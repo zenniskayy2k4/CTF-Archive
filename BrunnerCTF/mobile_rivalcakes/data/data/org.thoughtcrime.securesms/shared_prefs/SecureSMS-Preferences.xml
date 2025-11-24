@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="passphrase_iterations" value="26315" />
+    <boolean name="passphrase_initialized" value="true" />
+    <string name="master_secret">8uNa9V/3jnvub2uX1AB6bvH3zRsRSUqRF3DbJiqouIkpYNDgHAoLYDaCuM0KfoyBfTNuHcnN5bfZc4bNzvn0/S+DSCU=</string>
+    <string name="asymmetric_master_secret_curve25519_private">hfAi2piLCB/vb0OFIdg67IAHlExLKO0zxTpo3akXC3tZVNLmgaQPn9yKIFGEze/WAt1wc+C0BkzBT7uV/rPto+P6H2FDkfQQHkK1VckuALDYzE9W</string>
+    <string name="encryption_salt">8dSqKubb8abaLLVV0KzxiQ==</string>
+    <string name="mac_salt">/PeRLticLvaogwN8nOJXHA==</string>
+    <string name="asymmetric_master_secret_curve25519_public">BZuTeoxx51aRkyd8lanVt1xgROXH/7Na8by0Q/EJbo0n</string>
+</map>

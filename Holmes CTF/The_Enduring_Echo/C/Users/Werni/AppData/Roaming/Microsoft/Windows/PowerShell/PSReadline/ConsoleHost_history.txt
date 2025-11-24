@@ -1,0 +1,5 @@
+ls
+hostname
+ping 8.8.8.8
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f
+ping 8.8.8.8

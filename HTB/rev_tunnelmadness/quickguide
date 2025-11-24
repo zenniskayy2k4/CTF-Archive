@@ -1,0 +1,9 @@
+2 key functions: get_cell and prompt_and_update_pos
+
+get_cell reveals some information: 
+- the maze is organized in a 20 x 20 x 20 cube format, with each cell being 16 bytes
+- data for maze is at 001020e0
+
+prompt_and_update_pos tells the general movement guide and restrictions to moving. Mainly, you cant exit the cube's dimensions and certain cells are not accessible. 
+
+Line 17 of the main function is also an important clue to solving the maze.

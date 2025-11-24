@@ -1,0 +1,75 @@
+{
+  "races": [
+    {
+      "timestamp": "2025-08-30T11:11:26.409673",
+      "horses": [
+        {
+          "name": "Comet",
+          "speed": 5,
+          "stamina": 8,
+          "luck": 9
+        },
+        {
+          "name": "Lightning",
+          "speed": 9,
+          "stamina": 5,
+          "luck": 7
+        },
+        {
+          "name": "Storm",
+          "speed": 6,
+          "stamina": 9,
+          "luck": 5
+        },
+        {
+          "name": "Thunder",
+          "speed": 8,
+          "stamina": 7,
+          "luck": 6
+        }
+      ],
+      "results": [
+        "Lightning",
+        "Thunder",
+        "Storm",
+        "Comet"
+      ],
+      "player_bet": 10,
+      "winnings": 0
+    }
+  ],
+  "horses": {
+    "Lightning": {
+      "races": 1,
+      "wins": 1,
+      "placements": [
+        1
+      ]
+    },
+    "Thunder": {
+      "races": 1,
+      "wins": 0,
+      "placements": [
+        2
+      ]
+    },
+    "Storm": {
+      "races": 1,
+      "wins": 0,
+      "placements": [
+        3
+      ]
+    },
+    "Comet": {
+      "races": 1,
+      "wins": 0,
+      "placements": [
+        4
+      ]
+    }
+  },
+  "player": {
+    "total_bets": 10,
+    "total_winnings": 0
+  }
+}

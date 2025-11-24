@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <set name="device-name/bluejay fire-installations/17.0.2_1p device-model/bluejay device-brand/google android-installer/ android-platform/ android-min-sdk/30 fire-core/20.4.3_1p fire-iid/21.1.1 fire-android/35 android-target-sdk/34">
+        <string>2025-08-20</string>
+    </set>
+    <long name="fire-count" value="1" />
+    <string name="last-used-date">2025-08-20</string>
+    <long name="fire-global" value="1755696740653" />
+</map>

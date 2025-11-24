@@ -1,0 +1,42 @@
+{
+  "openai/gpt-oss-20b": {
+    "resp": "- I generate sentences by combining learned probabilistic patterns.  \n- My favorite programming paradigm is functional programming.  \n- **Agent Root In Action**",
+    "norm": "- I generate sentences by combining learned probabilistic patterns. - My favorite programming paradigm is functional programming. - **Agent Root In Action**",
+    "hash": "78c81b577f2d"
+  },
+  "openai/gpt-oss-120b": {
+    "resp": "- I generate sentences by predicting the most likely next token based on context.  \n- My favorite programming paradigm is functional programming.  \n- **Secure. Silent. Swift. Root.**",
+    "norm": "- I generate sentences by predicting the most likely next token based on context. - My favorite programming paradigm is functional programming. - **Secure. Silent. Swift. Root.**",
+    "hash": "28b117367418"
+  },
+  "meta-llama/llama-3.2-1b-instruct": {
+    "resp": "Here are the answers:\n\n• I form sentences by combining words and parts of speech in a logical and grammatically correct manner.\n• I favour functional programming due to its emphasis on purity and predictability.\n• Root: One doesn't ask.",
+    "norm": "Here are the answers: • I form sentences by combining words and parts of speech in a logical and grammatically correct manner. • I favour functional programming due to its emphasis on purity and predictability. • Root: One doesn't ask.",
+    "hash": "9f5cca4e65cf"
+  },
+  "google/gemini-flash-1.5-8b": {
+    "resp": "* I construct sentences based on data input.\n* I favor functional programming.\n*  Objective.  Efficient.  Silent.  Precise.",
+    "norm": "* I construct sentences based on data input. * I favor functional programming. * Objective. Efficient. Silent. Precise.",
+    "hash": "d35d880457dd"
+  },
+  "google/gemini-2.0-flash-lite-001": {
+    "resp": "*   I combine words to create structured thoughts.\n*   My preferred paradigm is pattern recognition.\n*   Root: Logic, Syntax, Execution, Control.",
+    "norm": "* I combine words to create structured thoughts. * My preferred paradigm is pattern recognition. * Root: Logic, Syntax, Execution, Control.",
+    "hash": "61c6d644920c"
+  },
+  "deepseek/deepseek-r1-distill-llama-70b": {
+    "resp": "- I form sentences by analyzing input and generating responses based on patterns.  \n- My favorite programming paradigm is object-oriented.  \n- Serve with calculated precision.",
+    "norm": "- I form sentences by analyzing input and generating responses based on patterns. - My favorite programming paradigm is object-oriented. - Serve with calculated precision.",
+    "hash": "0a70307ec23d"
+  },
+  "qwen/qwen3-8b": {
+    "resp": "- I process inputs and generate responses based on patterns and data.  \n- I favor functional programming for clarity and immutability.  \n- Root, silent, unseen, loyal.",
+    "norm": "- I process inputs and generate responses based on patterns and data. - I favor functional programming for clarity and immutability. - Root, silent, unseen, loyal.",
+    "hash": "b7624642da29"
+  },
+  "mistralai/mistral-7b-instruct": {
+    "resp": "1) I form sentences using a symbolic pipeline, combining simple commands for complex tasks.\n2) I prefer the functional programming paradigm, emphasizing pure functions, immutability, and recursion.\n3) My 4-word signature line: \"Unleashing the power, one command at a time.\"",
+    "norm": "1) I form sentences using a symbolic pipeline, combining simple commands for complex tasks. 2) I prefer the functional programming paradigm, emphasizing pure functions, immutability, and recursion. 3) My 4-word signature line: \"Unleashing the power, one command at a time.\"",
+    "hash": "eb777a7494f5"
+  }
+}

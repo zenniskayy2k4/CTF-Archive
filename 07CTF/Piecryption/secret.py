@@ -1,0 +1,1 @@
+FLAG = '07CTF{p1e_1s_aNsw3r_t0_ev3ryThy1ngggg}'

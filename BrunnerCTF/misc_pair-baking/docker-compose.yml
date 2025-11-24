@@ -1,0 +1,6 @@
+services:
+  pair-baking:
+    build:
+      context: .
+    ports:
+      - '5000:5000'

@@ -1,0 +1,1058 @@
+main.pyc (Python 3.11)
+[Code]
+    File Name: main.py
+    Object Name: <module>
+    Qualified Name: <module>
+    Arg Count: 0
+    Pos Only Arg Count: 0
+    KW Only Arg Count: 0
+    Stack Size: 6
+    Flags: 0x00000000
+    [Names]
+        'base64'
+        'json'
+        'time'
+        'random'
+        'sys'
+        'os'
+        'ctypes'
+        'CDLL'
+        'c_char_p'
+        'c_int'
+        'c_void_p'
+        'cryptography.hazmat.primitives'
+        'serialization'
+        'hashes'
+        'cryptography.hazmat.primitives.asymmetric'
+        'padding'
+        'get_resource_path'
+        'load_native_lib'
+        'platform'
+        'LIBNAME'
+        'lib'
+        'check_integrity'
+        'decrypt_flag_file'
+        'free_mem'
+        'argtypes'
+        'restype'
+        'Exception'
+        'e'
+        'print'
+        'run_integrity_or_exit'
+        'PUB_PEM'
+        'public_key'
+        'pub_path'
+        'path'
+        'exists'
+        'open'
+        'f'
+        'load_pem_public_key'
+        'read'
+        'b64url_encode'
+        'b64url_decode'
+        'verify_token'
+        'sample_token_nonvip'
+        'main'
+        '__name__'
+    [Locals+Names]
+    [Constants]
+        0
+        None
+        (
+            'CDLL'
+            'c_char_p'
+            'c_int'
+            'c_void_p'
+        )
+        (
+            'serialization'
+            'hashes'
+        )
+        (
+            'padding'
+        )
+        [Code]
+            File Name: main.py
+            Object Name: get_resource_path
+            Qualified Name: get_resource_path
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 5
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'getattr'
+                'sys'
+                '_MEIPASS'
+                'os'
+                'path'
+                'dirname'
+                '__file__'
+                'join'
+            [Locals+Names]
+                'name'
+                'base'
+            [Constants]
+                None
+                'frozen'
+                False
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + getattr
+                14      LOAD_GLOBAL                     2: sys
+                26      LOAD_CONST                      1: 'frozen'
+                28      LOAD_CONST                      2: False
+                30      PRECALL                         3
+                34      CALL                            3
+                44      POP_JUMP_FORWARD_IF_FALSE       13 (to 72)
+                46      LOAD_GLOBAL                     2: sys
+                58      LOAD_ATTR                       2: _MEIPASS
+                68      STORE_FAST                      1: base
+                70      JUMP_FORWARD                    36 (to 144)
+                72      LOAD_GLOBAL                     6: os
+                84      LOAD_ATTR                       4: path
+                94      LOAD_METHOD                     5: dirname
+                116     LOAD_GLOBAL                     12: __file__
+                128     PRECALL                         1
+                132     CALL                            1
+                142     STORE_FAST                      1: base
+                144     LOAD_GLOBAL                     6: os
+                156     LOAD_ATTR                       4: path
+                166     LOAD_METHOD                     7: join
+                188     LOAD_FAST                       1: base
+                190     LOAD_FAST                       0: name
+                192     PRECALL                         2
+                196     CALL                            2
+                206     RETURN_VALUE                    
+        [Code]
+            File Name: main.py
+            Object Name: load_native_lib
+            Qualified Name: load_native_lib
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 5
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'CDLL'
+                'get_resource_path'
+            [Locals+Names]
+                'name'
+            [Constants]
+                None
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + CDLL
+                14      LOAD_GLOBAL                     3: NULL + get_resource_path
+                26      LOAD_FAST                       0: name
+                28      PRECALL                         1
+                32      CALL                            1
+                42      PRECALL                         1
+                46      CALL                            1
+                56      RETURN_VALUE                    
+        'win32'
+        'libnative.dll'
+        'libnative.so'
+        'Warning: native lib not loaded:'
+        [Code]
+            File Name: main.py
+            Object Name: run_integrity_or_exit
+            Qualified Name: run_integrity_or_exit
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 4
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'check_integrity'
+                'sys'
+                'executable'
+                'encode'
+                'print'
+                'exit'
+            [Locals+Names]
+                'ok'
+            [Constants]
+                None
+                '[!] Integrity failed or debugger detected. Exiting.'
+                1
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     0: check_integrity
+                14      POP_JUMP_FORWARD_IF_FALSE       82 (to 180)
+                16      LOAD_GLOBAL                     1: NULL + check_integrity
+                28      LOAD_GLOBAL                     2: sys
+                40      LOAD_ATTR                       2: executable
+                50      LOAD_METHOD                     3: encode
+                72      PRECALL                         0
+                76      CALL                            0
+                86      PRECALL                         1
+                90      CALL                            1
+                100     STORE_FAST                      0: ok
+                102     LOAD_FAST                       0: ok
+                104     POP_JUMP_FORWARD_IF_TRUE        39 (to 184)
+                106     LOAD_GLOBAL                     9: NULL + print
+                118     LOAD_CONST                      1: '[!] Integrity failed or debugger detected. Exiting.'
+                120     PRECALL                         1
+                124     CALL                            1
+                134     POP_TOP                         
+                136     LOAD_GLOBAL                     3: NULL + sys
+                148     LOAD_ATTR                       5: exit
+                158     LOAD_CONST                      2: 1
+                160     PRECALL                         1
+                164     CALL                            1
+                174     POP_TOP                         
+                176     LOAD_CONST                      0: None
+                178     RETURN_VALUE                    
+                180     LOAD_CONST                      0: None
+                182     RETURN_VALUE                    
+                184     LOAD_CONST                      0: None
+                186     RETURN_VALUE                    
+        b'-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsJftFGJC6RjAC54aMncA\nfjb2xXeRECiwHuz2wC6QynDd93/7XIrqTObeTpfBCSpOKRLhks6/nzZFTTsYdQCj\n4roXhWo5lFfH0OTL+164VoKnmUkQ9dppzpmV0Kpk5IQhEyuPYzJfFAlafcHdQvUo\nidkqcOPpR7hznJPEuRbPxJod34Bph/u9vePKcQQfe+/l/nn02nbfYWTuGtuEdpHq\nMkktl4WpB50/a5ZqYkW4z0zjFCY5LIPE7mpUNLrZnadBGIaLoVV2lZEBdLt6iLkV\nHXIr+xNA9ysE304T0JJ/DwM1OXb4yVrtawbFLBu9otOC+Gu0Set+8OjfQvJ+tlT/\nzQIDAQAB\n-----END PUBLIC KEY-----'
+        'public.pem'
+        'rb'
+        'Failed loading public key:'
+        [Code]
+            File Name: main.py
+            Object Name: b64url_encode
+            Qualified Name: b64url_encode
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 3
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'base64'
+                'urlsafe_b64encode'
+                'rstrip'
+                'decode'
+            [Locals+Names]
+                'b'
+            [Constants]
+                None
+                b'='
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + base64
+                14      LOAD_ATTR                       1: urlsafe_b64encode
+                24      LOAD_FAST                       0: b
+                26      PRECALL                         1
+                30      CALL                            1
+                40      LOAD_METHOD                     2: rstrip
+                62      LOAD_CONST                      1: b'='
+                64      PRECALL                         1
+                68      CALL                            1
+                78      LOAD_METHOD                     3: decode
+                100     PRECALL                         0
+                104     CALL                            0
+                114     RETURN_VALUE                    
+        [Code]
+            File Name: main.py
+            Object Name: b64url_decode
+            Qualified Name: b64url_decode
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 6
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'len'
+                'base64'
+                'urlsafe_b64decode'
+                'encode'
+            [Locals+Names]
+                's'
+            [Constants]
+                None
+                '='
+                4
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_FAST                       0: s
+                4       LOAD_CONST                      1: '='
+                6       LOAD_CONST                      2: 4
+                8       LOAD_GLOBAL                     1: NULL + len
+                20      LOAD_FAST                       0: s
+                22      PRECALL                         1
+                26      CALL                            1
+                36      LOAD_CONST                      2: 4
+                38      BINARY_OP                       6 (%)
+                42      BINARY_OP                       10 (-)
+                46      LOAD_CONST                      2: 4
+                48      BINARY_OP                       6 (%)
+                52      BINARY_OP                       5 (*)
+                56      BINARY_OP                       13 (+=)
+                60      STORE_FAST                      0: s
+                62      LOAD_GLOBAL                     3: NULL + base64
+                74      LOAD_ATTR                       2: urlsafe_b64decode
+                84      LOAD_FAST                       0: s
+                86      LOAD_METHOD                     3: encode
+                108     PRECALL                         0
+                112     CALL                            0
+                122     PRECALL                         1
+                126     CALL                            1
+                136     RETURN_VALUE                    
+        [Code]
+            File Name: main.py
+            Object Name: verify_token
+            Qualified Name: verify_token
+            Arg Count: 1
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 7
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'public_key'
+                'strip'
+                'split'
+                'b64url_decode'
+                'verify'
+                'padding'
+                'PKCS1v15'
+                'hashes'
+                'SHA256'
+                'json'
+                'loads'
+                'decode'
+                'get'
+                'int'
+                'time'
+                'Exception'
+                'str'
+            [Locals+Names]
+                'token'
+                'payload_b64'
+                'sig_b64'
+                'payload'
+                'sig'
+                'j'
+                'e'
+            [Constants]
+                None
+                (
+                    False
+                    'no public key'
+                )
+                '.'
+                1
+                'role'
+                'VIP'
+                (
+                    False
+                    'role != VIP'
+                )
+                'expiry'
+                0
+                (
+                    False
+                    'expired'
+                )
+                True
+                False
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     0: public_key
+                14      POP_JUMP_FORWARD_IF_TRUE        2 (to 20)
+                16      LOAD_CONST                      1: (False, 'no public key')
+                18      RETURN_VALUE                    
+                20      NOP                             
+                22      LOAD_FAST                       0: token
+                24      LOAD_METHOD                     1: strip
+                46      PRECALL                         0
+                50      CALL                            0
+                60      LOAD_METHOD                     2: split
+                82      LOAD_CONST                      2: '.'
+                84      LOAD_CONST                      3: 1
+                86      PRECALL                         2
+                90      CALL                            2
+                100     UNPACK_SEQUENCE                 2
+                104     STORE_FAST                      1: payload_b64
+                106     STORE_FAST                      2: sig_b64
+                108     LOAD_GLOBAL                     7: NULL + b64url_decode
+                120     LOAD_FAST                       1: payload_b64
+                122     PRECALL                         1
+                126     CALL                            1
+                136     STORE_FAST                      3: payload
+                138     LOAD_GLOBAL                     7: NULL + b64url_decode
+                150     LOAD_FAST                       2: sig_b64
+                152     PRECALL                         1
+                156     CALL                            1
+                166     STORE_FAST                      4: sig
+                168     LOAD_GLOBAL                     0: public_key
+                180     LOAD_METHOD                     4: verify
+                202     LOAD_FAST                       4: sig
+                204     LOAD_FAST                       3: payload
+                206     LOAD_GLOBAL                     11: NULL + padding
+                218     LOAD_ATTR                       6: PKCS1v15
+                228     PRECALL                         0
+                232     CALL                            0
+                242     LOAD_GLOBAL                     15: NULL + hashes
+                254     LOAD_ATTR                       8: SHA256
+                264     PRECALL                         0
+                268     CALL                            0
+                278     PRECALL                         4
+                282     CALL                            4
+                292     POP_TOP                         
+                294     LOAD_GLOBAL                     19: NULL + json
+                306     LOAD_ATTR                       10: loads
+                316     LOAD_FAST                       3: payload
+                318     LOAD_METHOD                     11: decode
+                340     PRECALL                         0
+                344     CALL                            0
+                354     PRECALL                         1
+                358     CALL                            1
+                368     STORE_FAST                      5: j
+                370     LOAD_FAST                       5: j
+                372     LOAD_METHOD                     12: get
+                394     LOAD_CONST                      4: 'role'
+                396     PRECALL                         1
+                400     CALL                            1
+                410     LOAD_CONST                      5: 'VIP'
+                412     COMPARE_OP                      3 (!=)
+                418     POP_JUMP_FORWARD_IF_FALSE       2 (to 424)
+                420     LOAD_CONST                      6: (False, 'role != VIP')
+                422     RETURN_VALUE                    
+                424     LOAD_FAST                       5: j
+                426     LOAD_METHOD                     12: get
+                448     LOAD_CONST                      7: 'expiry'
+                450     LOAD_CONST                      8: 0
+                452     PRECALL                         2
+                456     CALL                            2
+                466     LOAD_GLOBAL                     27: NULL + int
+                478     LOAD_GLOBAL                     29: NULL + time
+                490     LOAD_ATTR                       14: time
+                500     PRECALL                         0
+                504     CALL                            0
+                514     PRECALL                         1
+                518     CALL                            1
+                528     COMPARE_OP                      0 (<)
+                534     POP_JUMP_FORWARD_IF_FALSE       2 (to 540)
+                536     LOAD_CONST                      9: (False, 'expired')
+                538     RETURN_VALUE                    
+                540     LOAD_CONST                      10: True
+                542     LOAD_FAST                       5: j
+                544     BUILD_TUPLE                     2
+                546     RETURN_VALUE                    
+                548     PUSH_EXC_INFO                   
+                550     LOAD_GLOBAL                     30: Exception
+                562     CHECK_EXC_MATCH                 
+                564     POP_JUMP_FORWARD_IF_FALSE       27 (to 620)
+                566     STORE_FAST                      6: e
+                568     LOAD_CONST                      11: False
+                570     LOAD_GLOBAL                     33: NULL + str
+                582     LOAD_FAST                       6: e
+                584     PRECALL                         1
+                588     CALL                            1
+                598     BUILD_TUPLE                     2
+                600     SWAP                            2
+                602     POP_EXCEPT                      
+                604     LOAD_CONST                      0: None
+                606     STORE_FAST                      6: e
+                608     DELETE_FAST                     6: e
+                610     RETURN_VALUE                    
+                612     LOAD_CONST                      0: None
+                614     STORE_FAST                      6: e
+                616     DELETE_FAST                     6: e
+                618     RERAISE                         1
+                620     RERAISE                         0
+                622     COPY                            3
+                624     POP_EXCEPT                      
+                626     RERAISE                         1
+        [Code]
+            File Name: main.py
+            Object Name: sample_token_nonvip
+            Qualified Name: sample_token_nonvip
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 7
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'json'
+                'dumps'
+                'int'
+                'time'
+                'encode'
+                'b64url_encode'
+            [Locals+Names]
+                'payload'
+            [Constants]
+                None
+                'guest'
+                3600
+                'USER'
+                (
+                    'user'
+                    'expiry'
+                    'role'
+                )
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + json
+                14      LOAD_ATTR                       1: dumps
+                24      LOAD_CONST                      1: 'guest'
+                26      LOAD_GLOBAL                     5: NULL + int
+                38      LOAD_GLOBAL                     7: NULL + time
+                50      LOAD_ATTR                       3: time
+                60      PRECALL                         0
+                64      CALL                            0
+                74      PRECALL                         1
+                78      CALL                            1
+                88      LOAD_CONST                      2: 3600
+                90      BINARY_OP                       0 (+)
+                94      LOAD_CONST                      3: 'USER'
+                96      LOAD_CONST                      4: ('user', 'expiry', 'role')
+                98      BUILD_CONST_KEY_MAP             3
+                100     PRECALL                         1
+                104     CALL                            1
+                114     LOAD_METHOD                     4: encode
+                136     PRECALL                         0
+                140     CALL                            0
+                150     STORE_FAST                      0: payload
+                152     LOAD_GLOBAL                     11: NULL + b64url_encode
+                164     LOAD_FAST                       0: payload
+                166     PRECALL                         1
+                170     CALL                            1
+                180     RETURN_VALUE                    
+        [Code]
+            File Name: main.py
+            Object Name: main
+            Qualified Name: main
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Stack Size: 6
+            Flags: 0x00000003 (CO_OPTIMIZED | CO_NEWLOCALS)
+            [Names]
+                'run_integrity_or_exit'
+                'print'
+                'input'
+                'strip'
+                'lower'
+                'random'
+                'choice'
+                'sample_token_nonvip'
+                'verify_token'
+                'decrypt_flag_file'
+                'get_resource_path'
+                'encode'
+                'ctypes'
+                'string_at'
+                'decode'
+                'free_mem'
+            [Locals+Names]
+                'queries'
+                'cmd'
+                'token'
+                'ok'
+                'info'
+                'flag_path'
+                'res_ptr'
+                'flag_bytes'
+                'flag'
+            [Constants]
+                None
+                '=== Bot Chat === \n    1.chat\n    2.showtoken\n    3.upgrade \n    4.quit'
+                0
+                True
+                '> '
+                (
+                    'quit'
+                    'exit'
+                )
+                'chat'
+                3
+                (
+                    'Hi'
+                    'Demo AI'
+                    'Hello!'
+                    'How can I assist you?'
+                    'I am a chatbot'
+                    'What do you want?'
+                    'Tell me more'
+                    'Interesting'
+                    'Go on...'
+                    'SIUUUUUUU'
+                    'I LOVE U'
+                    'HACK TO LEARN NOT LEARN TO HACK'
+                )
+                1
+                "Free queries exhausted. Use 'upgrade'"
+                'showtoken'
+                'Token current:'
+                'upgrade'
+                'Paste token: '
+                'Native library not available -> cannot decrypt'
+                'flag.enc'
+                'Native failed to decrypt or error'
+                'ignore'
+                (
+                    'errors'
+                )
+                'utf-8'
+                'replace'
+                '=== VIP VERIFIED ==='
+                'Token invalid:'
+                'Unknown. Use chat/showtoken/upgrade/quit'
+            [Disassembly]
+                0       RESUME                          0
+                2       LOAD_GLOBAL                     1: NULL + run_integrity_or_exit
+                14      PRECALL                         0
+                18      CALL                            0
+                28      POP_TOP                         
+                30      LOAD_GLOBAL                     3: NULL + print
+                42      LOAD_CONST                      1: '=== Bot Chat === \n    1.chat\n    2.showtoken\n    3.upgrade \n    4.quit'
+                44      PRECALL                         1
+                48      CALL                            1
+                58      POP_TOP                         
+                60      LOAD_CONST                      2: 0
+                62      STORE_FAST                      0: queries
+                64      NOP                             
+                66      LOAD_GLOBAL                     5: NULL + input
+                78      LOAD_CONST                      4: '> '
+                80      PRECALL                         1
+                84      CALL                            1
+                94      LOAD_METHOD                     3: strip
+                116     PRECALL                         0
+                120     CALL                            0
+                130     LOAD_METHOD                     4: lower
+                152     PRECALL                         0
+                156     CALL                            0
+                166     STORE_FAST                      1: cmd
+                168     LOAD_FAST                       1: cmd
+                170     LOAD_CONST                      5: ('quit', 'exit')
+                172     CONTAINS_OP                     0 (in)
+                174     POP_JUMP_FORWARD_IF_FALSE       2 (to 180)
+                176     LOAD_CONST                      0: None
+                178     RETURN_VALUE                    
+                180     LOAD_FAST                       1: cmd
+                182     LOAD_CONST                      6: 'chat'
+                184     COMPARE_OP                      2 (==)
+                190     POP_JUMP_FORWARD_IF_FALSE       65 (to 322)
+                192     LOAD_FAST                       0: queries
+                194     LOAD_CONST                      7: 3
+                196     COMPARE_OP                      0 (<)
+                202     POP_JUMP_FORWARD_IF_FALSE       42 (to 288)
+                204     LOAD_GLOBAL                     3: NULL + print
+                216     LOAD_GLOBAL                     11: NULL + random
+                228     LOAD_ATTR                       6: choice
+                238     BUILD_LIST                      0
+                240     LOAD_CONST                      8: ('Hi', 'Demo AI', 'Hello!', 'How can I assist you?', 'I am a chatbot', 'What do you want?', 'Tell me more', 'Interesting', 'Go on...', 'SIUUUUUUU', 'I LOVE U', 'HACK TO LEARN NOT LEARN TO HACK')
+                242     LIST_EXTEND                     1
+                244     PRECALL                         1
+                248     CALL                            1
+                258     PRECALL                         1
+                262     CALL                            1
+                272     POP_TOP                         
+                274     LOAD_FAST                       0: queries
+                276     LOAD_CONST                      9: 1
+                278     BINARY_OP                       13 (+=)
+                282     STORE_FAST                      0: queries
+                284     JUMP_FORWARD                    371 (to 1030)
+                288     LOAD_GLOBAL                     3: NULL + print
+                300     LOAD_CONST                      10: "Free queries exhausted. Use 'upgrade'"
+                302     PRECALL                         1
+                306     CALL                            1
+                316     POP_TOP                         
+                318     JUMP_FORWARD                    354 (to 1030)
+                322     LOAD_FAST                       1: cmd
+                324     LOAD_CONST                      11: 'showtoken'
+                326     COMPARE_OP                      2 (==)
+                332     POP_JUMP_FORWARD_IF_FALSE       32 (to 398)
+                334     LOAD_GLOBAL                     3: NULL + print
+                346     LOAD_CONST                      12: 'Token current:'
+                348     LOAD_GLOBAL                     15: NULL + sample_token_nonvip
+                360     PRECALL                         0
+                364     CALL                            0
+                374     BINARY_OP                       0 (+)
+                378     PRECALL                         1
+                382     CALL                            1
+                392     POP_TOP                         
+                394     JUMP_FORWARD                    316 (to 1030)
+                398     LOAD_FAST                       1: cmd
+                400     LOAD_CONST                      13: 'upgrade'
+                402     COMPARE_OP                      2 (==)
+                408     POP_JUMP_FORWARD_IF_FALSE       294 (to 1000)
+                412     LOAD_GLOBAL                     1: NULL + run_integrity_or_exit
+                424     PRECALL                         0
+                428     CALL                            0
+                438     POP_TOP                         
+                440     LOAD_GLOBAL                     5: NULL + input
+                452     LOAD_CONST                      14: 'Paste token: '
+                454     PRECALL                         1
+                458     CALL                            1
+                468     LOAD_METHOD                     3: strip
+                490     PRECALL                         0
+                494     CALL                            0
+                504     STORE_FAST                      2: token
+                506     LOAD_GLOBAL                     17: NULL + verify_token
+                518     LOAD_FAST                       2: token
+                520     PRECALL                         1
+                524     CALL                            1
+                534     UNPACK_SEQUENCE                 2
+                538     STORE_FAST                      3: ok
+                540     STORE_FAST                      4: info
+                542     LOAD_FAST                       3: ok
+                544     POP_JUMP_FORWARD_IF_FALSE       210 (to 966)
+                546     LOAD_GLOBAL                     18: decrypt_flag_file
+                558     POP_JUMP_FORWARD_IF_NOT_NONE    16 (to 592)
+                560     LOAD_GLOBAL                     3: NULL + print
+                572     LOAD_CONST                      15: 'Native library not available -> cannot decrypt'
+                574     PRECALL                         1
+                578     CALL                            1
+                588     POP_TOP                         
+                590     JUMP_FORWARD                    185 (to 962)
+                592     LOAD_GLOBAL                     21: NULL + get_resource_path
+                604     LOAD_CONST                      16: 'flag.enc'
+                606     PRECALL                         1
+                610     CALL                            1
+                620     LOAD_METHOD                     11: encode
+                642     PRECALL                         0
+                646     CALL                            0
+                656     STORE_FAST                      5: flag_path
+                658     LOAD_GLOBAL                     19: NULL + decrypt_flag_file
+                670     LOAD_FAST                       5: flag_path
+                672     PRECALL                         1
+                676     CALL                            1
+                686     STORE_FAST                      6: res_ptr
+                688     LOAD_FAST                       6: res_ptr
+                690     POP_JUMP_FORWARD_IF_TRUE        16 (to 724)
+                692     LOAD_GLOBAL                     3: NULL + print
+                704     LOAD_CONST                      17: 'Native failed to decrypt or error'
+                706     PRECALL                         1
+                710     CALL                            1
+                720     POP_TOP                         
+                722     JUMP_FORWARD                    119 (to 962)
+                724     LOAD_GLOBAL                     25: NULL + ctypes
+                736     LOAD_ATTR                       13: string_at
+                746     LOAD_FAST                       6: res_ptr
+                748     PRECALL                         1
+                752     CALL                            1
+                762     STORE_FAST                      7: flag_bytes
+                764     NOP                             
+                766     LOAD_FAST                       7: flag_bytes
+                768     LOAD_METHOD                     14: decode
+                790     LOAD_CONST                      18: 'ignore'
+                792     KW_NAMES                        19: ('errors',)
+                794     PRECALL                         1
+                798     CALL                            1
+                808     STORE_FAST                      8: flag
+                810     JUMP_FORWARD                    30 (to 872)
+                812     PUSH_EXC_INFO                   
+                814     POP_TOP                         
+                816     LOAD_FAST                       7: flag_bytes
+                818     LOAD_METHOD                     14: decode
+                840     LOAD_CONST                      20: 'utf-8'
+                842     LOAD_CONST                      21: 'replace'
+                844     KW_NAMES                        19: ('errors',)
+                846     PRECALL                         2
+                850     CALL                            2
+                860     STORE_FAST                      8: flag
+                862     POP_EXCEPT                      
+                864     JUMP_FORWARD                    3 (to 872)
+                866     COPY                            3
+                868     POP_EXCEPT                      
+                870     RERAISE                         1
+                872     LOAD_GLOBAL                     3: NULL + print
+                884     LOAD_CONST                      22: '=== VIP VERIFIED ==='
+                886     PRECALL                         1
+                890     CALL                            1
+                900     POP_TOP                         
+                902     LOAD_GLOBAL                     3: NULL + print
+                914     LOAD_FAST                       8: flag
+                916     PRECALL                         1
+                920     CALL                            1
+                930     POP_TOP                         
+                932     LOAD_GLOBAL                     31: NULL + free_mem
+                944     LOAD_FAST                       6: res_ptr
+                946     PRECALL                         1
+                950     CALL                            1
+                960     POP_TOP                         
+                962     LOAD_CONST                      0: None
+                964     RETURN_VALUE                    
+                966     LOAD_GLOBAL                     3: NULL + print
+                978     LOAD_CONST                      23: 'Token invalid:'
+                980     LOAD_FAST                       4: info
+                982     PRECALL                         2
+                986     CALL                            2
+                996     POP_TOP                         
+                998     JUMP_FORWARD                    15 (to 1030)
+                1000    LOAD_GLOBAL                     3: NULL + print
+                1012    LOAD_CONST                      24: 'Unknown. Use chat/showtoken/upgrade/quit'
+                1014    PRECALL                         1
+                1018    CALL                            1
+                1028    POP_TOP                         
+                1030    JUMP_BACKWARD                   484 (to 66)
+        '__main__'
+    [Disassembly]
+        0       RESUME                          0
+        2       LOAD_CONST                      0: 0
+        4       LOAD_CONST                      1: None
+        6       IMPORT_NAME                     0: base64
+        8       STORE_NAME                      0: base64
+        10      LOAD_CONST                      0: 0
+        12      LOAD_CONST                      1: None
+        14      IMPORT_NAME                     1: json
+        16      STORE_NAME                      1: json
+        18      LOAD_CONST                      0: 0
+        20      LOAD_CONST                      1: None
+        22      IMPORT_NAME                     2: time
+        24      STORE_NAME                      2: time
+        26      LOAD_CONST                      0: 0
+        28      LOAD_CONST                      1: None
+        30      IMPORT_NAME                     3: random
+        32      STORE_NAME                      3: random
+        34      LOAD_CONST                      0: 0
+        36      LOAD_CONST                      1: None
+        38      IMPORT_NAME                     4: sys
+        40      STORE_NAME                      4: sys
+        42      LOAD_CONST                      0: 0
+        44      LOAD_CONST                      1: None
+        46      IMPORT_NAME                     5: os
+        48      STORE_NAME                      5: os
+        50      LOAD_CONST                      0: 0
+        52      LOAD_CONST                      2: ('CDLL', 'c_char_p', 'c_int', 'c_void_p')
+        54      IMPORT_NAME                     6: ctypes
+        56      IMPORT_FROM                     7: CDLL
+        58      STORE_NAME                      7: CDLL
+        60      IMPORT_FROM                     8: c_char_p
+        62      STORE_NAME                      8: c_char_p
+        64      IMPORT_FROM                     9: c_int
+        66      STORE_NAME                      9: c_int
+        68      IMPORT_FROM                     10: c_void_p
+        70      STORE_NAME                      10: c_void_p
+        72      POP_TOP                         
+        74      LOAD_CONST                      0: 0
+        76      LOAD_CONST                      3: ('serialization', 'hashes')
+        78      IMPORT_NAME                     11: cryptography.hazmat.primitives
+        80      IMPORT_FROM                     12: serialization
+        82      STORE_NAME                      12: serialization
+        84      IMPORT_FROM                     13: hashes
+        86      STORE_NAME                      13: hashes
+        88      POP_TOP                         
+        90      LOAD_CONST                      0: 0
+        92      LOAD_CONST                      4: ('padding',)
+        94      IMPORT_NAME                     14: cryptography.hazmat.primitives.asymmetric
+        96      IMPORT_FROM                     15: padding
+        98      STORE_NAME                      15: padding
+        100     POP_TOP                         
+        102     LOAD_CONST                      0: 0
+        104     LOAD_CONST                      1: None
+        106     IMPORT_NAME                     6: ctypes
+        108     STORE_NAME                      6: ctypes
+        110     LOAD_CONST                      5: <CODE> get_resource_path
+        112     MAKE_FUNCTION                   0
+        114     STORE_NAME                      16: get_resource_path
+        116     LOAD_CONST                      6: <CODE> load_native_lib
+        118     MAKE_FUNCTION                   0
+        120     STORE_NAME                      17: load_native_lib
+        122     LOAD_NAME                       4: sys
+        124     LOAD_ATTR                       18: platform
+        134     LOAD_CONST                      7: 'win32'
+        136     COMPARE_OP                      2 (==)
+        142     POP_JUMP_FORWARD_IF_FALSE       3 (to 150)
+        144     LOAD_CONST                      8: 'libnative.dll'
+        146     STORE_NAME                      19: LIBNAME
+        148     JUMP_FORWARD                    2 (to 154)
+        150     LOAD_CONST                      9: 'libnative.so'
+        152     STORE_NAME                      19: LIBNAME
+        154     LOAD_CONST                      1: None
+        156     STORE_NAME                      20: lib
+        158     LOAD_CONST                      1: None
+        160     STORE_NAME                      21: check_integrity
+        162     LOAD_CONST                      1: None
+        164     STORE_NAME                      22: decrypt_flag_file
+        166     LOAD_CONST                      1: None
+        168     STORE_NAME                      23: free_mem
+        170     NOP                             
+        172     PUSH_NULL                       
+        174     LOAD_NAME                       17: load_native_lib
+        176     LOAD_NAME                       19: LIBNAME
+        178     PRECALL                         1
+        182     CALL                            1
+        192     STORE_NAME                      20: lib
+        194     LOAD_NAME                       20: lib
+        196     LOAD_ATTR                       21: check_integrity
+        206     STORE_NAME                      21: check_integrity
+        208     LOAD_NAME                       8: c_char_p
+        210     BUILD_LIST                      1
+        212     LOAD_NAME                       21: check_integrity
+        214     STORE_ATTR                      24: argtypes
+        224     LOAD_NAME                       9: c_int
+        226     LOAD_NAME                       21: check_integrity
+        228     STORE_ATTR                      25: restype
+        238     LOAD_NAME                       20: lib
+        240     LOAD_ATTR                       22: decrypt_flag_file
+        250     STORE_NAME                      22: decrypt_flag_file
+        252     LOAD_NAME                       8: c_char_p
+        254     BUILD_LIST                      1
+        256     LOAD_NAME                       22: decrypt_flag_file
+        258     STORE_ATTR                      24: argtypes
+        268     LOAD_NAME                       10: c_void_p
+        270     LOAD_NAME                       22: decrypt_flag_file
+        272     STORE_ATTR                      25: restype
+        282     LOAD_NAME                       20: lib
+        284     LOAD_ATTR                       23: free_mem
+        294     STORE_NAME                      23: free_mem
+        296     LOAD_NAME                       10: c_void_p
+        298     BUILD_LIST                      1
+        300     LOAD_NAME                       23: free_mem
+        302     STORE_ATTR                      24: argtypes
+        312     LOAD_CONST                      1: None
+        314     LOAD_NAME                       23: free_mem
+        316     STORE_ATTR                      25: restype
+        326     JUMP_FORWARD                    38 (to 404)
+        328     PUSH_EXC_INFO                   
+        330     LOAD_NAME                       26: Exception
+        332     CHECK_EXC_MATCH                 
+        334     POP_JUMP_FORWARD_IF_FALSE       30 (to 396)
+        336     STORE_NAME                      27: e
+        338     PUSH_NULL                       
+        340     LOAD_NAME                       28: print
+        342     LOAD_CONST                      10: 'Warning: native lib not loaded:'
+        344     LOAD_NAME                       27: e
+        346     PRECALL                         2
+        350     CALL                            2
+        360     POP_TOP                         
+        362     LOAD_CONST                      1: None
+        364     STORE_NAME                      20: lib
+        366     LOAD_CONST                      1: None
+        368     STORE_NAME                      21: check_integrity
+        370     LOAD_CONST                      1: None
+        372     STORE_NAME                      22: decrypt_flag_file
+        374     LOAD_CONST                      1: None
+        376     STORE_NAME                      23: free_mem
+        378     POP_EXCEPT                      
+        380     LOAD_CONST                      1: None
+        382     STORE_NAME                      27: e
+        384     DELETE_NAME                     27: e
+        386     JUMP_FORWARD                    8 (to 404)
+        388     LOAD_CONST                      1: None
+        390     STORE_NAME                      27: e
+        392     DELETE_NAME                     27: e
+        394     RERAISE                         1
+        396     RERAISE                         0
+        398     COPY                            3
+        400     POP_EXCEPT                      
+        402     RERAISE                         1
+        404     LOAD_CONST                      11: <CODE> run_integrity_or_exit
+        406     MAKE_FUNCTION                   0
+        408     STORE_NAME                      29: run_integrity_or_exit
+        410     LOAD_CONST                      12: b'-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsJftFGJC6RjAC54aMncA\nfjb2xXeRECiwHuz2wC6QynDd93/7XIrqTObeTpfBCSpOKRLhks6/nzZFTTsYdQCj\n4roXhWo5lFfH0OTL+164VoKnmUkQ9dppzpmV0Kpk5IQhEyuPYzJfFAlafcHdQvUo\nidkqcOPpR7hznJPEuRbPxJod34Bph/u9vePKcQQfe+/l/nn02nbfYWTuGtuEdpHq\nMkktl4WpB50/a5ZqYkW4z0zjFCY5LIPE7mpUNLrZnadBGIaLoVV2lZEBdLt6iLkV\nHXIr+xNA9ysE304T0JJ/DwM1OXb4yVrtawbFLBu9otOC+Gu0Set+8OjfQvJ+tlT/\nzQIDAQAB\n-----END PUBLIC KEY-----'
+        412     STORE_NAME                      30: PUB_PEM
+        414     LOAD_CONST                      1: None
+        416     STORE_NAME                      31: public_key
+        418     NOP                             
+        420     PUSH_NULL                       
+        422     LOAD_NAME                       16: get_resource_path
+        424     LOAD_CONST                      13: 'public.pem'
+        426     PRECALL                         1
+        430     CALL                            1
+        440     STORE_NAME                      32: pub_path
+        442     LOAD_NAME                       5: os
+        444     LOAD_ATTR                       33: path
+        454     LOAD_METHOD                     34: exists
+        476     LOAD_NAME                       32: pub_path
+        478     PRECALL                         1
+        482     CALL                            1
+        492     POP_JUMP_FORWARD_IF_FALSE       71 (to 636)
+        494     PUSH_NULL                       
+        496     LOAD_NAME                       35: open
+        498     LOAD_NAME                       32: pub_path
+        500     LOAD_CONST                      14: 'rb'
+        502     PRECALL                         2
+        506     CALL                            2
+        516     BEFORE_WITH                     
+        518     STORE_NAME                      36: f
+        520     PUSH_NULL                       
+        522     LOAD_NAME                       12: serialization
+        524     LOAD_ATTR                       37: load_pem_public_key
+        534     LOAD_NAME                       36: f
+        536     LOAD_METHOD                     38: read
+        558     PRECALL                         0
+        562     CALL                            0
+        572     PRECALL                         1
+        576     CALL                            1
+        586     STORE_NAME                      31: public_key
+        588     LOAD_CONST                      1: None
+        590     LOAD_CONST                      1: None
+        592     LOAD_CONST                      1: None
+        594     PRECALL                         2
+        598     CALL                            2
+        608     POP_TOP                         
+        610     JUMP_FORWARD                    11 (to 634)
+        612     PUSH_EXC_INFO                   
+        614     WITH_EXCEPT_START               
+        616     POP_JUMP_FORWARD_IF_TRUE        4 (to 626)
+        618     RERAISE                         2
+        620     COPY                            3
+        622     POP_EXCEPT                      
+        624     RERAISE                         1
+        626     POP_TOP                         
+        628     POP_EXCEPT                      
+        630     POP_TOP                         
+        632     POP_TOP                         
+        634     JUMP_FORWARD                    16 (to 668)
+        636     PUSH_NULL                       
+        638     LOAD_NAME                       12: serialization
+        640     LOAD_ATTR                       37: load_pem_public_key
+        650     LOAD_NAME                       30: PUB_PEM
+        652     PRECALL                         1
+        656     CALL                            1
+        666     STORE_NAME                      31: public_key
+        668     JUMP_FORWARD                    32 (to 734)
+        670     PUSH_EXC_INFO                   
+        672     LOAD_NAME                       26: Exception
+        674     CHECK_EXC_MATCH                 
+        676     POP_JUMP_FORWARD_IF_FALSE       24 (to 726)
+        678     STORE_NAME                      27: e
+        680     PUSH_NULL                       
+        682     LOAD_NAME                       28: print
+        684     LOAD_CONST                      15: 'Failed loading public key:'
+        686     LOAD_NAME                       27: e
+        688     PRECALL                         2
+        692     CALL                            2
+        702     POP_TOP                         
+        704     LOAD_CONST                      1: None
+        706     STORE_NAME                      31: public_key
+        708     POP_EXCEPT                      
+        710     LOAD_CONST                      1: None
+        712     STORE_NAME                      27: e
+        714     DELETE_NAME                     27: e
+        716     JUMP_FORWARD                    8 (to 734)
+        718     LOAD_CONST                      1: None
+        720     STORE_NAME                      27: e
+        722     DELETE_NAME                     27: e
+        724     RERAISE                         1
+        726     RERAISE                         0
+        728     COPY                            3
+        730     POP_EXCEPT                      
+        732     RERAISE                         1
+        734     LOAD_CONST                      16: <CODE> b64url_encode
+        736     MAKE_FUNCTION                   0
+        738     STORE_NAME                      39: b64url_encode
+        740     LOAD_CONST                      17: <CODE> b64url_decode
+        742     MAKE_FUNCTION                   0
+        744     STORE_NAME                      40: b64url_decode
+        746     LOAD_CONST                      18: <CODE> verify_token
+        748     MAKE_FUNCTION                   0
+        750     STORE_NAME                      41: verify_token
+        752     LOAD_CONST                      19: <CODE> sample_token_nonvip
+        754     MAKE_FUNCTION                   0
+        756     STORE_NAME                      42: sample_token_nonvip
+        758     LOAD_CONST                      20: <CODE> main
+        760     MAKE_FUNCTION                   0
+        762     STORE_NAME                      43: main
+        764     LOAD_NAME                       44: __name__
+        766     LOAD_CONST                      21: '__main__'
+        768     COMPARE_OP                      2 (==)
+        774     POP_JUMP_FORWARD_IF_FALSE       12 (to 800)
+        776     PUSH_NULL                       
+        778     LOAD_NAME                       43: main
+        780     PRECALL                         0
+        784     CALL                            0
+        794     POP_TOP                         
+        796     LOAD_CONST                      1: None
+        798     RETURN_VALUE                    
+        800     LOAD_CONST                      1: None
+        802     RETURN_VALUE                    

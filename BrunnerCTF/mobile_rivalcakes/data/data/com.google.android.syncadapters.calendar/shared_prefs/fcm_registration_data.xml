@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="last_used_registration_api" value="2" />
+    <string name="last_successful_registration_environment_url">notifications-pa.googleapis.com</string>
+    <boolean name="is_registered_to_unified_fcm_registration" value="false" />
+    <int name="last_successful_registration_request_hash_code" value="730457750" />
+    <string name="last_successful_fcm_registration_token">fi0zAq98QgqQkQI6W7KfKH:APA91bGi4jxl2Ouxhr2GzdHTL6-J8rgK6JaWdcjabB8seAF9TkGCiJNy0hkYZAJ9ZYUCkm7Pa5z3mGfn13bkBoOK5Pzb0S8zNbQzI1QMtrT4ytZo4obEEr0</string>
+    <long name="last_successful_registration_time_ms" value="1755613172020" />
+    <int name="last_successful_registration_account_type" value="1" />
+</map>

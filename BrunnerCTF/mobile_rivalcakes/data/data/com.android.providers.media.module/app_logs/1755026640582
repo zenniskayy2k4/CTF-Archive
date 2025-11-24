@@ -1,0 +1,43 @@
+2025-08-12 21:24:00.583 Changed schema version on external from 0 to 1506, 0 items taking 82ms UUID dc320810-7baa-4eda-bfb4-3827ca014145
+2025-08-12 21:24:01.354 Changed schema version on internal from 0 to 1506, 0 items taking 156ms UUID 37fa1ef9-f82a-40a9-b87a-6e97a9a55699
+2025-08-12 21:24:01.864 Scanned internal due to REASON_MOUNTED, found 0 items in 46ms, 0 inserts 0 updates 0 deletes
+2025-08-12 21:24:01.880 Scanned internal due to REASON_MOUNTED, found 0 items in 5ms, 0 inserts 0 updates 0 deletes
+2025-08-12 21:24:12.927 Scanned internal due to REASON_MOUNTED, found 257 items in 11046ms, 257 inserts 0 updates 0 deletes
+2025-08-12 21:24:13.024 Scanned external_primary due to REASON_MOUNTED, found 15 items in 34ms, 3 inserts 0 updates 0 deletes
+2025-08-12 22:43:10.616 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-12 22:43:10.623 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-12 22:43:10.629 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-12 22:43:10.632 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-12 22:43:10.638 Deleted 1 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+2025-08-12 22:43:10.639 Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 1 deletes
+2025-08-15 23:30:22.603 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:30:22.608 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:30:22.618 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:30:22.628 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:30:22.643 Deleted 1 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+2025-08-15 23:30:22.645 Scanned external_primary due to REASON_DEMAND, found 0 items in 8ms, 0 inserts 0 updates 1 deletes
+2025-08-15 23:33:09.814 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:33:09.817 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:33:09.820 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:33:09.827 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:33:09.839 Deleted 1 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+2025-08-15 23:33:09.841 Scanned external_primary due to REASON_DEMAND, found 0 items in 7ms, 0 inserts 0 updates 1 deletes
+2025-08-15 23:50:17.919 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:50:17.921 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:50:17.924 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:50:17.926 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-15 23:50:17.935 Deleted 1 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+2025-08-15 23:50:17.936 Scanned external_primary due to REASON_DEMAND, found 0 items in 5ms, 0 inserts 0 updates 1 deletes
+2025-08-16 00:05:31.332 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-16 00:05:31.338 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-16 00:05:31.342 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-16 00:05:31.347 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-16 00:05:31.357 Deleted 1 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+2025-08-16 00:05:31.358 Scanned external_primary due to REASON_DEMAND, found 0 items in 5ms, 0 inserts 0 updates 1 deletes
+2025-08-16 15:04:56.277 Scanned external_primary due to REASON_DEMAND, found 0 items in 8ms, 0 inserts 0 updates 0 deletes
+2025-08-19 16:15:28.231 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-19 16:15:28.239 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-19 16:15:28.248 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-19 16:15:28.256 Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.externalstorage
+2025-08-19 16:15:28.269 Deleted 1 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+2025-08-19 16:15:28.270 Scanned external_primary due to REASON_DEMAND, found 0 items in 9ms, 0 inserts 0 updates 1 deletes

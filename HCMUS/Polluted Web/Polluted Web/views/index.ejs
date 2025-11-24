@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %> 
+  <div class="background">
+    <div class="title">
+      Please provide your opinion on climate change!
+    </div>
+    <form action="/" method="post">
+      <div class="inp-container">
+        <label for="name">Your Name</label>
+        <input class="inp-name" type="text" name="name" id="name">
+        <label for="opinion">Your Opinion</label>
+        <textarea class="inp-text" type="text" name="opinion" id="opinion" rows="8" cols="50"></textarea>
+        <input class="btn" type="submit" value="submit">
+      </div>
+    </form>
+  </div>
+  <div class="recent-box">
+    <div class="recent-text">RECENT OPINIONS</div>
+  </div>
+  <% if (userOpinions) { %>
+    <div class="opinion-container">
+    <% for (const opinion of userOpinions) { %>
+      <div class="opinion-card"><%= opinion %></div>
+    <% } %> 
+    </div>
+  <% } %>
+<%- include("partials/footer.ejs") %> 

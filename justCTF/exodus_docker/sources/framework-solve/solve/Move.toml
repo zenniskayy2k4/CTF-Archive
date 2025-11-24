@@ -1,0 +1,16 @@
+[package]
+name = "solution"
+version = "0.0.1"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "mainnet-v1.30.1" }
+
+[dependencies.challenge]
+version = '1.0.0'
+local = '../dependency'
+
+[addresses]
+solution =  "0x0"
+# TODO: update this address
+challenge = "0xdcd17b904c54e28c00c498986b1bfb6aaac449dbad8b8e8bd4b107f2cd7e6df3"

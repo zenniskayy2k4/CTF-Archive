@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>⚧︖Manual Distress Signal⚧︖</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background: radial-gradient(circle at 50% 50%, #001020, #000000);
+    color: #00ffea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .hud {
+    width: 700px;
+    background: rgba(0, 0, 32, 0.8);
+    border: 2px solid #00ffea;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 0 30px #00ffea, 0 0 60px #00ffea50 inset;
+  }
+  h1 {
+    color: #00ffea;
+    text-align: center;
+    text-shadow: 0 0 8px #00ffea;
+  }
+  .input-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .input-row input,
+  .input-row button {
+    flex: 1; /* Equal width */
+    font-family: monospace;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 12px;
+  }
+  .input-row input {
+    border: 1px solid #00ffea;
+    background: rgba(0,16,32,0.9);
+    color: #00ffea;
+    text-shadow: 0 0 4px #00ffea;
+  }
+  .input-row button {
+    border: none;
+    background: #00ffea;
+    color: #001020;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffea;
+  }
+  .input-row button:hover {
+    box-shadow: 0 0 20px #00ffee;
+  }
+  pre {
+    margin-top: 16px;
+    padding: 12px;
+    background: rgba(0, 8, 16, 0.8);
+    border: 1px solid #00ffea;
+    border-radius: 8px;
+    max-height: 40vh;
+    overflow-y: auto;
+    text-shadow: 0 0 4px #00ffea;
+  }
+</style>
+</head>
+<body>
+<div class="hud">
+<h1>⚧︖Manual Distress Signal⚧︖</h1>
+<h3 style="overflow-wrap: break-word;">Only engage in the case of a real emergency. Non-essential uses of the distress signal are a crime, and all crimes will be tracked down and persecuted in the Milky Way Galaxy Terran Supreme Court of Law.</h3>
+<div class="input-row">
+  <input type="text" id="userInput" placeholder="Enter input">
+  <button id="sendBtn">Engage Transmission</button>
+</div>
+<pre id="log"></pre>
+</div>
+
+<script>
+const logEl = document.getElementById('log');
+function note(s){ logEl.textContent += s + "\n"; logEl.scrollTop = logEl.scrollHeight; }
+
+document.getElementById('sendBtn').addEventListener('click', async () => {
+  const input = document.getElementById('userInput').value;
+  logEl.textContent = "";
+  note("Initiating secure transmission...");
+  try {
+    const res = await fetch("/send", {
+      method: "POST",
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({data: input})
+    });
+    const json = await res.json();
+    if(json.error) note("Error: " + json.error);
+    if(json.ciphertext) note("Captured payload: '" + json.ciphertext);
+  } catch(err){
+    note("Transmission failed: '" + err.message);
+  }
+});
+</script>
+</body>
+</html>
+  

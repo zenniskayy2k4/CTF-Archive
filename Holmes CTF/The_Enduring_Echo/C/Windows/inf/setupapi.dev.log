@@ -1,0 +1,429 @@
+[Device Install Log]
+     OS Version = 10.0.19045
+     Service Pack = 0.0
+     Suite = 0x0100
+     ProductType = 1
+     Architecture = amd64
+
+[BeginLog]
+
+[Boot Session: 2025/04/21 03:45:18.667]
+
+>>>  [Setup Import Driver Package - C:\Windows\system32\spool\tools\Microsoft Print To PDF\prnms009.Inf]
+>>>  Section start 2025/04/21 03:46:12.743
+      cmd: C:\Windows\System32\spoolsv.exe
+     inf: Provider: Microsoft
+     inf: Class GUID: {4D36E979-E325-11CE-BFC1-08002BE10318}
+     inf: Driver Version: 06/21/2006,10.0.19041.1806
+     inf: Catalog File: prnms009.cat
+     ump: Import flags: 0x0000000D
+     pol: {Driver package policy check} 03:46:13.259
+     pol: {Driver package policy check - exit(0x00000000)} 03:46:13.259
+     sto: {Stage Driver Package: C:\Windows\system32\spool\tools\Microsoft Print To PDF\prnms009.Inf} 03:46:13.259
+     inf:      {Query Configurability: C:\Windows\system32\spool\tools\Microsoft Print To PDF\prnms009.Inf} 03:46:13.275
+     inf:           Driver package 'prnms009.Inf' is configurable.
+     inf:      {Query Configurability: exit(0x00000000)} 03:46:13.275
+     flq:      {FILE_QUEUE_COMMIT} 03:46:13.275
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\MPDW_devmode_map.xml' to 'C:\Windows\System32\DriverStore\Temp\{ae57f83f-d47c-f349-8be7-8c059a616b04}\MPDW_devmode_map.xml'.
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\prnms009.cat' to 'C:\Windows\System32\DriverStore\Temp\{ae57f83f-d47c-f349-8be7-8c059a616b04}\prnms009.cat'.
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\prnms009.Inf' to 'C:\Windows\System32\DriverStore\Temp\{ae57f83f-d47c-f349-8be7-8c059a616b04}\prnms009.Inf'.
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\MPDW-PDC.xml' to 'C:\Windows\System32\DriverStore\Temp\{ae57f83f-d47c-f349-8be7-8c059a616b04}\MPDW-PDC.xml'.
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\MPDW-manifest.ini' to 'C:\Windows\System32\DriverStore\Temp\{ae57f83f-d47c-f349-8be7-8c059a616b04}\MPDW-manifest.ini'.
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\MPDW-pipelineconfig.xml' to 'C:\Windows\System32\DriverStore\Temp\{ae57f83f-d47c-f349-8be7-8c059a616b04}\MPDW-pipelineconfig.xml'.
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft Print To PDF\MPDW-constraints.js' to 'C:\Windows\System32\DriverStore\Temp\{ae57f83f-d47c-f349-8be7-8c059a616b04}\MPDW-constraints.js'.
+     flq:      {FILE_QUEUE_COMMIT - exit(0x00000000)} 03:46:13.696
+     sto:      {DRIVERSTORE IMPORT VALIDATE} 03:46:13.696
+     sig:           Driver package catalog is valid.
+     sig:           {_VERIFY_FILE_SIGNATURE} 03:46:13.868
+     sig:                Key      = prnms009.Inf
+     sig:                FilePath = C:\Windows\System32\DriverStore\Temp\{ae57f83f-d47c-f349-8be7-8c059a616b04}\prnms009.Inf
+     sig:                Catalog  = C:\Windows\System32\DriverStore\Temp\{ae57f83f-d47c-f349-8be7-8c059a616b04}\prnms009.cat
+     sig:                Success: File is signed in catalog.
+     sig:           {_VERIFY_FILE_SIGNATURE exit(0x00000000)} 03:46:13.900
+     sto:      {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 03:46:13.962
+     sig:      Signer Score  = 0x0D000003 (Inbox)
+     sig:      Signer Name   = Microsoft Windows
+     sto:      {Core Driver Package Import: prnms009.inf_amd64_b1142994fb10cf54} 03:46:14.212
+     sto:           {DRIVERSTORE IMPORT BEGIN} 03:46:14.212
+     sto:           {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 03:46:14.290
+     cpy:           {Copy Directory: C:\Windows\System32\DriverStore\Temp\{ae57f83f-d47c-f349-8be7-8c059a616b04}} 03:46:14.290
+     cpy:                Target Path = C:\Windows\System32\DriverStore\FileRepository\prnms009.inf_amd64_b1142994fb10cf54
+     cpy:           {Copy Directory: exit(0x00000000)} 03:46:14.446
+     idb:           {Register Driver Package: C:\Windows\System32\DriverStore\FileRepository\prnms009.inf_amd64_b1142994fb10cf54\prnms009.Inf} 03:46:14.462
+     idb:                Created driver package object 'prnms009.inf_amd64_b1142994fb10cf54' in DRIVERS database node.
+     idb:                Created driver INF file object 'oem7.inf' in DRIVERS database node.
+     idb:                Registered driver package 'prnms009.inf_amd64_b1142994fb10cf54' with 'oem7.inf'.
+     idb:           {Register Driver Package: exit(0x00000000)} 03:46:14.603
+     idb:           {Publish Driver Package: C:\Windows\System32\DriverStore\FileRepository\prnms009.inf_amd64_b1142994fb10cf54\prnms009.Inf} 03:46:14.618
+     idb:                Activating driver package 'prnms009.inf_amd64_b1142994fb10cf54'.
+     cpy:                Published 'prnms009.inf_amd64_b1142994fb10cf54\prnms009.inf' to 'oem7.inf'.
+     idb:                Indexed 2 device IDs for 'prnms009.inf_amd64_b1142994fb10cf54'.
+     sto:                Flushed driver database node 'DRIVERS'. Time = 0 ms
+     sto:                Flushed driver database node 'SYSTEM'. Time = 16 ms
+     idb:           {Publish Driver Package: exit(0x00000000)} 03:46:14.696
+     sto:           {DRIVERSTORE IMPORT END} 03:46:14.696
+     dvi:                Flushed all driver package files to disk. Time = 0 ms
+     sig:                Installed catalog 'prnms009.cat' as 'oem7.cat'.
+     sto:           {DRIVERSTORE IMPORT END: exit(0x00000000)} 03:46:14.946
+     sto:      {Core Driver Package Import: exit(0x00000000)} 03:46:14.946
+     sto: {Stage Driver Package: exit(0x00000000)} 03:46:14.978
+<<<  Section end 2025/04/21 03:46:15.228
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Setup Import Driver Package - C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\prnms001.Inf]
+>>>  Section start 2025/04/21 03:46:17.134
+      cmd: C:\Windows\System32\spoolsv.exe
+     inf: Provider: Microsoft
+     inf: Class GUID: {4D36E979-E325-11CE-BFC1-08002BE10318}
+     inf: Driver Version: 06/21/2006,10.0.19041.1806
+     inf: Catalog File: prnms001.cat
+     ump: Import flags: 0x0000000D
+     pol: {Driver package policy check} 03:46:17.165
+     pol: {Driver package policy check - exit(0x00000000)} 03:46:17.165
+     sto: {Stage Driver Package: C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\prnms001.Inf} 03:46:17.165
+     inf:      {Query Configurability: C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\prnms001.Inf} 03:46:17.321
+     inf:           Driver package 'prnms001.Inf' is configurable.
+     inf:      {Query Configurability: exit(0x00000000)} 03:46:17.337
+     flq:      {FILE_QUEUE_COMMIT} 03:46:17.337
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\prnms001.cat' to 'C:\Windows\System32\DriverStore\Temp\{269cd8e5-3765-fe4e-a181-911d6027d9b2}\prnms001.cat'.
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\prnms001.Inf' to 'C:\Windows\System32\DriverStore\Temp\{269cd8e5-3765-fe4e-a181-911d6027d9b2}\prnms001.Inf'.
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\mxdwdui.dll' to 'C:\Windows\System32\DriverStore\Temp\{269cd8e5-3765-fe4e-a181-911d6027d9b2}\mxdwdui.dll'.
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\MXDW-manifest.ini' to 'C:\Windows\System32\DriverStore\Temp\{269cd8e5-3765-fe4e-a181-911d6027d9b2}\MXDW-manifest.ini'.
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\MXDW.gpd' to 'C:\Windows\System32\DriverStore\Temp\{269cd8e5-3765-fe4e-a181-911d6027d9b2}\MXDW.gpd'.
+     flq:           Copying 'C:\Windows\system32\spool\tools\Microsoft XPS Document Writer\MXDW-pipelineconfig.xml' to 'C:\Windows\System32\DriverStore\Temp\{269cd8e5-3765-fe4e-a181-911d6027d9b2}\MXDW-pipelineconfig.xml'.
+     flq:      {FILE_QUEUE_COMMIT - exit(0x00000000)} 03:46:17.368
+     sto:      {DRIVERSTORE IMPORT VALIDATE} 03:46:17.368
+     sig:           Driver package catalog is valid.
+     sig:           {_VERIFY_FILE_SIGNATURE} 03:46:17.400
+     sig:                Key      = prnms001.Inf
+     sig:                FilePath = C:\Windows\System32\DriverStore\Temp\{269cd8e5-3765-fe4e-a181-911d6027d9b2}\prnms001.Inf
+     sig:                Catalog  = C:\Windows\System32\DriverStore\Temp\{269cd8e5-3765-fe4e-a181-911d6027d9b2}\prnms001.cat
+     sig:                Success: File is signed in catalog.
+     sig:           {_VERIFY_FILE_SIGNATURE exit(0x00000000)} 03:46:17.415
+     sto:      {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 03:46:17.415
+     sig:      Signer Score  = 0x0D000003 (Inbox)
+     sig:      Signer Name   = Microsoft Windows
+     sto:      {Core Driver Package Import: prnms001.inf_amd64_7f3c60b255c53241} 03:46:17.415
+     sto:           {DRIVERSTORE IMPORT BEGIN} 03:46:17.415
+     sto:           {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 03:46:17.415
+     cpy:           {Copy Directory: C:\Windows\System32\DriverStore\Temp\{269cd8e5-3765-fe4e-a181-911d6027d9b2}} 03:46:17.431
+     cpy:                Target Path = C:\Windows\System32\DriverStore\FileRepository\prnms001.inf_amd64_7f3c60b255c53241
+     cpy:           {Copy Directory: exit(0x00000000)} 03:46:17.431
+     idb:           {Register Driver Package: C:\Windows\System32\DriverStore\FileRepository\prnms001.inf_amd64_7f3c60b255c53241\prnms001.Inf} 03:46:17.431
+     idb:                Created driver package object 'prnms001.inf_amd64_7f3c60b255c53241' in DRIVERS database node.
+     idb:                Created driver INF file object 'oem8.inf' in DRIVERS database node.
+     idb:                Registered driver package 'prnms001.inf_amd64_7f3c60b255c53241' with 'oem8.inf'.
+     idb:           {Register Driver Package: exit(0x00000000)} 03:46:17.431
+     idb:           {Publish Driver Package: C:\Windows\System32\DriverStore\FileRepository\prnms001.inf_amd64_7f3c60b255c53241\prnms001.Inf} 03:46:17.431
+     idb:                Activating driver package 'prnms001.inf_amd64_7f3c60b255c53241'.
+     cpy:                Published 'prnms001.inf_amd64_7f3c60b255c53241\prnms001.inf' to 'oem8.inf'.
+     idb:                Indexed 2 device IDs for 'prnms001.inf_amd64_7f3c60b255c53241'.
+     sto:                Flushed driver database node 'DRIVERS'. Time = 15 ms
+     sto:                Flushed driver database node 'SYSTEM'. Time = 15 ms
+     idb:           {Publish Driver Package: exit(0x00000000)} 03:46:17.525
+     sto:           {DRIVERSTORE IMPORT END} 03:46:17.634
+     dvi:                Flushed all driver package files to disk. Time = 0 ms
+     sig:                Installed catalog 'prnms001.cat' as 'oem8.cat'.
+     sto:           {DRIVERSTORE IMPORT END: exit(0x00000000)} 03:46:17.743
+     sto:      {Core Driver Package Import: exit(0x00000000)} 03:46:17.743
+     sto: {Stage Driver Package: exit(0x00000000)} 03:46:17.759
+<<<  Section end 2025/04/21 03:46:17.915
+<<<  [Exit status: SUCCESS]
+
+
+[Boot Session: 2025/08/14 09:28:48.995]
+
+>>>  [Sysprep Respecialize - {d5a03442-1e82-7e76-da7e-7feaaa8c3c96}]
+>>>  Section start 2025/08/14 09:29:01.717
+     set: System Information:
+     set:      BIOS Release Date: 11/12/2020
+     set:      BIOS Vendor: Phoenix Technologies LTD
+     set:      BIOS Version: 6.00
+     set:      System Manufacturer: VMware, Inc.
+     set:      System Product Name: VMware Virtual Platform
+     set:      System Version: None
+     set: {Device Install} 09:29:01.764
+     set:      Persisting installed devices.
+     set:      DeviceInstall service already running. 09:29:01.764
+     set:      Waiting for pending device installs... 09:29:01.764
+     set:      Completed pending device installs. 09:29:01.764
+     set:      STORAGE\VOLUME\{6C2ECF5F-1EE0-11F0-9F81-806E6F6E6963}#000000001F500000 -> Configured [volume.inf:STORAGE\Volume,volume_install.NT] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\PNP0C02\4 -> Configured [machine.inf:*PNP0C02,NO_DRV_MBRES] (ConfigFlags = 0x00000000).
+     set:      ACPI\ACPI0003\1 -> Configured [cmbatt.inf:ACPI\ACPI0003,AcAdapter_Inst] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_1000&DEV_0054&SUBSYS_197615AD&REV_01\4&2509F6E&0&00A8 -> Configured [lsi_sas.inf:PCI\VEN_1000&DEV_0054,LSI_SAS_Inst] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_8086&DEV_7191&SUBSYS_00000000&REV_01\3&61AAA01&0&08 -> Configured [pci.inf:PCI\CC_0604,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+!    set:      SWD\PRINTENUM\PRINTQUEUES -> Configured [printqueue.inf:PRINTENUM\LocalPrintQueue,NO_DRV_LOCAL] and non-present (ConfigFlags = 0x00000000).
+     set:      ROOT\VOLMGR\0000 -> Configured [volmgr.inf:ROOT\VOLMGR,Volmgr] and started (ConfigFlags = 0x00000000).
+     set:      DISPLAY\DEFAULT_MONITOR\4&427137E&0&UID0 -> Configured [monitor.inf:MONITOR\Default_Monitor,NonPnPMonitor.Install] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\PNP0A03\2&DABA3FF&0 -> Configured [pci.inf:*PNP0A03,PCI_ROOT] and started (ConfigFlags = 0x00000000).
+!    set:      FDC\GENERIC_FLOPPY_DRIVE\6&1B0D1D81&0&0 -> Configured [flpydisk.inf:GenFloppyDisk,floppy_install.NT] and non-present (ConfigFlags = 0x00000000).
+     set:      ACPI\VMW0001\7 -> Configured [wgencounter.inf:VM_Gen_Counter,VmGenCounter.NT] and started (ConfigFlags = 0x00000000).
+     set:      ROOT\BASICDISPLAY\0000 -> Configured [basicdisplay.inf:ROOT\BasicDisplay,MSBDD_Fallback] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\PNP0103\4&1BD7F811&0 -> Configured [machine.inf:*PNP0103,NO_DRV_HPET] (ConfigFlags = 0x00000000).
+     set:      ROOT\VID\0000 -> Configured [wvid.inf:ROOT\VID,Vid_Device_Client.NT] and started (ConfigFlags = 0x00000000).
+     set:      ROOT\COMPOSITEBUS\0000 -> Configured [compositebus.inf:ROOT\CompositeBus,CompositeBus_Device.NT] and started (ConfigFlags = 0x00000000).
+     set:      ROOT\VDRVROOT\0000 -> Configured [vdrvroot.inf:ROOT\vdrvroot,VDRVROOT] and started (ConfigFlags = 0x00000000).
+     set:      ROOT\SPACEPORT\0000 -> Configured [spaceport.inf:Root\Spaceport,Spaceport_Install] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\PNP0B00\4&1BD7F811&0 -> Configured [machine.inf:*PNP0B00,NO_DRV_X] and started (ConfigFlags = 0x00000000).
+     set:      ROOT\KDNIC\0000 -> Configured [kdnic.inf:root\kdnic,KdNic.ndi] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\PNP0303\4&1BD7F811&0 -> Configured [keyboard.inf:*PNP0303,STANDARD_Inst] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\AUTHENTICAMD_-_AMD64_FAMILY_23_MODEL_49_-_AMD_EPYC_7302P_16-CORE_PROCESSOR_______________\_0 -> Configured [cpu.inf:ACPI\AuthenticAMD_-_AMD64,AmdPPM_Inst.NT] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\AUTHENTICAMD_-_AMD64_FAMILY_23_MODEL_49_-_AMD_EPYC_7302P_16-CORE_PROCESSOR_______________\_1 -> Configured [cpu.inf:ACPI\AuthenticAMD_-_AMD64,AmdPPM_Inst.NT] and started (ConfigFlags = 0x00000000).
+!    set:      ACPI\PNP0700\5&2032E665&0 -> Configured [fdc.inf:*PNP0700,fdc_install.NT] and non-present (ConfigFlags = 0x00000000).
+!    set:      IDE\CDROMNECVMWAR_VMWARE_IDE_CDR01_______________1.00____\5&1778B74B&0&0.1.0 -> Configured [cdrom.inf:GenCdRom,cdrom_install] and non-present (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&A8 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&A9 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&AA -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&AB -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&AC -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&AD -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&AE -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&AF -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&B0 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&B1 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&B2 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&B3 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&B4 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&B5 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&B6 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&B7 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&B8 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&B9 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&BA -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&BB -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&BC -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&BD -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&BE -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&BF -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&C0 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&C1 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&C2 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&C3 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&C4 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&C5 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&C6 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61AAA01&0&C7 -> Configured [pci.inf:PCI\CC_0604&DT_4,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\PNP0200\4&1BD7F811&0 -> Configured [machine.inf:*PNP0200,NO_DRV_X] (ConfigFlags = 0x00000000).
+     set:      ROOT\UMBUS\0000 -> Configured [umbus.inf:root\umbus,UmBusRoot_Device.NT] and started (ConfigFlags = 0x00000000).
+     set:      SCSI\DISK&VEN_VMWARE&PROD_VIRTUAL_DISK\5&1EC51BF7&0&000000 -> Configured [disk.inf:GenDisk,disk_install.NT] and started (ConfigFlags = 0x00000000).
+!    set:      SWD\PRINTENUM\{A8CB8B96-2F2D-49AF-A244-1761F5514483} -> Configured [printqueue.inf:PRINTENUM\LocalPrintQueue,NO_DRV_LOCAL] and non-present (ConfigFlags = 0x00000000).
+     set:      SWD\RADIO\{3DB5895D-CC28-44B3-AD3D-6F01A782B8D2} -> Configured [c_swdevice.inf:SWD\GenericRaw,SoftwareDevice] and started (ConfigFlags = 0x00000000).
+     set:      ROOT\ACPI_HAL\0000 -> Configured [hal.inf:acpiapic,ACPI_AMD64_HAL] and started (ConfigFlags = 0x00000000).
+!    set:      SWD\PRINTENUM\{83D75EEE-A722-4B41-B904-249DCE6B7BC4} -> Configured [printqueue.inf:PRINTENUM\LocalPrintQueue,NO_DRV_LOCAL] and non-present (ConfigFlags = 0x00000000).
+     set:      ACPI_HAL\PNP0C08\0 -> Configured [acpi.inf:*PNP0C08,ACPI_Inst.NT] and started (ConfigFlags = 0x00000000).
+     set:      ROOT\BASICRENDER\0000 -> Configured [basicrender.inf:ROOT\BasicRender,BasicRender] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_0740&SUBSYS_074015AD&REV_10\3&61AAA01&0&3F -> Configured [oem0.inf:PCI\VEN_15AD&DEV_0740&SUBSYS_074015AD,vmci.install.x64.NT] and started (ConfigFlags = 0x00000000).
+     set:      STORAGE\VOLUME\{6C2ECF5F-1EE0-11F0-9F81-806E6F6E6963}#0000000000100000 -> Configured [volume.inf:STORAGE\Volume,volume_install.NT] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\FIXEDBUTTON\2&DABA3FF&0 -> Configured [machine.inf:ACPI\FixedButton,NO_DRV] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_8086&DEV_7110&SUBSYS_197615AD&REV_08\3&61AAA01&0&38 -> Configured [machine.inf:PCI\VEN_8086&DEV_7110&CC_0601,MSISADRV] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\PNP0C02\1F -> Configured [machine.inf:*PNP0C02,NO_DRV_MBRES] (ConfigFlags = 0x00000000).
+!    set:      IDE\CDROMNECVMWAR_VMWARE_IDE_CDR00_______________1.00____\5&1778B74B&0&0.0.0 -> Configured [cdrom.inf:GenCdRom,cdrom_install] and non-present (ConfigFlags = 0x00000000).
+     set:      ROOT\VMWVMCIHOSTDEV\0000 -> Configured [oem0.inf:ROOT\VMWVMCIHOSTDEV,vmci.install.x64.NT] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_8086&DEV_7111&SUBSYS_197615AD&REV_01\3&61AAA01&0&39 -> Configured [mshdc.inf:PCI\VEN_8086&DEV_7111,intelide_Inst] and started (ConfigFlags = 0x00000000).
+     set:      PCIIDE\IDECHANNEL\4&23686003&0&0 -> Configured [mshdc.inf:Internal_IDE_Channel,atapi_Inst] and started (ConfigFlags = 0x00000000).
+     set:      PCIIDE\IDECHANNEL\4&23686003&0&1 -> Configured [mshdc.inf:Internal_IDE_Channel,atapi_Inst] and started (ConfigFlags = 0x00000000).
+     set:      SWD\MMDEVAPI\MICROSOFTGSWAVETABLESYNTH -> Configured [c_swdevice.inf:SWD\GenericRaw,SoftwareDevice] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\PNP0800\4&1BD7F811&0 -> Configured [machine.inf:*PNP0800,NO_DRV_X] (ConfigFlags = 0x00000000).
+     set:      ACPI\PNP0001\4&1BD7F811&0 -> Configured [machine.inf:*PNP0001,NO_DRV_PIC] (ConfigFlags = 0x00000000).
+     set:      ROOT\NDISVIRTUALBUS\0000 -> Configured [ndisvirtualbus.inf:ROOT\NdisVirtualBus,NdisVirtualBus_Device.NT] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_8086&DEV_7190&SUBSYS_197615AD&REV_01\3&61AAA01&0&00 -> Configured [machine.inf:PCI\VEN_8086&DEV_7190,NO_DRV] and started (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_0405&SUBSYS_040515AD&REV_00\3&61AAA01&0&78 -> Configured [oem6.inf:PCI\VEN_15AD&DEV_0405&SUBSYS_040515AD&REV_00,VM3D_SVGA2_WIN10_1709] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\PNP0100\4&1BD7F811&0 -> Configured [machine.inf:*PNP0100,NO_DRV_X] (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_07B0&SUBSYS_07B015AD&REV_01\005056FFFFB442F300 -> Configured [oem2.inf:PCI\VEN_15AD&DEV_07B0,vmxnet3.ndis630.x64.ndi.NT] and started (ConfigFlags = 0x00000000).
+     set:      ROOT\MSSMBIOS\0000 -> Configured [mssmbios.inf:ROOT\mssmbios,MSSMBIOS_DRV] and started (ConfigFlags = 0x00000000).
+!    set:      SWD\PRINTENUM\{609289DB-8301-4F09-B2EC-0D9C95FE600B} -> Configured [printqueue.inf:PRINTENUM\LocalPrintQueue,NO_DRV_LOCAL] and non-present (ConfigFlags = 0x00000000).
+     set:      PCI\VEN_15AD&DEV_0790&SUBSYS_079015AD&REV_02\3&61AAA01&0&88 -> Configured [pci.inf:PCI\CC_0604,PCI_BRIDGE] and started (ConfigFlags = 0x00000000).
+     set:      ROOT\SYSTEM\0000 -> Configured [swenum.inf:ROOT\SWENUM,SWENUM] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\VMW0003\4&1BD7F811&0 -> Configured [oem5.inf:*VMW0003,VMMouse] and started (ConfigFlags = 0x00000000).
+     set:      ROOT\RDPBUS\0000 -> Configured [rdpbus.inf:ROOT\RDPBUS,RDPBUS] and started (ConfigFlags = 0x00000000).
+     set:      ACPI\PNP0A05\4&1BD7F811&0 -> Configured [machine.inf:*PNP0A05,NO_DRV_X_PNP] and started (ConfigFlags = 0x00000000).
+     set:      Devices pre-configured: 0
+     set:      Devices pre-installed: 0
+     set:      Devices need install: 0
+     set:      Devices configured: 90 (81 internal, 9 external)
+     set:      Devices installed: 0
+     set:      Devices non-present: 8 (5 internal, 3 external)
+     set: {Device Install - exit(0x00000000)} 09:29:01.827
+     set: Installed devices. Time = 62 ms. 09:29:01.827
+<<<  Section end 2025/08/14 09:29:01.842
+<<<  [Exit status: SUCCESS]
+
+
+[Boot Session: 2025/08/15 14:04:36.500]
+
+>>>  [Device Install (Hardware initiated) - PCI\VEN_8086&DEV_10D3&SUBSYS_07D015AD&REV_00\005056FFFFB4D16600]
+>>>  Section start 2025/08/15 14:04:43.432
+     utl: {Select Drivers - PCI\VEN_8086&DEV_10D3&SUBSYS_07D015AD&REV_00\005056FFFFB4D16600} 14:04:43.495
+     utl:      Driver Node:
+     utl:           Status         - Selected
+     utl:           Driver INF     - net1ic64.inf (C:\Windows\System32\DriverStore\FileRepository\net1ic64.inf_amd64_5f033e913d34d111\net1ic64.inf)
+     utl:           Class GUID     - {4d36e972-e325-11ce-bfc1-08002be10318}
+     utl:           Driver Version - 06/12/2018,12.17.10.8
+     utl:           Configuration  - PCI\VEN_8086&DEV_10D3
+     utl:           Driver Rank    - 00FF2001
+     utl:           Signer Score   - Inbox (0D000003)
+     utl: {Select Drivers - exit(0x00000000} 14:04:43.495
+     dvi: {Core Device Install} 14:04:43.495
+     dvi:      {Configure Device - PCI\VEN_8086&DEV_10D3&SUBSYS_07D015AD&REV_00\005056FFFFB4D16600} 14:04:43.495
+     dvi:           Device Status: 0x01806400 [0x12 - 0xc0000493]
+     dvi:           Config Flags: 0x00000020
+     dvi:           Parent Device: PCI\VEN_15AD&DEV_07A0&SUBSYS_07A015AD&REV_01\3&61aaa01&0&B8
+     sto:           {Configure Driver Package: C:\Windows\System32\DriverStore\FileRepository\net1ic64.inf_amd64_5f033e913d34d111\net1ic64.inf}
+     sto:                Source Filter  = PCI\VEN_8086&DEV_10D3
+     inf:                Class GUID     = {4d36e972-e325-11ce-bfc1-08002be10318}
+     inf:                Class Options  = Configurable
+!    inf:                Needed section [NO_DRV] not found. Code = 1315, Line = 98
+!    inf:                Needed section [NO_DRV] not found. Code = 1315, Line = 98
+     inf:                {Configure Driver: Intel(R) 82574L Gigabit Network Connection}
+     inf:                     Section Name = E10D3.10.0.1
+     inf:                     {Add Service: e1i65x64}
+     inf:                          Start Type    = 3
+     inf:                          Service Type  = 1
+     inf:                          Error Control = 1
+     inf:                          Image Path    = \SystemRoot\System32\drivers\e1i65x64.sys
+     inf:                          Display Name  = Intel(R) PRO/1000 PCI Express Network Connection Driver I
+     inf:                          Group         = NDIS
+     inf:                          Created new service 'e1i65x64'.
+     inf:                     {Add Service: exit(0x00000000)}
+     inf:                     Hardware Id  = PCI\VEN_8086&DEV_10D3
+     inf:                     {Configure Driver Configuration: E10D3.10.0.1}
+     inf:                          Service Name  = e1i65x64
+     inf:                          Included INFs = pci.inf
+     inf:                          Config Flags  = 0x00000000
+     inf:                     {Configure Driver Configuration: exit(0x00000000)}
+     inf:                {Configure Driver: exit(0x00000000)}
+     flq:                {FILE_QUEUE_COMMIT} 14:04:43.589
+     flq:                     Hardlinking 'C:\Windows\System32\DriverStore\FileRepository\net1ic64.inf_amd64_5f033e913d34d111\e1i65x64.sys' to 'C:\Windows\System32\drivers\e1i65x64.sys'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 14:04:43.589
+     dvi:                Existing files modified, may need to restart related services.
+     sto:           {Configure Driver Package: exit(0x00000bc3)}
+     dvi:           Restart required for any devices using this driver.
+     dvi:           Install Device: Configuring device. 14:04:43.589
+     dvi:                Configuration: net1ic64.inf:PCI\VEN_8086&DEV_10D3,*
+     dvi:           Install Device: Configuring device completed. 14:04:43.604
+     dvi:           Device Status: 0x01806000
+     dvi:           {Restarting Devices} 14:04:43.604
+     dvi:                Start: PCI\VEN_8086&DEV_10D3&SUBSYS_07D015AD&REV_00\005056FFFFB4D16600
+!    dvi:                Device 'PCI\VEN_8086&DEV_10D3&SUBSYS_07D015AD&REV_00\005056FFFFB4D16600' pending start: Device has problem: 0x38 (CM_PROB_NEED_CLASS_CONFIG), problem status: 0x00000000.
+     dvi:           {Restarting Devices exit} 14:04:43.729
+     dvi:      {Configure Device - exit(0x00000000)} 14:04:43.745
+     dvi: {Core Device Install - exit(0x00000000)} 14:04:43.745
+     dvi: Waiting for device post-install to complete. 14:04:43.745
+     dvi: Device post-install completed. 14:04:44.510
+     dvi: Device Status: 0x0180600a
+<<<  Section end 2025/08/15 14:04:44.682
+<<<  [Exit status: SUCCESS]
+
+
+[Boot Session: 2025/08/20 09:46:43.221]
+
+>>>  [Delete Device - SWD\PRINTENUM\{4782B426-9917-43C2-BCDC-4BEFBA2C39FE}]
+>>>  Section start 2025/08/20 10:05:14.881
+      cmd: C:\Windows\System32\spoolsv.exe
+!    dvi: Access denied from Query and Remove
+<<<  Section end 2025/08/20 10:05:15.020
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Delete Device - SWD\PRINTENUM\{215375EE-B446-4566-B192-EBD073A577AC}]
+>>>  Section start 2025/08/20 10:05:17.083
+      cmd: C:\Windows\System32\spoolsv.exe
+!    dvi: Access denied from Query and Remove
+<<<  Section end 2025/08/20 10:05:17.177
+<<<  [Exit status: SUCCESS]
+
+
+[Boot Session: 2025/08/20 10:10:45.816]
+
+>>>  [Device Uninstall (Device Manager) - PCI\VEN_8086&DEV_10D3&SUBSYS_07D015AD&REV_00\005056FFFFB4D16600]
+>>>  Section start 2025/08/20 10:16:13.781
+      cmd: "C:\Windows\system32\mmc.exe" C:\Windows\system32\devmgmt.msc
+     dvi: {DIF_REMOVE} 10:16:13.832
+     dvi:      Default installer: Enter 10:16:13.964
+     dvi:           {Remove DEVICE}
+     dvi:                {Delete Device - PCI\VEN_8086&DEV_10D3&SUBSYS_07D015AD&REV_00\005056FFFFB4D16600}
+     dvi:                {Delete Device - exit(0x00000000)}
+     dvi:           {Remove DEVICE exit (0x00000000)}
+     dvi:      Default installer: Exit
+     dvi: {DIF_REMOVE - exit(0x00000000)} 10:16:14.000
+<<<  Section end 2025/08/20 10:16:14.001
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Delete Device - SWD\PRINTENUM\{4926752F-0FD0-4E45-AE06-793B01A5E9C4}]
+>>>  Section start 2025/08/20 10:33:05.184
+      cmd: C:\Windows\System32\spoolsv.exe
+<<<  Section end 2025/08/20 10:33:05.281
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Delete Device - SWD\PRINTENUM\{FA0D4693-180A-4880-8D46-C855F8DBE032}]
+>>>  Section start 2025/08/20 10:33:09.806
+      cmd: C:\Windows\System32\spoolsv.exe
+!    dvi: Access denied from Query and Remove
+<<<  Section end 2025/08/20 10:33:09.945
+<<<  [Exit status: SUCCESS]
+
+
+[Boot Session: 2025/08/25 12:50:01.305]
+
+>>>  [Delete Device - SWD\PRINTENUM\{CC8A4E98-5E88-4379-8BD0-93C31EF49167}]
+>>>  Section start 2025/08/25 12:53:09.211
+      cmd: C:\Windows\System32\spoolsv.exe
+!    dvi: Access denied from Query and Remove
+<<<  Section end 2025/08/25 12:53:09.211
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Delete Device - SWD\PRINTENUM\{ACEEE48F-0263-48BD-ABB2-D0406ECF35C2}]
+>>>  Section start 2025/08/25 12:53:09.368
+      cmd: C:\Windows\System32\spoolsv.exe
+!    dvi: Access denied from Query and Remove
+<<<  Section end 2025/08/25 12:53:09.383
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Delete Device - SWD\PRINTENUM\{BC4940E8-F4A8-4146-A1E9-FD32416AB0CA}]
+>>>  Section start 2025/08/25 12:54:00.493
+      cmd: C:\Windows\System32\spoolsv.exe
+<<<  Section end 2025/08/25 12:54:00.508
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Delete Device - SWD\PRINTENUM\{92D18B23-E52B-4252-9365-ABF65476770D}]
+>>>  Section start 2025/08/25 12:54:00.665
+      cmd: C:\Windows\System32\spoolsv.exe
+!    dvi: Access denied from Query and Remove
+<<<  Section end 2025/08/25 12:54:00.680
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Delete Device - SWD\PRINTENUM\{9582B090-6819-4C1C-AE53-9C0F45694576}]
+>>>  Section start 2025/08/25 12:57:03.102
+      cmd: C:\Windows\System32\spoolsv.exe
+<<<  Section end 2025/08/25 12:57:03.102
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Delete Device - SWD\PRINTENUM\{88954FB7-F468-47AB-9B6A-CFBA1D2F7001}]
+>>>  Section start 2025/08/25 12:57:03.243
+      cmd: C:\Windows\System32\spoolsv.exe
+<<<  Section end 2025/08/25 12:57:03.243
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Delete Device - SWD\PRINTENUM\{11BEF593-DE92-4631-87E2-88FEAA501787}]
+>>>  Section start 2025/08/25 13:04:17.430
+      cmd: C:\Windows\System32\spoolsv.exe
+!    dvi: Access denied from Query and Remove
+<<<  Section end 2025/08/25 13:04:17.899
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Delete Device - SWD\PRINTENUM\{96798B5E-1E09-47A4-8652-E574EE127C3A}]
+>>>  Section start 2025/08/25 13:04:18.618
+      cmd: C:\Windows\System32\spoolsv.exe
+<<<  Section end 2025/08/25 13:04:18.633
+<<<  [Exit status: SUCCESS]
+

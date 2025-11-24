@@ -1,0 +1,59 @@
+# Windows junk
+Thumbs.db
+Desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Node
+node_modules/
+
+# Virtual env
+venv/
+env/
+
+# Binary dumps
+*.bin
+*.dat
+*.img
+*.iso
+*.vmdk
+*.qcow2
+
+# CTF extracted stuff
+**/uploads/
+**/dump/
+**/extracted/
+**/mnt/
+**/fs/
+**/rootfs/
+
+# Packed / output
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Git repos accidentally inside repo
+**/.git/
+Dreamhack/
+PatriotCTF/switchboard/initramfs/
+scriptCTF/
+
+# Tools cache
+tools/
+output/
+result/
+dist/
+build/
+
+# Malware / RE
+**/IDA/
+**/Ghidra/
+**/strings/
+**/analysis/

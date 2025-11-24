@@ -1,0 +1,75 @@
+{
+ "client_id": "C.e73428f4c29b5226",
+ "session_id": "F.D2CRG9I1GLHS0",
+ "request": {
+  "creator": "velo",
+  "client_id": "C.e73428f4c29b5226",
+  "artifacts": [
+   "Windows.KapeFiles.Targets"
+  ],
+  "specs": [
+   {
+    "artifact": "Windows.KapeFiles.Targets",
+    "parameters": {
+     "env": [
+      {
+       "key": "Device",
+       "value": "C:"
+      },
+      {
+       "key": "_SANS_Triage",
+       "value": "Y"
+      },
+      {
+       "key": "ServerTriage",
+       "value": "Y"
+      },
+      {
+       "key": "Antivirus",
+       "value": "Y"
+      },
+      {
+       "key": "CloudStorage_Metadata",
+       "value": "Y"
+      }
+     ]
+    }
+   }
+  ],
+  "timeout": 1000000000,
+  "max_rows": 1000000000,
+  "max_logs": 1000000000,
+  "max_upload_bytes": 1048576000000000
+ },
+ "create_time": 1754904614466246,
+ "start_time": 1754904734689494,
+ "active_time": 1754904860953895,
+ "total_uploaded_files": 1997,
+ "total_expected_uploaded_bytes": 1948006488,
+ "total_uploaded_bytes": 1196271704,
+ "total_collected_rows": 4076,
+ "total_logs": 1726,
+ "total_requests": 1,
+ "execution_duration": 126264401000,
+ "state": 2,
+ "artifacts_with_results": [
+  "Windows.KapeFiles.Targets/All File Metadata",
+  "Windows.KapeFiles.Targets/Uploads"
+ ],
+ "query_stats": [
+  {
+   "duration": 126264401000,
+   "last_active": 1754904860953895,
+   "first_active": 1754904734689494,
+   "names_with_response": [
+    "Windows.KapeFiles.Targets/All File Metadata",
+    "Windows.KapeFiles.Targets/Uploads"
+   ],
+   "log_rows": 1726,
+   "uploaded_files": 1997,
+   "uploaded_bytes": 1196271704,
+   "expected_uploaded_bytes": 1948006488,
+   "result_rows": 4076
+  }
+ ]
+}

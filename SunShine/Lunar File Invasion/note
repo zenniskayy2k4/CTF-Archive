@@ -1,0 +1,59 @@
+curl -v https://asteroid.sunshinectf.games/ -H "x-middleware-subrequest: src/middleware:src/middleware:src/middleware:src/middleware:src/middleware"
+
+zenniskayy@ZennisKayy:/mnt/e/Cyber Security/CTF/SunShine/Remotely Interesting$ curl https://asteroid.sunshinectf.games/robots.txt
+# don't need web scrapers scraping these sensitive files:
+
+Disallow: /.gitignore_test
+Disallow: /login
+Disallow: /admin/dashboard
+Disallow: /2FA
+zenniskayy@ZennisKayy:/mnt/e/Cyber Security/CTF/SunShine/Remotely Interesting$ curl https://asteroid.sunshinectf.games/index/static/login.html~
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div>
+        <img src="" alt="Image of Alien">
+        <form action="{{url_for('index.login')}}" method="POST">
+            <!-- TODO: use proper clean CSS stylesheets bruh -->
+            <p style="color: red;"> {{ err_msg }} </p>
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+            <label for="Email">Email</label>
+            <input value="admin@lunarfiles.muhammadali" type="text" name="email">
+
+            <label for="Password">Password</label>
+            <!-- just to save time while developing, make sure to remove this in prod !  -->
+            <input value="jEJ&(32)DMC<!*###" type="text" name="password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+
+  <div class="container">
+    <div class="image-section"></div>
+    <div class="form-section">
+      <h2>Lunar CMS Login</h2>
+      <form method="POST" action="/login">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="admin@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="••••••••" />
+        </div>
+        <div class="remember">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember Me</label>
+        </div>
+        <input type="hidden" name="csrf_token" value="IjRmNjY0ZDkxNDFlOWQ0ZTBhZDZiMGNjYzc5Y2IyMWRjZGYwNWNjY2Yi.aNj0rQ.R1m60o3l1GhNO4C80_iFczfd-LA" />
+        <button class="login-btn" type="submit">Login</button>
+        <div class="status-message"></div>
+      </form>
+    </div>
+  </div>

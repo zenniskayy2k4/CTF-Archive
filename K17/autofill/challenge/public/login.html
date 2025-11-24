@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+</head>
+
+<body>
+    <main class="container">
+        <article>
+            <h1>🔑 Login</h1>
+            <form action="/login" method="POST">
+                <label>
+                    Username
+                    <input type="text" name="username" required />
+                </label>
+                <label>
+                    Password
+                    <input type="password" name="password" id="password" required />
+                </label>
+                <button type="submit">Login</button>
+            </form>
+
+            <footer>
+                <a href="index.html" role="button" class="secondary">Back to Home</a>
+            </footer>
+        </article>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("error")) {
+            document.body.insertAdjacentHTML(
+                "beforeend",
+                `<article style="color: var(--pico-del-color);"><p>Login failed. Try again.</p></article>`
+            );
+        }
+    </script>
+</body>
+
+</html>

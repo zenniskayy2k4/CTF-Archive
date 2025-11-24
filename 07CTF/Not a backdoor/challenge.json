@@ -1,0 +1,19 @@
+{
+  "P": {
+    "x": "0x6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296",
+    "y": "0x4fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5"
+  },
+  "Q": {
+    "x": "0x7192be070a58b8be0b065f7dac95243f8098bb5c768ad8c9afa022bb1290fada",
+    "y": "0x6d31c02dfadd8546e31b35bb7336025d7f04ec40c50e157d0c74b4e5473ecd8b"
+  },
+  "observed": [
+    "4f7f66957c33ec7e810edddd2120e7818dc9d9b41495616f2822740a8099db15",
+    "db153c2433c2e418124873e4ebf4b3f43d6525197afef8a41e0f4ec3beb39d1b",
+    "9d1bcb845092f259608d69e55af0069e011ec004a5eef713318f9028ce9aee9a",
+    "ee9a797c776bda372fe6694aaa38f7671cd22e861725c3b8b4ca8f4ee5800396",
+    "03965b6d1a8591499c4bc28c6b7edc40fca0b54bef07531f43983af924c7bada"
+  ],
+  "ciphertext": "Qta4M99hYzwnzLPiafK6/7QaliRbtXw+JcWNoyUNPz0=",
+  "iv": "/eJtexmrppvMimI3QeOKOg=="
+}

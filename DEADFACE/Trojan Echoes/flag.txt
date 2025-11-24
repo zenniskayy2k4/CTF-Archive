@@ -1,0 +1,11 @@
+Pass .zip: infected
+
+flag 00 - deadface{Hello_my_friend}
+
+flag 01 - deadface{We_meet_again}
+
+flag 02 - deadface{Its_been_a_while} --> MDIgLSBkZWFkZmFjZXtJdHNfYmVlbl9hX3doaWxlfQ==
+
+flag 03 - deadface{Where_should_we_begin} --> MDMgLSBkZWFkZmFjZXtXaGVyZV9zaG91bGRfd2VfYmVnaW59
+
+flag 04 - deadface{Feels_like_forever} --> Hex -> ASCII -> Base64

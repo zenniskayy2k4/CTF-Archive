@@ -1,0 +1,20 @@
+services:
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.db
+    environment:
+      POSTGRES_DB: cake_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 871576ad349c9b16620685b58ab569ce
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      FLASK_ENV: development
+      POSTGRES_PASSWORD: 871576ad349c9b16620685b58ab569ce
+    restart: unless-stopped

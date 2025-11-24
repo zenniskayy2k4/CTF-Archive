@@ -1,0 +1,45 @@
+﻿Created By AccessData® FTK® Imager 4.7.1.2 
+
+Case Information: 
+Acquired using: ADI4.7.1.2
+Case Number: BrunnerCTF
+Evidence Number: Digging For Treasure
+Unique Description: 
+Examiner: You!
+Notes:  
+
+--------------------------------------------------------------
+
+Information for C:\Users\User\recipe_usb:
+
+Physical Evidentiary Item (Source) Information:
+[Device Info]
+ Source Type: Physical
+[Drive Geometry]
+ Cylinders: 489
+ Tracks per Cylinder: 255
+ Sectors per Track: 63
+ Bytes per Sector: 512
+ Sector Count: 7.856.127
+[Physical Drive Information]
+ Drive Model: SanDisk Cruzer Blade USB Device
+ Drive Serial Number: 0875920F047172B7
+ Drive Interface Type: USB
+ Removable drive: True
+ Source data size: 3835 MB
+ Sector count:    7856127
+[Computed Hashes]
+ MD5 checksum:    3e6daf20ce837abc27c6841d379eae66
+ SHA1 checksum:   20f3565203bccc47cbf6045aead1ac7fc2a10d39
+
+Image Information:
+ Acquisition started:   Wed Aug 13 00:10:23 2025
+ Acquisition finished:  Wed Aug 13 00:19:15 2025
+ Segment list:
+  C:\Users\User\recipe_usb.E01
+
+Image Verification Results:
+ Verification started:  Wed Aug 13 00:19:15 2025
+ Verification finished: Wed Aug 13 00:19:27 2025
+ MD5 checksum:    3e6daf20ce837abc27c6841d379eae66 : verified
+ SHA1 checksum:   20f3565203bccc47cbf6045aead1ac7fc2a10d39 : verified

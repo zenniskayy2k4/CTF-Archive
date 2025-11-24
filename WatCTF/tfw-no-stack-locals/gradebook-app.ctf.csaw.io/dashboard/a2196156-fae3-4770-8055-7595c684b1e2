@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <h1>Student Dashboard</h1>
+
+    
+
+    <form method="POST" action="/submit-feedback">
+        <table>
+            <thead>
+                <tr>
+                    <th>Class ID</th>
+                    <th>Class Name</th>
+                    <th>Grade</th>
+                    <th>Rating</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>88b73b9a-0099-4757-8645-f6fc6da019ff</td>
+                    <td>Data Structures and Algorithms</td>
+                    <td>B+</td>
+                    <td>
+                        <select name="rating_cf2eaebe-1770-448f-ac76-aad988228767">
+                            <option value="">Select Rating</option>
+                            <option value="1" >1 Star</option>
+                            <option value="2" >2 Stars</option>
+                            <option value="3" >3 Stars</option>
+                            <option value="4" >4 Stars</option>
+                            <option value="5" >5 Stars</option>
+                        </select>
+                    </td>
+                    <td>
+                        <textarea name="comment_cf2eaebe-1770-448f-ac76-aad988228767" placeholder="Optional comment...">None
+                        </textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>0608207f-8455-4223-911e-26ee29c058e1</td>
+                    <td>Introduction to Philosophy</td>
+                    <td>D</td>
+                    <td>
+                        <select name="rating_288bba47-c40a-4d9d-89c0-49e7252e58aa">
+                            <option value="">Select Rating</option>
+                            <option value="1" >1 Star</option>
+                            <option value="2" >2 Stars</option>
+                            <option value="3" >3 Stars</option>
+                            <option value="4" >4 Stars</option>
+                            <option value="5" >5 Stars</option>
+                        </select>
+                    </td>
+                    <td>
+                        <textarea name="comment_288bba47-c40a-4d9d-89c0-49e7252e58aa" placeholder="Optional comment...">None</textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>74dcbfcb-fe0a-49de-8849-017b04a210bd</td>
+                    <td>Political Science</td>
+                    <td>C+</td>
+                    <td>
+                        <select name="rating_6ddd9b29-140f-4b84-a0e1-f53d9471c3a4">
+                            <option value="">Select Rating</option>
+                            <option value="1" >1 Star</option>
+                            <option value="2" >2 Stars</option>
+                            <option value="3" >3 Stars</option>
+                            <option value="4" >4 Stars</option>
+                            <option value="5" >5 Stars</option>
+                        </select>
+                    </td>
+                    <td>
+                        <textarea name="comment_6ddd9b29-140f-4b84-a0e1-f53d9471c3a4" placeholder="Optional comment...">None</textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>3a1d33aa-f00d-4c17-8918-ea141f8ae646</td>
+                    <td>Organic Chemistry I</td>
+                    <td>C+</td>
+                    <td>
+                        <select name="rating_6b2c3389-a2bf-44be-bcc1-e5aa053e10cd">
+                            <option value="">Select Rating</option>
+                            <option value="1" >1 Star</option>
+                            <option value="2" >2 Stars</option>
+                            <option value="3" >3 Stars</option>
+                            <option value="4" >4 Stars</option>
+                            <option value="5" >5 Stars</option>
+                        </select>
+                    </td>
+                    <td>
+                        <textarea name="comment_6b2c3389-a2bf-44be-bcc1-e5aa053e10cd" placeholder="Optional comment...">None</textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>0b7901f4-e098-413a-bacd-2d776157a417</td>
+                    <td>General Chemistry I</td>
+                    <td>F</td>
+                    <td>
+                        <select name="rating_51154207-02f6-4a84-afac-6c4f5a6bb5ff">
+                            <option value="">Select Rating</option>
+                            <option value="1" >1 Star</option>
+                            <option value="2" >2 Stars</option>
+                            <option value="3" >3 Stars</option>
+                            <option value="4" >4 Stars</option>
+                            <option value="5" >5 Stars</option>
+                        </select>
+                    </td>
+                    <td>
+                        <textarea name="comment_51154207-02f6-4a84-afac-6c4f5a6bb5ff" placeholder="Optional comment...">None</textarea>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <button type="submit" class="submit-btn">Submit Ratings & Comments</button>
+    </form>
+ 
+</body>
+</html>

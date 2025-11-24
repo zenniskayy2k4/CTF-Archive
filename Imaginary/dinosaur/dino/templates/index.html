@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bitmap Image from Words</title>
+<style>
+  #imageCanvas {
+    image-rendering: pixelated;
+    border: 1px solid black;
+    cursor: crosshair;
+  }
+  #tooltip {
+    position: absolute;
+    background: #f0f0f0;
+    border: 1px solid #333;
+    padding: 2px 5px;
+    font-family: monospace;
+    display: none;
+    pointer-events: none;
+  }
+  #toggles {
+    margin-top: 15px;
+    max-width: 2000px;
+    overflow-y: scroll;
+    max-height: 500px;
+    border: 0px solid #ddd;
+    padding: 10px;
+  }
+  #toggles label {
+    display: inline-block;
+    width: 150px;
+    margin: 3px 10px 3px 0;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="imageCanvas" width="{{width}}" height="{{height}}"></canvas>
+<div id="tooltip"></div>
+
+<div id="toggles">
+  {% for word in unique_words %}
+    <label><input type="checkbox" data-word="{{word}}" {% if color_map[word] %}checked{% endif %}> {{word}}</label>
+  {% endfor %}
+</div>
+
+<script>
+  const canvas = document.getElementById('imageCanvas');
+  const ctx = canvas.getContext('2d');
+  const tooltip = document.getElementById('tooltip');
+  const pixelSize = 4; // scale up pixels for better visibility
+
+  // Scale canvas for pixelated display
+  canvas.style.width = canvas.width * pixelSize + 'px';
+  canvas.style.height = canvas.height * pixelSize + 'px';
+
+  // Words as flat array and width/height given
+  const wordsList = {{ words_list|tojson }};
+  const width = {{ width }};
+  const height = {{ height }};
+
+  // Load image from backend
+  function loadImage() {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => {
+        ctx.imageSmoothingEnabled = false;
+        ctx.clearRect(0, 0, width, height);
+        ctx.drawImage(img, 0, 0, width, height);
+        resolve();
+      };
+      img.src = '/image.png?t=' + Date.now();
+    });
+  }
+
+  // Show word under mouse coords scaled by pixelSize
+  canvas.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    let mouseX = e.clientX - rect.left;
+    let mouseY = e.clientY - rect.top;
+    let x = Math.floor(mouseX / pixelSize);
+    let y = Math.floor(mouseY / pixelSize);
+
+    if (x < 0 || x >= width || y < 0 || y >= height) {
+      tooltip.style.display = 'none';
+      return;
+    }
+    const idx = y * width + x;
+    const word = wordsList[idx];
+
+    tooltip.style.display = 'block';
+    tooltip.textContent = word;
+    // Position tooltip offset a bit to avoid mouse flicker
+    tooltip.style.left = e.pageX + 10 + 'px';
+    tooltip.style.top = e.pageY + 10 + 'px';
+  });
+
+  canvas.addEventListener('mouseleave', () => {
+    tooltip.style.display = 'none';
+  });
+
+  // Handle toggles
+  document.querySelectorAll('#toggles input[type=checkbox]').forEach(cb => {
+    cb.addEventListener('change', async (evt) => {
+      const word = evt.target.dataset.word;
+      // Send toggle request to backend
+      await fetch('/toggle_color', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({word: word})
+      });
+      await loadImage();
+    });
+  });
+
+  // Initial load
+  loadImage();
+</script>
+
+</body>
+</html>

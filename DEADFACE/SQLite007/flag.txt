@@ -1,0 +1,1 @@
+DEADFACE{you_found_the_sqli_01_flag!}

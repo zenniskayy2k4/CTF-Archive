@@ -1,0 +1,4 @@
+2025-08-20 15:32:15.602 Scanned internal due to REASON_MOUNTED, found 0 items in 38ms, 0 inserts 0 updates 0 deletes
+2025-08-20 15:32:15.629 Scanned internal due to REASON_MOUNTED, found 0 items in 5ms, 0 inserts 0 updates 0 deletes
+2025-08-20 15:32:15.859 Scanned internal due to REASON_MOUNTED, found 257 items in 229ms, 1 inserts 0 updates 0 deletes
+2025-08-20 15:32:16.113 Scanned external_primary due to REASON_MOUNTED, found 20 items in 233ms, 0 inserts 4 updates 0 deletes

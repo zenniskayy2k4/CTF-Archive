@@ -1,0 +1,22 @@
+{
+ "client_id": "C.e73428f4c29b5226",
+ "hostname": "jsmith",
+ "fqdn": "jsmith",
+ "system": "windows",
+ "release": "Microsoft Windows 11 Pro24H2",
+ "architecture": "amd64",
+ "ip_address": "192.168.1.5:49698",
+ "ping": 1754904877319848,
+ "client_version": "0.74.5",
+ "client_name": "velociraptor",
+ "first_seen_at": 1754834341,
+ "build_time": "2025-07-03T16:15:07Z",
+ "mac_addresses": [
+  "00:0c:29:e9:05:c7",
+  "0a:00:27:00:00:06",
+  "f6:8a:bc:8f:46:05"
+ ],
+ "last_interrogate_flow_id": "F.D2CAB9CROMC6Q",
+ "last_interrogate_artifact_name": "Generic.Client.Info/BasicInformation",
+ "last_event_table_version": 1754834342152503220
+}

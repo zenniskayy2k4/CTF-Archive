@@ -1,0 +1,2600 @@
+# New run 2025-10-18T05:33:29.466051Z host=crypto1.cscv.vn port=1337 tries=200
+2025-10-18T05:33:31.384295Z attempt=1 server_key=e37a8e3e3576ba01d4d4b373975f6e21 fk_key=e1205cbdedecc4228dede6eda5351dd9
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  e37a8e3e3576ba01d4d4b373975f6e21
+Enter your choice: current FlagKeeper key:  e1205cbdedecc4228dede6eda5351dd9
+Enter your choice: 
+
+2025-10-18T05:33:34.199837Z attempt=2 server_key=08f5a6a4df8a5e5a9da7c66d4bcb8367 fk_key=6d663af8c01d35b8465fa9b6aceb6c4c
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  08f5a6a4df8a5e5a9da7c66d4bcb8367
+Enter your choice: current FlagKeeper key:  6d663af8c01d35b8465fa9b6aceb6c4c
+Enter your choice: 
+
+2025-10-18T05:33:35.972748Z attempt=3 server_key=e6344aba4ff8916b3c0f2d315616d7cc fk_key=54151965e343f9b2856b12e28f715e55
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  e6344aba4ff8916b3c0f2d315616d7cc
+Enter your choice: current FlagKeeper key:  54151965e343f9b2856b12e28f715e55
+Enter your choice: 
+
+2025-10-18T05:33:37.697384Z attempt=4 server_key=112dbc21cec25cc0425e290f6a0ebf63 fk_key=3ebd527c8bb50aa07e576b2ed28954f9
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  112dbc21cec25cc0425e290f6a0ebf63
+Enter your choice: current FlagKeeper key:  3ebd527c8bb50aa07e576b2ed28954f9
+Enter your choice: 
+
+2025-10-18T05:33:39.486601Z attempt=5 server_key=789b8787c32af86a4e17ee00026b7aef fk_key=134d11216594198c76f32313fea6f62e
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  789b8787c32af86a4e17ee00026b7aef
+Enter your choice: current FlagKeeper key:  134d11216594198c76f32313fea6f62e
+Enter your choice: 
+
+2025-10-18T05:33:41.210194Z attempt=6 server_key=f70a627aee2b3c1ea807e609401ff3c8 fk_key=253054672b343e7f788da5f3b4e1fc8a
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  f70a627aee2b3c1ea807e609401ff3c8
+Enter your choice: current FlagKeeper key:  253054672b343e7f788da5f3b4e1fc8a
+Enter your choice: 
+
+2025-10-18T05:33:42.959405Z attempt=7 server_key=0a5e0836be38e282450b1ab216ec05f3 fk_key=09ae38d18bfeff1409e78b22754acce8
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  0a5e0836be38e282450b1ab216ec05f3
+Enter your choice: current FlagKeeper key:  09ae38d18bfeff1409e78b22754acce8
+Enter your choice: 
+
+2025-10-18T05:33:44.702370Z attempt=8 server_key=1b3624121517fcfbb37f7fa56bb4b0a7 fk_key=85d75b06a9904252b4cce064805b05f9
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  1b3624121517fcfbb37f7fa56bb4b0a7
+Enter your choice: current FlagKeeper key:  85d75b06a9904252b4cce064805b05f9
+Enter your choice: 
+
+2025-10-18T05:33:46.682574Z attempt=9 server_key=3b1e1af43af419767f089008042ebf0d fk_key=323c393ce32220d0233a8e0a869605f3
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  3b1e1af43af419767f089008042ebf0d
+Enter your choice: current FlagKeeper key:  323c393ce32220d0233a8e0a869605f3
+Enter your choice: 
+
+2025-10-18T05:33:48.692307Z attempt=10 server_key=e5e3db4271a9c4c80674885b1b438f78 fk_key=83912bf2b617c23335736968e51b67c4
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  e5e3db4271a9c4c80674885b1b438f78
+Enter your choice: current FlagKeeper key:  83912bf2b617c23335736968e51b67c4
+Enter your choice: 
+
+2025-10-18T05:33:50.506248Z attempt=11 server_key=cd443e2bfdb83a31b9b2e664e3145aa9 fk_key=4d6f29844364823c457c71a1b1fd6bab
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  cd443e2bfdb83a31b9b2e664e3145aa9
+Enter your choice: current FlagKeeper key:  4d6f29844364823c457c71a1b1fd6bab
+Enter your choice: 
+
+2025-10-18T05:33:52.806305Z attempt=12 server_key=cbc683b35a56229d48e6f3f757e9a19e fk_key=3eb6e113d3076d225efb65babea63f1d
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  cbc683b35a56229d48e6f3f757e9a19e
+Enter your choice: current FlagKeeper key:  3eb6e113d3076d225efb65babea63f1d
+Enter your choice: 
+
+2025-10-18T05:33:55.231105Z attempt=13 server_key=3acef47f22c89fe7e4036c79ba3563e5 fk_key=1e7c501d72e140eaeecfbb61c1e3df61
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  3acef47f22c89fe7e4036c79ba3563e5
+Enter your choice: current FlagKeeper key:  1e7c501d72e140eaeecfbb61c1e3df61
+Enter your choice: 
+
+2025-10-18T05:33:57.100886Z attempt=14 server_key=a1a88124dad2cc6b75bf7105273677b8 fk_key=bfa1cfda5a49b69bdeb36e3b15b9b78f
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  a1a88124dad2cc6b75bf7105273677b8
+Enter your choice: current FlagKeeper key:  bfa1cfda5a49b69bdeb36e3b15b9b78f
+Enter your choice: 
+
+2025-10-18T05:33:58.814816Z attempt=15 server_key=9cfa63092f16309ef83ac47452499d38 fk_key=df54d9a8bc797e4119daabfc6e30e9b8
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  9cfa63092f16309ef83ac47452499d38
+Enter your choice: current FlagKeeper key:  df54d9a8bc797e4119daabfc6e30e9b8
+Enter your choice: 
+
+2025-10-18T05:34:00.529886Z attempt=16 server_key=a23a102e5ea6ce17d89a79d14dd1c1ab fk_key=693e9937fca5679e4065ac32a9612500
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  a23a102e5ea6ce17d89a79d14dd1c1ab
+Enter your choice: current FlagKeeper key:  693e9937fca5679e4065ac32a9612500
+Enter your choice: 
+
+2025-10-18T05:34:03.269349Z attempt=17 server_key=82de1ab0e5a19b2b1fd8e4ccb6ceed7a fk_key=b93d0139057805b905a7a7ba13e8e5cd
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  82de1ab0e5a19b2b1fd8e4ccb6ceed7a
+Enter your choice: current FlagKeeper key:  b93d0139057805b905a7a7ba13e8e5cd
+Enter your choice: 
+
+2025-10-18T05:34:05.591621Z attempt=18 server_key=e6b3faea1a08dff5703caaf292e60a65 fk_key=8947a4ffbd0d1b0d53932887b8ec44bf
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  e6b3faea1a08dff5703caaf292e60a65
+Enter your choice: current FlagKeeper key:  8947a4ffbd0d1b0d53932887b8ec44bf
+Enter your choice: 
+
+2025-10-18T05:34:07.327099Z attempt=19 server_key=b05719cdf0e514b210f865b5752bdb8a fk_key=c12572d9fad2ff6b01eba39f0139ab6e
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  b05719cdf0e514b210f865b5752bdb8a
+Enter your choice: current FlagKeeper key:  c12572d9fad2ff6b01eba39f0139ab6e
+Enter your choice: 
+
+2025-10-18T05:34:09.243357Z attempt=20 server_key=1bce34aa8c85870588dd211d74db2d98 fk_key=cb6cca69a0e018af15b498186f38555b
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  1bce34aa8c85870588dd211d74db2d98
+Enter your choice: current FlagKeeper key:  cb6cca69a0e018af15b498186f38555b
+Enter your choice: 
+
+2025-10-18T05:34:11.459937Z attempt=21 server_key=0b8a42a119d2ba0b3a1dd41af8a1ff27 fk_key=0abff670b7ccbbd255ffd1ff4526d1a1
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  0b8a42a119d2ba0b3a1dd41af8a1ff27
+Enter your choice: current FlagKeeper key:  0abff670b7ccbbd255ffd1ff4526d1a1
+Enter your choice: 
+
+2025-10-18T05:34:13.159467Z attempt=22 server_key=848d8a2b75e33f045a34a64cd0261d7e fk_key=72d0361ab028f48b92d4e1a92ecda13d
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  848d8a2b75e33f045a34a64cd0261d7e
+Enter your choice: current FlagKeeper key:  72d0361ab028f48b92d4e1a92ecda13d
+Enter your choice: 
+
+2025-10-18T05:34:14.897322Z attempt=23 server_key=64a154efddfc1f0caaa7dda68f33eca7 fk_key=4e6d5bf41e965a21dc9d6cf92c0d90c5
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  64a154efddfc1f0caaa7dda68f33eca7
+Enter your choice: current FlagKeeper key:  4e6d5bf41e965a21dc9d6cf92c0d90c5
+Enter your choice: 
+
+2025-10-18T05:34:16.603087Z attempt=24 server_key=7ccfa1343b5745a4dafc5e990b251e86 fk_key=67cb0ad1d1cc3e0c6f54dc12f9668ca5
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  7ccfa1343b5745a4dafc5e990b251e86
+Enter your choice: current FlagKeeper key:  67cb0ad1d1cc3e0c6f54dc12f9668ca5
+Enter your choice: 
+
+2025-10-18T05:34:18.342796Z attempt=25 server_key=4395bdcc5a33a5ae35f9faf965a02091 fk_key=95360245d90010301e2b65f5955ba169
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  4395bdcc5a33a5ae35f9faf965a02091
+Enter your choice: current FlagKeeper key:  95360245d90010301e2b65f5955ba169
+Enter your choice: 
+
+2025-10-18T05:34:20.066152Z attempt=26 server_key=25911d9f15c9094e63a4e5a078f078b6 fk_key=190073d2b70ec2f6545d10745b9a3f2e
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  25911d9f15c9094e63a4e5a078f078b6
+Enter your choice: current FlagKeeper key:  190073d2b70ec2f6545d10745b9a3f2e
+Enter your choice: 
+
+2025-10-18T05:34:21.788929Z attempt=27 server_key=d10ac44a6a9177eec1d3c8de08f894ba fk_key=75a95ac554fbe15062aa424b6bfacd59
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  d10ac44a6a9177eec1d3c8de08f894ba
+Enter your choice: current FlagKeeper key:  75a95ac554fbe15062aa424b6bfacd59
+Enter your choice: 
+
+2025-10-18T05:34:23.513394Z attempt=28 server_key=9ee935776fee56b6797ee5684ffadb4c fk_key=031ecbcd09fbffb08f3f1249f3f3788f
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  9ee935776fee56b6797ee5684ffadb4c
+Enter your choice: current FlagKeeper key:  031ecbcd09fbffb08f3f1249f3f3788f
+Enter your choice: 
+
+2025-10-18T05:34:25.226865Z attempt=29 server_key=282017d6af31a55822e0d8f5c210d6a1 fk_key=572512a36618a5abda14bb95c7384c8c
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  282017d6af31a55822e0d8f5c210d6a1
+Enter your choice: current FlagKeeper key:  572512a36618a5abda14bb95c7384c8c
+Enter your choice: 
+
+2025-10-18T05:34:26.941313Z attempt=30 server_key=25d423cabae6b89e4457162aa60b1b1f fk_key=8209c185bbe86a9b9fc0a639f1f978fd
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  25d423cabae6b89e4457162aa60b1b1f
+Enter your choice: current FlagKeeper key:  8209c185bbe86a9b9fc0a639f1f978fd
+Enter your choice: 
+
+2025-10-18T05:34:28.672805Z attempt=31 server_key=8be5463ddc7cccbb3ab751d9f7508442 fk_key=6cc62666a35def0fc3578862b66646b5
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  8be5463ddc7cccbb3ab751d9f7508442
+Enter your choice: current FlagKeeper key:  6cc62666a35def0fc3578862b66646b5
+Enter your choice: 
+
+2025-10-18T05:34:30.395889Z attempt=32 server_key=04690c29bed575a1f0c1d16f991d6a84 fk_key=e74752d960594879b0287ceecd0f56a7
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  04690c29bed575a1f0c1d16f991d6a84
+Enter your choice: current FlagKeeper key:  e74752d960594879b0287ceecd0f56a7
+Enter your choice: 
+
+2025-10-18T05:34:32.100501Z attempt=33 server_key=8afc70851e326dd3ce181339d41a6c12 fk_key=d97c9f2d639551cc88f64137d174889d
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  8afc70851e326dd3ce181339d41a6c12
+Enter your choice: current FlagKeeper key:  d97c9f2d639551cc88f64137d174889d
+Enter your choice: 
+
+2025-10-18T05:34:33.821764Z attempt=34 server_key=79d58596a5904392377bdc0bfb88d46e fk_key=737cc8df01bf70b311a983b1c41197d2
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  79d58596a5904392377bdc0bfb88d46e
+Enter your choice: current FlagKeeper key:  737cc8df01bf70b311a983b1c41197d2
+Enter your choice: 
+
+2025-10-18T05:34:35.543895Z attempt=35 server_key=fc7b088070f228609091131f96a3b579 fk_key=95148135469ff5ed4b7423c530390c41
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  fc7b088070f228609091131f96a3b579
+Enter your choice: current FlagKeeper key:  95148135469ff5ed4b7423c530390c41
+Enter your choice: 
+
+2025-10-18T05:34:37.253683Z attempt=36 server_key=cbaa0266080bc3371ccce49736fc82c1 fk_key=b4bc58a6b397a5df2af8e601b566a0a7
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  cbaa0266080bc3371ccce49736fc82c1
+Enter your choice: current FlagKeeper key:  b4bc58a6b397a5df2af8e601b566a0a7
+Enter your choice: 
+
+2025-10-18T05:34:39.050147Z attempt=37 server_key=b9ddf1c52d897a22f7667b6d852cbe13 fk_key=7a815a2f00271c2fbedddeef3f6e6c70
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  b9ddf1c52d897a22f7667b6d852cbe13
+Enter your choice: current FlagKeeper key:  7a815a2f00271c2fbedddeef3f6e6c70
+Enter your choice: 
+
+2025-10-18T05:34:40.778559Z attempt=38 server_key=2e4a1214eb71162c92238f7928279e07 fk_key=7e84f49f65937fa3aa29ad1c04c6ae9a
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  2e4a1214eb71162c92238f7928279e07
+Enter your choice: current FlagKeeper key:  7e84f49f65937fa3aa29ad1c04c6ae9a
+Enter your choice: 
+
+2025-10-18T05:34:42.485515Z attempt=39 server_key=4aca772c8afacbe3954193fd7acbed6a fk_key=66c151ff09b57660b298a6f8a9b24c8b
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  4aca772c8afacbe3954193fd7acbed6a
+Enter your choice: current FlagKeeper key:  66c151ff09b57660b298a6f8a9b24c8b
+Enter your choice: 
+
+2025-10-18T05:34:44.282971Z attempt=40 server_key=d4d9170dd3d3f2c68f1c72d6d01eb7b4 fk_key=bb9a36c219425853afa368720ac7a9bf
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  d4d9170dd3d3f2c68f1c72d6d01eb7b4
+Enter your choice: current FlagKeeper key:  bb9a36c219425853afa368720ac7a9bf
+Enter your choice: 
+
+2025-10-18T05:34:46.321787Z attempt=41 server_key=48aaac0851e36c1adf1d07b84d962a93 fk_key=f85c3b54433eb1aa8031d80c53b47f36
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  48aaac0851e36c1adf1d07b84d962a93
+Enter your choice: current FlagKeeper key:  f85c3b54433eb1aa8031d80c53b47f36
+Enter your choice: 
+
+2025-10-18T05:34:48.132690Z attempt=42 server_key=ac44e62d29f9ccdd7ad8118ed7c4cba1 fk_key=5ba2090f9e9d7761acc4d850b454f38b
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  ac44e62d29f9ccdd7ad8118ed7c4cba1
+Enter your choice: current FlagKeeper key:  5ba2090f9e9d7761acc4d850b454f38b
+Enter your choice: 
+
+2025-10-18T05:34:50.039653Z attempt=43 server_key=bd6b32a47617dc483faabd8a077a37ed fk_key=584430ab7ac6c2b4b296d3cd660693e9
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  bd6b32a47617dc483faabd8a077a37ed
+Enter your choice: current FlagKeeper key:  584430ab7ac6c2b4b296d3cd660693e9
+Enter your choice: 
+
+2025-10-18T05:34:51.794619Z attempt=44 server_key=118808e20c7696dcc6cc8894207781b2 fk_key=261879ec110ddebd1cdc33681d7d3271
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  118808e20c7696dcc6cc8894207781b2
+Enter your choice: current FlagKeeper key:  261879ec110ddebd1cdc33681d7d3271
+Enter your choice: 
+
+2025-10-18T05:34:53.585344Z attempt=45 server_key=a4abc660c6fc43d4683b099611397a05 fk_key=d9e4c5aa3375c77420228bd8df84e933
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  a4abc660c6fc43d4683b099611397a05
+Enter your choice: current FlagKeeper key:  d9e4c5aa3375c77420228bd8df84e933
+Enter your choice: 
+
+2025-10-18T05:34:55.315317Z attempt=46 server_key=896c9c928bb9c2aa49a7fcdbd8e99e64 fk_key=529d35111449d353d35c58beb489f550
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  896c9c928bb9c2aa49a7fcdbd8e99e64
+Enter your choice: current FlagKeeper key:  529d35111449d353d35c58beb489f550
+Enter your choice: 
+
+2025-10-18T05:34:57.058295Z attempt=47 server_key=b576b73c37270f7ce03d5dc89fb41253 fk_key=631eff7820c219dc2c141823f78fac57
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  b576b73c37270f7ce03d5dc89fb41253
+Enter your choice: current FlagKeeper key:  631eff7820c219dc2c141823f78fac57
+Enter your choice: 
+
+2025-10-18T05:34:58.810062Z attempt=48 server_key=b0f3d268e97860b03a49c5acdf401e74 fk_key=7cb60bbf776bba5f3b7050bedc88be06
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  b0f3d268e97860b03a49c5acdf401e74
+Enter your choice: current FlagKeeper key:  7cb60bbf776bba5f3b7050bedc88be06
+Enter your choice: 
+
+2025-10-18T05:35:00.570390Z attempt=49 server_key=84291dfe95667afa04eed2c0b674bc0e fk_key=151bdb66d7c3dd05bf213fa076ca47df
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  84291dfe95667afa04eed2c0b674bc0e
+Enter your choice: current FlagKeeper key:  151bdb66d7c3dd05bf213fa076ca47df
+Enter your choice: 
+
+2025-10-18T05:35:02.293732Z attempt=50 server_key=b08f3595ea6841818c2d54fcd03badf0 fk_key=c8601c4e9d60e4d59bcabd3225d601a0
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  b08f3595ea6841818c2d54fcd03badf0
+Enter your choice: current FlagKeeper key:  c8601c4e9d60e4d59bcabd3225d601a0
+Enter your choice: 
+
+2025-10-18T05:35:04.016270Z attempt=51 server_key=02e6a9891fc315990cdac6c67f255eb7 fk_key=5de77393df3ec516afa3c77a38267b5b
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  02e6a9891fc315990cdac6c67f255eb7
+Enter your choice: current FlagKeeper key:  5de77393df3ec516afa3c77a38267b5b
+Enter your choice: 
+
+2025-10-18T05:35:06.131968Z attempt=52 server_key=80df7b25c879b41de4a55357bd0950ff fk_key=03986d4f82707354ea85ce5637727bf8
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  80df7b25c879b41de4a55357bd0950ff
+Enter your choice: current FlagKeeper key:  03986d4f82707354ea85ce5637727bf8
+Enter your choice: 
+
+2025-10-18T05:35:07.854120Z attempt=53 server_key=7f96fdb2ad814271d8f3bfd6c9fedd2d fk_key=66a3e54b3438af8cf8da280fba7a2887
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  7f96fdb2ad814271d8f3bfd6c9fedd2d
+Enter your choice: current FlagKeeper key:  66a3e54b3438af8cf8da280fba7a2887
+Enter your choice: 
+
+2025-10-18T05:35:09.594690Z attempt=54 server_key=08c04a4d127f2c1e5e7debc66b543f0e fk_key=39d8076c3f25c250569eda9ad52f056c
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  08c04a4d127f2c1e5e7debc66b543f0e
+Enter your choice: current FlagKeeper key:  39d8076c3f25c250569eda9ad52f056c
+Enter your choice: 
+
+2025-10-18T05:35:11.400796Z attempt=55 server_key=468a1f92ce86b18c7ab63bf7f9838842 fk_key=9b4565f473609a98f9e5cbe7e5d11c57
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  468a1f92ce86b18c7ab63bf7f9838842
+Enter your choice: current FlagKeeper key:  9b4565f473609a98f9e5cbe7e5d11c57
+Enter your choice: 
+
+2025-10-18T05:35:13.630794Z attempt=56 server_key=aa64644486091d9b7bec7e32ec45cc47 fk_key=f36bd51657b36969c8bd135e5b84bc52
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  aa64644486091d9b7bec7e32ec45cc47
+Enter your choice: current FlagKeeper key:  f36bd51657b36969c8bd135e5b84bc52
+Enter your choice: 
+
+2025-10-18T05:35:16.397726Z attempt=57 server_key=fd76feb3c18449283d8b9ef32d60e32c fk_key=4ffdbbacb2c8e68f82e9cf8035cf0ca6
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  fd76feb3c18449283d8b9ef32d60e32c
+Enter your choice: current FlagKeeper key:  4ffdbbacb2c8e68f82e9cf8035cf0ca6
+Enter your choice: 
+
+2025-10-18T05:35:18.152599Z attempt=58 server_key=6918a4043f029029709bbe1130e2207d fk_key=9ae21809de7dd0a17170eb19c36d7728
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  6918a4043f029029709bbe1130e2207d
+Enter your choice: current FlagKeeper key:  9ae21809de7dd0a17170eb19c36d7728
+Enter your choice: 
+
+2025-10-18T05:35:19.860312Z attempt=59 server_key=0722037fe6cd7834090e387207fcd800 fk_key=65f09ffe0abf200645314549544c95da
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  0722037fe6cd7834090e387207fcd800
+Enter your choice: current FlagKeeper key:  65f09ffe0abf200645314549544c95da
+Enter your choice: 
+
+2025-10-18T05:35:21.564852Z attempt=60 server_key=54a057dac0f04d0dd4e4f9c5c210717f fk_key=59f6b0ad0b68a88c6281b134f8f2755f
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  54a057dac0f04d0dd4e4f9c5c210717f
+Enter your choice: current FlagKeeper key:  59f6b0ad0b68a88c6281b134f8f2755f
+Enter your choice: 
+
+2025-10-18T05:35:23.287082Z attempt=61 server_key=f9c92a8911bb58a658ddd1c85b3df5a8 fk_key=42faabfbcada5ace65ddfb7fbeaa871c
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  f9c92a8911bb58a658ddd1c85b3df5a8
+Enter your choice: current FlagKeeper key:  42faabfbcada5ace65ddfb7fbeaa871c
+Enter your choice: 
+
+2025-10-18T05:35:25.060760Z attempt=62 server_key=6c81202a1041c98c37a4b9471586cde9 fk_key=d7f26301b2f48e6324b0d84f574916ff
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  6c81202a1041c98c37a4b9471586cde9
+Enter your choice: current FlagKeeper key:  d7f26301b2f48e6324b0d84f574916ff
+Enter your choice: 
+
+2025-10-18T05:35:26.777762Z attempt=63 server_key=50fcf729728595259dd317f804d056a9 fk_key=97f902fd9936eff7fed0b40b6c2561ec
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  50fcf729728595259dd317f804d056a9
+Enter your choice: current FlagKeeper key:  97f902fd9936eff7fed0b40b6c2561ec
+Enter your choice: 
+
+2025-10-18T05:35:28.498861Z attempt=64 server_key=b2c6d552baca0ca3e992a4d0c1966ed6 fk_key=caf73fdf10019359dc4d645584f1e872
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  b2c6d552baca0ca3e992a4d0c1966ed6
+Enter your choice: current FlagKeeper key:  caf73fdf10019359dc4d645584f1e872
+Enter your choice: 
+
+2025-10-18T05:35:30.233619Z attempt=65 server_key=216987303643176d89143efa058259cb fk_key=9cef8294a826fa7fd27242b9362cc118
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  216987303643176d89143efa058259cb
+Enter your choice: current FlagKeeper key:  9cef8294a826fa7fd27242b9362cc118
+Enter your choice: 
+
+2025-10-18T05:35:31.944731Z attempt=66 server_key=bd9a5d08ca88a6d904bd3143baf5ec38 fk_key=fc93ba359a735fcbab904a7343a03a57
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  bd9a5d08ca88a6d904bd3143baf5ec38
+Enter your choice: current FlagKeeper key:  fc93ba359a735fcbab904a7343a03a57
+Enter your choice: 
+
+2025-10-18T05:35:33.663308Z attempt=67 server_key=789685ed62c66e13fd8a7186df8dc5ca fk_key=f2480337cc15f177b4caf7b2cb0a872e
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  789685ed62c66e13fd8a7186df8dc5ca
+Enter your choice: current FlagKeeper key:  f2480337cc15f177b4caf7b2cb0a872e
+Enter your choice: 
+
+2025-10-18T05:35:35.389084Z attempt=68 server_key=970cba53e331a7082b31141771a9a0ef fk_key=d69201837d87540c74e2a31fe2c73327
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  970cba53e331a7082b31141771a9a0ef
+Enter your choice: current FlagKeeper key:  d69201837d87540c74e2a31fe2c73327
+Enter your choice: 
+
+2025-10-18T05:35:37.086936Z attempt=69 server_key=77331552b398df3e811d0a8bb18df79a fk_key=697ae16b42e3faa6075eee4748b7336c
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  77331552b398df3e811d0a8bb18df79a
+Enter your choice: current FlagKeeper key:  697ae16b42e3faa6075eee4748b7336c
+Enter your choice: 
+
+2025-10-18T05:35:38.966562Z attempt=70 server_key=1d3c1a590706b8466f9b48ad60c0c503 fk_key=14645471fdafae59444254b93a768338
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  1d3c1a590706b8466f9b48ad60c0c503
+Enter your choice: current FlagKeeper key:  14645471fdafae59444254b93a768338
+Enter your choice: 
+
+2025-10-18T05:35:40.724872Z attempt=71 server_key=ca088917da44ec6d44b74706589e0d1c fk_key=549648d46947817904f0c90f70e1061c
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  ca088917da44ec6d44b74706589e0d1c
+Enter your choice: current FlagKeeper key:  549648d46947817904f0c90f70e1061c
+Enter your choice: 
+
+2025-10-18T05:35:42.495085Z attempt=72 server_key=aa54a286e47a7658f9f17f8966c71fa3 fk_key=7f73705818a57dc77faa14bbca2c63b2
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  aa54a286e47a7658f9f17f8966c71fa3
+Enter your choice: current FlagKeeper key:  7f73705818a57dc77faa14bbca2c63b2
+Enter your choice: 
+
+2025-10-18T05:35:44.236581Z attempt=73 server_key=ac3a16da861c0f38202f713b57ada3ce fk_key=0560157788e1fd50a5368932dd53cbd4
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  ac3a16da861c0f38202f713b57ada3ce
+Enter your choice: current FlagKeeper key:  0560157788e1fd50a5368932dd53cbd4
+Enter your choice: 
+
+2025-10-18T05:35:46.032492Z attempt=74 server_key=4878abb7bb3bff9c4613a96ef9a4ed1f fk_key=74af3e6ead96af96a57ac6edc602e0da
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  4878abb7bb3bff9c4613a96ef9a4ed1f
+Enter your choice: current FlagKeeper key:  74af3e6ead96af96a57ac6edc602e0da
+Enter your choice: 
+
+2025-10-18T05:35:47.786926Z attempt=75 server_key=0d550eaa6a82104bdf028a55057f5867 fk_key=ef84371f27327445f82b692f137e316d
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  0d550eaa6a82104bdf028a55057f5867
+Enter your choice: current FlagKeeper key:  ef84371f27327445f82b692f137e316d
+Enter your choice: 
+
+2025-10-18T05:35:49.571044Z attempt=76 server_key=3a4ef939663ddd64a77ede58975f2afa fk_key=f398505e1b2ee01d0916d8319c365268
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  3a4ef939663ddd64a77ede58975f2afa
+Enter your choice: current FlagKeeper key:  f398505e1b2ee01d0916d8319c365268
+Enter your choice: 
+
+2025-10-18T05:35:51.563052Z attempt=77 server_key=8c70735ae94deb24df39c1c93eddfc2a fk_key=55ba96e2e00e5e6f037278e09748fa28
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  8c70735ae94deb24df39c1c93eddfc2a
+Enter your choice: current FlagKeeper key:  55ba96e2e00e5e6f037278e09748fa28
+Enter your choice: 
+
+2025-10-18T05:35:53.290060Z attempt=78 server_key=434e3e5559969ff8bc58e8f4517447a4 fk_key=a26f6864abc2ab369aaa6fb812cb4851
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  434e3e5559969ff8bc58e8f4517447a4
+Enter your choice: current FlagKeeper key:  a26f6864abc2ab369aaa6fb812cb4851
+Enter your choice: 
+
+2025-10-18T05:35:55.439055Z attempt=79 server_key=766a44ba64c4b403e430b02c9d59d0ca fk_key=79413fe7c77878cb9c7084fdfb007f34
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  766a44ba64c4b403e430b02c9d59d0ca
+Enter your choice: current FlagKeeper key:  79413fe7c77878cb9c7084fdfb007f34
+Enter your choice: 
+
+2025-10-18T05:35:57.270811Z attempt=80 server_key=ce0afbb6ff010bd73b8f8622fa410e5f fk_key=4a5dd7e9047ac10df6425efa5fdc4f34
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  ce0afbb6ff010bd73b8f8622fa410e5f
+Enter your choice: current FlagKeeper key:  4a5dd7e9047ac10df6425efa5fdc4f34
+Enter your choice: 
+
+2025-10-18T05:35:59.106463Z attempt=81 server_key=33c666db9b7af7ee09936db5f5a909fa fk_key=4803221ad3ee0317a7b8dd42d753d4db
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  33c666db9b7af7ee09936db5f5a909fa
+Enter your choice: current FlagKeeper key:  4803221ad3ee0317a7b8dd42d753d4db
+Enter your choice: 
+
+2025-10-18T05:36:01.074285Z attempt=82 server_key=50d6bfea22dfb9537383c02e993836ea fk_key=b281b21a771e160fcb31e6a2e887b7b3
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  50d6bfea22dfb9537383c02e993836ea
+Enter your choice: current FlagKeeper key:  b281b21a771e160fcb31e6a2e887b7b3
+Enter your choice: 
+
+2025-10-18T05:36:03.000423Z attempt=83 server_key=dab198e5697a79f4ee3ffa7d1f2a4932 fk_key=d1a958c15d84f49a7d55a04b9fe6b3b6
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  dab198e5697a79f4ee3ffa7d1f2a4932
+Enter your choice: current FlagKeeper key:  d1a958c15d84f49a7d55a04b9fe6b3b6
+Enter your choice: 
+
+2025-10-18T05:36:04.793324Z attempt=84 server_key=ef2e0fc4a3fc93c121e6a9a96202c70a fk_key=cc88d9804d3e5c5db52c3215ce7a5f1b
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  ef2e0fc4a3fc93c121e6a9a96202c70a
+Enter your choice: current FlagKeeper key:  cc88d9804d3e5c5db52c3215ce7a5f1b
+Enter your choice: 
+
+2025-10-18T05:36:06.546416Z attempt=85 server_key=9edf077f1c242e8037bb08cfc6c9a42b fk_key=056fe7a8cd2d8eefaae73a90fde05ebe
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  9edf077f1c242e8037bb08cfc6c9a42b
+Enter your choice: current FlagKeeper key:  056fe7a8cd2d8eefaae73a90fde05ebe
+Enter your choice: 
+
+2025-10-18T05:36:08.410322Z attempt=86 server_key=ee1c02a518c4fb667bbeb986b4d4f075 fk_key=ccb3a33816ef78358101915d14b871e1
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  ee1c02a518c4fb667bbeb986b4d4f075
+Enter your choice: current FlagKeeper key:  ccb3a33816ef78358101915d14b871e1
+Enter your choice: 
+
+2025-10-18T05:36:10.341841Z attempt=87 server_key=2ab6f7c64d094e883bfd38eb02cfbe39 fk_key=cf4a5c012606f7d71ac79847ca1c6bbb
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  2ab6f7c64d094e883bfd38eb02cfbe39
+Enter your choice: current FlagKeeper key:  cf4a5c012606f7d71ac79847ca1c6bbb
+Enter your choice: 
+
+2025-10-18T05:36:12.119732Z attempt=88 server_key=7fc300c23ec39530685e7f25125d3fef fk_key=b1af9af7985e4e9e14e3330c1f7efe38
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  7fc300c23ec39530685e7f25125d3fef
+Enter your choice: current FlagKeeper key:  b1af9af7985e4e9e14e3330c1f7efe38
+Enter your choice: 
+
+2025-10-18T05:36:13.909254Z attempt=89 server_key=1a2497a5e276fd7c02240c180e5a2548 fk_key=01bc09dbc91c5bea1c0888028eb6119e
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  1a2497a5e276fd7c02240c180e5a2548
+Enter your choice: current FlagKeeper key:  01bc09dbc91c5bea1c0888028eb6119e
+Enter your choice: 
+
+2025-10-18T05:36:15.666158Z attempt=90 server_key=ebf558d94f0c12d653ab19ebe5142592 fk_key=23f927d03b62bc5b80cb4405d2ced773
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  ebf558d94f0c12d653ab19ebe5142592
+Enter your choice: current FlagKeeper key:  23f927d03b62bc5b80cb4405d2ced773
+Enter your choice: 
+
+2025-10-18T05:36:17.478660Z attempt=91 server_key=e44854be1bfddb64b2f9dd5fb13f5006 fk_key=67f7ae60aebe5fd0fa6fb7e56348dc8a
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  e44854be1bfddb64b2f9dd5fb13f5006
+Enter your choice: current FlagKeeper key:  67f7ae60aebe5fd0fa6fb7e56348dc8a
+Enter your choice: 
+
+2025-10-18T05:36:19.189667Z attempt=92 server_key=5311cb3990bee94b71e1be98689582fb fk_key=ec32c9b6ddfcdae9aa563859beb5a572
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  5311cb3990bee94b71e1be98689582fb
+Enter your choice: current FlagKeeper key:  ec32c9b6ddfcdae9aa563859beb5a572
+Enter your choice: 
+
+2025-10-18T05:36:21.018718Z attempt=93 server_key=2dd6b3c46776b7e3958e1f920ebac19b fk_key=9359ebe32f4337c4bc0ba6d18e56f9cb
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  2dd6b3c46776b7e3958e1f920ebac19b
+Enter your choice: current FlagKeeper key:  9359ebe32f4337c4bc0ba6d18e56f9cb
+Enter your choice: 
+
+2025-10-18T05:36:22.818290Z attempt=94 server_key=f7f0d9c821f78875050e8aedbdae2ce3 fk_key=e2531cf60422e9a668a03bbc92a33b41
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  f7f0d9c821f78875050e8aedbdae2ce3
+Enter your choice: current FlagKeeper key:  e2531cf60422e9a668a03bbc92a33b41
+Enter your choice: 
+
+2025-10-18T05:36:24.538642Z attempt=95 server_key=33bfccea3da7542aca326ab33f286365 fk_key=4752525ba98b3cc22715cd6e2649da86
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  33bfccea3da7542aca326ab33f286365
+Enter your choice: current FlagKeeper key:  4752525ba98b3cc22715cd6e2649da86
+Enter your choice: 
+
+2025-10-18T05:36:26.276526Z attempt=96 server_key=1118ef9beabbb9168eb5e436446d4704 fk_key=52975635470f882ca18cab3d88087a96
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  1118ef9beabbb9168eb5e436446d4704
+Enter your choice: current FlagKeeper key:  52975635470f882ca18cab3d88087a96
+Enter your choice: 
+
+2025-10-18T05:36:28.076042Z attempt=97 server_key=94d638dc8183d2df770ceff532852650 fk_key=cda784b1b2ad8041c82fb863dab34d03
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  94d638dc8183d2df770ceff532852650
+Enter your choice: current FlagKeeper key:  cda784b1b2ad8041c82fb863dab34d03
+Enter your choice: 
+
+2025-10-18T05:36:29.858198Z attempt=98 server_key=436246f4362f15ae913b74eb44cb5cc2 fk_key=3a47f10ad443b0445f35b64ab950c788
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  436246f4362f15ae913b74eb44cb5cc2
+Enter your choice: current FlagKeeper key:  3a47f10ad443b0445f35b64ab950c788
+Enter your choice: 
+
+2025-10-18T05:36:31.740900Z attempt=99 server_key=525ffde02d4d6f1c99adde5a3965fa00 fk_key=bb668f3ccf6a109c5752237386359e1b
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  525ffde02d4d6f1c99adde5a3965fa00
+Enter your choice: current FlagKeeper key:  bb668f3ccf6a109c5752237386359e1b
+Enter your choice: 
+
+2025-10-18T05:36:33.474757Z attempt=100 server_key=cd83f53bf746c2f08b7a193b1bcb5996 fk_key=7ad6e5dc4aace135b293388b196094cb
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  cd83f53bf746c2f08b7a193b1bcb5996
+Enter your choice: current FlagKeeper key:  7ad6e5dc4aace135b293388b196094cb
+Enter your choice: 
+
+2025-10-18T05:36:35.223310Z attempt=101 server_key=b0df1e7b7004e5bf9f3c95a38e823326 fk_key=d856ad8aecf10a94c2159ca31314b1a1
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  b0df1e7b7004e5bf9f3c95a38e823326
+Enter your choice: current FlagKeeper key:  d856ad8aecf10a94c2159ca31314b1a1
+Enter your choice: 
+
+2025-10-18T05:36:37.018299Z attempt=102 server_key=568501ee753704a92b42f525994c3861 fk_key=812c667e72c2a84aa937d98d256701b7
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  568501ee753704a92b42f525994c3861
+Enter your choice: current FlagKeeper key:  812c667e72c2a84aa937d98d256701b7
+Enter your choice: 
+
+2025-10-18T05:36:38.770378Z attempt=103 server_key=f7740938ca140842f88a1872ceed3c35 fk_key=ebc5832c8fa1320b26ba5c1932a17225
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  f7740938ca140842f88a1872ceed3c35
+Enter your choice: current FlagKeeper key:  ebc5832c8fa1320b26ba5c1932a17225
+Enter your choice: 
+
+2025-10-18T05:36:40.562619Z attempt=104 server_key=4cb74b737f807bcf771ce894d4060b09 fk_key=f8bcc8e0a920b027c730f750a88c65ab
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  4cb74b737f807bcf771ce894d4060b09
+Enter your choice: current FlagKeeper key:  f8bcc8e0a920b027c730f750a88c65ab
+Enter your choice: 
+
+2025-10-18T05:36:42.396577Z attempt=105 server_key=62c1dc72f7357becdbf345599db0e52a fk_key=9e70327c3c16ee13a7fe5610480b1c95
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  62c1dc72f7357becdbf345599db0e52a
+Enter your choice: current FlagKeeper key:  9e70327c3c16ee13a7fe5610480b1c95
+Enter your choice: 
+
+2025-10-18T05:36:44.512585Z attempt=106 server_key=04231314c285b988132fab65145cc34f fk_key=70a22897e8ed7eac84e15783ec3e7374
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  04231314c285b988132fab65145cc34f
+Enter your choice: current FlagKeeper key:  70a22897e8ed7eac84e15783ec3e7374
+Enter your choice: 
+
+2025-10-18T05:36:46.275072Z attempt=107 server_key=44c842236bb52b9ccc20464206a51beb fk_key=1c659aa4dd6cea818ed81fcc0c3026e3
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  44c842236bb52b9ccc20464206a51beb
+Enter your choice: current FlagKeeper key:  1c659aa4dd6cea818ed81fcc0c3026e3
+Enter your choice: 
+
+2025-10-18T05:36:48.010828Z attempt=108 server_key=0a1c2b55fd87ac5e3509801ddd9b5884 fk_key=None
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  0a1c2b55fd87ac5e3509801ddd9b5884
+Enter your choice: 
+
+2025-10-18T05:36:50.119628Z attempt=109 server_key=a704142d9ffa19c0245dc399006eea64 fk_key=14229a5e90270e0ee81261872789d08a
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  a704142d9ffa19c0245dc399006eea64
+Enter your choice: current FlagKeeper key:  14229a5e90270e0ee81261872789d08a
+Enter your choice: 
+
+2025-10-18T05:36:52.225131Z attempt=110 server_key=adb2b1b1304262a4a2e0cdf5f91bd227 fk_key=dbf3cc2fc08dd9bc4aa43c10cc45d041
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  adb2b1b1304262a4a2e0cdf5f91bd227
+Enter your choice: current FlagKeeper key:  dbf3cc2fc08dd9bc4aa43c10cc45d041
+Enter your choice: 
+
+2025-10-18T05:36:54.218292Z attempt=111 server_key=bd278198524ce2eeb238d1c5ac3658cb fk_key=5c223ac5a749ed8790dd352e3fe7b068
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  bd278198524ce2eeb238d1c5ac3658cb
+Enter your choice: current FlagKeeper key:  5c223ac5a749ed8790dd352e3fe7b068
+Enter your choice: 
+
+2025-10-18T05:36:55.989260Z attempt=112 server_key=475bd13d59e53988160f9ceeed3bc944 fk_key=e76c51fc73c3ef4d31569eecce69ef33
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  475bd13d59e53988160f9ceeed3bc944
+Enter your choice: current FlagKeeper key:  e76c51fc73c3ef4d31569eecce69ef33
+Enter your choice: 
+
+2025-10-18T05:36:57.839956Z attempt=113 server_key=ee1196d5e198796d1e69aa583c9aba9a fk_key=2557485c3c93e214813dcd67dbf0c629
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  ee1196d5e198796d1e69aa583c9aba9a
+Enter your choice: current FlagKeeper key:  2557485c3c93e214813dcd67dbf0c629
+Enter your choice: 
+
+2025-10-18T05:36:59.603355Z attempt=114 server_key=af0e0a4f871f24fa4bc3323ea52804f6 fk_key=60f8aa1c0ba3f72931ead57a80223270
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  af0e0a4f871f24fa4bc3323ea52804f6
+Enter your choice: current FlagKeeper key:  60f8aa1c0ba3f72931ead57a80223270
+Enter your choice: 
+
+2025-10-18T05:37:01.405237Z attempt=115 server_key=8f2e379c5e75106c1b5c4059cfbfb55e fk_key=b4e4ce19591477c04273d3cdf294441e
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  8f2e379c5e75106c1b5c4059cfbfb55e
+Enter your choice: current FlagKeeper key:  b4e4ce19591477c04273d3cdf294441e
+Enter your choice: 
+
+2025-10-18T05:37:03.182608Z attempt=116 server_key=d2debde4d8ba79b2f250dd8b374515ee fk_key=44180926526783467e671e867ace9456
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  d2debde4d8ba79b2f250dd8b374515ee
+Enter your choice: current FlagKeeper key:  44180926526783467e671e867ace9456
+Enter your choice: 
+
+2025-10-18T05:37:04.893020Z attempt=117 server_key=5339763e052d477d21095e5fe9cbf5c8 fk_key=4cb899fddc588df82b13cad9f7359b4f
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  5339763e052d477d21095e5fe9cbf5c8
+Enter your choice: current FlagKeeper key:  4cb899fddc588df82b13cad9f7359b4f
+Enter your choice: 
+
+2025-10-18T05:37:06.583123Z attempt=118 server_key=366ce36d0da8434759b1f678ba5e817c fk_key=2d57d54a6610ad73e63f97ccd7bb67f6
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  366ce36d0da8434759b1f678ba5e817c
+Enter your choice: current FlagKeeper key:  2d57d54a6610ad73e63f97ccd7bb67f6
+Enter your choice: 
+
+2025-10-18T05:37:08.306952Z attempt=119 server_key=99a54dc093fe5b829879f6ef3e35fdd6 fk_key=7fd920030689a11769bea87230114bb6
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  99a54dc093fe5b829879f6ef3e35fdd6
+Enter your choice: current FlagKeeper key:  7fd920030689a11769bea87230114bb6
+Enter your choice: 
+
+2025-10-18T05:37:10.141829Z attempt=120 server_key=eaa133d9be988e4e17685c5599946a2e fk_key=d8d80e89f36d115402ba8ff1f14278af
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  eaa133d9be988e4e17685c5599946a2e
+Enter your choice: current FlagKeeper key:  d8d80e89f36d115402ba8ff1f14278af
+Enter your choice: 
+
+2025-10-18T05:37:11.900600Z attempt=121 server_key=6dee25b6597eb5fa32df4c1dc5415146 fk_key=6a8e7280c72ef4806c9a54ab01d50b4d
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  6dee25b6597eb5fa32df4c1dc5415146
+Enter your choice: current FlagKeeper key:  6a8e7280c72ef4806c9a54ab01d50b4d
+Enter your choice: 
+
+2025-10-18T05:37:13.649759Z attempt=122 server_key=fd471a437b14558ac54bfebfc3c47873 fk_key=8e56f063e914ff0c357c16aefdc54610
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  fd471a437b14558ac54bfebfc3c47873
+Enter your choice: current FlagKeeper key:  8e56f063e914ff0c357c16aefdc54610
+Enter your choice: 
+
+2025-10-18T05:37:15.794540Z attempt=123 server_key=233a757c8d614acb21be6cb447ee330f fk_key=962b11b2a190daeb2bab93206fe1f88f
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  233a757c8d614acb21be6cb447ee330f
+Enter your choice: current FlagKeeper key:  962b11b2a190daeb2bab93206fe1f88f
+Enter your choice: 
+
+2025-10-18T05:37:17.642964Z attempt=124 server_key=6cf8fcfa4430ce64046be4722432ea0d fk_key=024f12add5d25338f98d3457ad9637a1
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  6cf8fcfa4430ce64046be4722432ea0d
+Enter your choice: current FlagKeeper key:  024f12add5d25338f98d3457ad9637a1
+Enter your choice: 
+
+2025-10-18T05:37:19.761843Z attempt=125 server_key=ff9e1d2574ff001c33c72cbc1beeeec5 fk_key=64819ce340a59e3d9fcca473ccab7ce0
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  ff9e1d2574ff001c33c72cbc1beeeec5
+Enter your choice: current FlagKeeper key:  64819ce340a59e3d9fcca473ccab7ce0
+Enter your choice: 
+
+2025-10-18T05:37:21.708816Z attempt=126 server_key=e7f8c2b505158ccce3234a0c615322a7 fk_key=3a68c7c91593d545d76cb149c80d770d
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  e7f8c2b505158ccce3234a0c615322a7
+Enter your choice: current FlagKeeper key:  3a68c7c91593d545d76cb149c80d770d
+Enter your choice: 
+
+2025-10-18T05:37:23.621775Z attempt=127 server_key=82ec30835c6f4d8ed8473f8efe704351 fk_key=292adbe4e0c535f11f1895dd74d55fd7
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  82ec30835c6f4d8ed8473f8efe704351
+Enter your choice: current FlagKeeper key:  292adbe4e0c535f11f1895dd74d55fd7
+Enter your choice: 
+
+2025-10-18T05:37:25.459680Z attempt=128 server_key=7360e22235467d157eefc74b35bd4d0f fk_key=236f1907518e2a822b1819b29e497bc3
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  7360e22235467d157eefc74b35bd4d0f
+Enter your choice: current FlagKeeper key:  236f1907518e2a822b1819b29e497bc3
+Enter your choice: 
+
+2025-10-18T05:37:27.202538Z attempt=129 server_key=a9b61f015c1776e3bf4aa35f8d929060 fk_key=3c4d3cc7b1c4fe11ce9b8035eed4e4ae
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  a9b61f015c1776e3bf4aa35f8d929060
+Enter your choice: current FlagKeeper key:  3c4d3cc7b1c4fe11ce9b8035eed4e4ae
+Enter your choice: 
+
+2025-10-18T05:37:29.193789Z attempt=130 server_key=5e3ad3e7e0ffb430d4420530c7a2b4ad fk_key=68f25406d0c00d707f9d499c8afaf471
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  5e3ad3e7e0ffb430d4420530c7a2b4ad
+Enter your choice: current FlagKeeper key:  68f25406d0c00d707f9d499c8afaf471
+Enter your choice: 
+
+2025-10-18T05:37:31.028628Z attempt=131 server_key=8ef6eb6abd3a65a54666e4452f8c2f15 fk_key=eec17be523dc2229ce31eb9ec24f60e2
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  8ef6eb6abd3a65a54666e4452f8c2f15
+Enter your choice: current FlagKeeper key:  eec17be523dc2229ce31eb9ec24f60e2
+Enter your choice: 
+
+2025-10-18T05:37:32.771209Z attempt=132 server_key=67e28fcc8117a766b3e638572f7cef72 fk_key=28288d0b9729dde7810496b2630c8240
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  67e28fcc8117a766b3e638572f7cef72
+Enter your choice: current FlagKeeper key:  28288d0b9729dde7810496b2630c8240
+Enter your choice: 
+
+2025-10-18T05:37:34.954032Z attempt=133 server_key=1b9b7580dc367ce60499b4633ade0144 fk_key=275cb2b9029715dd093f09ee477533dd
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  1b9b7580dc367ce60499b4633ade0144
+Enter your choice: current FlagKeeper key:  275cb2b9029715dd093f09ee477533dd
+Enter your choice: 
+
+2025-10-18T05:37:36.682005Z attempt=134 server_key=c674223718043db29782bc62ae5e5708 fk_key=25227d1d613018b2d872bbc93657210a
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  c674223718043db29782bc62ae5e5708
+Enter your choice: current FlagKeeper key:  25227d1d613018b2d872bbc93657210a
+Enter your choice: 
+
+2025-10-18T05:37:38.491706Z attempt=135 server_key=f6e6033304a6e3b854571ebf1e3630dc fk_key=6e1cd25315f1c06a14d75f278dc9b315
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  f6e6033304a6e3b854571ebf1e3630dc
+Enter your choice: current FlagKeeper key:  6e1cd25315f1c06a14d75f278dc9b315
+Enter your choice: 
+
+2025-10-18T05:37:40.357853Z attempt=136 server_key=c44a09fb0f474fd7580d4fe30890c40e fk_key=1713c600f26fbf9c0d9ec72148eea3c4
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  c44a09fb0f474fd7580d4fe30890c40e
+Enter your choice: current FlagKeeper key:  1713c600f26fbf9c0d9ec72148eea3c4
+Enter your choice: 
+
+2025-10-18T05:37:42.229449Z attempt=137 server_key=1c0b69acd46584b99dbf1ebc20606c43 fk_key=14dfa7bbc70ba3d27e6d3b8b5e8d4c42
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  1c0b69acd46584b99dbf1ebc20606c43
+Enter your choice: current FlagKeeper key:  14dfa7bbc70ba3d27e6d3b8b5e8d4c42
+Enter your choice: 
+
+2025-10-18T05:37:44.485439Z attempt=138 server_key=110f84ba3f2171221bb809323c85a7ac fk_key=62bee14ff60afbccd85748de27805179
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  110f84ba3f2171221bb809323c85a7ac
+Enter your choice: current FlagKeeper key:  62bee14ff60afbccd85748de27805179
+Enter your choice: 
+
+2025-10-18T05:37:46.284387Z attempt=139 server_key=2bacc8c84250c3e387fc4f268ee516e0 fk_key=5af3d7ddbe7d35c23b7394f1dc3e6cea
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  2bacc8c84250c3e387fc4f268ee516e0
+Enter your choice: current FlagKeeper key:  5af3d7ddbe7d35c23b7394f1dc3e6cea
+Enter your choice: 
+
+2025-10-18T05:37:48.008569Z attempt=140 server_key=649c9eadcc155903dbb2aac9fe9fe89a fk_key=042667b22b27186ed274967727fa4f74
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  649c9eadcc155903dbb2aac9fe9fe89a
+Enter your choice: current FlagKeeper key:  042667b22b27186ed274967727fa4f74
+Enter your choice: 
+
+2025-10-18T05:37:49.723884Z attempt=141 server_key=487bf19ed0680735dfa4e35fe08e150f fk_key=bfe759c12aef8d1d7e8ae06fe05f1c76
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  487bf19ed0680735dfa4e35fe08e150f
+Enter your choice: current FlagKeeper key:  bfe759c12aef8d1d7e8ae06fe05f1c76
+Enter your choice: 
+
+2025-10-18T05:37:51.445677Z attempt=142 server_key=72d16eff8f107a2789a1a0b6ad6ca566 fk_key=b3d593d5241a54c6542daf540d7c0d84
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  72d16eff8f107a2789a1a0b6ad6ca566
+Enter your choice: current FlagKeeper key:  b3d593d5241a54c6542daf540d7c0d84
+Enter your choice: 
+
+2025-10-18T05:37:53.158407Z attempt=143 server_key=9a154498172bba6a317e14e86437447b fk_key=aaf6efc053840b6720e2a5de7acfba85
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  9a154498172bba6a317e14e86437447b
+Enter your choice: current FlagKeeper key:  aaf6efc053840b6720e2a5de7acfba85
+Enter your choice: 
+
+2025-10-18T05:37:54.901785Z attempt=144 server_key=896ce2e129bfd8720457269cc5f4cc79 fk_key=123e021a5c7b6bb41ce3f61d89bea698
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  896ce2e129bfd8720457269cc5f4cc79
+Enter your choice: current FlagKeeper key:  123e021a5c7b6bb41ce3f61d89bea698
+Enter your choice: 
+
+2025-10-18T05:37:56.623748Z attempt=145 server_key=98bfdfe4701b491265daa642aec63bf9 fk_key=fcb9094f7b2ab69b7fc1af0aa0b51627
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  98bfdfe4701b491265daa642aec63bf9
+Enter your choice: current FlagKeeper key:  fcb9094f7b2ab69b7fc1af0aa0b51627
+Enter your choice: 
+
+2025-10-18T05:37:58.348856Z attempt=146 server_key=6d09c3edc6628d1397e579aefcbfa49f fk_key=c794bf6af5875339ebd3d6a1f833b461
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  6d09c3edc6628d1397e579aefcbfa49f
+Enter your choice: current FlagKeeper key:  c794bf6af5875339ebd3d6a1f833b461
+Enter your choice: 
+
+2025-10-18T05:38:00.052911Z attempt=147 server_key=50fa401a45086350d52d2e4c4258e5a4 fk_key=dc1e769ef693f7da9b345fff2fe82e3f
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  50fa401a45086350d52d2e4c4258e5a4
+Enter your choice: current FlagKeeper key:  dc1e769ef693f7da9b345fff2fe82e3f
+Enter your choice: 
+
+2025-10-18T05:38:01.751505Z attempt=148 server_key=eb6c92fdb8596df80bea970dbc176f1b fk_key=ffb7001ec0f1a1e92b96a1087a4013cd
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  eb6c92fdb8596df80bea970dbc176f1b
+Enter your choice: current FlagKeeper key:  ffb7001ec0f1a1e92b96a1087a4013cd
+Enter your choice: 
+
+2025-10-18T05:38:03.494310Z attempt=149 server_key=7f8b346bbc38779a37b94ea9bbad171c fk_key=420c7e63a370aabe62839603e5c2e508
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  7f8b346bbc38779a37b94ea9bbad171c
+Enter your choice: current FlagKeeper key:  420c7e63a370aabe62839603e5c2e508
+Enter your choice: 
+
+2025-10-18T05:38:05.223801Z attempt=150 server_key=c4a4289a4f59f5f7beeca58c0b5af6e9 fk_key=be3551e3268c9258727fd40642486413
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  c4a4289a4f59f5f7beeca58c0b5af6e9
+Enter your choice: current FlagKeeper key:  be3551e3268c9258727fd40642486413
+Enter your choice: 
+
+2025-10-18T05:38:06.934890Z attempt=151 server_key=43a8f3076c73a19d0694fb5e336c22f5 fk_key=277545541492d618ea85553263080b64
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  43a8f3076c73a19d0694fb5e336c22f5
+Enter your choice: current FlagKeeper key:  277545541492d618ea85553263080b64
+Enter your choice: 
+
+2025-10-18T05:38:08.657433Z attempt=152 server_key=1f51b87f50664d265533a5a763a10ddc fk_key=7c358feab6d9352b1bc25e24f395b865
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  1f51b87f50664d265533a5a763a10ddc
+Enter your choice: current FlagKeeper key:  7c358feab6d9352b1bc25e24f395b865
+Enter your choice: 
+
+2025-10-18T05:38:10.384949Z attempt=153 server_key=af3514bd1f050ec24df863cdb4166618 fk_key=be822ed07edbcc80b15d90f08aac8b90
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  af3514bd1f050ec24df863cdb4166618
+Enter your choice: current FlagKeeper key:  be822ed07edbcc80b15d90f08aac8b90
+Enter your choice: 
+
+2025-10-18T05:38:12.139431Z attempt=154 server_key=d2043bb7cb7dcd879d8a2034e7c18abe fk_key=66202f8bf30f9c5f6902b5fb45aa0136
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  d2043bb7cb7dcd879d8a2034e7c18abe
+Enter your choice: current FlagKeeper key:  66202f8bf30f9c5f6902b5fb45aa0136
+Enter your choice: 
+
+2025-10-18T05:38:13.942939Z attempt=155 server_key=65cff91481fb84ad39d3fc67774bb35f fk_key=dbc3a83734b9c56493d213e117154ba4
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  65cff91481fb84ad39d3fc67774bb35f
+Enter your choice: current FlagKeeper key:  dbc3a83734b9c56493d213e117154ba4
+Enter your choice: 
+
+2025-10-18T05:38:15.685152Z attempt=156 server_key=e6472bbfb727e236dd09c04cf8f6096c fk_key=2748d5f20a58539ed124207ced77f5b2
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  e6472bbfb727e236dd09c04cf8f6096c
+Enter your choice: current FlagKeeper key:  2748d5f20a58539ed124207ced77f5b2
+Enter your choice: 
+
+2025-10-18T05:38:24.409455Z attempt=157 server_key=b31dd0cddcdbe3c002fdd3650b1e2c36 fk_key=2a95b75a706e153e856bd1ce50da3215
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  b31dd0cddcdbe3c002fdd3650b1e2c36
+Enter your choice: current FlagKeeper key:  2a95b75a706e153e856bd1ce50da3215
+Enter your choice: 
+
+2025-10-18T05:38:26.144720Z attempt=158 server_key=06b3e53facaf834307b7056013cef74e fk_key=e4d1d4c300e0aa559177d61508a497a1
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  06b3e53facaf834307b7056013cef74e
+Enter your choice: current FlagKeeper key:  e4d1d4c300e0aa559177d61508a497a1
+Enter your choice: 
+
+2025-10-18T05:38:27.894557Z attempt=159 server_key=3a77059bfffdc50ab5997a4624b149d4 fk_key=9836a3a826ad350649f300c26e6dcb07
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  3a77059bfffdc50ab5997a4624b149d4
+Enter your choice: current FlagKeeper key:  9836a3a826ad350649f300c26e6dcb07
+Enter your choice: 
+
+2025-10-18T05:38:29.625233Z attempt=160 server_key=17b4cd9ba0b8850951a8e0922b76bdf9 fk_key=c9e9c733c1813cff3da0af165c00664d
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  17b4cd9ba0b8850951a8e0922b76bdf9
+Enter your choice: current FlagKeeper key:  c9e9c733c1813cff3da0af165c00664d
+Enter your choice: 
+
+2025-10-18T05:38:31.327978Z attempt=161 server_key=a5a9202f93e65a90563dd295123b7e08 fk_key=1d4f7218af87268a7de902daf82eb81f
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  a5a9202f93e65a90563dd295123b7e08
+Enter your choice: current FlagKeeper key:  1d4f7218af87268a7de902daf82eb81f
+Enter your choice: 
+
+2025-10-18T05:38:33.036027Z attempt=162 server_key=4f368b1e70a86e20a1b02892031acf34 fk_key=d78de205e3607b81041289274083c61c
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  4f368b1e70a86e20a1b02892031acf34
+Enter your choice: current FlagKeeper key:  d78de205e3607b81041289274083c61c
+Enter your choice: 
+
+2025-10-18T05:38:34.830026Z attempt=163 server_key=1373e3df16d0f6243dd05086c7550c85 fk_key=8b17c145860001325ac81afdb352577c
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  1373e3df16d0f6243dd05086c7550c85
+Enter your choice: current FlagKeeper key:  8b17c145860001325ac81afdb352577c
+Enter your choice: 
+
+2025-10-18T05:38:36.524091Z attempt=164 server_key=13c040d4d4d71ba9adee503fdae8502f fk_key=b2a3549deac53e27f7aca2987363d292
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  13c040d4d4d71ba9adee503fdae8502f
+Enter your choice: current FlagKeeper key:  b2a3549deac53e27f7aca2987363d292
+Enter your choice: 
+
+2025-10-18T05:38:38.291691Z attempt=165 server_key=58124e02a96af896febd2a6a08d308e8 fk_key=db9b5c92d3d49a6fa4400b7ce27b4b4e
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  58124e02a96af896febd2a6a08d308e8
+Enter your choice: current FlagKeeper key:  db9b5c92d3d49a6fa4400b7ce27b4b4e
+Enter your choice: 
+
+2025-10-18T05:38:40.058365Z attempt=166 server_key=2cd8f9eddd61a66012dcf36efaf69f65 fk_key=ba701e4e8c0532857d9414d579d8bc7b
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  2cd8f9eddd61a66012dcf36efaf69f65
+Enter your choice: current FlagKeeper key:  ba701e4e8c0532857d9414d579d8bc7b
+Enter your choice: 
+
+2025-10-18T05:38:41.787288Z attempt=167 server_key=c8473b186312692a816fff497be26138 fk_key=a85df7a629bad679e04367cae23386e2
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  c8473b186312692a816fff497be26138
+Enter your choice: current FlagKeeper key:  a85df7a629bad679e04367cae23386e2
+Enter your choice: 
+
+2025-10-18T05:38:43.596812Z attempt=168 server_key=9260c5403e7df1a7a42e6058035f204e fk_key=404c09979ea56f65f291ef0da860a944
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  9260c5403e7df1a7a42e6058035f204e
+Enter your choice: current FlagKeeper key:  404c09979ea56f65f291ef0da860a944
+Enter your choice: 
+
+2025-10-18T05:38:45.377216Z attempt=169 server_key=2466b50903cb351eec06d8565e431d5b fk_key=f3f79011561fbe2d494ef1005fd9d414
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  2466b50903cb351eec06d8565e431d5b
+Enter your choice: current FlagKeeper key:  f3f79011561fbe2d494ef1005fd9d414
+Enter your choice: 
+
+2025-10-18T05:38:47.067382Z attempt=170 server_key=30a5425185b396289165bcde4c4414a0 fk_key=db8258ccd7667535f288dfda1c587ab2
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  30a5425185b396289165bcde4c4414a0
+Enter your choice: current FlagKeeper key:  db8258ccd7667535f288dfda1c587ab2
+Enter your choice: 
+
+2025-10-18T05:38:48.773956Z attempt=171 server_key=89ee43c420cba62f602307e0eaa032fd fk_key=9a41b1aadce476fa21341a2f73321785
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  89ee43c420cba62f602307e0eaa032fd
+Enter your choice: current FlagKeeper key:  9a41b1aadce476fa21341a2f73321785
+Enter your choice: 
+
+2025-10-18T05:38:50.493342Z attempt=172 server_key=2863edf1e3e5095abc003b46b61839e4 fk_key=83ba5fd6409101a3cb7cbfda8ffd61b4
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  2863edf1e3e5095abc003b46b61839e4
+Enter your choice: current FlagKeeper key:  83ba5fd6409101a3cb7cbfda8ffd61b4
+Enter your choice: 
+
+2025-10-18T05:38:52.201066Z attempt=173 server_key=b41b81e0e6c50b2a0328187c71b58b7b fk_key=617af7667af9ddde55cd5ae56fbb47cc
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  b41b81e0e6c50b2a0328187c71b58b7b
+Enter your choice: current FlagKeeper key:  617af7667af9ddde55cd5ae56fbb47cc
+Enter your choice: 
+
+2025-10-18T05:38:53.967104Z attempt=174 server_key=78e9869f0b2a1148d4b69b86de60430d fk_key=854b6e05026cebec8956f840a7e1b517
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  78e9869f0b2a1148d4b69b86de60430d
+Enter your choice: current FlagKeeper key:  854b6e05026cebec8956f840a7e1b517
+Enter your choice: 
+
+2025-10-18T05:38:55.707974Z attempt=175 server_key=bf560ac0e3d984340e17b2669e800b80 fk_key=7101d1e58298acf075e9bfe069089d0a
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  bf560ac0e3d984340e17b2669e800b80
+Enter your choice: current FlagKeeper key:  7101d1e58298acf075e9bfe069089d0a
+Enter your choice: 
+
+2025-10-18T05:38:57.496459Z attempt=176 server_key=1720bb954a5467fed82ad0e5ad888165 fk_key=6f6172a82f03631d5c5e47e8862f6244
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  1720bb954a5467fed82ad0e5ad888165
+Enter your choice: current FlagKeeper key:  6f6172a82f03631d5c5e47e8862f6244
+Enter your choice: 
+
+2025-10-18T05:38:59.203965Z attempt=177 server_key=13b7e1176154cbc4150c260dfe7c1263 fk_key=02bf49e4c340849e8e92ecb952a882b5
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  13b7e1176154cbc4150c260dfe7c1263
+Enter your choice: current FlagKeeper key:  02bf49e4c340849e8e92ecb952a882b5
+Enter your choice: 
+
+2025-10-18T05:39:00.912047Z attempt=178 server_key=36b919369f9427d175e767365f0dfdb7 fk_key=0ce276a4a411effb65a1abff064ca841
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  36b919369f9427d175e767365f0dfdb7
+Enter your choice: current FlagKeeper key:  0ce276a4a411effb65a1abff064ca841
+Enter your choice: 
+
+2025-10-18T05:39:02.627049Z attempt=179 server_key=4f4a65453a137c69c55b1b592eb3d3c9 fk_key=484834c0f50d576d97fe8d4418703a94
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  4f4a65453a137c69c55b1b592eb3d3c9
+Enter your choice: current FlagKeeper key:  484834c0f50d576d97fe8d4418703a94
+Enter your choice: 
+
+2025-10-18T05:39:04.345891Z attempt=180 server_key=5e291d2eb8b7824b113627d1fff94edd fk_key=d95b027a10a4157334d40606242758f6
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  5e291d2eb8b7824b113627d1fff94edd
+Enter your choice: current FlagKeeper key:  d95b027a10a4157334d40606242758f6
+Enter your choice: 
+
+2025-10-18T05:39:06.060771Z attempt=181 server_key=5e72b2cb635b501dc887f35ffc64c253 fk_key=efdc3447484e5806e14acdcf552574ad
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  5e72b2cb635b501dc887f35ffc64c253
+Enter your choice: current FlagKeeper key:  efdc3447484e5806e14acdcf552574ad
+Enter your choice: 
+
+2025-10-18T05:39:07.778736Z attempt=182 server_key=2bbe9b64705e4952b5c0842699316cb2 fk_key=e2f3f6156878e40b5b5e71262e642dd8
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  2bbe9b64705e4952b5c0842699316cb2
+Enter your choice: current FlagKeeper key:  e2f3f6156878e40b5b5e71262e642dd8
+Enter your choice: 
+
+2025-10-18T05:39:09.538171Z attempt=183 server_key=e7bf439e6a0f1c2258a25888446b0cff fk_key=da852c770cb681a3b7982de88864e1b6
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  e7bf439e6a0f1c2258a25888446b0cff
+Enter your choice: current FlagKeeper key:  da852c770cb681a3b7982de88864e1b6
+Enter your choice: 
+
+2025-10-18T05:39:11.249748Z attempt=184 server_key=42fe778445bc24605b2aef98e659e983 fk_key=9cf779b5968dd0264ed93ebbd4bd8152
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  42fe778445bc24605b2aef98e659e983
+Enter your choice: current FlagKeeper key:  9cf779b5968dd0264ed93ebbd4bd8152
+Enter your choice: 
+
+2025-10-18T05:39:12.992063Z attempt=185 server_key=3c74cae204ca7c202bf2ac98a63d53d1 fk_key=abb5ce731df5306986f1b8ab378af80e
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  3c74cae204ca7c202bf2ac98a63d53d1
+Enter your choice: current FlagKeeper key:  abb5ce731df5306986f1b8ab378af80e
+Enter your choice: 
+
+2025-10-18T05:39:14.716176Z attempt=186 server_key=e00e362aa9427bf05a7b808c2dd0f44f fk_key=b29ff5caef1f403c8b217cbcc286583f
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  e00e362aa9427bf05a7b808c2dd0f44f
+Enter your choice: current FlagKeeper key:  b29ff5caef1f403c8b217cbcc286583f
+Enter your choice: 
+
+2025-10-18T05:39:16.436720Z attempt=187 server_key=1e4cde3af82bcb582c41c442d0a7ca73 fk_key=622625986083dd11b6a02034b1a2469d
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  1e4cde3af82bcb582c41c442d0a7ca73
+Enter your choice: current FlagKeeper key:  622625986083dd11b6a02034b1a2469d
+Enter your choice: 
+
+2025-10-18T05:39:18.145928Z attempt=188 server_key=d936e0095d907a0494a198cdba752532 fk_key=01ab7b24e3da4be53175339b4424f947
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  d936e0095d907a0494a198cdba752532
+Enter your choice: current FlagKeeper key:  01ab7b24e3da4be53175339b4424f947
+Enter your choice: 
+
+2025-10-18T05:39:19.878996Z attempt=189 server_key=4a5376003d4b4037e3a03b890b9bc53f fk_key=cd90faa549194f93dd18a5e9772dd9ee
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  4a5376003d4b4037e3a03b890b9bc53f
+Enter your choice: current FlagKeeper key:  cd90faa549194f93dd18a5e9772dd9ee
+Enter your choice: 
+
+2025-10-18T05:39:21.604026Z attempt=190 server_key=fea0abd78c9f37b34b87de281cd20fc1 fk_key=14ba4b02badd1c909f84b268ed3a0ca6
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  fea0abd78c9f37b34b87de281cd20fc1
+Enter your choice: current FlagKeeper key:  14ba4b02badd1c909f84b268ed3a0ca6
+Enter your choice: 
+
+2025-10-18T05:39:23.307608Z attempt=191 server_key=f6fcef9bb43760f027d53919b6e081d5 fk_key=cfb1fe24ff5378f5eb601bd5fd686b00
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  f6fcef9bb43760f027d53919b6e081d5
+Enter your choice: current FlagKeeper key:  cfb1fe24ff5378f5eb601bd5fd686b00
+Enter your choice: 
+
+2025-10-18T05:39:25.022540Z attempt=192 server_key=6d8f0960ec71162b1bb196c1d4645e04 fk_key=f69a5e6daa2a9e76ed99a6610c889465
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  6d8f0960ec71162b1bb196c1d4645e04
+Enter your choice: current FlagKeeper key:  f69a5e6daa2a9e76ed99a6610c889465
+Enter your choice: 
+
+2025-10-18T05:39:26.716861Z attempt=193 server_key=d92c099dd9d45ce83068245f53784bf6 fk_key=35c2f85ff1168d57cca55bd098571c53
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  d92c099dd9d45ce83068245f53784bf6
+Enter your choice: current FlagKeeper key:  35c2f85ff1168d57cca55bd098571c53
+Enter your choice: 
+
+2025-10-18T05:39:28.483007Z attempt=194 server_key=6861d7f453459fa870af25b3d96e4572 fk_key=6e3f98060dbb560ddc085c0bc41ad243
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  6861d7f453459fa870af25b3d96e4572
+Enter your choice: current FlagKeeper key:  6e3f98060dbb560ddc085c0bc41ad243
+Enter your choice: 
+
+2025-10-18T05:39:30.189783Z attempt=195 server_key=6974974bac64cb0985b43b79ac48880e fk_key=aa38e20616ff43acc6d0dc42db9aff1d
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  6974974bac64cb0985b43b79ac48880e
+Enter your choice: current FlagKeeper key:  aa38e20616ff43acc6d0dc42db9aff1d
+Enter your choice: 
+
+2025-10-18T05:39:31.912867Z attempt=196 server_key=c9ca820edabe64b7b8b9128422f86e25 fk_key=fcb70baec59e316d39b34b5daff22cdb
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  c9ca820edabe64b7b8b9128422f86e25
+Enter your choice: current FlagKeeper key:  fcb70baec59e316d39b34b5daff22cdb
+Enter your choice: 
+
+2025-10-18T05:39:33.628202Z attempt=197 server_key=65e9bc15d3a03aaff4cfd246578510cf fk_key=9b28bc344fb3dc4693db024383b0444a
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  65e9bc15d3a03aaff4cfd246578510cf
+Enter your choice: current FlagKeeper key:  9b28bc344fb3dc4693db024383b0444a
+Enter your choice: 
+
+2025-10-18T05:39:35.372417Z attempt=198 server_key=246d171a88931ac32bb83e06ee4a1ce2 fk_key=4ecc1f3861ba884b1c3fd8cf9692c333
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  246d171a88931ac32bb83e06ee4a1ce2
+Enter your choice: current FlagKeeper key:  4ecc1f3861ba884b1c3fd8cf9692c333
+Enter your choice: 
+
+2025-10-18T05:39:37.078361Z attempt=199 server_key=2a809cd6cfc66d5159b77ae282140948 fk_key=f14506a93e449a627a7359270acb9913
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  2a809cd6cfc66d5159b77ae282140948
+Enter your choice: current FlagKeeper key:  f14506a93e449a627a7359270acb9913
+Enter your choice: 
+
+2025-10-18T05:39:38.897111Z attempt=200 server_key=3871982dfce2c8aa0ad250417af3eb53 fk_key=7b5d6969fc520877588741f0c6bd4611
+---- interaction dump ----
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  3871982dfce2c8aa0ad250417af3eb53
+Enter your choice: current FlagKeeper key:  7b5d6969fc520877588741f0c6bd4611
+Enter your choice: 
+

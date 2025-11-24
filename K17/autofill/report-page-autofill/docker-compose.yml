@@ -1,0 +1,6 @@
+services:
+  report-page-autofill:
+    build: .
+    ports:
+      - "1337:1337"
+    privileged: true

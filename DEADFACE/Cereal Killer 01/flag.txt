@@ -1,0 +1,23 @@
+zenniskayy@ZennisKayy:/mnt/e/Cyber Security/CTF/DEADFACE/Cereal Killer 01$ ./ck01-2025-rev03.bin
+This year, AI moguls are asking their LLMs which spooky cereal is best!
+Mr. Sam Altman. has a favorite spooky cereal.  Tear apart this
+binary and see if you can figure out what it is!
+
+
+Please enter the password: peanutbuttercrunch
+
+
+ChatGPT says:
+The SPOOKIEST cereal is...
+
+*********** (I THINK I MIGHT BE HALLUCINATING) ***********
+
+deadface{Yeah-its-not-a-monster-cereal--Mr-Altman-is----different!}
+
+*********** (I THINK I MIGHT BE HALLUCINATING) ***********
+
+zenniskayy@ZennisKayy:/mnt/e/Cyber Security/CTF/DEADFACE/Cereal Killer 01$
+
+
+MD5 Hash Pass: aee1ee5262757cf67b619ff63e9672b6
+Pass: peanutbuttercrunch

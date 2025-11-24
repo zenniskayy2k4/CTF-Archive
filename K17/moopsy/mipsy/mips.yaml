@@ -1,0 +1,3113 @@
+instructions:
+  # R-Type Instructions
+
+  # SPECIAL
+  - name: SLL
+    desc_short: Shifts the value in $Rt left by Sa logically, storing the result in $Rd
+    desc_long: >
+      insert long description here if you so please
+    compile:
+      format: [Rd, Rt, Shamt]
+    runtime:
+      type: R
+      funct: 0x00
+      reads: [Rt]
+
+  - name: SRL
+    desc_short: Shifts the value in $Rt right by Sa logically, storing the result in $Rd
+    compile:
+      format: [Rd, Rt, Shamt]
+    runtime:
+      type: R
+      funct: 0x02
+      rs:    0x00
+      reads: [Rt]
+
+  - name: ROTR
+    desc_short: Rotates the value in $Rt right by Sa logically, storing the result in $Rd
+    compile:
+      format: [Rd, Rt, Shamt]
+    runtime:
+      type: R
+      funct: 0x02
+      rs:    0x01
+      reads: [Rt]
+
+  - name: SRA
+    desc_short: Shifts the value in $Rt right by Sa arithmetically, storing the result in $Rd
+    compile:
+      format: [Rd, Rt, Shamt]
+    runtime:
+      type: R
+      funct: 0x03
+      reads: [Rt]
+
+  - name: SLLV
+    desc_short: Shifts the value in $Rt left by the value in $Rs logically, storing the result in $Rd
+    compile:
+      format: [Rd, Rt, Rs]
+    runtime:
+      type: R
+      funct: 0x04
+      reads: [Rt, Rs]
+
+  - name: SRLV
+    desc_short: Shifts the value in $Rt right by the value in $Rs logically, storing the result in $Rd
+    compile:
+      format: [Rd, Rt, Rs]
+    runtime:
+      type: R
+      funct: 0x06
+      shamt: 0x00
+      reads: [Rt, Rs]
+
+  - name: ROTRV
+    desc_short: Rotates the value in $Rt right by the value in $Rs logically, storing the result in $Rd
+    compile:
+      format: [Rd, Rt, Rs]
+    runtime:
+      type: R
+      funct: 0x06
+      shamt: 0x01
+      reads: [Rt, Rs]
+
+  - name: SRAV
+    desc_short: Shifts the value in $Rt right by the value in $Rs arithmetically, storing the result in $Rd
+    compile:
+      format: [Rd, Rt, Rs]
+    runtime:
+      type: R
+      funct: 0x07
+      reads: [Rt, Rs]
+
+
+  - name: JR
+    desc_short: Jumps to the address stored in the register $Rs
+    compile:
+      format: [Rs]
+    runtime:
+      type: R
+      funct: 0x08
+      reads: [Rs]
+
+  - name: JALR
+    desc_short: Jump-and-links to the address stored in the register $Rs, storing the return address in $Rd ($31 if not specified)
+    compile:
+      format: [Rd, Rs]
+    runtime:
+      type: R
+      funct: 0x09
+      reads: [Rs]
+
+
+  - name: MOVZ
+    desc_short: Move Conditional on Zero
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x0A
+      reads: [Rs, Rt]
+
+  - name: MOVN
+    desc_short: Move Conditional on Not Zero
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x0B
+      reads: [Rs, Rt]
+
+  - name: SYSCALL
+    desc_short: Causes a system-call interrupt
+    compile:
+      format: []
+    runtime:
+      type: R
+      funct: 0x0C
+      reads: []
+
+  - name: BREAK
+    desc_short: Causes a break interrupt
+    compile:
+      format: []
+    runtime:
+      type: R
+      funct: 0x0D
+      reads: []
+
+
+  - name: MFHI
+    desc_short: Copies the value from the HI register to $Rd
+    compile:
+      format: [Rd]
+    runtime:
+      type: R
+      funct: 0x10
+      shamt: 0x00
+      reads: []
+
+  - name: CLZ
+    desc_short: Count leading zeroes of $Rs, store in $Rd
+    compile:
+      format: [Rd, Rs]
+    runtime:
+      type: R
+      funct: 0x10
+      shamt: 0x01
+      reads: [Rs]
+
+  - name: MTHI
+    desc_short: Copies the value from $Rs to the HI register
+    compile:
+      format: [Rs]
+    runtime:
+      type: R
+      funct: 0x11
+      shamt: 0x00
+      reads: [Rs]
+
+  - name: CLO
+    desc_short: Count leading ones of $Rs, store in $Rd
+    compile:
+      format: [Rd, Rs]
+    runtime:
+      type: R
+      funct: 0x11
+      shamt: 0x01
+      reads: [Rs]
+
+  - name: MFLO
+    desc_short: Copies the value from the LO register to $Rd
+    compile:
+      format: [Rd]
+    runtime:
+      type: R
+      funct: 0x12
+      reads: []
+
+  - name: MTLO
+    desc_short: Copies the value from $Rs to the LO register
+    compile:
+      format: [Rs]
+    runtime:
+      type: R
+      funct: 0x13
+      reads: [Rs]
+
+  - name: MULT
+    desc_short: Multiplies the values in $Rs and $Rt, storing the result in the HI and LO registers
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x18
+      reads: [Rs, Rt]
+
+  - name: MULTU
+    desc_short: Multiplies the values in $Rs and $Rt, storing the result in the HI and LO registers, unsigned
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x19
+      reads: [Rs, Rt]
+
+  - name: DIV
+    desc_short: Divides the values in $Rs and $Rt, storing the $Rs / $Rt in LO, and $Rs % $Rt in HI
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x1A
+      reads: [Rs, Rt]
+
+  - name: DIVU
+    desc_short: Divides the values in $Rs and $Rt, storing the $Rs / $Rt in LO, and $Rs % $Rt in HI, unsigned
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x1B
+      reads: [Rs, Rt]
+
+
+  - name: TGE
+    desc_short: Trap if Greater or Equal
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x30
+      reads: [Rs, Rt]
+
+  - name: TGEU
+    desc_short: Trap if Greater or Equal Unsigned
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x31
+      reads: [Rs, Rt]
+
+  - name: TLT
+    desc_short: Trap if Less Than
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x32
+      reads: [Rs, Rt]
+
+  - name: TLTU
+    desc_short: Trap if Less Than Unsigned
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x33
+      reads: [Rs, Rt]
+
+  - name: TEQ
+    desc_short: Trap if Equal
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x34
+      reads: [Rs, Rt]
+
+  - name: TNE
+    desc_short: Trap if Not Equal
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x36
+      reads: [Rs, Rt]
+
+  # SPECIAL2
+  - name: MADD
+    desc_short: todo
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      opcode: 0x1C
+      funct:  0x00
+      reads: [Rs, Rt]
+
+  - name: MADDU
+    desc_short: todo
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      opcode: 0x1C
+      funct:  0x01
+      reads: [Rs, Rt]
+
+  - name: MUL
+    desc_short: Multiplies the values in $Rs and $Rt, storing the result in $Rd
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      opcode: 0x1C
+      funct: 0x02
+      reads: [Rs, Rt]
+
+  - name: MSUB
+    desc_short: todo
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      opcode: 0x1C
+      funct:  0x04
+      reads: [Rs, Rt]
+
+  - name: MSUBU
+    desc_short: todo
+    compile:
+      format: [Rs, Rt]
+    runtime:
+      type: R
+      opcode: 0x1C
+      funct:  0x05
+      reads: [Rs, Rt]
+
+  # SPECIAL3
+  - name: WSBH
+    desc_short: Word Swap Bytes Within Halfwords
+    compile:
+      format: [Rd, Rt]
+    runtime:
+      type: R
+      opcode: 0x1F
+      funct:  0x20
+      rs:     0x00
+      shamt:  0x02
+      reads: [Rt]
+
+  - name: SEB
+    desc_short: Sign-Extend Byte
+    compile:
+      format: [Rd, Rt]
+    runtime:
+      type: R
+      opcode: 0x1F
+      funct:  0x20
+      rs:     0x00
+      shamt:  0x10
+      reads: [Rt]
+
+  - name: SEH
+    desc_short: Sign-Extend Halfword
+    compile:
+      format: [Rd, Rt]
+    runtime:
+      type: R
+      opcode: 0x1F
+      funct:  0x20
+      rs:     0x00
+      shamt:  0x18
+      reads: [Rt]
+
+
+  - name: ADD
+    desc_short: todo
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x20
+      reads: [Rs, Rt]
+
+  - name: ADDU
+    desc_short: todo
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x21
+      reads: [Rs, Rt]
+
+  - name: SUB
+    desc_short: todo
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x22
+      reads: [Rs, Rt]
+
+  - name: SUBU
+    desc_short: todo
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x23
+      reads: [Rs, Rt]
+
+  - name: AND
+    desc_short: todo
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x24
+      reads: [Rs, Rt]
+
+  - name: OR
+    desc_short: todo
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x25
+      reads: [Rs, Rt]
+
+  - name: XOR
+    desc_short: todo
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x26
+      reads: [Rs, Rt]
+
+  - name: NOR
+    desc_short: todo
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x27
+      reads: [Rs, Rt]
+
+
+  - name: SLT
+    desc_short: Set $Rd to 1 if $Rs < $Rt, otherwise set $Rd to 0, unsigned
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x2A
+      reads: [Rs, Rt]
+
+  - name: SLTU
+    desc_short: Set $Rd to 1 if $Rs < $Rt, otherwise set $Rd to 0, unsigned
+    compile:
+      format: [Rd, Rs, Rt]
+    runtime:
+      type: R
+      funct: 0x2B
+      reads: [Rs, Rt]
+
+  # I-Type instructions
+
+  - name: BLTZ
+    desc_short: Branch to the immediate address if the value in $Rs < 0
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    runtime:
+      type: I
+      opcode: 0x01
+      rt: 0x00
+      reads: [Rs]
+
+  - name: BGEZ
+    desc_short: Branch to the immediate address if the value in $Rs >= 0
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    runtime:
+      type: I
+      opcode: 0x01
+      rt: 0x01
+      reads: [Rs]
+
+  - name: TGEI
+    desc_short: Trap if Greater or Equal Immediate
+    compile:
+      format: [Rs, I16]
+    runtime:
+      type: I
+      opcode: 0x01
+      rt: 0x08
+      reads: [Rs]
+
+  - name: TGEIU
+    desc_short: Trap if Greater or Equal Immediate Unsigned
+    compile:
+      format: [Rs, I16]
+    runtime:
+      type: I
+      opcode: 0x01
+      rt: 0x09
+      reads: [Rs]
+
+  - name: TLTI
+    desc_short: Trap if Less Than Immediate
+    compile:
+      format: [Rs, I16]
+    runtime:
+      type: I
+      opcode: 0x01
+      rt: 0x0A
+      reads: [Rs]
+
+  - name: TLTIU
+    desc_short: Trap if Less Than Immediate Unsigned
+    compile:
+      format: [Rs, I16]
+    runtime:
+      type: I
+      opcode: 0x01
+      rt: 0x0B
+      reads: [Rs]
+
+  - name: TEQI
+    desc_short: Trap if Equal Immediate
+    compile:
+      format: [Rs, I16]
+    runtime:
+      type: I
+      opcode: 0x01
+      rt: 0x0C
+      reads: [Rs]
+
+  - name: TNEI
+    desc_short: Trap if Not Equal Immediate
+    compile:
+      format: [Rs, I16]
+    runtime:
+      type: I
+      opcode: 0x01
+      rt: 0x0E
+      reads: [Rs]
+
+
+  - name: BLTZAL
+    desc_short: Branch-and-link to the immediate address if the value in $Rs < 0
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    runtime:
+      type: I
+      opcode: 0x01
+      rt: 0x10
+      reads: [Rs]
+
+  - name: BGEZAL
+    desc_short: Branch-and-link to the immediate address if the value in $Rs >= 0
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    runtime:
+      type: I
+      opcode: 0x01
+      rt: 0x11
+      reads: [Rs]
+
+  - name: BEQ
+    desc_short: Branch to the immediate address if the values in $Rs == $Rt
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    runtime:
+      type: I
+      opcode: 0x04
+      reads: [Rs, Rt]
+
+  - name: BNE
+    desc_short: Branch to the immediate address if the values in $Rs != $Rt
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    runtime:
+      type: I
+      opcode: 0x05
+      reads: [Rs, Rt]
+
+  - name: BLEZ
+    desc_short: Branch to the immediate address if the value in $Rs <= 0
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    runtime:
+      type: I
+      opcode: 0x06
+      reads: [Rs]
+
+  - name: BGTZ
+    desc_short: Branch to the immediate address if the value in $Rs > 0
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    runtime:
+      type: I
+      opcode: 0x07
+      reads: [Rs]
+
+
+  - name: ADDI
+    desc_short: Adds an immediate value to the value in $Rs, stores result in $Rt
+    compile:
+      format: [Rt, Rs, I16]
+    runtime:
+      type: I
+      opcode: 0x08
+      reads: [Rs]
+
+  - name: ADDIU
+    desc_short: Adds an immediate value to the value in $Rs, stores result in $Rt, unsigned
+    compile:
+      format: [Rt, Rs, I16]
+    runtime:
+      type: I
+      opcode: 0x09
+      reads: [Rs]
+
+
+  - name: SLTI
+    desc_short: Sets $Rt to 1 if the value in $Rs is less than the immediate value, otherwise sets $Rt to 0
+    compile:
+      format: [Rt, Rs, I16]
+    runtime:
+      type: I
+      opcode: 0x0A
+      reads: [Rs]
+
+  - name: SLTIU
+    desc_short: Sets $Rt to 1 if the value in $Rs is less than the immediate value, otherwise sets $Rt to 0, unsigned
+    compile:
+      format: [Rt, Rs, I16]
+    runtime:
+      type: I
+      opcode: 0x0B
+      reads: [Rs]
+
+
+  - name: ANDI
+    desc_short: Bitwise and of the value in $Rs and the immediate value, stores the result in $Rt
+    compile:
+      format: [Rt, Rs, U16]
+    runtime:
+      type: I
+      opcode: 0x0C
+      reads: [Rs]
+
+  - name: ORI
+    desc_short: Bitwise or of the value in $Rs and the immediate value, stores the result in $Rt
+    compile:
+      format: [Rt, Rs, U16]
+    runtime:
+      type: I
+      opcode: 0x0D
+      reads: [Rs]
+
+  - name: XORI
+    desc_short: Bitwise xor of the value in $Rs and the immediate value, stores the result in $Rt
+    compile:
+      format: [Rt, Rs, U16]
+    runtime:
+      type: I
+      opcode: 0x0E
+      reads: [Rs]
+
+  - name: LUI
+    desc_short: Load the immediate value into the upper 16 bits of $Rt
+    compile:
+      format: [Rt, U16]
+    runtime:
+      type: I
+      opcode: 0x0F
+      reads: []
+
+
+  - name: LB
+    desc_short: Load one byte at the immediate address + $Rs into $Rt
+    compile:
+      format: [Rt, OffRs]
+    runtime:
+      type: I
+      opcode: 0x20
+      reads: [OffRs]
+
+  - name: LH
+    desc_short: Load two bytes at the immediate address + $Rs into $Rt
+    compile:
+      format: [Rt, OffRs]
+    runtime:
+      type: I
+      opcode: 0x21
+      reads: [OffRs]
+
+  - name: LWL
+    desc_short: Load Word Left
+    compile:
+      format: [Rt, OffRs]
+    runtime:
+      type: I
+      opcode: 0x22
+      reads: [OffRs]
+
+  - name: LW
+    desc_short: Load four bytes at the immediate address + $Rs into $Rt
+    compile:
+      format: [Rt, OffRs]
+    runtime:
+      type: I
+      opcode: 0x23
+      reads: [OffRs]
+
+  - name: LBU
+    desc_short: Load one byte at the immediate address + $Rs into $Rt, don't sign extend
+    compile:
+      format: [Rt, OffRs]
+    runtime:
+      type: I
+      opcode: 0x24
+      reads: [OffRs]
+
+  - name: LHU
+    desc_short: Load two bytes at the immediate address + $Rs into $Rt, don't sign extend
+    compile:
+      format: [Rt, OffRs]
+    runtime:
+      type: I
+      opcode: 0x25
+      reads: [OffRs]
+
+  - name: LWR
+    desc_short: Load Word Right
+    compile:
+      format: [Rt, OffRs]
+    runtime:
+      type: I
+      opcode: 0x26
+      reads: [OffRs]
+
+  - name: SB
+    desc_short: Store one byte from $Rt into the immediate address + $Rs
+    compile:
+      format: [Rt, OffRs]
+    runtime:
+      type: I
+      opcode: 0x28
+      reads: [Rt]
+
+  - name: SH
+    desc_short: Store two bytes from $Rt into the immediate address + $Rs
+    compile:
+      format: [Rt, OffRs]
+    runtime:
+      type: I
+      opcode: 0x29
+      reads: [Rt]
+
+  - name: SW
+    desc_short: Store four bytes from $Rt into the immediate address + $Rs
+    compile:
+      format: [Rt, OffRs]
+    runtime:
+      type: I
+      opcode: 0x2B
+      reads: [Rt]
+
+  # J-Type Instructions
+  - name: J
+    desc_short: Jump to the immediate address
+    compile:
+      format: [J]
+    runtime:
+      type: J
+      opcode: 0x02
+      reads: []
+
+  - name: JAL
+    desc_short: Jump-and-link to the immediate address
+    compile:
+      format: [J]
+    runtime:
+      type: J
+      opcode: 0x03
+      reads: []
+
+
+pseudoinstructions:
+# R-Type Instructions
+
+  # SPECIAL
+  - name: SLL
+    compile:
+      format: [Rd, Rt, Shamt]
+    expand:
+      - inst: SLL
+        data: [$Rd, $Rt, $Shamt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SRL
+    compile:
+      format: [Rd, Rt, Shamt]
+    expand:
+      - inst: SRL
+        data: [$Rd, $Rt, $Shamt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: ROTR
+    compile:
+      format: [Rd, Rt, Shamt]
+    expand:
+      - inst: ROTR
+        data: [$Rd, $Rt, $Shamt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+
+  - name: SRA
+    compile:
+      format: [Rd, Rt, Shamt]
+    expand:
+      - inst: SRA
+        data: [$Rd, $Rt, $Shamt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SLLV
+    compile:
+      format: [Rd, Rt, Rs]
+    expand:
+      - inst: SLLV
+        data: [$Rd, $Rt, $Rs]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SRLV
+    compile:
+      format: [Rd, Rt, Rs]
+    expand:
+      - inst: SRLV
+        data: [$Rd, $Rt, $Rs]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: ROTRV
+    compile:
+      format: [Rd, Rt, Rs]
+    expand:
+      - inst: ROTRV
+        data: [$Rd, $Rt, $Rs]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SRAV
+    compile:
+      format: [Rd, Rt, Rs]
+    expand:
+      - inst: SRAV
+        data: [$Rd, $Rt, $Rs]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: JR
+    compile:
+      format: [Rs]
+    expand:
+      - inst: JR
+        data: [$Rs]
+    only_derive: true
+
+  - name: JALR
+    compile:
+      format: [Rd, Rs]
+    expand:
+      - inst: JALR
+        data: [$Rd, $Rs]
+    only_derive: true
+
+  - name: JALR
+    compile:
+      format: [Rs]
+    expand:
+      - inst: JALR
+        data: [$ra, $Rs]
+
+  - name: MOVZ
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: MOVZ
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+
+  - name: MOVN
+    desc_short: Move Conditional on Not Zero
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: MOVN
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+
+  - name: SYSCALL
+    compile:
+      format: []
+    expand:
+      - inst: SYSCALL
+        data: []
+    only_derive: true
+
+  - name: BREAK
+    compile:
+      format: []
+    expand:
+      - inst: BREAK
+        data: []
+    only_derive: true
+
+
+  - name: MFHI
+    compile:
+      format: [Rd]
+    expand:
+      - inst: MFHI
+        data: [$Rd]
+    only_derive: true
+
+  - name: CLZ
+    compile:
+      format: [Rd, Rs]
+    expand:
+      - inst: CLZ
+        data: [$Rd, $Rs]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+
+  - name: MTHI
+    compile:
+      format: [Rs]
+    expand:
+      - inst: MTHI
+        data: [$Rs]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: CLO
+    compile:
+      format: [Rd, Rs]
+    expand:
+      - inst: CLO
+        data: [$Rd, $Rs]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+
+  - name: MFLO
+    compile:
+      format: [Rd]
+    expand:
+      - inst: MFLO
+        data: [$Rd]
+    only_derive: true
+
+  - name: MTLO
+    compile:
+      format: [Rs]
+    expand:
+      - inst: MTLO
+        data: [$Rs]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: MULT
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: MULT
+        data: [$Rs, $Rt]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: MULTU
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: MULTU
+        data: [$Rs, $Rt]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: DIV
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: DIV
+        data: [$Rs, $Rt]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: DIVU
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: DIVU
+        data: [$Rs, $Rt]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+
+  - name: TGE
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: TGE
+        data: [$Rs, $Rt]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: TGEU
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: TGEU
+        data: [$Rs, $Rt]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: TLT
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: TLT
+        data: [$Rs, $Rt]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: TLTU
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: TLTU
+        data: [$Rs, $Rt]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: TEQ
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: TEQ
+        data: [$Rs, $Rt]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: TNE
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: TNE
+        data: [$Rs, $Rt]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+
+  # SPECIAL2
+  - name: MADD
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: MADD
+        data: [$Rs, $Rt]
+    only_derive: true
+
+  - name: MADDU
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: MADDU
+        data: [$Rs, $Rt]
+    only_derive: true
+
+  - name: MSUB
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: MSUB
+        data: [$Rs, $Rt]
+    only_derive: true
+
+  - name: MSUBU
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: MSUBU
+        data: [$Rs, $Rt]
+    only_derive: true
+
+  # SPECIAL3
+  - name: WSBH
+    desc_short: Word Swap Bytes Within Halfwords
+    compile:
+      format: [Rd, Rt]
+    expand:
+      - inst: WSBH
+        data: [$Rd, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+
+  - name: SEB
+    compile:
+      format: [Rd, Rt]
+    expand:
+      - inst: SEB
+        data: [$Rd, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+
+  - name: SEH
+    compile:
+      format: [Rd, Rt]
+    expand:
+      - inst: SEH
+        data: [$Rd, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+
+
+  - name: ADD
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: ADD
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: ADDU
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: ADDU
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: INCR
+    desc_short: Increment the value of $Rs
+    compile:
+      format: [Rs]
+    expand:
+      - inst: ADDIU
+        data: [$Rs, $Rs, 1]
+
+  - name: DECR
+    desc_short: Decrement the value of $Rs
+    compile:
+      format: [Rs]
+    expand:
+      - inst: ADDIU
+        data: [$Rs, $Rs, -1]
+
+  - name: SUB
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SUB
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SUBU
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SUBU
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: AND
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: AND
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: OR
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: OR
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: XOR
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: XOR
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: NOR
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: NOR
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SLT
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SLT
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SLTU
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SLTU
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SLE
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SLT
+        data: [$Rd, $Rt, $Rs]
+      - inst: SLTIU
+        data: [$Rd, $Rd, 1]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SLEU
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SLTU
+        data: [$Rd, $Rt, $Rs]
+      - inst: SLTIU
+        data: [$Rd, $Rd, 1]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SGT
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SLT
+        data: [$Rd, $Rt, $Rs]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SGTU
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SLTU
+        data: [$Rd, $Rt, $Rs]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SGE
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SLT
+        data: [$Rd, $Rs, $Rt]
+      - inst: ORI
+        data: [$At, $0, 1]
+      - inst: SUB
+        data: [$Rd, $At, $Rd]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SGEU
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SLTU
+        data: [$Rd, $Rs, $Rt]
+      - inst: ORI
+        data: [$At, $0, 1]
+      - inst: SUB
+        data: [$Rd, $At, $Rd]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SEQ
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: XOR
+        data: [$Rd, $Rs, $Rt]
+      - inst: SLTIU
+        data: [$Rd, $Rd, 1]
+    derives:
+      # - DefaultValue:
+      #     value: Rs
+      #     default: $Rd
+      #     derives:
+      #       - Imm2Reg:
+      #           register: Rt
+      #           imm_types: [I16, U16, I32, U32]
+      #           sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: SNE
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: XOR
+        data: [$Rd, $Rs, $Rt]
+      - inst: SLTU
+        data: [$Rd, $0, $Rd]
+    derives:
+      # - DefaultValue:
+      #     value: Rs
+      #     default: $Rd
+      #     derives:
+      #       - Imm2Reg:
+      #           register: Rt
+      #           imm_types: [I16, U16, I32, U32]
+      #           sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  # I-Type instructions
+
+  - name: BLTZ
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    expand:
+      - inst: BLTZ
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: BGEZ
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    expand:
+      - inst: BGEZ
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: TGEI
+    compile:
+      format: [Rs, I16]
+    expand:
+      - inst: TGEI
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: TGEI
+    compile:
+      format: [Rs, Rx]
+    expand:
+      - inst: TGE
+        data: [$Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [U16, I32, U32]
+
+  - name: TGEIU
+    compile:
+      format: [Rs, I16]
+    expand:
+      - inst: TGEIU
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: TGEIU
+    compile:
+      format: [Rs, Rx]
+    expand:
+      - inst: TGEI
+        data: [$Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [U16, I32, U32]
+
+  - name: TLTI
+    compile:
+      format: [Rs, I16]
+    expand:
+      - inst: TLTI
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: TLTI
+    compile:
+      format: [Rs, Rx]
+    expand:
+      - inst: TLT
+        data: [$Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [U16, I32, U32]
+
+  - name: TLTIU
+    compile:
+      format: [Rs, I16]
+    expand:
+      - inst: TLTIU
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: TLTIU
+    compile:
+      format: [Rs, Rx]
+    expand:
+      - inst: TLTI
+        data: [$Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [U16, I32, U32]
+
+  - name: TEQI
+    compile:
+      format: [Rs, I16]
+    expand:
+      - inst: TEQI
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: TEQI
+    compile:
+      format: [Rs, Rx]
+    expand:
+      - inst: TEQ
+        data: [$Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [U16, I32, U32]
+
+  - name: TNEI
+    compile:
+      format: [Rs, I16]
+    expand:
+      - inst: TNEI
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: TNEI
+    compile:
+      format: [Rs, Rx]
+    expand:
+      - inst: TNE
+        data: [$Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [U16, I32, U32]
+
+  - name: BEQ
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    expand:
+      - inst: BEQ
+        data: [$Rs, $Rt, $I16]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+
+  - name: BNE
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    expand:
+      - inst: BNE
+        data: [$Rs, $Rt, $I16]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+
+  - name: BLEZ
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    expand:
+      - inst: BLEZ
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: BGTZ
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    expand:
+      - inst: BGTZ
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: BLTZAL
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    expand:
+      - inst: BLTZAL
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: BGEZAL
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    expand:
+      - inst: BGEZAL
+        data: [$Rs, $I16]
+    only_derive: true
+
+  - name: ADDI
+    compile:
+      format: [Rt, Rs, I16]
+    expand:
+      - inst: ADDI
+        data: [$Rt, $Rs, $I16]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rt
+
+  - name: ADDI
+    compile:
+      format: [Rt, Rs, Rx]
+    expand:
+      - inst: ADD
+        data: [$Rt, $Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [U16, I32, U32]
+          derives:
+            - DefaultValue:
+                value: Rs
+                default: $Rt
+
+  - name: ADDIU
+    compile:
+      format: [Rt, Rs, I16]
+    expand:
+      - inst: ADDIU
+        data: [$Rt, $Rs, $I16]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rt
+
+  - name: ADDIU
+    compile:
+      format: [Rt, Rs, Rx]
+    expand:
+      - inst: ADDU
+        data: [$Rt, $Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [U16, I32, U32]
+          derives:
+            - DefaultValue:
+                value: Rs
+                default: $Rt
+
+  - name: SLTI
+    compile:
+      format: [Rt, Rs, I16]
+    expand:
+      - inst: SLTI
+        data: [$Rt, $Rs, $I16]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rt
+
+  - name: SLTI
+    compile:
+      format: [Rt, Rs, Rx]
+    expand:
+      - inst: SLT
+        data: [$Rt, $Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [U16, I32, U32]
+
+  - name: SLTIU
+    compile:
+      format: [Rt, Rs, I16]
+    expand:
+      - inst: SLTIU
+        data: [$Rt, $Rs, $I16]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rt
+
+  - name: SLTIU
+    compile:
+      format: [Rt, Rs, Rx]
+    expand:
+      - inst: SLTU
+        data: [$Rt, $Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [U16, I32, U32]
+
+  - name: ANDI
+    compile:
+      format: [Rt, Rs, U16]
+    expand:
+      - inst: ANDI
+        data: [$Rt, $Rs, $U16]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rt
+
+  - name: ANDI
+    compile:
+      format: [Rt, Rs, Rx]
+    expand:
+      - inst: AND
+        data: [$Rt, $Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [I32, U32]
+
+  - name: ORI
+    compile:
+      format: [Rt, Rs, U16]
+    expand:
+      - inst: ORI
+        data: [$Rt, $Rs, $U16]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rt
+
+  - name: ORI
+    compile:
+      format: [Rt, Rs, Rx]
+    expand:
+      - inst: OR
+        data: [$Rt, $Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [I32, U32]
+
+  - name: XORI
+    compile:
+      format: [Rt, Rs, U16]
+    expand:
+      - inst: XORI
+        data: [$Rt, $Rs, $U16]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rt
+
+  - name: XORI
+    compile:
+      format: [Rt, Rs, Rx]
+    expand:
+      - inst: XOR
+        data: [$Rt, $Rs, $Rx]
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          imm_types: [I32, U32]
+
+  - name: LUI
+    compile:
+      format: [Rt, U16]
+    expand:
+      - inst: LUI
+        data: [$Rt, $U16]
+    only_derive: true
+
+  - name: LUI
+    compile:
+      format: [Rt, I16]
+    expand:
+      - inst: LUI
+        data: [$Rt, $I16asU16]
+
+  - name: LB
+    compile:
+      format: [Rt, U32]
+    expand:
+      - inst: LUI
+        data: [$At, $U32uHi]
+      - inst: ORI
+        data: [$At, $At, $U32uLo]
+      - inst: LB
+        data: [$Rt, ($At)]
+
+  - name: LB
+    compile:
+      format: [Rt, Off32Rs]
+    expand:
+      - inst: LUI
+        data: [$At, $Off32uHi]
+      - inst: ORI
+        data: [$At, $At, $Off32uLo]
+      - inst: ADDU
+        data: [$At, $At, $Rs]
+      - inst: LB
+        data: [$Rt, ($At)]
+
+  - name: LH
+    compile:
+      format: [Rt, U32]
+    expand:
+      - inst: LUI
+        data: [$At, $U32uHi]
+      - inst: ORI
+        data: [$At, $At, $U32uLo]
+      - inst: LH
+        data: [$Rt, ($At)]
+
+  - name: LH
+    compile:
+      format: [Rt, Off32Rs]
+    expand:
+      - inst: LUI
+        data: [$At, $Off32uHi]
+      - inst: ORI
+        data: [$At, $At, $Off32uLo]
+      - inst: ADDU
+        data: [$At, $At, $Rs]
+      - inst: LH
+        data: [$Rt, ($At)]
+
+  - name: LW
+    compile:
+      format: [Rt, U32]
+    expand:
+      - inst: LUI
+        data: [$At, $U32uHi]
+      - inst: ORI
+        data: [$At, $At, $U32uLo]
+      - inst: LW
+        data: [$Rt, ($At)]
+
+  - name: LW
+    compile:
+      format: [Rt, Off32Rs]
+    expand:
+      - inst: LUI
+        data: [$At, $Off32uHi]
+      - inst: ORI
+        data: [$At, $At, $Off32uLo]
+      - inst: ADDU
+        data: [$At, $At, $Rs]
+      - inst: LW
+        data: [$Rt, ($At)]
+
+  - name: LBU
+    compile:
+      format: [Rt, U32]
+    expand:
+      - inst: LUI
+        data: [$At, $U32uHi]
+      - inst: ORI
+        data: [$At, $At, $U32uLo]
+      - inst: LBU
+        data: [$Rt, ($At)]
+
+  - name: LBU
+    compile:
+      format: [Rt, Off32Rs]
+    expand:
+      - inst: LUI
+        data: [$At, $Off32uHi]
+      - inst: ORI
+        data: [$At, $At, $Off32uLo]
+      - inst: ADDU
+        data: [$At, $At, $Rs]
+      - inst: LBU
+        data: [$Rt, ($At)]
+
+  - name: LHU
+    compile:
+      format: [Rt, U32]
+    expand:
+      - inst: LUI
+        data: [$At, $U32uHi]
+      - inst: ORI
+        data: [$At, $At, $U32uLo]
+      - inst: LHU
+        data: [$Rt, ($At)]
+
+  - name: LHU
+    compile:
+      format: [Rt, Off32Rs]
+    expand:
+      - inst: LUI
+        data: [$At, $Off32uHi]
+      - inst: ORI
+        data: [$At, $At, $Off32uLo]
+      - inst: ADDU
+        data: [$At, $At, $Rs]
+      - inst: LHU
+        data: [$Rt, ($At)]
+
+  - name: SB
+    compile:
+      format: [Rt, U32]
+    expand:
+      - inst: LUI
+        data: [$At, $U32uHi]
+      - inst: ORI
+        data: [$At, $At, $U32uLo]
+      - inst: SB
+        data: [$Rt, ($At)]
+
+  - name: SB
+    compile:
+      format: [Rt, Off32Rs]
+    expand:
+      - inst: LUI
+        data: [$At, $Off32uHi]
+      - inst: ORI
+        data: [$At, $At, $Off32uLo]
+      - inst: ADDU
+        data: [$At, $At, $Rs]
+      - inst: SB
+        data: [$Rt, ($At)]
+
+  - name: SH
+    compile:
+      format: [Rt, U32]
+    expand:
+      - inst: LUI
+        data: [$At, $U32uHi]
+      - inst: ORI
+        data: [$At, $At, $U32uLo]
+      - inst: SH
+        data: [$Rt, ($At)]
+
+  - name: SH
+    compile:
+      format: [Rt, Off32Rs]
+    expand:
+      - inst: LUI
+        data: [$At, $Off32uHi]
+      - inst: ORI
+        data: [$At, $At, $Off32uLo]
+      - inst: ADDU
+        data: [$At, $At, $Rs]
+      - inst: SH
+        data: [$Rt, ($At)]
+
+  - name: SW
+    compile:
+      format: [Rt, U32]
+    expand:
+      - inst: LUI
+        data: [$At, $U32uHi]
+      - inst: ORI
+        data: [$At, $At, $U32uLo]
+      - inst: SW
+        data: [$Rt, ($At)]
+
+  - name: SW
+    compile:
+      format: [Rt, Off32Rs]
+    expand:
+      - inst: LUI
+        data: [$At, $Off32uHi]
+      - inst: ORI
+        data: [$At, $At, $Off32uLo]
+      - inst: ADDU
+        data: [$At, $At, $Rs]
+      - inst: SW
+        data: [$Rt, ($At)]
+
+  - name: LWC1
+    compile:
+      format: [Rt, OffRs]
+    expand:
+      - inst: LWC1
+        data: [$Rt, $OffRs]
+    only_derive: true
+
+  - name: SWC1
+    compile:
+      format: [Rt, OffRs]
+    expand:
+      - inst: SWC1
+        data: [$Rt, $OffRs]
+    only_derive: true
+
+  # J-Type Instructions
+  - name: J
+    compile:
+      format: [J]
+    expand:
+      - inst: J
+        data: [$J]
+    only_derive: true
+
+  - name: JAL
+    compile:
+      format: [J]
+    expand:
+      - inst: JAL
+        data: [$J]
+    only_derive: true
+
+  # True pseudo-instructions
+  - name: LI
+    compile:
+      format: [Rs, Rx]
+    expand: []
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          sign_extend: true
+          imm_types: [I16, U16, I32, U32]
+          imm_register: 'Rs'
+
+  - name: LA
+    compile:
+      format: [Rs, Rx]
+    expand: []
+    only_derive: true
+    derives:
+      - Imm2Reg:
+          register: Rx
+          sign_extend: true
+          imm_types: [I32, U32]
+          imm_register: 'Rs'
+
+  - name: LA
+    compile:
+      format: [Rs, OffRt]
+    expand:
+      - inst: ADDIU
+        data: [$Rs, $Rt, $Off]
+
+  - name: LA
+    compile:
+      format: [Rs, Off32Rt]
+    expand:
+      - inst: LUI
+        data: [$At, $Off32uHi]
+      - inst: ORI
+        data: [$At, $At, $Off32uLo]
+      - inst: ADDU
+        data: [$Rs, $Rt, $At]
+
+  - name: NOP
+    desc_short: No-Operation - doesn't do anything
+    compile:
+      format: []
+    expand:
+      - inst: SLL
+        data: [$0, $0, 0]
+
+  - name: MOVE
+    desc_short: Copy the value from $Rs into $Rd
+    compile:
+      format: [Rd, Rs]
+    expand:
+      - inst: ADDU
+        data: [$Rd, $0, $Rs]
+
+  - name: COPY
+    desc_short: Copy the value from $Rs into $Rd
+    compile:
+      format: [Rd, Rs]
+    expand:
+      - inst: ADDU
+        data: [$Rd, $0, $Rs]
+
+  - name: NEG
+    desc_short: Flip all the bits in $Rs, store result in $Rd
+    compile:
+      format: [Rd, Rs]
+    expand:
+      - inst: SUB
+        data: [$Rd, $0, $Rs]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+
+  - name: NEGU
+    desc_short: Flip all the bits in $Rs, store result in $Rd
+    compile:
+      format: [Rd, Rs]
+    expand:
+      - inst: SUBU
+        data: [$Rd, $0, $Rs]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+
+  - name: NOT
+    desc_short: $Rd = ! $Rs
+    compile:
+      format: [Rd, Rs]
+    expand:
+      - inst: NOR
+        data: [$Rd, $0, $Rs]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: MUL
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: MUL
+        data: [$Rd, $Rs, $Rt]
+    only_derive: true
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: DIV
+    desc_short: $Rd = $Rs / $Rt
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: DIV
+        data: [$Rs, $Rt]
+      - inst: MFLO
+        data: [$Rd]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: REM
+    desc_short: Store the remainder of $Rs / $Rt into $Rd
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: DIV
+        data: [$Rs, $Rt]
+      - inst: MFHI
+        data: [$Rd]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: REMU
+    desc_short: Store the remainder of $Rs / $Rt (unsigned) into $Rd
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: DIVU
+        data: [$Rs, $Rt]
+      - inst: MFHI
+        data: [$Rd]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [U16, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, U32]
+          sign_extend: true
+
+  - name: MOD
+    desc_short: Store the remainder of $Rs / $Rt into $Rd
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: DIV
+        data: [$Rs, $Rt]
+      - inst: MFHI
+        data: [$Rd]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [I16, U16, I32, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+          sign_extend: true
+
+  - name: MODU
+    desc_short: Store the remainder of $Rs / $Rt (unsigned) into $Rd
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: DIVU
+        data: [$Rs, $Rt]
+      - inst: MFHI
+        data: [$Rd]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+          derives:
+            - Imm2Reg:
+                register: Rt
+                imm_types: [U16, U32]
+                sign_extend: true
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, U32]
+          sign_extend: true
+
+  - name: ABS
+    desc_short: $Rs = |$Rt|
+    compile:
+      format: [Rs, Rt]
+    expand:
+      - inst: ADDU
+        data: [$Rs, $0, $Rt]
+      - inst: BGEZ
+        data: [$Rt, 2]
+      - inst: SUB
+        data: [$Rs, $0, $Rt]
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rs
+
+  - name: PUSH
+    desc_short: Push $Rs to the top of the stack
+    compile:
+      format: [Rs]
+    expand:
+      - inst: ADDIU
+        data: [$sp, $sp, -4]
+      - inst: SW
+        data: [$Rs, ($sp)]
+
+  - name: POP
+    desc_short: Pop the top of the stack into $Rd
+    compile:
+      format: [Rd]
+    expand:
+      - inst: LW
+        data: [$Rd, ($sp)]
+      - inst: ADDIU
+        data: [$sp, $sp, 4]
+
+  - name: BEGIN
+    desc_short: Begin a new stack frame
+    compile:
+      format: []
+    expand:
+      - inst: ADDIU
+        data: [$sp, $sp, -4]
+      - inst: SW
+        data: [$fp, ($sp)]
+      - inst: ADDU
+        data: [$fp, $0, $sp]
+
+  - name: END
+    desc_short: End the current stack frame
+    compile:
+      format: []
+    expand:
+      - inst: ADDIU
+        data: [$sp, $fp, 4]
+      - inst: LW
+        data: [$fp, ($fp)]
+
+  - name: ROL
+    desc_short: Rotate Left
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SUBU
+        data: [$at, $0, $Rt]
+      - inst: ADDIU
+        data: [$at, $at, 32]
+      - inst: SRLV
+        data: [$at, $Rs, $at]
+      - inst: SLLV
+        data: [$Rd, $Rs, $Rt]
+      - inst: OR
+        data: [$Rd, $Rd, $at]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+
+  - name: ROL
+    desc_short: Rotate Left
+    compile:
+      format: [Rd, Rs, Shamt]
+    expand:
+      - inst: ORI
+        data: [$at, $0, $Shamt]
+      - inst: SUBU
+        data: [$at, $0, $at]
+      - inst: ADDIU
+        data: [$at, $at, 32]
+      - inst: SRLV
+        data: [$at, $Rs, $at]
+      - inst: SLL
+        data: [$Rd, $Rs, $Shamt]
+      - inst: OR
+        data: [$Rd, $Rd, $at]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+
+  - name: ROR
+    desc_short: Rotate Right
+    compile:
+      format: [Rd, Rs, Rt]
+    expand:
+      - inst: SUBU
+        data: [$at, $0, $Rt]
+      - inst: ADDIU
+        data: [$at, $at, 32]
+      - inst: SLLV
+        data: [$at, $Rs, $at]
+      - inst: SRLV
+        data: [$Rd, $Rs, $Rt]
+      - inst: OR
+        data: [$Rd, $Rd, $at]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+
+  - name: ROR
+    desc_short: Rotate Right
+    compile:
+      format: [Rd, Rs, Shamt]
+    expand:
+      - inst: ORI
+        data: [$at, $0, $Shamt]
+      - inst: SUBU
+        data: [$at, $0, $at]
+      - inst: ADDIU
+        data: [$at, $at, 32]
+      - inst: SLLV
+        data: [$at, $Rs, $at]
+      - inst: SRL
+        data: [$Rd, $Rs, $Shamt]
+      - inst: OR
+        data: [$Rd, $Rd, $at]
+    derives:
+      - DefaultValue:
+          value: Rs
+          default: $Rd
+
+  - name: ZEB
+    desc_short: Zero-Extend Byte
+    compile:
+      format: [Rd, Rt]
+    expand:
+      - inst: ANDI
+        data: [$Rd, $Rt, 0xFF]
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+
+  - name: ZEH
+    desc_short: Zero-Extend Half
+    compile:
+      format: [Rd, Rt]
+    expand:
+      - inst: ANDI
+        data: [$Rd, $Rt, 0xFFFF]
+    derives:
+      - DefaultValue:
+          value: Rt
+          default: $Rd
+
+  - name: B
+    desc_short: Branch unconditionally
+    compile:
+      format: [I16]
+      relative_label: true
+    expand:
+      - inst: BEQ
+        data: [$0, $0, $I16]
+
+  - name: BAL
+    compile:
+      format: [I16]
+      relative_label: true
+    expand:
+      - inst: BGEZAL
+        data: [$0, $I16]
+
+  - name: BEQZ
+    desc_short: Branch if $Rs == 0
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    expand:
+      - inst: BEQ
+        data: [$Rs, $0, $I16]
+
+  - name: BNEZ
+    desc_short: Branch if $Rs != 0
+    compile:
+      format: [Rs, I16]
+      relative_label: true
+    expand:
+      - inst: BNE
+        data: [$Rs, $0, $I16]
+
+  - name: BGE
+    desc_short: Branch if $Rs >= $Rt
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    expand:
+      - inst: SLT
+        data: [$At, $Rs, $Rt]
+      - inst: BEQ
+        data: [$At, $0, $I16]
+    derives:
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+
+  - name: BGEU
+    desc_short: Branch if $Rs >= $Rt unsigned
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    expand:
+      - inst: SLTU
+        data: [$At, $Rs, $Rt]
+      - inst: BEQ
+        data: [$At, $0, $I16]
+    derives:
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, U32]
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, U32]
+
+  - name: BLT
+    desc_short: Branch if $Rs < $Rt
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    expand:
+      - inst: SLT
+        data: [$At, $Rs, $Rt]
+      - inst: BNE
+        data: [$At, $0, $I16]
+    derives:
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+
+  - name: BLTU
+    desc_short: Branch if $Rs < $Rt unsigned
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    expand:
+      - inst: SLTU
+        data: [$At, $Rs, $Rt]
+      - inst: BNE
+        data: [$At, $0, $I16]
+    derives:
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, U32]
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, U32]
+
+  - name: BLE
+    desc_short: Branch if $Rs <= $Rt
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    expand:
+      - inst: SLT
+        data: [$At, $Rt, $Rs]
+      - inst: BEQ
+        data: [$At, $0, $I16]
+    derives:
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+
+  - name: BLEU
+    desc_short: Branch if $Rs <= $Rt
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    expand:
+      - inst: SLTU
+        data: [$At, $Rt, $Rs]
+      - inst: BEQ
+        data: [$At, $0, $I16]
+    derives:
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, U32]
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, U32]
+
+  - name: BGT
+    desc_short: Branch if $Rs > $Rt
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    expand:
+      - inst: SLT
+        data: [$At, $Rt, $Rs]
+      - inst: BNE
+        data: [$At, $0, $I16]
+    derives:
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, I32, U32]
+          sign_extend: true
+
+  - name: BGTU
+    desc_short: Branch if $Rs > $Rt unsigned
+    compile:
+      format: [Rs, Rt, I16]
+      relative_label: true
+    expand:
+      - inst: SLTU
+        data: [$At, $Rt, $Rs]
+      - inst: BNE
+        data: [$At, $0, $I16]
+    derives:
+      - Imm2Reg:
+          register: Rt
+          imm_types: [U16, U32]
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U16, U32]
+
+  - name: DBG_PRINT_INT
+    desc_short: Print the value of $Rs as an integer without modifying any registers
+    compile:
+      format: [Rs]
+    expand:
+      - inst: ADDIU
+        data: [$sp, $sp, -4]
+      - inst: SW
+        data: [$a0, ($sp)]
+      - inst: ADDU
+        data: [$a0, $zero, $Rs]
+      - inst: ADDIU
+        data: [$sp, $sp, -4]
+      - inst: SW
+        data: [$v0, ($sp)]
+      - inst: ADDIU
+        data: [$v0, $zero, 1]
+      - inst: SYSCALL
+        data: []
+      - inst: LW
+        data: [$v0, ($sp)]
+      - inst: ADDIU
+        data: [$sp, $sp, 4]
+      - inst: LW
+        data: [$a0, ($sp)]
+      - inst: ADDIU
+        data: [$sp, $sp, 4]
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+
+  - name: DBG_PRINT_CHAR
+    desc_short: Print the value of $Rs as a character without modifying any registers
+    compile:
+      format: [Rs]
+    expand:
+      - inst: ADDIU
+        data: [$sp, $sp, -4]
+      - inst: SW
+        data: [$a0, ($sp)]
+      - inst: ADDU
+        data: [$a0, $zero, $Rs]
+      - inst: ADDIU
+        data: [$sp, $sp, -4]
+      - inst: SW
+        data: [$v0, ($sp)]
+      - inst: ADDIU
+        data: [$v0, $zero, 11]
+      - inst: SYSCALL
+        data: []
+      - inst: LW
+        data: [$v0, ($sp)]
+      - inst: ADDIU
+        data: [$sp, $sp, 4]
+      - inst: LW
+        data: [$a0, ($sp)]
+      - inst: ADDIU
+        data: [$sp, $sp, 4]
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [I16, U16, I32, U32]
+
+  - name: DBG_PRINT_STR
+    desc_short: Print the value of $Rs as a string without modifying any registers
+    compile:
+      format: [Rs]
+    expand:
+      - inst: ADDIU
+        data: [$sp, $sp, -4]
+      - inst: SW
+        data: [$a0, ($sp)]
+      - inst: ADDU
+        data: [$a0, $zero, $Rs]
+      - inst: ADDIU
+        data: [$sp, $sp, -4]
+      - inst: SW
+        data: [$v0, ($sp)]
+      - inst: ADDIU
+        data: [$v0, $zero, 4]
+      - inst: SYSCALL
+        data: []
+      - inst: LW
+        data: [$v0, ($sp)]
+      - inst: ADDIU
+        data: [$sp, $sp, 4]
+      - inst: LW
+        data: [$a0, ($sp)]
+      - inst: ADDIU
+        data: [$sp, $sp, 4]
+    derives:
+      - Imm2Reg:
+          register: Rs
+          imm_types: [U32]

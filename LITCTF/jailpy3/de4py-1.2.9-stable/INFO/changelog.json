@@ -1,0 +1,81 @@
+[
+    {
+        "version": "1.0",
+        "changes": [
+            "De4py released"
+        ]
+    },
+    {
+        "version": "1.0.1",
+        "changes": [
+            "Bug fixed for BlankOBF deobfuscator"
+        ]
+    },
+    {
+        "version": "1.0.2",
+        "changes": [
+            "Add support for Hyperion obfuscator"
+        ]
+    },
+    {
+        "version": "1.0.3",
+        "changes": [
+            "Add support for pyobfuscate.com obfuscator",
+            "Added file analyzer feature",
+            "Fixed some bugs"
+        ]
+    },
+    {
+        "version": "1.0.4",
+        "changes": [
+            "Added WinAPI hooking features Monitoring Files, Monitoring Processes and Monitoring Connections"
+        ]
+    },
+    {
+        "version": "1.0.5",
+        "changes": [
+            "Fixed some bugs",
+            "Added openssl + sockets dumper to text file"
+        ]
+    },
+    {
+        "version": "1.0.6",
+        "changes": [
+            "Added CLI mode (use --cli to run it)"
+        ]
+    },
+    {
+        "version": "1.0.7",
+        "changes": [
+            "Added plugins feature (https://bit.ly/de4pyplugins)",
+            "Improved WinAPI hooking",
+            "Added test feature (use --test to run it) "
+        ]
+    },
+    {
+        "version": "1.0.8",
+        "changes": [
+            "Added new deobfuscator (development tools obf)",
+            "Added runtime dumper",
+            "Added stealth features (titles + injecton)",
+            "Added error reports"
+        ]
+    },
+    {
+        "version": "1.1.9",
+        "changes": [
+            "Added settings section",
+            "Fixed some bugs in pyshell",
+            "Removed errors reporting",
+            "Ended support on windows binaries",
+            "Follow versions system",
+            "Better logs"
+        ]
+    },
+    {
+        "version": "1.2.9",
+        "changes": [
+            "Added API support"
+        ]
+    }
+]

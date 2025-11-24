@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  app:
+    build: ./
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 5000:5000
+    environment:
+      - PORT=5000
+      - FLAG=HCMUS-CTF{I_4m_L0r4x_4nD_1_sP3aK_FOr_th3_tr33s!!!}
+    restart: unless-stopped
+    

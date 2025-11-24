@@ -1,0 +1,15 @@
+deadface{SECRETSFORALL}
+
+19 5 3 18 5 20 19 6 15 18 1 12 12
+
+Giải mã từ các kí tự dựa trên hàng phím số máy tính (Khi nhấn phím Shift).
+Ví dụ số 1 sẽ tương ứng với kí tự !
+Số 2 -> @
+Số 3-> #
+Tương tự cho các số còn lại
+
+Kí tự | chính là phân cách
+
+Giải mã xong ta được chuỗi số: 19 5 3 18 5 20 19 6 15 18 1 12 12
+
+Chuyển chuỗi số đang sang chữ (bảng chữ cái tiếng Anh) theo quy ước: 1 -> A, 2 -> B, ...., 26 -> Z

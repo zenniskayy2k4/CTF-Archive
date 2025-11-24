@@ -1,0 +1,1 @@
+17.407	sha224	from	vigenere	0-5	sub	07CTF{pgtltefh_vhbgrdnf_qarubt}

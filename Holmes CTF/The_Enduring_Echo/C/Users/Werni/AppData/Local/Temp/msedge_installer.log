@@ -1,0 +1,60 @@
+[2304:4084:0815/142436.064:172453:VERBOSE1:base\win\edge_trace_logging\trace_logging.cc:21] Register TraceLogging provider
+[2304:4084:0815/142436.064:172453:VERBOSE1:base\win\edge_trace_logging\trace_logging.cc:21] Register TraceLogging provider
+[2304:4084:0815/142436.064:172453:VERBOSE1:chrome\installer\setup\setup_main.cc:3245] Command Line: "C:\Program Files (x86)\Microsoft\Edge\Application\139.0.3405.86\Installer\setup.exe" --configure-user-settings --verbose-logging --system-level --msedge --channel=stable
+[2304:4084:0815/142436.064:172453:VERBOSE1:chrome\installer\setup\setup_main.cc:3251] system install is 1
+[2304:4084:0815/142436.064:172453:VERBOSE1:chrome\installer\setup\installer_state.cc:101] Install
+[2304:4084:0815/142436.142:172531:VERBOSE1:chrome\installer\util\install_util.cc:324] Windows NT 10.0.19045
+[2304:4084:0815/142436.158:172546:VERBOSE1:chrome\installer\setup\install.cc:1206] Executing HandleActiveSetupForBrowser. Force: 0
+[2304:4084:0815/142436.158:172546:VERBOSE1:chrome\installer\setup\install_worker.cc:1842] Adding unregistration items for per-user Metro keys.
+[2304:4084:0815/142436.158:172546:VERBOSE1:chrome\installer\util\work_item_list.cc:32] Beginning execution of work item list Cleanup deprecated per-user registrations
+[2304:4084:0815/142436.158:172546:VERBOSE1:chrome\installer\util\registry_util.cc:25] Deleting registry key Software\Microsoft\Edge\Metro
+[2304:4084:0815/142436.158:172546:VERBOSE1:chrome\installer\util\registry_util.cc:25] Deleting registry key Software\Microsoft\Edge\Metro
+[2304:4084:0815/142436.158:172546:VERBOSE1:chrome\installer\util\work_item_list.cc:53] Successful execution of work item list Cleanup deprecated per-user registrations
+[2304:4084:0815/142436.158:172546:VERBOSE1:chrome\installer\setup\install.cc:751] Launching ""C:\Program Files (x86)\Microsoft\Edge\Application\139.0.3405.86\Installer\setup.exe" --msedge --channel=stable --system-level --verbose-logging --installerdata="C:\Program Files (x86)\Microsoft\Edge\Application\master_preferences" --create-shortcuts=1 --install-level=0" to create shortcuts
+[748:792:0815/142436.189:172578:VERBOSE1:base\win\edge_trace_logging\trace_logging.cc:21] Register TraceLogging provider
+[748:792:0815/142436.189:172578:VERBOSE1:base\win\edge_trace_logging\trace_logging.cc:21] Register TraceLogging provider
+[748:792:0815/142436.189:172578:VERBOSE1:chrome\installer\setup\setup_main.cc:3245] Command Line: "C:\Program Files (x86)\Microsoft\Edge\Application\139.0.3405.86\Installer\setup.exe" --msedge --channel=stable --system-level --verbose-logging --installerdata="C:\Program Files (x86)\Microsoft\Edge\Application\master_preferences" --create-shortcuts=1 --install-level=0
+[748:792:0815/142436.189:172578:VERBOSE1:chrome\installer\setup\setup_main.cc:3251] system install is 1
+[748:792:0815/142436.189:172578:VERBOSE1:chrome\installer\setup\installer_state.cc:101] Install
+[748:792:0815/142436.252:172640:VERBOSE1:chrome\installer\util\install_util.cc:324] Windows NT 10.0.19045
+[748:792:0815/142436.267:172656:VERBOSE1:chrome\installer\util\shell_util.cc:4075] IsEnterpriseDevice() returning false
+[748:792:0815/142436.267:172656:VERBOSE1:chrome\installer\util\shell_util.cc:2602] ShouldCreateDesktopShortcut() returning true
+[748:792:0815/142436.267:172656:VERBOSE1:chrome\installer\setup\install.cc:159] Creating per-user Desktop "Microsoft Edge" shortcut to C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe.
+[748:792:0815/142436.267:172656:VERBOSE1:chrome\installer\util\shell_util.cc:3981] Stable: didn't check uninstall policy, or policy disabled
+[748:792:0815/142436.267:172656:VERBOSE1:chrome\installer\util\shell_util.cc:4005] Browser/WebView is sticky, uninstall not allowed.
+[748:792:0815/142436.314:172703:VERBOSE1:chrome\installer\setup\install.cc:159] Creating per-user Quick Launch "Microsoft Edge" shortcut to C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe.
+[748:792:0815/142436.314:172703:VERBOSE1:chrome\installer\util\shell_util.cc:3981] Stable: didn't check uninstall policy, or policy disabled
+[748:792:0815/142436.314:172703:VERBOSE1:chrome\installer\util\shell_util.cc:4005] Browser/WebView is sticky, uninstall not allowed.
+[748:792:0815/142436.314:172703:VERBOSE1:chrome\installer\setup\install.cc:159] Creating per-user Start menu "Microsoft Edge" shortcut to C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe.
+[748:792:0815/142436.314:172703:VERBOSE1:chrome\installer\setup\setup_main.cc:3480] NonInstall operation completed. Exit code: 73
+[748:792:0815/142436.345:172734:ERROR:base\metrics\persistent_histogram_storage.cc:163] Persistent histograms fail to write to file: C:\Program Files (x86)\Microsoft\Edge\Application\SetupMetrics\748_13399766676325300_748.pma
+[2304:4084:0815/142436.345:172734:VERBOSE1:chrome\installer\setup\install.cc:767] Shortcut creation process succeeded.
+[2304:4084:0815/142436.345:172734:VERBOSE1:chrome\installer\setup\install.cc:1242] Setting EdgeUWP associations as known to overcome shell bug.
+[2304:4084:0815/142436.345:172734:VERBOSE1:chrome\installer\setup\edge_setup_util.cc:884] Unable to write registry for Windows Experiment Configuration. OS is not Windows 11 or later.
+[2304:4084:0815/142436.345:172734:VERBOSE1:chrome\installer\setup\edge_setup_util.cc:680] Skipping checking Windows Update experiment config for new device.
+[2304:4084:0815/142436.345:172734:VERBOSE1:chrome\installer\util\shell_util.cc:4094] Taking default associations
+[2304:4084:0815/142436.361:172750:VERBOSE1:chrome\installer\util\shell_util.cc:1876] No default associations to modify were found.
+[2304:4084:0815/142436.361:172750:VERBOSE1:chrome\installer\util\shell_util.cc:4266] Attempting to set Edge as the default MHT handler
+[2304:4084:0815/142436.361:172750:VERBOSE1:chrome\installer\util\shell_util.cc:4299] IE is the default app for .mht
+[2304:4084:0815/142436.392:172781:VERBOSE1:chrome\installer\util\shell_util.cc:4340] Successfully set Edge as the default app for .mht
+[2304:4084:0815/142436.392:172781:VERBOSE1:chrome\installer\util\shell_util.cc:4299] IE is the default app for .mhtml
+[2304:4084:0815/142436.408:172796:VERBOSE1:chrome\installer\util\shell_util.cc:4340] Successfully set Edge as the default app for .mhtml
+[2304:4084:0815/142436.408:172796:VERBOSE1:chrome\installer\setup\install.cc:1284] Checking if the browser should be auto-launched.
+[2304:4084:0815/142436.408:172796:VERBOSE1:chrome\installer\setup\install.cc:1295] Auto-Launch not allowed: 11
+[2304:4084:0815/142436.408:172796:VERBOSE1:chrome\installer\setup\install.cc:1305] Launching msedge to finish Active Setup
+[2304:4084:0815/142436.408:172796:VERBOSE1:chrome\installer\setup\edge_install.cc:176] Launching ""C:\Program Files (x86)\Microsoft\Edge\Application\139.0.3405.86\Installer\setup.exe" --msedge --channel=stable --launch-msedge-after-unlock --verbose-logging --system-level" to wait for unlock.
+[2304:4084:0815/142436.423:172812:VERBOSE1:chrome\installer\setup\install.cc:1317] Active-Setup phase took 267 msecs.
+[2304:4084:0815/142436.423:172812:VERBOSE1:chrome\installer\util\install_util.cc:293] Existing version found: 139.0.3405.86
+[2304:4084:0815/142436.423:172812:VERBOSE1:chrome\installer\setup\setup_main.cc:3480] NonInstall operation completed. Exit code: 0
+[2304:4084:0815/142436.439:172828:ERROR:base\metrics\persistent_histogram_storage.cc:163] Persistent histograms fail to write to file: C:\Program Files (x86)\Microsoft\Edge\Application\SetupMetrics\2304_13399766676434674_2304.pma
+[7192:8072:0815/142436.455:172843:VERBOSE1:base\win\edge_trace_logging\trace_logging.cc:21] Register TraceLogging provider
+[7192:8072:0815/142436.455:172843:VERBOSE1:base\win\edge_trace_logging\trace_logging.cc:21] Register TraceLogging provider
+[7192:8072:0815/142436.455:172843:VERBOSE1:chrome\installer\setup\setup_main.cc:3245] Command Line: "C:\Program Files (x86)\Microsoft\Edge\Application\139.0.3405.86\Installer\setup.exe" --msedge --channel=stable --launch-msedge-after-unlock --verbose-logging --system-level
+[7192:8072:0815/142436.455:172843:VERBOSE1:chrome\installer\setup\setup_main.cc:3251] system install is 1
+[7192:8072:0815/142436.455:172843:VERBOSE1:chrome\installer\setup\installer_state.cc:101] Install
+[7192:8072:0815/142436.580:172968:VERBOSE1:chrome\installer\util\install_util.cc:324] Windows NT 10.0.19045
+[7192:8072:0815/142436.658:173046:VERBOSE1:chrome\installer\util\auto_launch_util.cc:415] OOBE already completed.
+[7192:8072:0815/142436.658:173046:VERBOSE1:chrome\installer\util\auto_launch_util.cc:439] Session is already unlocked.
+[7192:8072:0815/142436.658:173046:VERBOSE1:chrome\installer\setup\setup_main.cc:2236] Launching the browser after unlock. Arguments:  --continue-active-setup
+[7192:8072:0815/142436.658:173046:VERBOSE1:chrome\installer\setup\setup_main.cc:3480] NonInstall operation completed. Exit code: 0
+[7192:8072:0815/142436.673:173062:ERROR:base\metrics\persistent_histogram_storage.cc:163] Persistent histograms fail to write to file: C:\Program Files (x86)\Microsoft\Edge\Application\SetupMetrics\7192_13399766676667720_7192.pma

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="lastVersionCodeUsed" value="720406301" />
+    <set name="CachedFlagsEnabled">
+        <string>WebViewSeparateResourceContext</string>
+    </set>
+    <set name="CachedFlagsDisabled">
+        <string>WebViewDisableCHIPS</string>
+        <string>WebViewUseStartupTasksLogic</string>
+    </set>
+</map>

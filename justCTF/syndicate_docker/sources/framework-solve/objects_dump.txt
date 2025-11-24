@@ -1,0 +1,196 @@
+[SERVER] dumping existing objects
+---
+object(0, 0)
+Owner: Account Address ( admin )
+Version: 3
+Contents: sui::coin::Coin<sui::sui::SUI> {
+    id: sui::object::UID {
+        id: sui::object::ID {
+            bytes: fake(0,0),
+        },
+    },
+    balance: sui::balance::Balance<sui::sui::SUI> {
+        value: 299999955497684u64,
+    },
+}
+---
+object(0, 1)
+Owner: Account Address ( otternaut )
+Version: 2
+Contents: sui::coin::Coin<sui::sui::SUI> {
+    id: sui::object::UID {
+        id: sui::object::ID {
+            bytes: fake(0,1),
+        },
+    },
+    balance: sui::balance::Balance<sui::sui::SUI> {
+        value: 299999985874800u64,
+    },
+}
+---
+object(0, 2)
+Owner: Account Address ( _ )
+Version: 1
+Contents: sui::coin::Coin<sui::sui::SUI> {
+    id: sui::object::UID {
+        id: sui::object::ID {
+            bytes: fake(0,2),
+        },
+    },
+    balance: sui::balance::Balance<sui::sui::SUI> {
+        value: 300000000000000u64,
+    },
+}
+---
+object(1, 0)
+Owner: Account Address ( admin )
+Version: 3
+Contents: challenge::otternaut_syndicate::BankCap {
+    id: sui::object::UID {
+        id: sui::object::ID {
+            bytes: fake(1,0),
+        },
+    },
+    bank_id: sui::object::ID {
+        bytes: fake(1,2),
+    },
+}
+---
+object(1, 1)
+Owner: Shared( 2 )
+Version: 2
+Contents: challenge::otternaut_syndicate::CouncilGuard {
+    id: sui::object::UID {
+        id: sui::object::ID {
+            bytes: fake(1,1),
+        },
+    },
+    bal: sui::balance::Balance<challenge::cryon_credits::CRYON_CREDITS> {
+        value: 0u64,
+    },
+    is_corrupted: false,
+}
+---
+object(1, 2)
+Owner: Shared( 2 )
+Version: 3
+Contents: challenge::otternaut_syndicate::CryonUnderbank<challenge::cryon_credits::CRYON_CREDITS, challenge::otternaut_syndicate::S_CRYON_CREDITS> {
+    id: sui::object::UID {
+        id: sui::object::ID {
+            bytes: fake(1,2),
+        },
+    },
+    supply: sui::balance::Supply<challenge::otternaut_syndicate::S_CRYON_CREDITS> {
+        value: 0u64,
+    },
+    bal: sui::balance::Balance<challenge::cryon_credits::CRYON_CREDITS> {
+        value: 3333u64,
+    },
+    share_price: 92233720368547758080u128,
+}
+---
+object(1, 3)
+1,3::{cryon_credits, otternaut_syndicate}
+---
+object(1, 4)
+Owner: Account Address ( admin )
+Version: 2
+Contents: sui::coin::Coin<challenge::cryon_credits::CRYON_CREDITS> {
+    id: sui::object::UID {
+        id: sui::object::ID {
+            bytes: fake(1,4),
+        },
+    },
+    balance: sui::balance::Balance<challenge::cryon_credits::CRYON_CREDITS> {
+        value: 3333u64,
+    },
+}
+---
+object(1, 5)
+Owner: Immutable
+Version: 2
+Contents: sui::coin::CoinMetadata<challenge::cryon_credits::CRYON_CREDITS> {
+    id: sui::object::UID {
+        id: sui::object::ID {
+            bytes: fake(1,5),
+        },
+    },
+    decimals: 6u8,
+    name: std::string::String {
+        bytes: vector[
+            67u8,
+            114u8,
+            121u8,
+            111u8,
+            110u8,
+            67u8,
+            114u8,
+            101u8,
+            100u8,
+            105u8,
+            116u8,
+            115u8,
+        ],
+    },
+    symbol: std::ascii::String {
+        bytes: vector[
+            67u8,
+            67u8,
+        ],
+    },
+    description: std::string::String {
+        bytes: vector[],
+    },
+    icon_url: std::option::Option<sui::url::Url> {
+        vec: vector[],
+    },
+}
+---
+object(1, 6)
+Owner: Account Address ( admin )
+Version: 3
+Contents: sui::coin::TreasuryCap<challenge::cryon_credits::CRYON_CREDITS> {
+    id: sui::object::UID {
+        id: sui::object::ID {
+            bytes: fake(1,6),
+        },
+    },
+    total_supply: sui::balance::Supply<challenge::cryon_credits::CRYON_CREDITS> {
+        value: 6666u64,
+    },
+}
+---
+object(1, 7)
+Owner: Account Address ( admin )
+Version: 2
+Contents: sui::package::UpgradeCap {
+    id: sui::object::UID {
+        id: sui::object::ID {
+            bytes: fake(1,7),
+        },
+    },
+    package: sui::object::ID {
+        bytes: challenge,
+    },
+    version: 1u64,
+    policy: 0u8,
+}
+---
+object(2, 0)
+2,0::solution
+---
+object(2, 1)
+Owner: Account Address ( otternaut )
+Version: 2
+Contents: sui::package::UpgradeCap {
+    id: sui::object::UID {
+        id: sui::object::ID {
+            bytes: fake(2,1),
+        },
+    },
+    package: sui::object::ID {
+        bytes: solution,
+    },
+    version: 1u64,
+    policy: 0u8,
+}

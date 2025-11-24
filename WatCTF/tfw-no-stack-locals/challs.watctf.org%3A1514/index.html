@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Check Input Example</title>
+  <style>
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial; padding: 40px; }
+    .container { max-width: 480px; margin: 0 auto; }
+    label { display:block; margin-bottom:8px; font-weight:600; }
+    input[type="text"] { width:100%; padding:8px 10px; font-size:16px; box-sizing:border-box; }
+    button { margin-top:12px; padding:8px 12px; font-size:16px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1> Flag Checker </h1>
+    <form id="check-form" novalidate>
+      <label for="user-input">Input what you think the flag is here:</label>
+      <input id="user-input" name="user-input" type="text" autocomplete="off" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script type="module">
+    import init, { check_flag } from './tfw_no_stack_locals.js';
+    const mod = await init('./tfw_no_stack_locals_bg.wasm');
+    window.wasm = mod;
+    document.getElementById('check-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var input = document.getElementById('user-input').value;
+      alert(check_flag(input) ? "That's the correct flag!" : "That is not the flag");
+    });
+  </script>
+</body>
+</html>
+

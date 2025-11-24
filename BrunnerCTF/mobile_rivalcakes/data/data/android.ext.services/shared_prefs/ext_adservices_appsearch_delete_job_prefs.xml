@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="job_run_count" value="1" />
+    <long name="ota_date" value="1755606886224" />
+    <boolean name="appsearch_data_found" value="false" />
+</map>

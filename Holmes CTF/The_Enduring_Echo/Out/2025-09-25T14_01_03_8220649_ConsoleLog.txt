@@ -1,0 +1,108 @@
+[2025-09-25 21:01:04.0564521 | INF] KAPE directory: E:\Cyber Security\KAPE
+[2025-09-25 21:01:04.0721195 | INF] Command line:   --tsource E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C --tdest E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out --target !BasicCollection,!SANS_Triage --mdest E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output --module !!ToolSync,!EZParser --gui 
+[2025-09-25 21:01:04.0721195 | INF] System info: Machine name: ZENNISKAYY, 64-bit: true, User: Admin OS: "Windows10" (10.0.19045)
+[2025-09-25 21:01:04.6970007 | INF] Using Target operations
+[2025-09-25 21:01:04.6970007 | INF] Found 2 targets. Expanding targets to file list...
+[2025-09-25 21:01:05.3535510 | ERR] Target ApplicationEvents with Id 2da16dbf-ea47-448e-a00f-fc442c3109ba already processed. Skipping!
+[2025-09-25 21:01:05.4942269 | ERR] Target EventLogs with Id d95784d9-bd1c-472b-aeef-de5d9ecc7aaa already processed. Skipping!
+[2025-09-25 21:01:05.5098509 | ERR] Target PowerShellConsole with Id efa4332a-89eb-430c-ab61-006a9e6620d7 already processed. Skipping!
+[2025-09-25 21:01:05.5254791 | ERR] Target USBDevicesLogs with Id 1c1d3c54-fb49-4ed1-81f7-03c6744167a1 already processed. Skipping!
+[2025-09-25 21:01:05.5567252 | ERR] Target EvidenceOfExecution with Id 13ba1e33-4899-4843-adf0-c7e6a20d758a already processed. Skipping!
+[2025-09-25 21:01:05.5567252 | ERR] Target FileSystem with Id 2bd97ef7-5fbf-4427-8ca2-ffb15d545b00 already processed. Skipping!
+[2025-09-25 21:01:05.6036029 | ERR] Target LNKFilesAndJumpLists with Id 2e354bdc-e418-438e-8439-c21c83c64e90 already processed. Skipping!
+[2025-09-25 21:01:05.9629237 | ERR] Target RecycleBin_InfoFiles with Id 6205454f-fcaa-4ace-a7b5-33c4e40b156a already processed. Skipping!
+[2025-09-25 21:01:05.9629237 | ERR] Target RegistryHives with Id 76af6086-bd0b-429f-bfd7-4a8e8ff8138f already processed. Skipping!
+[2025-09-25 21:01:05.9941722 | ERR] Target ApplicationEvents with Id 2da16dbf-ea47-448e-a00f-fc442c3109ba already processed. Skipping!
+[2025-09-25 21:01:06.0254245 | ERR] Target ApplicationEvents with Id 2da16dbf-ea47-448e-a00f-fc442c3109ba already processed. Skipping!
+[2025-09-25 21:01:06.1036194 | ERR] Target ApplicationEvents with Id 2da16dbf-ea47-448e-a00f-fc442c3109ba already processed. Skipping!
+[2025-09-25 21:01:06.1347977 | ERR] Target ApplicationEvents with Id 2da16dbf-ea47-448e-a00f-fc442c3109ba already processed. Skipping!
+[2025-09-25 21:01:06.1506058 | ERR] Target ScheduledTasks with Id e5dc4367-2e6b-49bf-a90a-d4c1598bbe28 already processed. Skipping!
+[2025-09-25 21:01:06.1506058 | ERR] Target SRUM with Id 9858f1fc-5e22-46a0-8bfd-c821ac9b4a13 already processed. Skipping!
+[2025-09-25 21:01:06.1662432 | ERR] Target ThumbCache with Id 1eec8849-b6eb-475b-a700-f4fb0055356d already processed. Skipping!
+[2025-09-25 21:01:08.4009116 | ERR] Target WindowsIndexSearch with Id 9828b927-f955-464a-80fb-a48ce0101236 already processed. Skipping!
+[2025-09-25 21:01:08.4321693 | INF] Found 1,109 files in 3.714 seconds. Beginning copy...
+[2025-09-25 21:01:11.7779971 | INF]   Deferring E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\$Extend\$UsnJrnl:$J due to NotSupportedException...
+[2025-09-25 21:01:11.7779971 | INF]   Deferring E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\$Extend\$UsnJrnl:$Max due to NotSupportedException...
+[2025-09-25 21:01:12.1061112 | INF]   Deferring E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\$Secure:$SDS due to NotSupportedException...
+[2025-09-25 21:01:17.3879861 | INF] Deferred file count: 3. Copying locked files...
+[2025-09-25 21:01:17.3879861 | WRN] File E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\$Extend\$UsnJrnl:$J does not exist! Skipping!
+[2025-09-25 21:01:17.3879861 | WRN] File E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\$Extend\$UsnJrnl:$Max does not exist! Skipping!
+[2025-09-25 21:01:17.3879861 | WRN] File E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\$Secure:$SDS does not exist! Skipping!
+[2025-09-25 21:01:17.4036116 | INF] Copied 983 (Deduplicated: 123) out of 1,109 files in 12.7082 seconds. See E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out\2025-09-25T14_01_03_8220649_CopyLog.csv for copy details
+[2025-09-25 21:01:17.4036116 | INF] Using Module operations
+[2025-09-25 21:01:17.4036116 | WRN]   Setting --msource to E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out since --msource was not provided
+[2025-09-25 21:01:17.4036116 | INF]   Module !!ToolSync: Found 4 processors
+[2025-09-25 21:01:17.4036116 | INF]   Module Sync_EvtxECmd: Found 1 processor
+[2025-09-25 21:01:17.4036116 | INF]     Found processor Executable: EvtxECmd\EvtxECmd.exe, Cmd line: --sync --debug, Export: , Append: False!
+[2025-09-25 21:01:17.4036116 | INF]   Module Sync_KAPE: Found 1 processor
+[2025-09-25 21:01:17.4036116 | INF]     Found processor Executable: C:\Windows\System32\cmd.exe, Cmd line: /c "%kapeDirectory%\kape.exe" --sync, Export: , Append: False!
+[2025-09-25 21:01:17.4036116 | INF]   Module Sync_RECmd: Found 1 processor
+[2025-09-25 21:01:17.4036116 | INF]     Found processor Executable: RECmd\RECmd.exe, Cmd line: --sync --debug, Export: , Append: False!
+[2025-09-25 21:01:17.4036116 | INF]   Module Sync_SQLECmd: Found 1 processor
+[2025-09-25 21:01:17.4036116 | INF]     Found processor Executable: SQLECmd\SQLECmd.exe, Cmd line: --sync --debug, Export: , Append: False!
+[2025-09-25 21:01:17.4036116 | INF]   Module !EZParser: Found 15 processors
+[2025-09-25 21:01:17.4036116 | INF]   Module AmcacheParser: Found 1 processor
+[2025-09-25 21:01:17.4036116 | INF]     Found processor Executable: AmcacheParser.exe, Cmd line: -f %sourceFile% --csv %destinationDirectory% -i --mp, Export: csv, Append: False!
+[2025-09-25 21:01:17.4036116 | INF]   Module AppCompatCacheParser: Found 1 processor
+[2025-09-25 21:01:17.4036116 | INF]     Found processor Executable: AppCompatCacheParser.exe, Cmd line: -f %sourceFile% --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module EvtxECmd: Found 3 processors
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: EvtxECmd\EvtxECmd.exe, Cmd line: -d %sourceDirectory% --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module JLECmd: Found 3 processors
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: JLECmd.exe, Cmd line: -d %sourceDirectory% --csv %destinationDirectory% -q --mp, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module LECmd: Found 3 processors
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: LECmd.exe, Cmd line: -d %sourceDirectory% --csv %destinationDirectory% -q --mp, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module MFTECmd: Found 4 processors
+[2025-09-25 21:01:17.4192365 | INF]   Module MFTECmd_$Boot: Found 2 processors
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: MFTECmd.exe, Cmd line: -f %sourceFile% --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module MFTECmd_$MFT: Found 2 processors
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: MFTECmd.exe, Cmd line: -f %sourceFile% --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module MFTECmd_$J: Found 2 processors
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: MFTECmd.exe, Cmd line: -f %sourceFile% --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module MFTECmd_$SDS: Found 2 processors
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: MFTECmd.exe, Cmd line: -f %sourceFile% --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module PECmd: Found 3 processors
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: PECmd.exe, Cmd line: -d %sourceDirectory% --csv %destinationDirectory% --mp -q, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module RBCmd: Found 1 processor
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: RBCmd.exe, Cmd line: -d %sourceDirectory% --csv %destinationDirectory% -q, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module RecentFileCacheParser: Found 2 processors
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: RecentFileCacheParser.exe, Cmd line: -f %sourceFile% --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module RECmd_DFIRBatch: Found 1 processor
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: RECmd\RECmd.exe, Cmd line: -d %sourceDirectory% --bn BatchExamples\DFIRBatch.reb --nl false --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module SBECmd: Found 1 processor
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: SBECmd.exe, Cmd line: -d %sourceDirectory% --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module SQLECmd: Found 2 processors
+[2025-09-25 21:01:17.4192365 | INF]     Found processor Executable: SQLECmd\SQLECmd.exe, Cmd line: -d %sourceDirectory% --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4192365 | INF]   Module SrumECmd: Found 1 processor
+[2025-09-25 21:01:17.4348614 | INF]     Found processor Executable: SrumECmd.exe, Cmd line: -d %sourceDirectory% --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4348614 | INF]   Module SumECmd: Found 1 processor
+[2025-09-25 21:01:17.4348614 | INF]     Found processor Executable: SumECmd.exe, Cmd line: -d %sourceDirectory%\Windows\System32\LogFiles\SUM --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4348614 | INF]   Module WxTCmd: Found 1 processor
+[2025-09-25 21:01:17.4348614 | INF]     Found processor Executable: WxTCmd.exe, Cmd line: -f %sourceFile% --csv %destinationDirectory%, Export: csv, Append: False!
+[2025-09-25 21:01:17.4348614 | INF] Discovered 22 processors to run
+[2025-09-25 21:01:17.4348614 | INF] Executing modules with file masks...
+[2025-09-25 21:01:17.4504944 | INF]   Running AmcacheParser.exe: -f "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out\E\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\Windows\AppCompat\Programs\Amcache.hve" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\ProgramExecution" -i --mp
+[2025-09-25 21:01:18.3568059 | INF]   Running AppCompatCacheParser.exe: -f "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out\E\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\Windows\System32\config\SYSTEM" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\ProgramExecution"
+[2025-09-25 21:01:19.5445136 | INF]   Running MFTECmd.exe: -f "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out\E\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\$Boot" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\FileSystem"
+[2025-09-25 21:01:20.0289508 | INF]   Running MFTECmd.exe: -f "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out\E\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\$MFT" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\FileSystem"
+[2025-09-25 21:01:26.6343927 | INF]   Running MFTECmd.exe: -f "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out\E\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\$Extend\$J" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\FileSystem"
+[2025-09-25 21:01:31.9617882 | INF]   Running MFTECmd.exe: -f "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out\E\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\$Secure_$SDS" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\FileSystem"
+[2025-09-25 21:01:32.8608587 | INF]   Skipping RecentFileCacheParser.exe: No matching files found for RecentFileCache.bcf!
+[2025-09-25 21:01:32.8787756 | INF]   Running WxTCmd.exe: -f "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out\E\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\Users\Administrator\AppData\Local\ConnectedDevicesPlatform\L.Administrator\ActivitiesCache.db" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\FileFolderAccess"
+[2025-09-25 21:01:34.5436039 | INF]   Running WxTCmd.exe: -f "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out\E\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\C\Users\Werni\AppData\Local\ConnectedDevicesPlatform\L.Werni\ActivitiesCache.db" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\FileFolderAccess"
+[2025-09-25 21:01:35.3581974 | INF] Executing remaining modules...
+[2025-09-25 21:01:35.3603875 | INF]   Running EvtxECmd\EvtxECmd.exe: --sync --debug
+[2025-09-25 21:01:38.3252905 | INF]   Running C:\Windows\System32\cmd.exe: /c "E:\Cyber Security\KAPE\kape.exe" --sync
+[2025-09-25 21:01:41.3036014 | INF]   Running RECmd\RECmd.exe: --sync --debug
+[2025-09-25 21:01:43.0319497 | INF]   Running SQLECmd\SQLECmd.exe: --sync --debug
+[2025-09-25 21:01:45.2974505 | INF]   Running EvtxECmd\EvtxECmd.exe: -d "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\EventLogs"
+[2025-09-25 21:01:56.5800196 | INF]   Running JLECmd.exe: -d "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\FileFolderAccess" -q --mp
+[2025-09-25 21:01:57.1112840 | INF]   Running LECmd.exe: -d "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\FileFolderAccess" -q --mp
+[2025-09-25 21:01:57.6115177 | INF]   Running PECmd.exe: -d "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\ProgramExecution" --mp -q
+[2025-09-25 21:01:58.2833928 | INF]   Running RBCmd.exe: -d "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\FileDeletion" -q
+[2025-09-25 21:01:58.6114598 | INF]   Running RECmd\RECmd.exe: -d "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out" --bn BatchExamples\DFIRBatch.reb --nl false --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\Registry"
+[2025-09-25 21:01:59.0490195 | INF]   Running SBECmd.exe: -d "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\FileFolderAccess"
+[2025-09-25 21:02:00.0961510 | INF]   Running SQLECmd\SQLECmd.exe: -d "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\SQLDatabases"
+[2025-09-25 21:02:00.6745004 | INF]   Running SrumECmd.exe: -d "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out" --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\SRUMDatabase"
+[2025-09-25 21:02:01.9871299 | INF]   Running SumECmd.exe: -d "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Out"\Windows\System32\LogFiles\SUM --csv "E:\Cyber Security\CTF\Holmes CTF\The_Enduring_Echo\Output\SUMDatabase"
+[2025-09-25 21:02:02.2840123 | INF] Executed 22 processors in 44.8871 seconds
+[2025-09-25 21:02:02.2840123 | INF] Total execution time: 57.6020 seconds

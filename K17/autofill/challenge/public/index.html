@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Color Viewer</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            border-radius: 1rem;
+            border: 2px solid var(--pico-muted-border-color);
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <article>
+            <h1>🎨 Color Viewer</h1>
+            <p id="color-name"></p>
+            <div id="app"></div>
+            <footer>
+                <a href="login.html" role="button">Go to Login</a>
+            </footer>
+        </article>
+    </main>
+
+    <script>
+        function getQueryParam(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        const color = getQueryParam("color") || "blue";
+
+        $("#color-name").text(`Showing color: ${color}`);
+        $("#app").html(`<div id="colorBox" style="background-color: ${color}"></div>`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+LITCTF{46.781,-56.171}
+
+https://www.google.com/maps/@46.7811492,-56.1714396,3a,90y,83.57h,101.35t/data=!3m8!1e1!3m6!1sCIHM0ogKEICAgIC6pfarzAE!2e10!3e11!6shttps:%2F%2Flh3.googleusercontent.com%2Fgpms-cs-s%2FAB8u6HZHS-jdYn-1WhIxjXc6AfoNFi0RgIuSiBiU_cXah_gTtQtAJeuhI8OZ36jKOsYVTJlonpGhQlT_AY-eBxM-bHkgGzCZRd0QpXXOXugp-TDgI0AgoGBqMIXKEHxNiDJDD5bphZXO%3Dw900-h600-k-no-pi-11.350551780836014-ya186.65050202335448-ro0-fo100!7i7680!8i3840?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D

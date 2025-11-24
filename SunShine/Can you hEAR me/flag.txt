@@ -1,0 +1,4 @@
+zenniskayy@ZennisKayy:/mnt/e/Cyber Security/CTF/SunShine/Can you hEAR me$ ./runpeg CanYouHearMe.peg
+RAD-EAR-3 CPU initialized, running at 10MHz
+
+Board serial number: sun{d0_n0t_fEAR_th1s_c4t3g0ry}

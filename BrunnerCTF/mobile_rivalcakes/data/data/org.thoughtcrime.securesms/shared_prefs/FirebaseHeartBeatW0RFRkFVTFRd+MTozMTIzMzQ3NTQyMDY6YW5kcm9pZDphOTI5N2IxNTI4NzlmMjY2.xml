@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <set name="kotlin/2.1.21 fire-transport/18.2.0 android-installer/ fire-android/35 fire-core/21.0.0 device-model/bluejay device-name/bluejay device-brand/google fire-core-ktx/21.0.0 fire-installations/17.2.0 android-platform/ android-min-sdk/21 fire-fcm/24.1.0 android-target-sdk/35">
+        <string>2025-08-13</string>
+    </set>
+    <long name="fire-count" value="4" />
+    <string name="last-used-date">2025-08-20</string>
+    <set name="kotlin/2.1.21 fire-transport/18.2.0 android-installer/ fire-android/35 fire-core/21.0.0 device-model/bluejay device-name/bluejay device-brand/google fire-core-ktx/21.0.0 fire-installations/17.2.0 android-min-sdk/21 android-platform/ fire-fcm/24.1.0 android-target-sdk/35">
+        <string>2025-08-20</string>
+    </set>
+    <set name="kotlin/2.1.21 fire-transport/18.2.0 android-installer/ fire-android/35 fire-core/21.0.0 device-name/bluejay device-model/bluejay device-brand/google fire-core-ktx/21.0.0 fire-installations/17.2.0 android-platform/ android-min-sdk/21 fire-fcm/24.1.0 android-target-sdk/35">
+        <string>2025-08-12</string>
+        <string>2025-08-19</string>
+    </set>
+</map>

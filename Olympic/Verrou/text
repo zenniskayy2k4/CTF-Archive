@@ -1,0 +1,665 @@
+undefined8 FUN_001043e8(int param_1,long param_2)
+
+{
+  ostream *this;
+  undefined8 uVar1;
+  void *pvVar2;
+  
+  if (param_1 < 2) {
+    this = std::operator<<((ostream *)std::cout,"Usage: ./verrou input output");
+    std::ostream::operator<<(this,std::endl<>);
+    uVar1 = 0xffffffff;
+  }
+  else {
+    pvVar2 = operator.new(1);
+    FUN_00103a62(pvVar2,0x139,0x28,1,*(undefined8 *)(param_2 + 8),*(undefined8 *)(param_2 + 0x10));
+    if (pvVar2 != (void *)0x0) {
+      operator.delete(pvVar2,1);
+    }
+    uVar1 = 0;
+  }
+  return uVar1;
+}
+
+
+void _FINI_0(void)
+
+{
+  if (DAT_00108150 != '\0') {
+    return;
+  }
+  __cxa_finalize(PTR_LOOP_00108008);
+  FUN_001025f0();
+  DAT_00108150 = 1;
+  return;
+}
+
+
+void _INIT_0(void)
+
+{
+  FUN_00102620();
+  return;
+}
+
+
+/* WARNING: Removing unreachable block (ram,0x00102644) */
+/* WARNING: Removing unreachable block (ram,0x00102650) */
+
+void FUN_00102620(void)
+
+{
+  return;
+}
+
+
+void _INIT_1(void)
+
+{
+  FUN_001033c6(1,0xffff);
+  return;
+}
+
+
+void FUN_001033c6(int param_1,int param_2)
+
+{
+  if ((param_1 == 1) && (param_2 == 0xffff)) {
+    std::ios_base::Init::Init((Init *)&DAT_00108151);
+    __cxa_atexit(std::ios_base::Init::~Init,&DAT_00108151,&PTR_LOOP_00108008);
+  }
+  return;
+}
+
+
+void _INIT_2(void)
+
+{
+  FUN_00103c99(1,0xffff);
+  return;
+}
+
+
+void FUN_00103c99(int param_1,int param_2)
+
+{
+  if ((param_1 == 1) && (param_2 == 0xffff)) {
+    std::ios_base::Init::Init((Init *)&DAT_00108152);
+    __cxa_atexit(std::ios_base::Init::~Init,&DAT_00108152,&PTR_LOOP_00108008);
+  }
+  return;
+}
+
+
+void _INIT_3(void)
+
+{
+  FUN_00104495(1,0xffff);
+  return;
+}
+
+
+void FUN_00104495(int param_1,int param_2)
+
+{
+  if ((param_1 == 1) && (param_2 == 0xffff)) {
+    std::ios_base::Init::Init((Init *)&DAT_00108153);
+    __cxa_atexit(std::ios_base::Init::~Init,&DAT_00108153,&PTR_LOOP_00108008);
+  }
+  return;
+}
+
+
+void FUN_00103a62(undefined8 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+                 undefined8 param_5,undefined8 param_6)
+
+{
+  long in_FS_OFFSET;
+  allocator<char> local_f9;
+  void *local_f8;
+  void *local_f0;
+  _InputArray local_e8 [32];
+  undefined8 local_c8;
+  undefined8 local_c0;
+  undefined8 local_b8;
+  string local_a8 [32];
+  Mat local_88 [104];
+  long local_20;
+  
+  local_20 = *(long *)(in_FS_OFFSET + 0x28);
+  local_f8 = operator.new(1);
+  local_f0 = (void *)FUN_00102776(local_f8,param_5);
+  FUN_00102a12(local_88,local_f8,param_2,param_3,param_4,local_f0);
+  local_c8 = 0;
+  local_c0 = 0;
+  local_b8 = 0;
+  FUN_00103d86(&local_c8);
+  FUN_00103dd2(local_e8,local_88);
+  std::allocator<char>::allocator();
+                    /* try { // try from 00103b7b to 00103b7f has its CatchHandler @ 00103c43 */
+  FUN_00103fda(local_a8,param_6,&local_f9);
+                    /* try { // try from 00103b9b to 00103b9f has its CatchHandler @ 00103c2b */
+  cv::imwrite(local_a8,local_e8,(vector *)&local_c8);
+  std::__cxx11::string::~string(local_a8);
+  std::allocator<char>::~allocator(&local_f9);
+  FUN_00103e0e(local_e8);
+  FUN_00103f6e(&local_c8);
+  if (local_f0 != (void *)0x0) {
+    operator.delete[](local_f0);
+  }
+  if (local_f8 != (void *)0x0) {
+    operator.delete(local_f8,1);
+  }
+  cv::Mat::~Mat(local_88);
+  if (local_20 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return;
+}
+
+
+void * FUN_00102776(undefined8 param_1,undefined8 param_2)
+
+{
+  char cVar1;
+  undefined4 uVar2;
+  ulong uVar3;
+  void *pvVar4;
+  long in_FS_OFFSET;
+  undefined1 auVar5 [16];
+  undefined1 local_238 [16];
+  ifstream local_228 [520];
+  long local_20;
+  
+  local_20 = *(long *)(in_FS_OFFSET + 0x28);
+  std::ifstream::ifstream(local_228);
+  uVar2 = FUN_00103435(8,4);
+                    /* try { // try from 001027d7 to 001028b1 has its CatchHandler @ 001028e3 */
+  std::ifstream::open(local_228,param_2,uVar2);
+  cVar1 = std::ifstream::is_open();
+  if (cVar1 == '\0') {
+    pvVar4 = (void *)0x0;
+  }
+  else {
+    local_238 = FUN_001026aa(param_1,param_2);
+    uVar3 = FUN_00103512(local_238);
+    pvVar4 = operator.new[](uVar3);
+    std::istream::seekg(local_228,0,0);
+    auVar5 = FUN_001026aa(param_1,param_2);
+    local_238 = auVar5;
+    FUN_00103512(local_238);
+    std::istream::read((char *)local_228,(long)pvVar4);
+    std::ifstream::close();
+  }
+  std::ifstream::~ifstream(local_228);
+  if (local_20 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return pvVar4;
+}
+
+
+uint FUN_00103435(uint param_1,uint param_2)
+
+{
+  return param_1 | param_2;
+}
+
+
+undefined8 FUN_001026aa(undefined8 param_1,undefined8 param_2)
+
+{
+  undefined4 uVar1;
+  undefined8 uVar2;
+  long in_FS_OFFSET;
+  ifstream local_238 [520];
+  long local_30;
+  
+  local_30 = *(long *)(in_FS_OFFSET + 0x28);
+  uVar1 = FUN_00103435(2,4);
+  std::ifstream::ifstream(local_238,param_2,uVar1);
+                    /* try { // try from 0010270f to 00102713 has its CatchHandler @ 00102741 */
+  uVar2 = std::istream::tellg();
+  std::ifstream::~ifstream(local_238);
+  if (local_30 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return uVar2;
+}
+
+
+undefined8 FUN_001026aa(undefined8 param_1,undefined8 param_2)
+
+{
+  undefined4 uVar1;
+  undefined8 uVar2;
+  long in_FS_OFFSET;
+  ifstream local_238 [520];
+  long local_30;
+  
+  local_30 = *(long *)(in_FS_OFFSET + 0x28);
+  uVar1 = FUN_00103435(2,4);
+  std::ifstream::ifstream(local_238,param_2,uVar1);
+                    /* try { // try from 0010270f to 00102713 has its CatchHandler @ 00102741 */
+  uVar2 = std::istream::tellg();
+  std::ifstream::~ifstream(local_238);
+  if (local_30 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return uVar2;
+}
+
+
+undefined8 FUN_00103512(undefined8 *param_1)
+
+{
+  return *param_1;
+}
+
+
+undefined8 FUN_001026aa(undefined8 param_1,undefined8 param_2)
+
+{
+  undefined4 uVar1;
+  undefined8 uVar2;
+  long in_FS_OFFSET;
+  ifstream local_238 [520];
+  long local_30;
+  
+  local_30 = *(long *)(in_FS_OFFSET + 0x28);
+  uVar1 = FUN_00103435(2,4);
+  std::ifstream::ifstream(local_238,param_2,uVar1);
+                    /* try { // try from 0010270f to 00102713 has its CatchHandler @ 00102741 */
+  uVar2 = std::istream::tellg();
+  std::ifstream::~ifstream(local_238);
+  if (local_30 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return uVar2;
+}
+
+
+undefined8 FUN_00103512(undefined8 *param_1)
+
+{
+  return *param_1;
+}
+
+
+Mat * FUN_00102a12(Mat *param_1,undefined8 param_2,int param_3,int param_4,int param_5,long param_6)
+
+{
+  long lVar1;
+  Mat *this;
+  int iVar2;
+  int iVar3;
+  ulong uVar4;
+  undefined2 *puVar5;
+  uint uVar6;
+  uint uVar7;
+  undefined1 *puVar8;
+  uint uVar9;
+  long in_FS_OFFSET;
+  undefined1 auStack_138 [8];
+  long local_130;
+  int local_124;
+  int local_120;
+  int local_11c;
+  undefined8 local_118;
+  Mat *local_110;
+  int local_108;
+  int local_104;
+  int local_100;
+  int local_fc;
+  int local_f8;
+  int local_f4;
+  int local_f0;
+  int local_ec;
+  int local_e8;
+  int local_e4;
+  int local_e0;
+  uint local_dc;
+  long local_d8;
+  undefined1 *local_d0;
+  undefined2 local_c8;
+  undefined1 local_c6;
+  Mat local_a8 [104];
+  long local_40;
+  
+  local_40 = *(long *)(in_FS_OFFSET + 0x28);
+  local_130 = param_6;
+  local_124 = param_5;
+  local_120 = param_4;
+  local_11c = param_3;
+  local_118 = param_2;
+  local_110 = param_1;
+  FUN_0010361e(0,0,0,0,&local_c8);
+  cv::Mat::Mat(local_a8,local_120,local_11c,0x10,(Scalar_ *)&local_c8);
+  local_e8 = (local_120 / local_124) * (local_11c / local_124);
+  iVar3 = local_e8 * 8;
+  local_d8 = (long)iVar3 + -1;
+  uVar4 = (((long)iVar3 + 0xfU) / 0x10) * 0x10;
+  for (puVar8 = auStack_138; puVar8 != auStack_138 + -(uVar4 & 0xfffffffffffff000);
+      puVar8 = puVar8 + -0x1000) {
+    *(undefined8 *)(puVar8 + -8) = *(undefined8 *)(puVar8 + -8);
+  }
+  lVar1 = -(ulong)((uint)uVar4 & 0xfff);
+  if ((uVar4 & 0xfff) != 0) {
+    *(undefined8 *)(puVar8 + ((ulong)((uint)uVar4 & 0xfff) - 8) + lVar1) =
+         *(undefined8 *)(puVar8 + ((ulong)((uint)uVar4 & 0xfff) - 8) + lVar1);
+  }
+  local_108 = 0;
+  for (local_104 = 0; local_104 < local_e8; local_104 = local_104 + 1) {
+    for (local_100 = 0; local_100 < 8; local_100 = local_100 + 1) {
+      puVar8[local_108 + lVar1] =
+           (byte)((int)*(char *)(local_130 + local_104) >> ((byte)local_100 & 0x1f)) & 1;
+      local_108 = local_108 + 1;
+    }
+  }
+  local_fc = 0;
+  local_d0 = puVar8 + lVar1;
+  for (local_f8 = 0; this = local_110, local_f8 < local_120 / local_124; local_f8 = local_f8 + 1) {
+    for (local_f4 = 0; local_f4 < local_11c / local_124; local_f4 = local_f4 + 1) {
+      for (local_f0 = 0; local_f0 < local_124; local_f0 = local_f0 + 1) {
+        for (local_ec = 0; local_ec < local_124; local_ec = local_ec + 1) {
+          local_e4 = local_f0 + local_f8 * local_124;
+          local_e0 = local_ec + local_f4 * local_124;
+          local_dc = (char)local_d0[local_fc] * 0xff;
+          uVar6 = local_dc & 0xff;
+          uVar7 = local_dc & 0xff;
+          uVar9 = local_dc & 0xff;
+                    /* try { // try from 00102cdc to 00102da3 has its CatchHandler @ 00102dc9 */
+          *(undefined8 *)(puVar8 + lVar1 + -8) = 0x102ce1;
+          FUN_001036d0(&local_c8,uVar9,uVar7,uVar6);
+          iVar2 = local_e0;
+          iVar3 = local_e4;
+          *(undefined8 *)(puVar8 + lVar1 + -8) = 0x102cfe;
+          puVar5 = (undefined2 *)FUN_00103688(local_a8,iVar3,iVar2);
+          *puVar5 = local_c8;
+          *(undefined1 *)(puVar5 + 1) = local_c6;
+        }
+      }
+      local_fc = local_fc + 1;
+    }
+  }
+  *(undefined8 *)(puVar8 + lVar1 + -8) = 0x102da4;
+  cv::Mat::Mat(this,local_a8);
+  *(undefined8 *)(puVar8 + lVar1 + -8) = 0x102db4;
+  cv::Mat::~Mat(local_a8);
+  if (local_40 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return local_110;
+}
+
+
+void FUN_0010361e(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,
+                 undefined8 *param_5)
+
+{
+  FUN_00103776(param_5);
+  *param_5 = param_1;
+  param_5[1] = param_2;
+  param_5[2] = param_3;
+  param_5[3] = param_4;
+  return;
+}
+
+
+void FUN_00103776(undefined8 param_1)
+
+{
+  FUN_00103914(param_1);
+  return;
+}
+
+
+void FUN_00103914(long param_1)
+
+{
+  undefined4 local_c;
+  
+  for (local_c = 0; local_c < 4; local_c = local_c + 1) {
+    *(undefined8 *)(param_1 + (long)local_c * 8) = 0;
+  }
+  return;
+}
+
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void __thiscall cv::Mat::Mat(Mat *this,int param_1,int param_2,int param_3,Scalar_ *param_4)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+long FUN_00103688(long param_1,int param_2,int param_3)
+
+{
+  return (long)param_3 * 3 + **(long **)(param_1 + 0x48) * (long)param_2 + *(long *)(param_1 + 0x10)
+  ;
+}
+
+
+void FUN_00103d86(undefined8 param_1)
+
+{
+  FUN_00103d66(param_1);
+  return;
+}
+
+
+void FUN_00103d66(undefined8 param_1)
+
+{
+  FUN_00103ed0(param_1);
+  return;
+}
+
+
+void FUN_0010409e(undefined8 param_1)
+
+{
+  FUN_001042f6(param_1);
+  return;
+}
+
+
+void FUN_001042f6(void)
+
+{
+  return;
+}
+
+
+void FUN_001040be(undefined8 *param_1)
+
+{
+  *param_1 = 0;
+  param_1[1] = 0;
+  param_1[2] = 0;
+  return;
+}
+
+
+void FUN_00103ed0(undefined8 param_1)
+
+{
+  FUN_0010409e(param_1);
+  FUN_001040be(param_1);
+  return;
+}
+
+
+void FUN_00103dd2(long param_1,undefined8 param_2)
+
+{
+  FUN_00103fb6(param_1 + 0x10);
+  FUN_00103da6(param_1,0x1010000,param_2);
+  return;
+}
+
+
+void FUN_00103fb6(undefined4 *param_1)
+
+{
+  *param_1 = 0;
+  param_1[1] = 0;
+  return;
+}
+
+
+void FUN_00103da6(undefined4 *param_1,undefined4 param_2,undefined8 param_3)
+
+{
+  *param_1 = param_2;
+  *(undefined8 *)(param_1 + 2) = param_3;
+  return;
+}
+
+
+void FUN_00103fda(_Alloc_hider *param_1,long param_2,allocator *param_3)
+
+{
+  long lVar1;
+  char *pcVar2;
+  long lVar3;
+  long in_FS_OFFSET;
+  
+  lVar1 = *(long *)(in_FS_OFFSET + 0x28);
+  pcVar2 = (char *)std::__cxx11::string::_M_local_data();
+  std::__cxx11::string::_Alloc_hider::_Alloc_hider(param_1,pcVar2,param_3);
+  if (param_2 == 0) {
+    lVar3 = 1;
+  }
+  else {
+                    /* try { // try from 00104035 to 00104062 has its CatchHandler @ 00104065 */
+    lVar3 = FUN_00103d08(param_2);
+    lVar3 = lVar3 + param_2;
+  }
+  std::__cxx11::string::_M_construct<>(param_1,param_2,lVar3);
+  if (lVar1 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return;
+}
+
+
+/* WARNING: Removing unreachable block (ram,0x00103d29) */
+
+void FUN_00103d08(char *param_1)
+
+{
+  strlen(param_1);
+  return;
+}
+
+
+void FUN_00103e0e(void)
+
+{
+  return;
+}
+
+
+void FUN_00103f6e(undefined8 *param_1)
+
+{
+  undefined8 uVar1;
+  
+  uVar1 = FUN_0010413a(param_1);
+  FUN_0010414c(*param_1,param_1[1],uVar1);
+  FUN_00103f1c(param_1);
+  return;
+}
+
+
+undefined8 FUN_0010413a(undefined8 param_1)
+
+{
+  return param_1;
+}
+
+
+void FUN_0010414c(undefined8 param_1,undefined8 param_2)
+
+{
+  FUN_00104337(param_1,param_2);
+  return;
+}
+
+
+void FUN_00104337(undefined8 param_1,undefined8 param_2)
+
+{
+  FUN_001043d5(param_1,param_2);
+  return;
+}
+
+
+void FUN_001043d5(void)
+
+{
+  return;
+}
+
+
+void FUN_00103f1c(long *param_1)
+
+{
+  FUN_00104100(param_1,*param_1,param_1[2] - *param_1 >> 2);
+  FUN_00103d46(param_1);
+  return;
+}
+
+
+void FUN_00104305(undefined8 param_1,undefined8 param_2,undefined8 param_3)
+
+{
+  FUN_001043a0(param_1,param_2,param_3);
+  return;
+}
+
+
+void FUN_00104100(undefined8 param_1,long param_2,undefined8 param_3)
+
+{
+  if (param_2 != 0) {
+    FUN_00104305(param_1,param_2,param_3);
+  }
+  return;
+}
+
+
+void FUN_00103d46(undefined8 param_1)
+
+{
+  FUN_00103efc(param_1);
+  return;
+}
+
+
+void FUN_00103efc(undefined8 param_1)
+
+{
+  FUN_001040f0(param_1);
+  return;
+}
+
+
+void FUN_001040f0(void)
+
+{
+  return;
+}
+

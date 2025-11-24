@@ -1,0 +1,31 @@
+
+
+# RUN 2025-10-18T08:06:02.984728Z host=crypto1.cscv.vn port=1337
+2025-10-18T08:06:03.256978Z iter=1 server_key=17f76600728ea4acb54eff3b300f2e46 fk_key=d3ccec8cd3cdeaff047e59e565d4e63b
+--- interaction ---
+Welcome to the secure server!
+You can use the following services:
+1. Rotate Server's keys 
+2. Rotate FlagKeeper's keys 
+3. Sign a message (except admin = True)
+4. Get the flag (only if your message contains admin = True)
+5. Exit
+Enter your choice: current Server key:  17f76600728ea4acb54eff3b300f2e46
+Enter your choice: current FlagKeeper key:  d3ccec8cd3cdeaff047e59e565d4e63b
+Enter your choice: 
+
+# probe_sign_behavior iter=1 signed_any=True fmt=hex
+Error: invalid literal for int() with base 10: '44450656c77228d78ae2519e163ea52f0a0cebcb20f394403d28ac96f0da7692'
+Enter your choice: 
+
+=== exploit attempt ===
+ok=True
+Error: non-hexadecimal number found in fromhex() arg at position 1
+Enter your choice: Error: invalid literal for int() with base 10: '2+XvtFgQ+6Sv+LdOCcG5/FUSB9cwSxFGT7KR15XA5c876Fyrm+wNKkIQYIX5453NpHieGxCYRqxZ4rVL4opK6Q=='
+Enter your choice: 
+Error: non-hexadecimal number found in fromhex() arg at position 1
+Enter your choice: 
+---
+Error: invalid literal for int() with base 10: 'dbe5efb45810fba4aff8b74e09c1b9fc551207d7304b11464fb291d795c0e5cf3be85cab9bec0d2a42106085f9e39dcda4789e1b109846ac59e2b54be28a4ae91e23194465609a'
+Enter your choice: 
+

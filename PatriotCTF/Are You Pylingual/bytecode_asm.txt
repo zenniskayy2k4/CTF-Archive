@@ -1,0 +1,226 @@
+pylinguese.pyc (Python 3.12)
+[Code]
+    File Name: pylinguese.py
+    Object Name: <module>
+    Qualified Name: <module>
+    Arg Count: 0
+    Pos Only Arg Count: 0
+    KW Only Arg Count: 0
+    Stack Size: 6
+    Flags: 0x00000000
+    [Names]
+        'pyfiglet'
+        'open'
+        'file'
+        'read'
+        'flag'
+        'font'
+        'words'
+        'flag_track'
+        'list'
+        'figlet_format'
+        'art'
+        'len'
+        'i'
+        'range'
+        'ind'
+        'join'
+        'art_str'
+        'first_val'
+        'second_val'
+        'first_half'
+        'second_half'
+        'ord'
+        'first'
+        'second'
+        'output'
+        'print'
+    [Locals+Names]
+        'char'
+    [Constants]
+        0
+        None
+        'flag.txt'
+        'r'
+        'slant'
+        'MASONCC IS THE BEST CLUB EVER'
+        (
+            'font'
+        )
+        10
+        28
+        1
+        ''
+        5
+        6
+        2
+    [Disassembly]
+        0       RESUME                          0
+        2       LOAD_CONST                      0: 0
+        4       LOAD_CONST                      1: None
+        6       IMPORT_NAME                     0: pyfiglet
+        8       STORE_NAME                      0: pyfiglet
+        10      PUSH_NULL                       
+        12      LOAD_NAME                       1: open
+        14      LOAD_CONST                      2: 'flag.txt'
+        16      LOAD_CONST                      3: 'r'
+        18      CALL                            2
+        26      STORE_NAME                      2: file
+        28      LOAD_NAME                       2: file
+        30      LOAD_ATTR                       7: read
+        50      CALL                            0
+        58      STORE_NAME                      4: flag
+        60      LOAD_CONST                      4: 'slant'
+        62      STORE_NAME                      5: font
+        64      LOAD_CONST                      5: 'MASONCC IS THE BEST CLUB EVER'
+        66      STORE_NAME                      6: words
+        68      LOAD_CONST                      0: 0
+        70      STORE_NAME                      7: flag_track
+        72      PUSH_NULL                       
+        74      LOAD_NAME                       8: list
+        76      PUSH_NULL                       
+        78      LOAD_NAME                       0: pyfiglet
+        80      LOAD_ATTR                       18: figlet_format
+        100     LOAD_NAME                       6: words
+        102     LOAD_NAME                       5: font
+        104     KW_NAMES                        6: ('font',)
+        106     CALL                            2
+        114     CALL                            1
+        122     STORE_NAME                      10: art
+        124     PUSH_NULL                       
+        126     LOAD_NAME                       11: len
+        128     LOAD_NAME                       10: art
+        130     CALL                            1
+        138     LOAD_CONST                      7: 10
+        140     BINARY_OP                       6 (%)
+        144     STORE_NAME                      12: i
+        146     PUSH_NULL                       
+        148     LOAD_NAME                       13: range
+        150     PUSH_NULL                       
+        152     LOAD_NAME                       11: len
+        154     LOAD_NAME                       10: art
+        156     CALL                            1
+        164     CALL                            1
+        172     GET_ITER                        
+        174     FOR_ITER                        38 (to 252)
+        178     STORE_NAME                      14: ind
+        180     LOAD_NAME                       14: ind
+        182     LOAD_NAME                       12: i
+        184     COMPARE_OP                      40 (==)
+        188     POP_JUMP_IF_TRUE                1 (to 192)
+        190     JUMP_BACKWARD                   9 (to 174)
+        192     LOAD_NAME                       7: flag_track
+        194     PUSH_NULL                       
+        196     LOAD_NAME                       11: len
+        198     LOAD_NAME                       4: flag
+        200     CALL                            1
+        208     COMPARE_OP                      2 (<)
+        212     POP_JUMP_IF_TRUE                1 (to 216)
+        214     JUMP_BACKWARD                   21 (to 174)
+        216     LOAD_NAME                       4: flag
+        218     LOAD_NAME                       7: flag_track
+        220     BINARY_SUBSCR                   
+        224     LOAD_NAME                       10: art
+        226     LOAD_NAME                       14: ind
+        228     STORE_SUBSCR                    
+        232     LOAD_NAME                       12: i
+        234     LOAD_CONST                      8: 28
+        236     BINARY_OP                       13 (+=)
+        240     STORE_NAME                      12: i
+        242     LOAD_NAME                       7: flag_track
+        244     LOAD_CONST                      9: 1
+        246     BINARY_OP                       13 (+=)
+        250     STORE_NAME                      7: flag_track
+        252     JUMP_BACKWARD                   40 (to 174)
+        254     END_FOR                         
+        256     LOAD_CONST                      10: ''
+        258     LOAD_ATTR                       31: join
+        278     LOAD_NAME                       10: art
+        280     CALL                            1
+        288     STORE_NAME                      16: art_str
+        290     LOAD_CONST                      11: 5
+        292     STORE_NAME                      17: first_val
+        294     LOAD_CONST                      12: 6
+        296     STORE_NAME                      18: second_val
+        298     LOAD_NAME                       16: art_str
+        300     LOAD_CONST                      1: None
+        302     PUSH_NULL                       
+        304     LOAD_NAME                       11: len
+        306     LOAD_NAME                       16: art_str
+        308     CALL                            1
+        316     LOAD_CONST                      13: 2
+        318     BINARY_OP                       2 (//)
+        322     BINARY_SLICE                    
+        324     STORE_NAME                      19: first_half
+        326     LOAD_NAME                       16: art_str
+        328     PUSH_NULL                       
+        330     LOAD_NAME                       11: len
+        332     LOAD_NAME                       16: art_str
+        334     CALL                            1
+        342     LOAD_CONST                      13: 2
+        344     BINARY_OP                       2 (//)
+        348     LOAD_CONST                      1: None
+        350     BINARY_SLICE                    
+        352     STORE_NAME                      20: second_half
+        354     LOAD_NAME                       19: first_half
+        356     GET_ITER                        
+        358     LOAD_FAST_AND_CLEAR             0: char
+        360     SWAP                            2
+        362     BUILD_LIST                      0
+        364     SWAP                            2
+        366     FOR_ITER                        14 (to 396)
+        370     STORE_FAST                      0: char
+        372     PUSH_NULL                       
+        374     LOAD_NAME                       21: ord
+        376     LOAD_FAST                       0: char
+        378     CALL                            1
+        386     UNARY_INVERT                    
+        388     LOAD_NAME                       17: first_val
+        390     BINARY_OP                       12 (^)
+        394     LIST_APPEND                     2
+        396     JUMP_BACKWARD                   16 (to 366)
+        398     END_FOR                         
+        400     SWAP                            2
+        402     STORE_FAST                      0: char
+        404     STORE_NAME                      22: first
+        406     LOAD_NAME                       20: second_half
+        408     GET_ITER                        
+        410     LOAD_FAST_AND_CLEAR             0: char
+        412     SWAP                            2
+        414     BUILD_LIST                      0
+        416     SWAP                            2
+        418     FOR_ITER                        14 (to 448)
+        422     STORE_FAST                      0: char
+        424     PUSH_NULL                       
+        426     LOAD_NAME                       21: ord
+        428     LOAD_FAST                       0: char
+        430     CALL                            1
+        438     UNARY_INVERT                    
+        440     LOAD_NAME                       18: second_val
+        442     BINARY_OP                       12 (^)
+        446     LIST_APPEND                     2
+        448     JUMP_BACKWARD                   16 (to 418)
+        450     END_FOR                         
+        452     SWAP                            2
+        454     STORE_FAST                      0: char
+        456     STORE_NAME                      23: second
+        458     LOAD_NAME                       23: second
+        460     LOAD_NAME                       22: first
+        462     BINARY_OP                       0 (+)
+        466     STORE_NAME                      24: output
+        468     PUSH_NULL                       
+        470     LOAD_NAME                       25: print
+        472     LOAD_NAME                       24: output
+        474     CALL                            1
+        482     POP_TOP                         
+        484     RETURN_CONST                    1: None
+        486     SWAP                            2
+        488     POP_TOP                         
+        490     SWAP                            2
+        492     STORE_FAST                      0: char
+        494     RERAISE                         0
+        496     SWAP                            2
+        498     POP_TOP                         
+        500     SWAP                            2
+        502     STORE_FAST                      0: char
+        504     RERAISE                         0

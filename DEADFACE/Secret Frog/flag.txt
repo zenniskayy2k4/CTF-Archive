@@ -1,0 +1,1 @@
+zenniskayy@ZennisKayy:/mnt/e/Cyber Security/CTF/DEADFACE$ dd if=froggy-steg.png of=extracted_frog.gif bs=1 skip=1223461

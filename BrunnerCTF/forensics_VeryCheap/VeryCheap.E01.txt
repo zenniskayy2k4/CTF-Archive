@@ -1,0 +1,39 @@
+﻿Created By AccessData® FTK® Imager 4.7.1.2 
+
+Case Information: 
+Acquired using: ADI4.7.1.2
+Case Number: BrunnerCTF
+Evidence Number: VeryCheap
+Unique Description: 
+Examiner: You!
+Notes:  
+
+--------------------------------------------------------------
+
+Information for C:\Users\Nissen\VirtualBox VMs\VeryCheap1\VeryCheap:
+
+Physical Evidentiary Item (Source) Information:
+[Device Info]
+ Source Type: Physical
+[Drive Geometry]
+ Bytes per Sector: 512
+ Sector Count: 83.886.080
+[Image]
+ Image Type: Raw (dd)
+ Source data size: 40960 MB
+ Sector count:    83886080
+[Computed Hashes]
+ MD5 checksum:    f047fdad42971753b1ec514757285693
+ SHA1 checksum:   52673a350bd44ab3f320ae520244c3849c4ff8d9
+
+Image Information:
+ Acquisition started:   Sat Aug  2 23:07:24 2025
+ Acquisition finished:  Sat Aug  2 23:10:33 2025
+ Segment list:
+  C:\Users\Nissen\VirtualBox VMs\VeryCheap1\VeryCheap.E01
+
+Image Verification Results:
+ Verification started:  Sat Aug  2 23:10:33 2025
+ Verification finished: Sat Aug  2 23:13:47 2025
+ MD5 checksum:    f047fdad42971753b1ec514757285693 : verified
+ SHA1 checksum:   52673a350bd44ab3f320ae520244c3849c4ff8d9 : verified

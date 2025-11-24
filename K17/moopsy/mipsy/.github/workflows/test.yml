@@ -1,0 +1,53 @@
+name: Test Mipsy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  test:
+    name: Test on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        # windows can't build spim because of bison
+        # TODO: find a way to build spim on windows (choco doesn't install bison somewhere we can use it)
+        # macOS can't run tests because of how it handles SIGPIPE
+        # TODO: modify scripts/compare.sh so that SIGPIPE is never triggered
+        # os: [ macOS-latest, windows-latest ]
+
+        experimental: [false]
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: cargo build --verbose --package mipsy
+
+      - name: Install SPIM
+        shell: bash
+        run: |
+          sudo apt-get install -y subversion
+          svn checkout svn://svn.code.sf.net/p/spimsimulator/code/ spimsimulator-code
+          cd spimsimulator-code/spim
+          make PREFIX="$HOME"
+          make PREFIX="$HOME" test
+          make PREFIX="$HOME" install
+          echo "$HOME/bin" >> $GITHUB_PATH
+
+      - name: Test
+        shell: bash
+        run: |
+          echo "$HOME/bin" >> $GITHUB_PATH
+          cd ${{ github.workspace }}
+          bash scripts/compare.sh

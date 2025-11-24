@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="pref_attachment_encrypted_secret">{&quot;data&quot;:&quot;SANtR2Nx2SEvqCWuoP2e16KbN4+U+7/oL+CPb/0Ecjk8txq6KrxS1+WJz31c7HV+Om9qm41Wl09Nj1CD1tbR3n75FlEQveQ4IRmRCeQp9T+kOIlEaiwL3iU5ngYuMgJzSytjgqfD6R886iZTOpZkGzBLyu440fQ9&quot;,&quot;iv&quot;:&quot;A7iMpIG0lBEeACHt&quot;}</string>
+    <int name="pref_job_manager_version" value="12" />
+    <long name="pref_unidentified_access_certificate_rotation_time" value="1755763313077" />
+    <int name="last_version_code" value="156800" />
+    <int name="pref_first_install_version" value="1568" />
+    <long name="pref_update_apk_refresh_time" value="1755698513105" />
+    <boolean name="pref_seen_sticker_intro_tooltip" value="true" />
+    <long name="pref_backup_next_time" value="1755740834000" />
+    <string name="pref_database_encrypted_secret">{&quot;data&quot;:&quot;KCVnDzg5b7cDlUJF5gDMcFJV5iyI+Lv6Xe+mkDAh6wrTDE2sJ0YcCf2VXcEiRbE1&quot;,&quot;iv&quot;:&quot;cSw5784mvkqjE6GD&quot;}</string>
+    <int name="pref_notification_channel_version" value="5" />
+    <boolean name="pref_typing_indicators" value="true" />
+    <long name="pref_signed_pre_key_rotation_time" value="1755740894491" />
+    <int name="pref_app_migration_version" value="145" />
+    <boolean name="pref_read_receipts" value="true" />
+    <long name="pref_directory_refresh_time" value="1755740894507" />
+</map>

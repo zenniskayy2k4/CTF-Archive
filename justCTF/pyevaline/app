@@ -1,0 +1,81 @@
+#!/usr/bin/env python3
+import os
+import subprocess
+import sys
+import readline
+import ast
+import os
+import json
+import time
+import string
+import random
+import math
+
+def process():
+    command = input("> ")
+
+    if not command:
+        return
+
+    if command == "exit":
+        print("Goodbye!")
+        sys.exit(0)
+
+    if command == "id":
+        print("uid:  %d,  gid: %d" % (os.getuid(), os.getgid()))
+        print("euid: %d, egid: %d" % (os.geteuid(), os.getegid()))
+        return
+
+    if command == "ls":
+        os.system("/bin/ls -lah")
+        return
+
+    if command == "time":
+        print("time now: ", time.time())
+        return
+
+    if command == "rng":
+        print("rng:", random.random())
+        return
+
+    if command == "help":
+        print("""
+Commands:
+    exit                - exit shell
+    help                - display this help
+    eval <expression>   - evalute given expression :)
+    id                  - show our id
+    ls                  - list files
+    time                - time now
+    rng                 - roll a dice!
+""")
+        return
+
+    cmd, expr = command.split(" ", 1)
+    if cmd != "eval":
+        print("unrecognized command: ", cmd)
+        return
+
+    if len(expr) > 10:
+        print("Too long expression, sorry")
+        return
+
+    e = ast.literal_eval(expr)
+    print("Result of {} = {}".format(expr, e))
+
+    # TODO/FIXME: Implement math expressions via pwnlib.util.safeeval.expr() 
+
+
+def main():
+    print("Welcome to our crime shell!")
+    print("Type `exit` to quit. Type `help` for help.")
+
+    while True:
+        try:
+            process()
+        except Exception as e:
+            print("Oh, sorry, we got this exception:", e)
+
+
+if __name__ == '__main__':
+    main()

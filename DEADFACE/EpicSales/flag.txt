@@ -1,0 +1,298 @@
+zenniskayy@ZennisKayy:~$ mysql -h env01.deadface.io -u epicsales -p -P 3306 epicsales_db
+Enter password:
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 54260
+Server version: 5.7.44 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> SELECT COUNT(*) FROM customers WHERE signup_date >= '2025-09-01';
+ERROR 1054 (42S22): Unknown column 'signup_date' in 'where clause'
+mysql> SELECT COUNT(*) FROM customers
+    ->
+    -> abc
+    ->
+    ->
+    ->
+    ->
+    ->
+    -> ^C
+mysql> DESCRIBE customers;
++-------------+------------------+------+-----+---------+-------+
+| Field       | Type             | Null | Key | Default | Extra |
++-------------+------------------+------+-----+---------+-------+
+| customer_id | int(10) unsigned | NO   | PRI | NULL    |       |
+| first_name  | varchar(32)      | NO   |     | NULL    |       |
+| last_name   | varchar(64)      | NO   |     | NULL    |       |
+| email       | varchar(128)     | NO   | UNI | NULL    |       |
+| password    | varchar(60)      | NO   |     | NULL    |       |
+| dob         | date             | NO   |     | NULL    |       |
+| sex         | varchar(8)       | NO   |     | NULL    |       |
+| join_date   | date             | NO   | MUL | NULL    |       |
+| street      | varchar(64)      | NO   |     | NULL    |       |
+| suite       | varchar(16)      | YES  |     | NULL    |       |
+| city        | varchar(64)      | NO   |     | NULL    |       |
+| state       | varchar(8)       | NO   |     | NULL    |       |
+| postal      | varchar(16)      | NO   |     | NULL    |       |
+| country     | varchar(8)       | NO   |     | US      |       |
++-------------+------------------+------+-----+---------+-------+
+14 rows in set (0.20 sec)
+
+mysql> SELECT COUNT(*) FROM customers WHERE join_date >= '2025-09-01';
++----------+
+| COUNT(*) |
++----------+
+|       18 |
++----------+
+1 row in set (0.21 sec)
+
+mysql> SHOW TABLES;
++------------------------+
+| Tables_in_epicsales_db |
++------------------------+
+| categories             |
+| customers              |
+| employee_assignments   |
+| employees              |
+| facilities             |
+| inventories            |
+| loyalty_points         |
+| order_items            |
+| orders                 |
+| products               |
+| reviews                |
++------------------------+
+11 rows in set (0.21 sec)
+
+mysql> DESCRIBE products;
++--------------+------------------+------+-----+---------+-------+
+| Field        | Type             | Null | Key | Default | Extra |
++--------------+------------------+------+-----+---------+-------+
+| product_id   | int(10) unsigned | NO   | PRI | NULL    |       |
+| product_name | varchar(128)     | NO   |     | NULL    |       |
+| model_num    | varchar(32)      | NO   | UNI | NULL    |       |
+| version      | varchar(32)      | NO   |     | NULL    |       |
+| price        | decimal(10,2)    | NO   | MUL | NULL    |       |
+| category_id  | int(10) unsigned | NO   | MUL | NULL    |       |
++--------------+------------------+------+-----+---------+-------+
+6 rows in set (0.20 sec)
+
+mysql> DESCRIBE reviews;
++-------------+---------------------+------+-----+---------+-------+
+| Field       | Type                | Null | Key | Default | Extra |
++-------------+---------------------+------+-----+---------+-------+
+| review_id   | int(10) unsigned    | NO   | PRI | NULL    |       |
+| product_id  | int(10) unsigned    | NO   | MUL | NULL    |       |
+| customer_id | int(10) unsigned    | NO   | MUL | NULL    |       |
+| rating      | tinyint(3) unsigned | NO   | MUL | NULL    |       |
+| comment     | text                | YES  |     | NULL    |       |
+| review_date | date                | NO   |     | NULL    |       |
++-------------+---------------------+------+-----+---------+-------+
+6 rows in set (0.21 sec)
+
+mysql> SELECT
+    ->     p.name
+  reviews AS r O    -> FROM
+    ->     products AS p
+    -> JOIN
+    ->     reviews AS r ON p.id = r.product_id
+    -> GROUP BY
+    ->     p.name
+    -> ing) DESC
+LIMIT ORDER BY
+    ->     AVG(r.rating) DESC
+    ->
+    -> ^C
+mysql> SELECT p.product_name FROM products AS p JOIN reviews AS r ON p.product_id = r.product_id GROUP BY p.product_name ORDER BY AVG(r.rating) DESC LIMIT 1;
++-------------------+
+| product_name      |
++-------------------+
+| VortexAudio Focus |
++-------------------+
+1 row in set (0.23 sec)
+
+mysql> DESCRIBE inventor
+inventories               inventories.inventory_id  inventories.quantity
+inventories.facility_id   inventories.product_id    inventory_id
+mysql> DESCRIBE inventories;
++--------------+------------------+------+-----+---------+-------+
+| Field        | Type             | Null | Key | Default | Extra |
++--------------+------------------+------+-----+---------+-------+
+| inventory_id | int(10) unsigned | NO   | PRI | NULL    |       |
+| product_id   | int(10) unsigned | NO   | MUL | NULL    |       |
+| facility_id  | int(10) unsigned | NO   | MUL | NULL    |       |
+| quantity     | int(10) unsigned | NO   |     | 0       |       |
++--------------+------------------+------+-----+---------+-------+
+4 rows in set (0.21 sec)
+
+mysql> SELECT p.product_name, i.facility_id FROM products AS p JOIN inventory AS i ON p.product_id = i.product_id WHERE i.quantity < 5 ORDER BY i.quantity ASC LIMIT 1;
+ERROR 1146 (42S02): Table 'epicsales_db.inventory' doesn't exist
+mysql> SELECT p.product_name, i.facility_id FROM products AS p JOIN inventories AS i ON p.product_id = i.product_id WHERE i.quantity < 5 ORDER BY i.quantity ASC LIMIT 1;
++---------------------------+-------------+
+| product_name              | facility_id |
++---------------------------+-------------+
+| ConnectGear SafeDrive 2TB |          16 |
++---------------------------+-------------+
+1 row in set (0.24 sec)
+
+mysql> DESCRIBE employees;
++-------------+------------------+------+-----+---------+-------+
+| Field       | Type             | Null | Key | Default | Extra |
++-------------+------------------+------+-----+---------+-------+
+| employee_id | int(10) unsigned | NO   | PRI | NULL    |       |
+| first_name  | varchar(32)      | NO   |     | NULL    |       |
+| last_name   | varchar(64)      | NO   |     | NULL    |       |
+| email       | varchar(128)     | NO   | UNI | NULL    |       |
+| dob         | date             | NO   |     | NULL    |       |
+| sex         | varchar(8)       | NO   |     | NULL    |       |
+| start_date  | date             | NO   | MUL | NULL    |       |
+| end_date    | date             | YES  |     | NULL    |       |
+| pay_rate    | decimal(10,2)    | NO   |     | NULL    |       |
+| role        | varchar(64)      | YES  |     | NULL    |       |
+| street      | varchar(64)      | NO   |     | NULL    |       |
+| suite       | varchar(16)      | YES  |     | NULL    |       |
+| city        | varchar(64)      | NO   |     | NULL    |       |
+| state       | varchar(8)       | NO   |     | NULL    |       |
+| postal      | varchar(16)      | NO   |     | NULL    |       |
+| country     | varchar(8)       | NO   |     | US      |       |
++-------------+------------------+------+-----+---------+-------+
+16 rows in set (0.21 sec)
+
+mysql> DESCRIBE employee_assignments;
++---------------+------------------+------+-----+---------+-------+
+| Field         | Type             | Null | Key | Default | Extra |
++---------------+------------------+------+-----+---------+-------+
+| assignment_id | int(10) unsigned | NO   | PRI | NULL    |       |
+| employee_id   | int(10) unsigned | NO   | MUL | NULL    |       |
+| facility_id   | int(10) unsigned | NO   | MUL | NULL    |       |
++---------------+------------------+------+-----+---------+-------+
+3 rows in set (0.22 sec)
+
+mysql> SELECT SUM(e.pay_rate) FROM employees AS e JOIN employee_assignments AS a ON e.employee_id = a.employee_id WHERE a.role IN ('CEO', 'CTO', 'CFO');
+ERROR 1054 (42S22): Unknown column 'a.role' in 'where clause'
+mysql> SELECT SUM(e.pay_rate) FROM employees AS e JOIN employee_assignments AS a ON e.employee_id = a.employee_id WHERE a.assignment_id IN ('CEO', 'CTO', 'CFO');
++-----------------+
+| SUM(e.pay_rate) |
++-----------------+
+|            NULL |
++-----------------+
+1 row in set, 3 warnings (0.21 sec)
+
+mysql> SELECT SUM(e.pay_rate) FROM employees AS e JOIN employee_assignments AS a ON e.employee_id = a.employee_id WHERE a.facility_id IN ('CEO', 'CTO', 'CFO');
++-----------------+
+| SUM(e.pay_rate) |
++-----------------+
+|            NULL |
++-----------------+
+1 row in set, 3 warnings (0.22 sec)
+
+mysql> SELECT SUM(e.pay_rate) FROM employees AS e JOIN employee_assignments AS a ON e.employee_id = a.employee_id WHERE e.role IN ('CEO', 'CTO', 'CFO');
++-----------------+
+| SUM(e.pay_rate) |
++-----------------+
+|         7391.20 |
++-----------------+
+1 row in set (0.21 sec)
+
+mysql> SELECT
+    orders AS o     ->     c.email
+    -> FROM
+    ->     customers AS c
+    -> JOIN
+tomer_id NOT IN     ->     orders AS o ON c.customer_id = o.customer_id
+    -> WHERE
+M reviews)
+GROUP    ->     c.customer_id NOT IN (SELECT DISTINCT customer_id FROM reviews)
+    -> GROUP BY
+    ->     c.customer_id, c.email
+SC
+LIMIT 1;    -> ORDER BY
+    ->     COUNT(o.order_id) DESC
+    -> LIMIT 1;
++-----------------------+
+| email                 |
++-----------------------+
+| dgrimsley2ab@webs.com |
++-----------------------+
+1 row in set (0.22 sec)
+
+mysql> SELECT
+
+JOIN
+    orders AS o ON c.custo    ->     c.first_name,
+    ->     c.last_name
+    -> FROM
+    ->     customers AS c
+    -> JOIN
+    ->     orders AS o ON c.customer_id = o.customer_id
+    -> JOIN
+    ->     order_items AS oi ON o.order_id = oi.order_id
+    -> JOIN
+    ->     products AS p ON oi.product_id = p.product_id
+    -> GROUP BY
+    ->     c.customer_id, c.first_name, c.last_name
+    -> ORDER BY
+    ->     SUM(oi.quantity * p.price) DESC
+    -> LIMIT 1;
++------------+-----------+
+| first_name | last_name |
++------------+-----------+
+| Willabella | Wain      |
++------------+-----------+
+1 row in set (0.27 sec)
+
+mysql> SELECT
+ROM
+    employees AS e
+JOIN
+    employee_assignments AS a ON e.employee_id = a.employee_id
+JOIN
+    (SELECT
+        facility_id,
+        AVG(quantity) AS avg_qty
+    FROM
+        inventories
+    GROUP BY
+        facility_id
+    ) AS facility_stats ON a.facility_id = facility_stats.facility_id
+WHERE
+    e.role = 'IT Manager'
+ORDER BY
+    facility_stats.avg_qty ASC
+LIMIT 1;    ->     e.email,
+    ->     facility_stats.avg_qty
+    -> FROM
+    ->     employees AS e
+    -> JOIN
+    ->     employee_assignments AS a ON e.employee_id = a.employee_id
+    -> JOIN
+    ->     (SELECT
+    ->         facility_id,
+    ->         AVG(quantity) AS avg_qty
+    ->     FROM
+    ->         inventories
+    ->     GROUP BY
+    ->         facility_id
+    ->     ) AS facility_stats ON a.facility_id = facility_stats.facility_id
+    -> WHERE
+    ->     e.role = 'IT Manager'
+    -> ORDER BY
+    ->     facility_stats.avg_qty ASC
+    -> LIMIT 1;
++------------------------------+-----------+
+| email                        | avg_qty   |
++------------------------------+-----------+
+| valera.kenner@epicsales.shop | 2274.4626 |
++------------------------------+-----------+
+1 row in set (0.19 sec)
+
+mysql>

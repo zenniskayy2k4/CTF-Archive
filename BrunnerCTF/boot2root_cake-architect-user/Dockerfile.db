@@ -1,0 +1,18 @@
+FROM postgres:15-bookworm
+
+RUN apt-get update && \
+    apt-get install -y postgresql-plpython3-15 curl netcat-traditional python3 && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN echo "brunner{<USER>...}" > /user.txt
+RUN chown postgres:postgres /user.txt
+
+RUN echo "brunner{<ROOT>...}" > /root/root.txt
+RUN chmod 400 /root/root.txt
+
+COPY cake_logger /usr/local/bin/cake_logger
+RUN chmod +x /usr/local/bin/cake_logger
+RUN chown root:root /usr/local/bin/cake_logger
+RUN chmod 4755 /usr/local/bin/cake_logger
+
+COPY /app/init_db.sql /docker-entrypoint-initdb.d/init_db.sql

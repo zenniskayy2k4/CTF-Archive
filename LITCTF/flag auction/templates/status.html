@@ -1,0 +1,36 @@
+<!-- status.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auction Status</title>
+</head>
+<body>
+    <h1>Auction Status</h1>
+    {% if active %}
+        <p>The auction is ongoing.</p>
+    {% else %}
+        <p>The auction has ended.</p>
+    {% endif %}
+    <p>Your Balance: {{ balance }}</p>
+    <ul>
+        {% for item in items %}
+            <li>
+                <strong>{{ item.prize }}</strong> - Highest Bid: {{ item.highest_bid }}
+                {% if item.highest_bidder %}
+                    by {{ item.highest_bidder }}
+                {% else %}
+                    (No bids yet)
+                {% endif %}
+                {% if active %}
+                    <form action="/bid" method="POST">
+                        <input type="hidden" name="item_id" value="{{ loop.index0 }}">
+                        <label for="bid">Your Bid:</label>
+                        <input type="number" name="bid" required>
+                        <button type="submit">Place Bid</button>
+                    </form>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,7 @@
+ASIS{ADSB_3nc0din9S_iN__R3vEr5Es!}
+
+Secret: 8d45ac2d9904d910613f94ba81b5
+
+zenniskayy@ZennisKayy:/mnt/e/Cyber Security/CTF/Olympic/BadMode$ qemu-aarch64 ./badmode license
+Please enter the SECRET string to validate license: 8d45ac2d9904d910613f94ba81b5
+Congratulations! Here is your flag: ASIS{ADSB_3nc0din9S_iN__R3vEr5Es!}

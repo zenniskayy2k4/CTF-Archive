@@ -1,0 +1,3 @@
+d4rkc0de{ezZ_f0r_pyth0n_lvrs_huh?}
+
+open('flag.txt').read()

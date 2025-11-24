@@ -1,0 +1,10 @@
+Username: admin
+Pass: router123
+
+sudo mount -t ext2 -o loop rootfs.ext2 mnt/router_fs
+
+# gdbserver :31337 /usr/bin/router-web-panel
+
+gdb-multiarch mnt/router_fs/usr/bin/router-web-panel
+
+target remote localhost:31337

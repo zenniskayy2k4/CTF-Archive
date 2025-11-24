@@ -1,0 +1,1140 @@
+--- Bytecode for chatbot_extracted/main.pyc ---
+  0           0 RESUME                   0
+
+  1           2 LOAD_CONST               0 (0)
+              4 LOAD_CONST               1 (None)
+              6 IMPORT_NAME              0 (base64)
+              8 STORE_NAME               0 (base64)
+             10 LOAD_CONST               0 (0)
+             12 LOAD_CONST               1 (None)
+             14 IMPORT_NAME              1 (json)
+             16 STORE_NAME               1 (json)
+             18 LOAD_CONST               0 (0)
+             20 LOAD_CONST               1 (None)
+             22 IMPORT_NAME              2 (time)
+             24 STORE_NAME               2 (time)
+             26 LOAD_CONST               0 (0)
+             28 LOAD_CONST               1 (None)
+             30 IMPORT_NAME              3 (random)
+             32 STORE_NAME               3 (random)
+             34 LOAD_CONST               0 (0)
+             36 LOAD_CONST               1 (None)
+             38 IMPORT_NAME              4 (sys)
+             40 STORE_NAME               4 (sys)
+             42 LOAD_CONST               0 (0)
+             44 LOAD_CONST               1 (None)
+             46 IMPORT_NAME              5 (os)
+             48 STORE_NAME               5 (os)
+
+  2          50 LOAD_CONST               0 (0)
+             52 LOAD_CONST               2 (('CDLL', 'c_char_p', 'c_int', 'c_void_p'))
+             54 IMPORT_NAME              6 (ctypes)
+             56 IMPORT_FROM              7 (CDLL)
+             58 STORE_NAME               7 (CDLL)
+             60 IMPORT_FROM              8 (c_char_p)
+             62 STORE_NAME               8 (c_char_p)
+             64 IMPORT_FROM              9 (c_int)
+             66 STORE_NAME               9 (c_int)
+             68 IMPORT_FROM             10 (c_void_p)
+             70 STORE_NAME              10 (c_void_p)
+             72 POP_TOP
+
+  3          74 LOAD_CONST               0 (0)
+             76 LOAD_CONST               3 (('serialization', 'hashes'))
+             78 IMPORT_NAME             11 (cryptography.hazmat.primitives)
+             80 IMPORT_FROM             12 (serialization)
+             82 STORE_NAME              12 (serialization)
+             84 IMPORT_FROM             13 (hashes)
+             86 STORE_NAME              13 (hashes)
+             88 POP_TOP
+
+  4          90 LOAD_CONST               0 (0)
+             92 LOAD_CONST               4 (('padding',))
+             94 IMPORT_NAME             14 (cryptography.hazmat.primitives.asymmetric)
+             96 IMPORT_FROM             15 (padding)
+             98 STORE_NAME              15 (padding)
+            100 POP_TOP
+
+  5         102 LOAD_CONST               0 (0)
+            104 LOAD_CONST               1 (None)
+            106 IMPORT_NAME              6 (ctypes)
+            108 STORE_NAME               6 (ctypes)
+
+  8         110 LOAD_CONST               5 (<code object get_resource_path at 0x00000185AE1368D0, file "main.py", line 8>)
+            112 MAKE_FUNCTION            0
+            114 STORE_NAME              16 (get_resource_path)
+
+ 16         116 LOAD_CONST               6 (<code object load_native_lib at 0x00000185ADDF2830, file "main.py", line 16>)
+            118 MAKE_FUNCTION            0
+            120 STORE_NAME              17 (load_native_lib)
+
+ 19         122 LOAD_NAME                4 (sys)
+            124 LOAD_ATTR               18 (c_int)
+
+ 20         144 LOAD_CONST               8 ('libnative.dll')
+            146 STORE_NAME              19 (LIBNAME)
+            148 JUMP_FORWARD             2 (to 154)
+
+ 22         150 LOAD_CONST               9 ('libnative.so')
+            152 STORE_NAME              19 (LIBNAME)
+
+ 24     >>  154 LOAD_CONST               1 (None)
+            156 STORE_NAME              20 (lib)
+
+ 25         158 LOAD_CONST               1 (None)
+            160 STORE_NAME              21 (check_integrity)
+
+ 26         162 LOAD_CONST               1 (None)
+            164 STORE_NAME              22 (decrypt_flag_file)
+
+ 27         166 LOAD_CONST               1 (None)
+            168 STORE_NAME              23 (free_mem)
+
+ 28         170 NOP
+
+ 29         172 PUSH_NULL
+            174 LOAD_NAME               17 (load_native_lib)
+            176 LOAD_NAME               19 (LIBNAME)
+            178 UNPACK_SEQUENCE          1
+            182 CALL                     1
+            190 CACHE
+            192 STORE_NAME              20 (lib)
+
+ 30         194 LOAD_NAME               20 (lib)
+            196 LOAD_ATTR               21 (NULL|self + c_void_p)
+            216 CACHE
+            218 CACHE
+            220 CACHE
+            222 CACHE
+
+ 32         224 LOAD_NAME                9 (c_int)
+            226 LOAD_NAME               21 (check_integrity)
+            228 STORE_ATTR              25 (restype)
+
+ 34         238 LOAD_NAME               20 (lib)
+            240 LOAD_ATTR               22 (cryptography.hazmat.primitives)
+            260 CACHE
+            262 CACHE
+            264 CACHE
+            266 CACHE
+
+ 36         268 LOAD_NAME               10 (c_void_p)
+            270 LOAD_NAME               22 (decrypt_flag_file)
+            272 STORE_ATTR              25 (restype)
+
+ 38         282 LOAD_NAME               20 (lib)
+            284 LOAD_ATTR               23 (NULL|self + cryptography.hazmat.primitives)
+            304 CACHE
+            306 CACHE
+            308 CACHE
+            310 CACHE
+
+ 40         312 LOAD_CONST               1 (None)
+            314 LOAD_NAME               23 (free_mem)
+            316 STORE_ATTR              25 (restype)
+            326 JUMP_FORWARD            38 (to 404)
+        >>  328 PUSH_EXC_INFO
+
+ 41         330 LOAD_NAME               26 (Exception)
+            332 CHECK_EXC_MATCH
+            334 POP_JUMP_IF_FALSE       30 (to 396)
+            336 STORE_NAME              27 (e)
+
+ 42         338 PUSH_NULL
+            340 LOAD_NAME               28 (print)
+            342 LOAD_CONST              10 ('Warning: native lib not loaded:')
+            344 LOAD_NAME               27 (e)
+            346 UNPACK_SEQUENCE          2
+            350 CALL                     2
+            358 CACHE
+            360 POP_TOP
+
+ 43         362 LOAD_CONST               1 (None)
+            364 STORE_NAME              20 (lib)
+
+ 44         366 LOAD_CONST               1 (None)
+            368 STORE_NAME              21 (check_integrity)
+
+ 45         370 LOAD_CONST               1 (None)
+            372 STORE_NAME              22 (decrypt_flag_file)
+
+ 46         374 LOAD_CONST               1 (None)
+            376 STORE_NAME              23 (free_mem)
+            378 POP_EXCEPT
+            380 LOAD_CONST               1 (None)
+            382 STORE_NAME              27 (e)
+            384 DELETE_NAME             27 (e)
+            386 JUMP_FORWARD             8 (to 404)
+        >>  388 LOAD_CONST               1 (None)
+            390 STORE_NAME              27 (e)
+            392 DELETE_NAME             27 (e)
+            394 RERAISE                  1
+
+ 41     >>  396 RERAISE                  0
+        >>  398 COPY                     3
+            400 POP_EXCEPT
+            402 RERAISE                  1
+
+ 48     >>  404 LOAD_CONST              11 (<code object run_integrity_or_exit at 0x00000185ADE40030, file "main.py", line 48>)
+            406 MAKE_FUNCTION            0
+            408 STORE_NAME              29 (run_integrity_or_exit)
+
+ 56         410 LOAD_CONST              12 (b'-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsJftFGJC6RjAC54aMncA\nfjb2xXeRECiwHuz2wC6QynDd93/7XIrqTObeTpfBCSpOKRLhks6/nzZFTTsYdQCj\n4roXhWo5lFfH0OTL+164VoKnmUkQ9dppzpmV0Kpk5IQhEyuPYzJfFAlafcHdQvUo\nidkqcOPpR7hznJPEuRbPxJod34Bph/u9vePKcQQfe+/l/nn02nbfYWTuGtuEdpHq\nMkktl4WpB50/a5ZqYkW4z0zjFCY5LIPE7mpUNLrZnadBGIaLoVV2lZEBdLt6iLkV\nHXIr+xNA9ysE304T0JJ/DwM1OXb4yVrtawbFLBu9otOC+Gu0Set+8OjfQvJ+tlT/\nzQIDAQAB\n-----END PUBLIC KEY-----')
+            412 STORE_NAME              30 (PUB_PEM)
+
+ 65         414 LOAD_CONST               1 (None)
+            416 STORE_NAME              31 (public_key)
+
+ 66         418 NOP
+
+ 67         420 PUSH_NULL
+            422 LOAD_NAME               16 (get_resource_path)
+            424 LOAD_CONST              13 ('public.pem')
+            426 UNPACK_SEQUENCE          1
+            430 CALL                     1
+            438 CACHE
+            440 STORE_NAME              32 (pub_path)
+
+ 68         442 LOAD_NAME                5 (os)
+            444 LOAD_ATTR               33 (NULL|self + get_resource_path)
+            464 CACHE
+            466 CACHE
+            468 CACHE
+            470 CACHE
+            472 CACHE
+            474 CACHE
+            476 LOAD_NAME               32 (pub_path)
+            478 UNPACK_SEQUENCE          1
+            482 CALL                     1
+            490 CACHE
+            492 POP_JUMP_IF_FALSE       71 (to 636)
+
+ 69         494 PUSH_NULL
+            496 LOAD_NAME               35 (open)
+            498 LOAD_NAME               32 (pub_path)
+            500 LOAD_CONST              14 ('rb')
+            502 UNPACK_SEQUENCE          2
+            506 CALL                     2
+            514 CACHE
+            516 BEFORE_WITH
+            518 STORE_NAME              36 (f)
+
+ 70         520 PUSH_NULL
+            522 LOAD_NAME               12 (serialization)
+            524 LOAD_ATTR               37 (NULL|self + platform)
+            544 CACHE
+            546 CACHE
+            548 CACHE
+            550 CACHE
+            552 CACHE
+            554 CACHE
+            556 CACHE
+            558 UNPACK_SEQUENCE          0
+            562 CALL                     0
+            570 CACHE
+            572 UNPACK_SEQUENCE          1
+            576 CALL                     1
+            584 CACHE
+            586 STORE_NAME              31 (public_key)
+
+ 69         588 LOAD_CONST               1 (None)
+            590 LOAD_CONST               1 (None)
+            592 LOAD_CONST               1 (None)
+            594 UNPACK_SEQUENCE          2
+            598 CALL                     2
+            606 CACHE
+            608 POP_TOP
+            610 JUMP_FORWARD            11 (to 634)
+        >>  612 PUSH_EXC_INFO
+            614 WITH_EXCEPT_START
+            616 POP_JUMP_IF_TRUE         4 (to 626)
+            618 RERAISE                  2
+        >>  620 COPY                     3
+            622 POP_EXCEPT
+            624 RERAISE                  1
+        >>  626 POP_TOP
+            628 POP_EXCEPT
+            630 POP_TOP
+            632 POP_TOP
+        >>  634 JUMP_FORWARD            16 (to 668)
+
+ 72     >>  636 PUSH_NULL
+            638 LOAD_NAME               12 (serialization)
+            640 LOAD_ATTR               37 (NULL|self + platform)
+            660 CACHE
+            662 CACHE
+            664 CACHE
+            666 STORE_NAME              31 (public_key)
+        >>  668 JUMP_FORWARD            32 (to 734)
+        >>  670 PUSH_EXC_INFO
+
+ 73         672 LOAD_NAME               26 (Exception)
+            674 CHECK_EXC_MATCH
+            676 POP_JUMP_IF_FALSE       24 (to 726)
+            678 STORE_NAME              27 (e)
+
+ 74         680 PUSH_NULL
+            682 LOAD_NAME               28 (print)
+            684 LOAD_CONST              15 ('Failed loading public key:')
+            686 LOAD_NAME               27 (e)
+            688 UNPACK_SEQUENCE          2
+            692 CALL                     2
+            700 CACHE
+            702 POP_TOP
+
+ 75         704 LOAD_CONST               1 (None)
+            706 STORE_NAME              31 (public_key)
+            708 POP_EXCEPT
+            710 LOAD_CONST               1 (None)
+            712 STORE_NAME              27 (e)
+            714 DELETE_NAME             27 (e)
+            716 JUMP_FORWARD             8 (to 734)
+        >>  718 LOAD_CONST               1 (None)
+            720 STORE_NAME              27 (e)
+            722 DELETE_NAME             27 (e)
+            724 RERAISE                  1
+
+ 73     >>  726 RERAISE                  0
+        >>  728 COPY                     3
+            730 POP_EXCEPT
+            732 RERAISE                  1
+
+ 78     >>  734 LOAD_CONST              16 (<code object b64url_encode at 0x00000185ADE891B0, file "main.py", line 78>)
+            736 MAKE_FUNCTION            0
+            738 STORE_NAME              39 (b64url_encode)
+
+ 79         740 LOAD_CONST              17 (<code object b64url_decode at 0x00000185ADDF5BC0, file "main.py", line 79>)
+            742 MAKE_FUNCTION            0
+            744 STORE_NAME              40 (b64url_decode)
+
+ 83         746 LOAD_CONST              18 (<code object verify_token at 0x00000185AE041030, file "main.py", line 83>)
+            748 MAKE_FUNCTION            0
+            750 STORE_NAME              41 (verify_token)
+
+100         752 LOAD_CONST              19 (<code object sample_token_nonvip at 0x00000185ADE40630, file "main.py", line 100>)
+            754 MAKE_FUNCTION            0
+            756 STORE_NAME              42 (sample_token_nonvip)
+
+105         758 LOAD_CONST              20 (<code object main at 0x00000185AE08B7C0, file "main.py", line 105>)
+            760 MAKE_FUNCTION            0
+            762 STORE_NAME              43 (main)
+
+157         764 LOAD_NAME               44 (__name__)
+            766 LOAD_CONST              21 ('__main__')
+            768 COMPARE_OP               2 (<)
+            772 CACHE
+            774 POP_JUMP_IF_FALSE       12 (to 800)
+
+158         776 PUSH_NULL
+            778 LOAD_NAME               43 (main)
+            780 UNPACK_SEQUENCE          0
+            784 CALL                     0
+            792 CACHE
+            794 POP_TOP
+            796 LOAD_CONST               1 (None)
+            798 RETURN_VALUE
+
+157     >>  800 LOAD_CONST               1 (None)
+            802 RETURN_VALUE
+ExceptionTable:
+  172 to 324 -> 328 [0]
+  328 to 336 -> 398 [1] lasti
+  338 to 376 -> 388 [1] lasti
+  388 to 396 -> 398 [1] lasti
+  420 to 516 -> 670 [0]
+  518 to 586 -> 612 [1] lasti
+  588 to 610 -> 670 [0]
+  612 to 618 -> 620 [3] lasti
+  620 to 624 -> 670 [0]
+  626 to 626 -> 620 [3] lasti
+  628 to 666 -> 670 [0]
+  670 to 678 -> 728 [1] lasti
+  680 to 706 -> 718 [1] lasti
+  718 to 726 -> 728 [1] lasti
+
+Disassembly of <code object get_resource_path at 0x00000185AE1368D0, file "main.py", line 8>:
+  8           0 RESUME                   0
+
+  9           2 LOAD_GLOBAL              1 (NULL + getattr)
+             12 CACHE
+             14 LOAD_GLOBAL              2 (sys)
+             24 CACHE
+             26 LOAD_CONST               1 ('frozen')
+             28 LOAD_CONST               2 (False)
+             30 UNPACK_SEQUENCE          3
+             34 CALL                     3
+             42 CACHE
+             44 POP_JUMP_IF_FALSE       13 (to 72)
+
+ 10          46 LOAD_GLOBAL              2 (sys)
+             56 CACHE
+             58 LOAD_ATTR                2 (sys)
+             78 CACHE
+             80 CACHE
+             82 CACHE
+             84 LOAD_ATTR                4 (_MEIPASS)
+            104 CACHE
+            106 CACHE
+            108 CACHE
+            110 CACHE
+            112 CACHE
+            114 CACHE
+            116 LOAD_GLOBAL             12 (__file__)
+            126 CACHE
+            128 UNPACK_SEQUENCE          1
+            132 CALL                     1
+            140 CACHE
+            142 STORE_FAST               1 (base)
+
+ 13         144 LOAD_GLOBAL              6 (os)
+            154 CACHE
+            156 LOAD_ATTR                4 (_MEIPASS)
+            176 CACHE
+            178 CACHE
+            180 CACHE
+            182 CACHE
+            184 CACHE
+            186 CACHE
+            188 LOAD_FAST                1 (base)
+            190 LOAD_FAST                0 (name)
+            192 UNPACK_SEQUENCE          2
+            196 CALL                     2
+            204 CACHE
+            206 RETURN_VALUE
+
+Disassembly of <code object load_native_lib at 0x00000185ADDF2830, file "main.py", line 16>:
+ 16           0 RESUME                   0
+
+ 17           2 LOAD_GLOBAL              1 (NULL + CDLL)
+             12 CACHE
+             14 LOAD_GLOBAL              3 (NULL + get_resource_path)
+             24 CACHE
+             26 LOAD_FAST                0 (name)
+             28 UNPACK_SEQUENCE          1
+             32 CALL                     1
+             40 CACHE
+             42 UNPACK_SEQUENCE          1
+             46 CALL                     1
+             54 CACHE
+             56 RETURN_VALUE
+
+Disassembly of <code object run_integrity_or_exit at 0x00000185ADE40030, file "main.py", line 48>:
+ 48           0 RESUME                   0
+
+ 49           2 LOAD_GLOBAL              0 (check_integrity)
+             12 CACHE
+             14 POP_JUMP_IF_FALSE       82 (to 180)
+
+ 50          16 LOAD_GLOBAL              1 (NULL + check_integrity)
+             26 CACHE
+             28 LOAD_GLOBAL              2 (sys)
+             38 CACHE
+             40 LOAD_ATTR                2 (sys)
+             60 CACHE
+             62 CACHE
+             64 CACHE
+             66 CACHE
+             68 CACHE
+             70 CACHE
+             72 UNPACK_SEQUENCE          0
+             76 CALL                     0
+             84 CACHE
+             86 UNPACK_SEQUENCE          1
+             90 CALL                     1
+             98 CACHE
+            100 STORE_FAST               0 (ok)
+
+ 51         102 LOAD_FAST                0 (ok)
+            104 POP_JUMP_IF_TRUE        39 (to 184)
+
+ 52         106 LOAD_GLOBAL              9 (NULL + print)
+            116 CACHE
+            118 LOAD_CONST               1 ('[!] Integrity failed or debugger detected. Exiting.')
+            120 UNPACK_SEQUENCE          1
+            124 CALL                     1
+            132 CACHE
+            134 POP_TOP
+
+ 53         136 LOAD_GLOBAL              3 (NULL + sys)
+            146 CACHE
+            148 LOAD_ATTR                5 (NULL|self + executable)
+            168 CACHE
+            170 CACHE
+            172 CACHE
+            174 POP_TOP
+            176 LOAD_CONST               0 (None)
+            178 RETURN_VALUE
+
+ 49     >>  180 LOAD_CONST               0 (None)
+            182 RETURN_VALUE
+
+ 51     >>  184 LOAD_CONST               0 (None)
+            186 RETURN_VALUE
+
+Disassembly of <code object b64url_encode at 0x00000185ADE891B0, file "main.py", line 78>:
+ 78           0 RESUME                   0
+              2 LOAD_GLOBAL              1 (NULL + base64)
+             12 CACHE
+             14 LOAD_ATTR                1 (NULL|self + base64)
+             34 CACHE
+             36 CACHE
+             38 CACHE
+             40 STORE_SUBSCR
+             44 CACHE
+             46 CACHE
+             48 CACHE
+             50 CACHE
+             52 CACHE
+             54 CACHE
+             56 CACHE
+             58 CACHE
+             60 CACHE
+             62 LOAD_CONST               1 (b'=')
+             64 UNPACK_SEQUENCE          1
+             68 CALL                     1
+             76 CACHE
+             78 STORE_SUBSCR
+             82 CACHE
+             84 CACHE
+             86 CACHE
+             88 CACHE
+             90 CACHE
+             92 CACHE
+             94 CACHE
+             96 CACHE
+             98 CACHE
+            100 UNPACK_SEQUENCE          0
+            104 CALL                     0
+            112 CACHE
+            114 RETURN_VALUE
+
+Disassembly of <code object b64url_decode at 0x00000185ADDF5BC0, file "main.py", line 79>:
+ 79           0 RESUME                   0
+
+ 80           2 LOAD_FAST                0 (s)
+              4 LOAD_CONST               1 ('=')
+              6 LOAD_CONST               2 (4)
+              8 LOAD_GLOBAL              1 (NULL + len)
+             18 CACHE
+             20 LOAD_FAST                0 (s)
+             22 UNPACK_SEQUENCE          1
+             26 CALL                     1
+             34 CACHE
+             36 LOAD_CONST               2 (4)
+             38 BINARY_OP                6 (%)
+             42 BINARY_OP               10 (-)
+             46 LOAD_CONST               2 (4)
+             48 BINARY_OP                6 (%)
+             52 BINARY_OP                5 (*)
+             56 BINARY_OP               13 (+=)
+             60 STORE_FAST               0 (s)
+
+ 81          62 LOAD_GLOBAL              3 (NULL + base64)
+             72 CACHE
+             74 LOAD_ATTR                2 (base64)
+             94 CACHE
+             96 CACHE
+             98 CACHE
+            100 CACHE
+            102 CACHE
+            104 CACHE
+            106 CACHE
+            108 UNPACK_SEQUENCE          0
+            112 CALL                     0
+            120 CACHE
+            122 UNPACK_SEQUENCE          1
+            126 CALL                     1
+            134 CACHE
+            136 RETURN_VALUE
+
+Disassembly of <code object verify_token at 0x00000185AE041030, file "main.py", line 83>:
+ 83           0 RESUME                   0
+
+ 84           2 LOAD_GLOBAL              0 (public_key)
+             12 CACHE
+             14 POP_JUMP_IF_TRUE         2 (to 20)
+
+ 85          16 LOAD_CONST               1 ((False, 'no public key'))
+             18 RETURN_VALUE
+
+ 86     >>   20 NOP
+
+ 87          22 LOAD_FAST                0 (token)
+             24 STORE_SUBSCR
+             28 CACHE
+             30 CACHE
+             32 CACHE
+             34 CACHE
+             36 CACHE
+             38 CACHE
+             40 CACHE
+             42 CACHE
+             44 CACHE
+             46 UNPACK_SEQUENCE          0
+             50 CALL                     0
+             58 CACHE
+             60 STORE_SUBSCR
+             64 CACHE
+             66 CACHE
+             68 CACHE
+             70 CACHE
+             72 CACHE
+             74 CACHE
+             76 CACHE
+             78 CACHE
+             80 CACHE
+             82 LOAD_CONST               2 ('.')
+             84 LOAD_CONST               3 (1)
+             86 UNPACK_SEQUENCE          2
+             90 CALL                     2
+             98 CACHE
+            100 UNPACK_SEQUENCE          2
+            104 STORE_FAST               1 (payload_b64)
+            106 STORE_FAST               2 (sig_b64)
+
+ 88         108 LOAD_GLOBAL              7 (NULL + b64url_decode)
+            118 CACHE
+            120 LOAD_FAST                1 (payload_b64)
+            122 UNPACK_SEQUENCE          1
+            126 CALL                     1
+            134 CACHE
+            136 STORE_FAST               3 (payload)
+
+ 89         138 LOAD_GLOBAL              7 (NULL + b64url_decode)
+            148 CACHE
+            150 LOAD_FAST                2 (sig_b64)
+            152 UNPACK_SEQUENCE          1
+            156 CALL                     1
+            164 CACHE
+            166 STORE_FAST               4 (sig)
+
+ 90         168 LOAD_GLOBAL              0 (public_key)
+            178 CACHE
+            180 STORE_SUBSCR
+            184 CACHE
+            186 CACHE
+            188 CACHE
+            190 CACHE
+            192 CACHE
+            194 CACHE
+            196 CACHE
+            198 CACHE
+            200 CACHE
+            202 LOAD_FAST                4 (sig)
+            204 LOAD_FAST                3 (payload)
+            206 LOAD_GLOBAL             11 (NULL + padding)
+            216 CACHE
+            218 LOAD_ATTR                6 (b64url_decode)
+            238 CACHE
+            240 CACHE
+            242 LOAD_GLOBAL             15 (NULL + hashes)
+            252 CACHE
+            254 LOAD_ATTR                8 (verify)
+            274 CACHE
+            276 CACHE
+            278 UNPACK_SEQUENCE          4
+            282 CALL                     4
+            290 CACHE
+            292 POP_TOP
+
+ 91         294 LOAD_GLOBAL             19 (NULL + json)
+            304 CACHE
+            306 LOAD_ATTR               10 (padding)
+            326 CACHE
+            328 CACHE
+            330 CACHE
+            332 CACHE
+            334 CACHE
+            336 CACHE
+            338 CACHE
+            340 UNPACK_SEQUENCE          0
+            344 CALL                     0
+            352 CACHE
+            354 UNPACK_SEQUENCE          1
+            358 CALL                     1
+            366 CACHE
+            368 STORE_FAST               5 (j)
+
+ 92         370 LOAD_FAST                5 (j)
+            372 STORE_SUBSCR
+            376 CACHE
+            378 CACHE
+            380 CACHE
+            382 CACHE
+            384 CACHE
+            386 CACHE
+            388 CACHE
+            390 CACHE
+            392 CACHE
+            394 LOAD_CONST               4 ('role')
+            396 UNPACK_SEQUENCE          1
+            400 CALL                     1
+            408 CACHE
+            410 LOAD_CONST               5 ('VIP')
+            412 COMPARE_OP               3 (<)
+            416 CACHE
+            418 POP_JUMP_IF_FALSE        2 (to 424)
+
+ 93         420 LOAD_CONST               6 ((False, 'role != VIP'))
+            422 RETURN_VALUE
+
+ 94     >>  424 LOAD_FAST                5 (j)
+            426 STORE_SUBSCR
+            430 CACHE
+            432 CACHE
+            434 CACHE
+            436 CACHE
+            438 CACHE
+            440 CACHE
+            442 CACHE
+            444 CACHE
+            446 CACHE
+            448 LOAD_CONST               7 ('expiry')
+            450 LOAD_CONST               8 (0)
+            452 UNPACK_SEQUENCE          2
+            456 CALL                     2
+            464 CACHE
+            466 LOAD_GLOBAL             27 (NULL + int)
+            476 CACHE
+            478 LOAD_GLOBAL             29 (NULL + time)
+            488 CACHE
+            490 LOAD_ATTR               14 (hashes)
+            510 CACHE
+            512 CACHE
+            514 UNPACK_SEQUENCE          1
+            518 CALL                     1
+            526 CACHE
+            528 COMPARE_OP               0 (<)
+            532 CACHE
+            534 POP_JUMP_IF_FALSE        2 (to 540)
+
+ 95         536 LOAD_CONST               9 ((False, 'expired'))
+            538 RETURN_VALUE
+
+ 96     >>  540 LOAD_CONST              10 (True)
+            542 LOAD_FAST                5 (j)
+            544 BUILD_TUPLE              2
+            546 RETURN_VALUE
+        >>  548 PUSH_EXC_INFO
+
+ 97         550 LOAD_GLOBAL             30 (Exception)
+            560 CACHE
+            562 CHECK_EXC_MATCH
+            564 POP_JUMP_IF_FALSE       27 (to 620)
+            566 STORE_FAST               6 (e)
+
+ 98         568 LOAD_CONST              11 (False)
+            570 LOAD_GLOBAL             33 (NULL + str)
+            580 CACHE
+            582 LOAD_FAST                6 (e)
+            584 UNPACK_SEQUENCE          1
+            588 CALL                     1
+            596 CACHE
+            598 BUILD_TUPLE              2
+            600 SWAP                     2
+            602 POP_EXCEPT
+            604 LOAD_CONST               0 (None)
+            606 STORE_FAST               6 (e)
+            608 DELETE_FAST              6 (e)
+            610 RETURN_VALUE
+        >>  612 LOAD_CONST               0 (None)
+            614 STORE_FAST               6 (e)
+            616 DELETE_FAST              6 (e)
+            618 RERAISE                  1
+
+ 97     >>  620 RERAISE                  0
+        >>  622 COPY                     3
+            624 POP_EXCEPT
+            626 RERAISE                  1
+ExceptionTable:
+  22 to 418 -> 548 [0]
+  424 to 534 -> 548 [0]
+  540 to 544 -> 548 [0]
+  548 to 566 -> 622 [1] lasti
+  568 to 598 -> 612 [1] lasti
+  600 to 600 -> 622 [1] lasti
+  612 to 620 -> 622 [1] lasti
+
+Disassembly of <code object sample_token_nonvip at 0x00000185ADE40630, file "main.py", line 100>:
+100           0 RESUME                   0
+
+101           2 LOAD_GLOBAL              1 (NULL + json)
+             12 CACHE
+             14 LOAD_ATTR                1 (NULL|self + json)
+             34 CACHE
+             36 CACHE
+             38 LOAD_GLOBAL              7 (NULL + time)
+             48 CACHE
+             50 LOAD_ATTR                3 (NULL|self + dumps)
+             70 CACHE
+             72 CACHE
+             74 UNPACK_SEQUENCE          1
+             78 CALL                     1
+             86 CACHE
+             88 LOAD_CONST               2 (3600)
+             90 BINARY_OP                0 (+)
+             94 LOAD_CONST               3 ('USER')
+             96 LOAD_CONST               4 (('user', 'expiry', 'role'))
+             98 BUILD_CONST_KEY_MAP      3
+            100 UNPACK_SEQUENCE          1
+            104 CALL                     1
+            112 CACHE
+            114 STORE_SUBSCR
+            118 CACHE
+            120 CACHE
+            122 CACHE
+            124 CACHE
+            126 CACHE
+            128 CACHE
+            130 CACHE
+            132 CACHE
+            134 CACHE
+            136 UNPACK_SEQUENCE          0
+            140 CALL                     0
+            148 CACHE
+            150 STORE_FAST               0 (payload)
+
+102         152 LOAD_GLOBAL             11 (NULL + b64url_encode)
+            162 CACHE
+            164 LOAD_FAST                0 (payload)
+            166 UNPACK_SEQUENCE          1
+            170 CALL                     1
+            178 CACHE
+            180 RETURN_VALUE
+
+Disassembly of <code object main at 0x00000185AE08B7C0, file "main.py", line 105>:
+105           0 RESUME                   0
+
+106           2 LOAD_GLOBAL              1 (NULL + run_integrity_or_exit)
+             12 CACHE
+             14 UNPACK_SEQUENCE          0
+             18 CALL                     0
+             26 CACHE
+             28 POP_TOP
+
+107          30 LOAD_GLOBAL              3 (NULL + print)
+             40 CACHE
+             42 LOAD_CONST               1 ('=== Bot Chat === \n    1.chat\n    2.showtoken\n    3.upgrade \n    4.quit')
+             44 UNPACK_SEQUENCE          1
+             48 CALL                     1
+             56 CACHE
+             58 POP_TOP
+
+112          60 LOAD_CONST               2 (0)
+             62 STORE_FAST               0 (queries)
+
+113          64 NOP
+
+114     >>   66 LOAD_GLOBAL              5 (NULL + input)
+             76 CACHE
+             78 LOAD_CONST               4 ('> ')
+             80 UNPACK_SEQUENCE          1
+             84 CALL                     1
+             92 CACHE
+             94 STORE_SUBSCR
+             98 CACHE
+            100 CACHE
+            102 CACHE
+            104 CACHE
+            106 CACHE
+            108 CACHE
+            110 CACHE
+            112 CACHE
+            114 CACHE
+            116 UNPACK_SEQUENCE          0
+            120 CALL                     0
+            128 CACHE
+            130 STORE_SUBSCR
+            134 CACHE
+            136 CACHE
+            138 CACHE
+            140 CACHE
+            142 CACHE
+            144 CACHE
+            146 CACHE
+            148 CACHE
+            150 CACHE
+            152 UNPACK_SEQUENCE          0
+            156 CALL                     0
+            164 CACHE
+            166 STORE_FAST               1 (cmd)
+
+115         168 LOAD_FAST                1 (cmd)
+            170 LOAD_CONST               5 (('quit', 'exit'))
+            172 CONTAINS_OP              0
+            174 POP_JUMP_IF_FALSE        2 (to 180)
+
+116         176 LOAD_CONST               0 (None)
+            178 RETURN_VALUE
+
+117     >>  180 LOAD_FAST                1 (cmd)
+            182 LOAD_CONST               6 ('chat')
+            184 COMPARE_OP               2 (<)
+            188 CACHE
+            190 POP_JUMP_IF_FALSE       65 (to 322)
+
+118         192 LOAD_FAST                0 (queries)
+            194 LOAD_CONST               7 (3)
+            196 COMPARE_OP               0 (<)
+            200 CACHE
+            202 POP_JUMP_IF_FALSE       42 (to 288)
+
+119         204 LOAD_GLOBAL              3 (NULL + print)
+            214 CACHE
+            216 LOAD_GLOBAL             11 (NULL + random)
+            226 CACHE
+            228 LOAD_ATTR                6 (strip)
+            248 CALL                     1
+            256 CACHE
+            258 UNPACK_SEQUENCE          1
+            262 CALL                     1
+            270 CACHE
+            272 POP_TOP
+
+125         274 LOAD_FAST                0 (queries)
+            276 LOAD_CONST               9 (1)
+            278 BINARY_OP               13 (+=)
+            282 STORE_FAST               0 (queries)
+            284 EXTENDED_ARG             1
+            286 JUMP_FORWARD           371 (to 1030)
+
+127     >>  288 LOAD_GLOBAL              3 (NULL + print)
+            298 CACHE
+            300 LOAD_CONST              10 ("Free queries exhausted. Use 'upgrade'")
+            302 UNPACK_SEQUENCE          1
+            306 CALL                     1
+            314 CACHE
+            316 POP_TOP
+            318 EXTENDED_ARG             1
+            320 JUMP_FORWARD           354 (to 1030)
+
+128     >>  322 LOAD_FAST                1 (cmd)
+            324 LOAD_CONST              11 ('showtoken')
+            326 COMPARE_OP               2 (<)
+            330 CACHE
+            332 POP_JUMP_IF_FALSE       32 (to 398)
+
+129         334 LOAD_GLOBAL              3 (NULL + print)
+            344 CACHE
+            346 LOAD_CONST              12 ('Token current:')
+            348 LOAD_GLOBAL             15 (NULL + sample_token_nonvip)
+            358 CACHE
+            360 UNPACK_SEQUENCE          0
+            364 CALL                     0
+            372 CACHE
+            374 BINARY_OP                0 (+)
+            378 UNPACK_SEQUENCE          1
+            382 CALL                     1
+            390 CACHE
+            392 POP_TOP
+            394 EXTENDED_ARG             1
+            396 JUMP_FORWARD           316 (to 1030)
+
+130     >>  398 LOAD_FAST                1 (cmd)
+            400 LOAD_CONST              13 ('upgrade')
+            402 COMPARE_OP               2 (<)
+            406 CACHE
+            408 EXTENDED_ARG             1
+            410 POP_JUMP_IF_FALSE      294 (to 1000)
+
+131         412 LOAD_GLOBAL              1 (NULL + run_integrity_or_exit)
+            422 CACHE
+            424 UNPACK_SEQUENCE          0
+            428 CALL                     0
+            436 CACHE
+            438 POP_TOP
+
+132         440 LOAD_GLOBAL              5 (NULL + input)
+            450 CACHE
+            452 LOAD_CONST              14 ('Paste token: ')
+            454 UNPACK_SEQUENCE          1
+            458 CALL                     1
+            466 CACHE
+            468 STORE_SUBSCR
+            472 CACHE
+            474 CACHE
+            476 CACHE
+            478 CACHE
+            480 CACHE
+            482 CACHE
+            484 CACHE
+            486 CACHE
+            488 CACHE
+            490 UNPACK_SEQUENCE          0
+            494 CALL                     0
+            502 CACHE
+            504 STORE_FAST               2 (token)
+
+133         506 LOAD_GLOBAL             17 (NULL + verify_token)
+            516 CACHE
+            518 LOAD_FAST                2 (token)
+            520 UNPACK_SEQUENCE          1
+            524 CALL                     1
+            532 CACHE
+            534 UNPACK_SEQUENCE          2
+            538 STORE_FAST               3 (ok)
+            540 STORE_FAST               4 (info)
+
+134         542 LOAD_FAST                3 (ok)
+            544 POP_JUMP_IF_FALSE      210 (to 966)
+
+135         546 LOAD_GLOBAL             18 (decrypt_flag_file)
+            556 CACHE
+            558 POP_JUMP_IF_NOT_NONE    16 (to 592)
+
+136         560 LOAD_GLOBAL              3 (NULL + print)
+            570 CACHE
+            572 LOAD_CONST              15 ('Native library not available -> cannot decrypt')
+            574 UNPACK_SEQUENCE          1
+            578 CALL                     1
+            586 CACHE
+            588 POP_TOP
+            590 JUMP_FORWARD           185 (to 962)
+
+138     >>  592 LOAD_GLOBAL             21 (NULL + get_resource_path)
+            602 CACHE
+            604 LOAD_CONST              16 ('flag.enc')
+            606 UNPACK_SEQUENCE          1
+            610 CALL                     1
+            618 CACHE
+            620 STORE_SUBSCR
+            624 CACHE
+            626 CACHE
+            628 CACHE
+            630 CACHE
+            632 CACHE
+            634 CACHE
+            636 CACHE
+            638 CACHE
+            640 CACHE
+            642 UNPACK_SEQUENCE          0
+            646 CALL                     0
+            654 CACHE
+            656 STORE_FAST               5 (flag_path)
+
+139         658 LOAD_GLOBAL             19 (NULL + decrypt_flag_file)
+            668 CACHE
+            670 LOAD_FAST                5 (flag_path)
+            672 UNPACK_SEQUENCE          1
+            676 CALL                     1
+            684 CACHE
+            686 STORE_FAST               6 (res_ptr)
+
+140         688 LOAD_FAST                6 (res_ptr)
+            690 POP_JUMP_IF_TRUE        16 (to 724)
+
+141         692 LOAD_GLOBAL              3 (NULL + print)
+            702 CACHE
+            704 LOAD_CONST              17 ('Native failed to decrypt or error')
+            706 UNPACK_SEQUENCE          1
+            710 CALL                     1
+            718 CACHE
+            720 POP_TOP
+            722 JUMP_FORWARD           119 (to 962)
+
+143     >>  724 LOAD_GLOBAL             25 (NULL + ctypes)
+            734 CACHE
+            736 LOAD_ATTR               13 (NULL|self + choice)
+            756 CACHE
+            758 CACHE
+            760 CACHE
+            762 STORE_FAST               7 (flag_bytes)
+
+144         764 NOP
+
+145         766 LOAD_FAST                7 (flag_bytes)
+            768 STORE_SUBSCR
+            772 CACHE
+            774 CACHE
+            776 CACHE
+            778 CACHE
+            780 CACHE
+            782 CACHE
+            784 CACHE
+            786 CACHE
+            788 CACHE
+            790 LOAD_CONST              18 ('ignore')
+            792 KW_NAMES                19 (('errors',))
+            794 UNPACK_SEQUENCE          1
+            798 CALL                     1
+            806 CACHE
+            808 STORE_FAST               8 (flag)
+            810 JUMP_FORWARD            30 (to 872)
+        >>  812 PUSH_EXC_INFO
+
+146         814 POP_TOP
+
+147         816 LOAD_FAST                7 (flag_bytes)
+            818 STORE_SUBSCR
+            822 CACHE
+            824 CACHE
+            826 CACHE
+            828 CACHE
+            830 CACHE
+            832 CACHE
+            834 CACHE
+            836 CACHE
+            838 CACHE
+            840 LOAD_CONST              20 ('utf-8')
+            842 LOAD_CONST              21 ('replace')
+            844 KW_NAMES                19 (('errors',))
+            846 UNPACK_SEQUENCE          2
+            850 CALL                     2
+            858 CACHE
+            860 STORE_FAST               8 (flag)
+            862 POP_EXCEPT
+            864 JUMP_FORWARD             3 (to 872)
+        >>  866 COPY                     3
+            868 POP_EXCEPT
+            870 RERAISE                  1
+
+148     >>  872 LOAD_GLOBAL              3 (NULL + print)
+            882 CACHE
+            884 LOAD_CONST              22 ('=== VIP VERIFIED ===')
+            886 UNPACK_SEQUENCE          1
+            890 CALL                     1
+            898 CACHE
+            900 POP_TOP
+
+149         902 LOAD_GLOBAL              3 (NULL + print)
+            912 CACHE
+            914 LOAD_FAST                8 (flag)
+            916 UNPACK_SEQUENCE          1
+            920 CALL                     1
+            928 CACHE
+            930 POP_TOP
+
+150         932 LOAD_GLOBAL             31 (NULL + free_mem)
+            942 CACHE
+            944 LOAD_FAST                6 (res_ptr)
+            946 UNPACK_SEQUENCE          1
+            950 CALL                     1
+            958 CACHE
+            960 POP_TOP
+
+151     >>  962 LOAD_CONST               0 (None)
+            964 RETURN_VALUE
+
+153     >>  966 LOAD_GLOBAL              3 (NULL + print)
+            976 CACHE
+            978 LOAD_CONST              23 ('Token invalid:')
+            980 LOAD_FAST                4 (info)
+            982 UNPACK_SEQUENCE          2
+            986 CALL                     2
+            994 CACHE
+            996 POP_TOP
+            998 JUMP_FORWARD            15 (to 1030)
+
+155     >> 1000 LOAD_GLOBAL              3 (NULL + print)
+           1010 CACHE
+           1012 LOAD_CONST              24 ('Unknown. Use chat/showtoken/upgrade/quit')
+           1014 UNPACK_SEQUENCE          1
+           1018 CALL                     1
+           1026 CACHE
+           1028 POP_TOP
+
+113     >> 1030 EXTENDED_ARG             1
+           1032 JUMP_BACKWARD          484 (to 66)
+ExceptionTable:
+  766 to 808 -> 812 [0]
+  812 to 860 -> 866 [1] lasti

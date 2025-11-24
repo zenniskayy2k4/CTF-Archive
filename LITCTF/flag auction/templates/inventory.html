@@ -1,0 +1,19 @@
+<!-- inventory.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Inventory</title>
+</head>
+<body>
+    <h1>Your Won Items</h1>
+    {% if inventory %}
+        <ul>
+            {% for item in inventory %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>You haven't won any items yet.</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,9 @@
+
+Flag1: 1x...x{....}
+Flag2: 1x...x{....}
+Flag3: Decode: w/BX481MVteTsqfzuzUBTe+BcSG+2dGSr4Csbmzh3+T9zczDBa4p32ZRKzFCgE4aElN93L7MO99D0izyKuBj6w==
+Chuỗi trên là Base64. Giải ra bytes sẽ thấy phần đầu là salt, tiếp theo là IV, rồi phần dữ liệu mã hoá. Dùng mật khẩu thu được ở bước trước làm cơ sở sinh khoá bằng một hàm derive mạnh (trăm nghìn vòng). Dùng khoá đó với AES-CBC + padding thông dụng để giải — kết quả UTF-8 là Flag3
+
+
+Flag: 1adsecvn{g0x7r9k2b1qz}
+Flag: 
