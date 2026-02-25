@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{2EA8FA58-49E2-49AC-AFDA-8979D88C82F3}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Unity.Splines</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityEngine\Splines\ArrayUtility.cs" />
+    <Compile Include="UnityEngine\Splines\BezierCurve.cs" />
+    <Compile Include="UnityEngine\Splines\BezierKnot.cs" />
+    <Compile Include="UnityEngine\Splines\BezierTangent.cs" />
+    <Compile Include="UnityEngine\Splines\CurveUtility.cs" />
+    <Compile Include="UnityEngine\Splines\DataPoint.cs" />
+    <Compile Include="UnityEngine\Splines\DataPointComparer.cs" />
+    <Compile Include="UnityEngine\Splines\DistanceToInterpolation.cs" />
+    <Compile Include="UnityEngine\Splines\EmbeddedSplineData.cs" />
+    <Compile Include="UnityEngine\Splines\EmbeddedSplineDataField.cs" />
+    <Compile Include="UnityEngine\Splines\EmbeddedSplineDataFieldsAttribute.cs" />
+    <Compile Include="UnityEngine\Splines\EmbeddedSplineDataType.cs" />
+    <Compile Include="UnityEngine\Splines\ExtrudeSettings.cs" />
+    <Compile Include="UnityEngine\Splines\ExtrusionShapes\Circle.cs" />
+    <Compile Include="UnityEngine\Splines\ExtrusionShapes\Road.cs" />
+    <Compile Include="UnityEngine\Splines\ExtrusionShapes\ShapeType.cs" />
+    <Compile Include="UnityEngine\Splines\ExtrusionShapes\ShapeTypeUtility.cs" />
+    <Compile Include="UnityEngine\Splines\ExtrusionShapes\SplineShape.cs" />
+    <Compile Include="UnityEngine\Splines\ExtrusionShapes\Square.cs" />
+    <Compile Include="UnityEngine\Splines\GetPosition.cs" />
+    <Compile Include="UnityEngine\Splines\GetPositionTangentNormal.cs" />
+    <Compile Include="UnityEngine\Splines\IDataPoint.cs" />
+    <Compile Include="UnityEngine\Splines\IExtrudeShape.cs" />
+    <Compile Include="UnityEngine\Splines\IHasEmptyCurves.cs" />
+    <Compile Include="UnityEngine\Splines\IInterpolator.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\LerpColor.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\LerpFloat.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\LerpFloat2.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\LerpFloat3.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\LerpFloat4.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\LerpQuaternion.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\SlerpFloat2.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\SlerpFloat3.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\SlerpQuaternion.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\SmoothStepFloat.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\SmoothStepFloat2.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\SmoothStepFloat3.cs" />
+    <Compile Include="UnityEngine\Splines\Interpolators\SmoothStepFloat4.cs" />
+    <Compile Include="UnityEngine\Splines\InterpolatorUtility.cs" />
+    <Compile Include="UnityEngine\Splines\ISpline.cs" />
+    <Compile Include="UnityEngine\Splines\ISplineContainer.cs" />
+    <Compile Include="UnityEngine\Splines\ISplineModificationHandler.cs" />
+    <Compile Include="UnityEngine\Splines\ISplineProvider.cs" />
+    <Compile Include="UnityEngine\Splines\KnotLinkCollection.cs" />
+    <Compile Include="UnityEngine\Splines\MathUtility.cs" />
+    <Compile Include="UnityEngine\Splines\NativeSpline.cs" />
+    <Compile Include="UnityEngine\Splines\PathIndexUnit.cs" />
+    <Compile Include="UnityEngine\Splines\RamerDouglasPeucker.cs" />
+    <Compile Include="UnityEngine\Splines\SliceDirection.cs" />
+    <Compile Include="UnityEngine\Splines\Spline.cs" />
+    <Compile Include="UnityEngine\Splines\SplineAnimate.cs" />
+    <Compile Include="UnityEngine\Splines\SplineComponent.cs" />
+    <Compile Include="UnityEngine\Splines\SplineComputeBufferScope.cs" />
+    <Compile Include="UnityEngine\Splines\SplineContainer.cs" />
+    <Compile Include="UnityEngine\Splines\SplineData.cs" />
+    <Compile Include="UnityEngine\Splines\SplineDataDictionary.cs" />
+    <Compile Include="UnityEngine\Splines\SplineDataHandleAttribute.cs" />
+    <Compile Include="UnityEngine\Splines\SplineDataKeyValuePair.cs" />
+    <Compile Include="UnityEngine\Splines\SplineExtrude.cs" />
+    <Compile Include="UnityEngine\Splines\SplineFactory.cs" />
+    <Compile Include="UnityEngine\Splines\SplineIndexAttribute.cs" />
+    <Compile Include="UnityEngine\Splines\SplineInfo.cs" />
+    <Compile Include="UnityEngine\Splines\SplineInstantiate.cs" />
+    <Compile Include="UnityEngine\Splines\SplineJobs.cs" />
+    <Compile Include="UnityEngine\Splines\SplineKnotIndex.cs" />
+    <Compile Include="UnityEngine\Splines\SplineMath.cs" />
+    <Compile Include="UnityEngine\Splines\SplineMesh.cs" />
+    <Compile Include="UnityEngine\Splines\SplineModification.cs" />
+    <Compile Include="UnityEngine\Splines\SplineModificationData.cs" />
+    <Compile Include="UnityEngine\Splines\SplinePath.cs" />
+    <Compile Include="UnityEngine\Splines\SplinePathRef.cs" />
+    <Compile Include="UnityEngine\Splines\SplineRange.cs" />
+    <Compile Include="UnityEngine\Splines\SplineSlice.cs" />
+    <Compile Include="UnityEngine\Splines\SplineType.cs" />
+    <Compile Include="UnityEngine\Splines\SplineTypeUtility.cs" />
+    <Compile Include="UnityEngine\Splines\SplineUtility.cs" />
+    <Compile Include="UnityEngine\Splines\TangentMode.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

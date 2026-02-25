@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{D5483512-444D-4A40-AC8B-45EF51379CCB}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>UnityEngine.PropertiesModule</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unity\Properties\ArrayPropertyBag.cs" />
+    <Compile Include="Unity\Properties\AttributesScope.cs" />
+    <Compile Include="Unity\Properties\ConcreteTypeVisitor.cs" />
+    <Compile Include="Unity\Properties\ContainerPropertyBag.cs" />
+    <Compile Include="Unity\Properties\ConversionRegistry.cs" />
+    <Compile Include="Unity\Properties\CreatePropertyAttribute.cs" />
+    <Compile Include="Unity\Properties\DelegateProperty.cs" />
+    <Compile Include="Unity\Properties\DictionaryPropertyBag.cs" />
+    <Compile Include="Unity\Properties\DontCreatePropertyAttribute.cs" />
+    <Compile Include="Unity\Properties\ExcludeContext.cs" />
+    <Compile Include="Unity\Properties\FieldMember.cs" />
+    <Compile Include="Unity\Properties\GeneratePropertyBagAttribute.cs" />
+    <Compile Include="Unity\Properties\GeneratePropertyBagsForAssemblyAttribute.cs" />
+    <Compile Include="Unity\Properties\GeneratePropertyBagsForTypeAttribute.cs" />
+    <Compile Include="Unity\Properties\GeneratePropertyBagsForTypesQualifiedWithAttribute.cs" />
+    <Compile Include="Unity\Properties\HashSetPropertyBag.cs" />
+    <Compile Include="Unity\Properties\ICollectionElementProperty.cs" />
+    <Compile Include="Unity\Properties\ICollectionPropertyAccept.cs" />
+    <Compile Include="Unity\Properties\ICollectionPropertyBag.cs" />
+    <Compile Include="Unity\Properties\ICollectionPropertyBagAccept.cs" />
+    <Compile Include="Unity\Properties\ICollectionPropertyBagVisitor.cs" />
+    <Compile Include="Unity\Properties\ICollectionPropertyVisitor.cs" />
+    <Compile Include="Unity\Properties\IConstructor.cs" />
+    <Compile Include="Unity\Properties\IConstructorWithCount.cs" />
+    <Compile Include="Unity\Properties\IDictionaryElementProperty.cs" />
+    <Compile Include="Unity\Properties\IDictionaryPropertyAccept.cs" />
+    <Compile Include="Unity\Properties\IDictionaryPropertyBag.cs" />
+    <Compile Include="Unity\Properties\IDictionaryPropertyBagAccept.cs" />
+    <Compile Include="Unity\Properties\IDictionaryPropertyBagVisitor.cs" />
+    <Compile Include="Unity\Properties\IDictionaryPropertyVisitor.cs" />
+    <Compile Include="Unity\Properties\IExcludeContravariantPropertyAdapter.cs" />
+    <Compile Include="Unity\Properties\IExcludePropertyAdapter.cs" />
+    <Compile Include="Unity\Properties\IIndexedCollectionPropertyBagEnumerator.cs" />
+    <Compile Include="Unity\Properties\IIndexedProperties.cs" />
+    <Compile Include="Unity\Properties\IKeyedProperties.cs" />
+    <Compile Include="Unity\Properties\IListElementProperty.cs" />
+    <Compile Include="Unity\Properties\IListPropertyAccept.cs" />
+    <Compile Include="Unity\Properties\IListPropertyBag.cs" />
+    <Compile Include="Unity\Properties\IListPropertyBagAccept.cs" />
+    <Compile Include="Unity\Properties\IListPropertyBagVisitor.cs" />
+    <Compile Include="Unity\Properties\IListPropertyVisitor.cs" />
+    <Compile Include="Unity\Properties\IMemberInfo.cs" />
+    <Compile Include="Unity\Properties\INamedProperties.cs" />
+    <Compile Include="Unity\Properties\IndexedCollectionPropertyBag.cs" />
+    <Compile Include="Unity\Properties\IndexedCollectionPropertyBagEnumerable.cs" />
+    <Compile Include="Unity\Properties\IndexedCollectionPropertyBagEnumerator.cs" />
+    <Compile Include="Unity\Properties\IndexedCollectionSharedPropertyState.cs" />
+    <Compile Include="Unity\Properties\InstantiationKind.cs" />
+    <Compile Include="Unity\Properties\Internal\BoundsIntPropertyBag.cs" />
+    <Compile Include="Unity\Properties\Internal\BoundsPropertyBag.cs" />
+    <Compile Include="Unity\Properties\Internal\ColorPropertyBag.cs" />
+    <Compile Include="Unity\Properties\Internal\IAttributes.cs" />
+    <Compile Include="Unity\Properties\Internal\IPropertyBagRegister.cs" />
+    <Compile Include="Unity\Properties\Internal\PropertiesInitialization.cs" />
+    <Compile Include="Unity\Properties\Internal\PropertyBagStore.cs" />
+    <Compile Include="Unity\Properties\Internal\ReadOnlyAdapterCollection.cs" />
+    <Compile Include="Unity\Properties\Internal\RectIntPropertyBag.cs" />
+    <Compile Include="Unity\Properties\Internal\RectPropertyBag.cs" />
+    <Compile Include="Unity\Properties\Internal\ReflectedPropertyBag.cs" />
+    <Compile Include="Unity\Properties\Internal\ReflectedPropertyBagAttribute.cs" />
+    <Compile Include="Unity\Properties\Internal\ReflectedPropertyBagProvider.cs" />
+    <Compile Include="Unity\Properties\Internal\ReflectionUtilities.cs" />
+    <Compile Include="Unity\Properties\Internal\SystemVersionPropertyBag.cs" />
+    <Compile Include="Unity\Properties\Internal\Vector2IntPropertyBag.cs" />
+    <Compile Include="Unity\Properties\Internal\Vector2PropertyBag.cs" />
+    <Compile Include="Unity\Properties\Internal\Vector3IntPropertyBag.cs" />
+    <Compile Include="Unity\Properties\Internal\Vector3PropertyBag.cs" />
+    <Compile Include="Unity\Properties\Internal\Vector4PropertyBag.cs" />
+    <Compile Include="Unity\Properties\InvalidContainerTypeException.cs" />
+    <Compile Include="Unity\Properties\InvalidPathException.cs" />
+    <Compile Include="Unity\Properties\IProperty.cs" />
+    <Compile Include="Unity\Properties\IPropertyAccept.cs" />
+    <Compile Include="Unity\Properties\IPropertyBag.cs" />
+    <Compile Include="Unity\Properties\IPropertyBagVisitor.cs" />
+    <Compile Include="Unity\Properties\IPropertyVisitor.cs" />
+    <Compile Include="Unity\Properties\IPropertyVisitorAdapter.cs" />
+    <Compile Include="Unity\Properties\ISetElementProperty.cs" />
+    <Compile Include="Unity\Properties\ISetPropertyAccept.cs" />
+    <Compile Include="Unity\Properties\ISetPropertyBag.cs" />
+    <Compile Include="Unity\Properties\ISetPropertyBagAccept.cs" />
+    <Compile Include="Unity\Properties\ISetPropertyBagVisitor.cs" />
+    <Compile Include="Unity\Properties\ISetPropertyVisitor.cs" />
+    <Compile Include="Unity\Properties\ITypeVisitor.cs" />
+    <Compile Include="Unity\Properties\IVisitContravariantPropertyAdapter.cs" />
+    <Compile Include="Unity\Properties\IVisitPrimitivesPropertyAdapter.cs" />
+    <Compile Include="Unity\Properties\IVisitPropertyAdapter.cs" />
+    <Compile Include="Unity\Properties\KeyValueCollectionPropertyBag.cs" />
+    <Compile Include="Unity\Properties\KeyValuePairPropertyBag.cs" />
+    <Compile Include="Unity\Properties\ListPropertyBag.cs" />
+    <Compile Include="Unity\Properties\MissingPropertyBagException.cs" />
+    <Compile Include="Unity\Properties\PathVisitor.cs" />
+    <Compile Include="Unity\Properties\Property.cs" />
+    <Compile Include="Unity\Properties\PropertyBag.cs" />
+    <Compile Include="Unity\Properties\PropertyCollection.cs" />
+    <Compile Include="Unity\Properties\PropertyContainer.cs" />
+    <Compile Include="Unity\Properties\PropertyGetter.cs" />
+    <Compile Include="Unity\Properties\PropertyMember.cs" />
+    <Compile Include="Unity\Properties\PropertyPath.cs" />
+    <Compile Include="Unity\Properties\PropertyPathPart.cs" />
+    <Compile Include="Unity\Properties\PropertyPathPartKind.cs" />
+    <Compile Include="Unity\Properties\PropertySetter.cs" />
+    <Compile Include="Unity\Properties\PropertyVisitor.cs" />
+    <Compile Include="Unity\Properties\ReflectedMemberProperty.cs" />
+    <Compile Include="Unity\Properties\SetPropertyBagBase.cs" />
+    <Compile Include="Unity\Properties\TypeConversion.cs" />
+    <Compile Include="Unity\Properties\TypeConverter.cs" />
+    <Compile Include="Unity\Properties\TypeGenerationOptions.cs" />
+    <Compile Include="Unity\Properties\TypeTraits.cs" />
+    <Compile Include="Unity\Properties\TypeUtility.cs" />
+    <Compile Include="Unity\Properties\VisitContext.cs" />
+    <Compile Include="Unity\Properties\VisitExceptionKind.cs" />
+    <Compile Include="Unity\Properties\VisitParameters.cs" />
+    <Compile Include="Unity\Properties\VisitReturnCode.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

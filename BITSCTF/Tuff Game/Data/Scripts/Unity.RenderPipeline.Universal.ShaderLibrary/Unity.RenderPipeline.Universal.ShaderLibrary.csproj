@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{45C3DB3B-C9DE-4883-A1B4-8250FA29308B}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Unity.RenderPipeline.Universal.ShaderLibrary</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugFullScreenMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugLightingFeatureFlags.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugLightingMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugMaterialMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugMaterialValidationMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugMipInfoMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugMipMapModeTerrainTexture.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugMipMapStatusMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugOverdrawMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugPostProcessingMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugSceneOverrideMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugValidationMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DebugVertexAttributeMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\HDRDebugMode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PixelValidationChannels.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShaderInput.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

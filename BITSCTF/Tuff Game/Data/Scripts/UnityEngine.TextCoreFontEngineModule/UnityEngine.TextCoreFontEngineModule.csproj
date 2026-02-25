@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{9AF582C1-1CEA-4810-B845-4A1EF553DEBE}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>UnityEngine.TextCoreFontEngineModule</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityEngine\TextCore\FaceInfo.cs" />
+    <Compile Include="UnityEngine\TextCore\Glyph.cs" />
+    <Compile Include="UnityEngine\TextCore\GlyphClassDefinitionType.cs" />
+    <Compile Include="UnityEngine\TextCore\GlyphMetrics.cs" />
+    <Compile Include="UnityEngine\TextCore\GlyphRect.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\AlternateSubstitutionRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\ChainingContextualSubstitutionRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\ContextualSubstitutionRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\FontEngine.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\FontEngineError.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\FontEngineUtilities.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\FontFeatureLookupFlags.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\FontReference.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphAdjustmentRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphAnchorPoint.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphIDSequence.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphIndexCodePointMap.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphLoadFlags.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphMarshallingStruct.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphPackingMode.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphPairAdjustmentRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphRasterModes.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphRenderMode.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphRenderModeUI.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\GlyphValueRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\LigatureSubstitutionRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\MarkAdjustmentRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\MarkPositionAdjustment.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\MarkToBaseAdjustmentRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\MarkToLigatureAdjustmentRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\MarkToMarkAdjustmentRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\MultipleSubstitutionRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OpenTypeFeature.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OpenTypeLayoutFeature.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OpenTypeLayoutLanguage.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OpenTypeLayoutLookup.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OpenTypeLayoutScript.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OpenTypeLayoutTable.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OTL_Direction.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OTL_Feature.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OTL_Language.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OTL_Lookup.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OTL_LookupType.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OTL_Script.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OTL_Table.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OTL_TableType.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\OTL_Tag.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\SequenceLookupRecord.cs" />
+    <Compile Include="UnityEngine\TextCore\LowLevel\SingleSubstitutionRecord.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

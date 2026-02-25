@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{4E38355C-6652-4BB3-8257-B4A522E2CE7E}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Unity.2D.Common.Runtime</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UAi\kMeans.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UAi\MatrixMxN.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UAi\MatrixMxNDebugView.cs" />
+    <Compile Include="UnityEngine\U2D\Common\URaster\Pixels.cs" />
+    <Compile Include="UnityEngine\U2D\Common\URaster\RasterUtils.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\Array.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\ArrayDebugView.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\ArraySlice.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\ArraySliceDebugView.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\ConvexHull2D.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\DelaEdgeCompare.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\ICondition2.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\IntersectionCompare.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\ModuleHandle.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\PlanarGraph.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\Refinery.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\Smoothen.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\TessCellCompare.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\TessEdgeCompare.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\Tessellator.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\TessEventCompare.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\TessJunctionCompare.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\TessLink.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\UBounds.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\UCircle.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\UEncroachingSegment.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\UEvent.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\UEventType.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\UHull.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\UStar.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\UTriangle.cs" />
+    <Compile Include="UnityEngine\U2D\Common\UTess\XCompare.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

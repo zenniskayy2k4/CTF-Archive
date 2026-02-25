@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{ED98826B-9F6A-4B88-BCF9-EBC46A746FA0}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnotherStraightLiner.cs" />
+    <Compile Include="CameraFollow.cs" />
+    <Compile Include="ChatController.cs" />
+    <Compile Include="DistanceScoreManager.cs" />
+    <Compile Include="DropdownSample.cs" />
+    <Compile Include="EnemyBase.cs" />
+    <Compile Include="EnemyLockOn.cs" />
+    <Compile Include="EnemySpawner.cs" />
+    <Compile Include="EnemyZigZag.cs" />
+    <Compile Include="EnvMapAnimator.cs" />
+    <Compile Include="FirstTimeMovePrompt.cs" />
+    <Compile Include="FlagGeneration.cs" />
+    <Compile Include="FreezeCamera.cs" />
+    <Compile Include="MusicManager.cs" />
+    <Compile Include="NotAFlag.cs" />
+    <Compile Include="ParallaxFollowCamera.cs" />
+    <Compile Include="PlayerDeathManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RetryButton.cs" />
+    <Compile Include="ScoreManaged.cs" />
+    <Compile Include="ShipMovement.cs" />
+    <Compile Include="Stander.cs" />
+    <Compile Include="StraightLiner.cs" />
+    <Compile Include="TMPro\Examples\Benchmark01.cs" />
+    <Compile Include="TMPro\Examples\Benchmark01_UGUI.cs" />
+    <Compile Include="TMPro\Examples\Benchmark02.cs" />
+    <Compile Include="TMPro\Examples\Benchmark03.cs" />
+    <Compile Include="TMPro\Examples\Benchmark04.cs" />
+    <Compile Include="TMPro\Examples\CameraController.cs" />
+    <Compile Include="TMPro\Examples\ObjectSpin.cs" />
+    <Compile Include="TMPro\Examples\ShaderPropAnimator.cs" />
+    <Compile Include="TMPro\Examples\SimpleScript.cs" />
+    <Compile Include="TMPro\Examples\SkewTextExample.cs" />
+    <Compile Include="TMPro\Examples\TeleType.cs" />
+    <Compile Include="TMPro\Examples\TextConsoleSimulator.cs" />
+    <Compile Include="TMPro\Examples\TextMeshProFloatingText.cs" />
+    <Compile Include="TMPro\Examples\TextMeshSpawner.cs" />
+    <Compile Include="TMPro\Examples\TMPro_InstructionOverlay.cs" />
+    <Compile Include="TMPro\Examples\TMP_ExampleScript_01.cs" />
+    <Compile Include="TMPro\Examples\TMP_FrameRateCounter.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextEventCheck.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextSelector_A.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextSelector_B.cs" />
+    <Compile Include="TMPro\Examples\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="TMPro\Examples\VertexColorCycler.cs" />
+    <Compile Include="TMPro\Examples\VertexJitter.cs" />
+    <Compile Include="TMPro\Examples\VertexShakeA.cs" />
+    <Compile Include="TMPro\Examples\VertexShakeB.cs" />
+    <Compile Include="TMPro\Examples\VertexZoom.cs" />
+    <Compile Include="TMPro\Examples\WarpTextExample.cs" />
+    <Compile Include="TMPro\TMP_DigitValidator.cs" />
+    <Compile Include="TMPro\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="TMPro\TMP_TextEventHandler.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

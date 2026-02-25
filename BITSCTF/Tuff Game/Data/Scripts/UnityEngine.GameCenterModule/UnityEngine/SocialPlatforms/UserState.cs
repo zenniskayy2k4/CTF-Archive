@@ -1,0 +1,14 @@
+using System;
+
+namespace UnityEngine.SocialPlatforms
+{
+	[Obsolete("UserState is deprecated and will be removed in a future release.", false)]
+	public enum UserState
+	{
+		Online = 0,
+		OnlineAndAway = 1,
+		OnlineAndBusy = 2,
+		Offline = 3,
+		Playing = 4
+	}
+}

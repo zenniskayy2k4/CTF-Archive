@@ -1,0 +1,897 @@
+#define UNITY_ASSERTIONS
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
+using System.Text;
+using Unity.Jobs.LowLevel.Unsafe;
+using UnityEngine.Bindings;
+
+namespace UnityEngine.TextCore.Text
+{
+	[DebuggerDisplay("{settings.text}")]
+	[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule", "UnityEditor.QuickSearchModule" })]
+	internal class TextHandle
+	{
+		[Flags]
+		private protected enum TextHandleFlags
+		{
+			IsCachedPermanentTextCore = 2,
+			IsCachedPermanentATG = 4
+		}
+
+		internal readonly struct GlyphMetricsForOverlay
+		{
+			public readonly bool isVisible;
+
+			public readonly float origin;
+
+			public readonly float xAdvance;
+
+			public readonly float ascentline;
+
+			public readonly float baseline;
+
+			public readonly float descentline;
+
+			public readonly Vector3 topLeft;
+
+			public readonly Vector3 bottomLeft;
+
+			public readonly Vector3 topRight;
+
+			public readonly Vector3 bottomRight;
+
+			public readonly float scale;
+
+			public readonly int lineNumber;
+
+			public readonly float fontCapLine;
+
+			public readonly float fontMeanLine;
+
+			public GlyphMetricsForOverlay(ref TextElementInfo textElementInfo, float pixelPerPoint)
+			{
+				float num = 1f / pixelPerPoint;
+				isVisible = textElementInfo.isVisible;
+				origin = textElementInfo.origin * num;
+				xAdvance = textElementInfo.xAdvance * num;
+				ascentline = textElementInfo.ascender * num;
+				baseline = textElementInfo.baseLine * num;
+				descentline = textElementInfo.descender * num;
+				topLeft = textElementInfo.topLeft * num;
+				bottomLeft = textElementInfo.bottomLeft * num;
+				topRight = textElementInfo.topRight * num;
+				bottomRight = textElementInfo.bottomRight * num;
+				scale = textElementInfo.scale;
+				lineNumber = textElementInfo.lineNumber;
+				fontCapLine = textElementInfo.fontAsset.faceInfo.capLine * num;
+				fontMeanLine = textElementInfo.fontAsset.faceInfo.meanLine * num;
+			}
+
+			[CompilerGenerated]
+			public override string ToString()
+			{
+				StringBuilder stringBuilder = new StringBuilder();
+				stringBuilder.Append("GlyphMetricsForOverlay");
+				stringBuilder.Append(" { ");
+				if (PrintMembers(stringBuilder))
+				{
+					stringBuilder.Append(' ');
+				}
+				stringBuilder.Append('}');
+				return stringBuilder.ToString();
+			}
+
+			[CompilerGenerated]
+			private bool PrintMembers(StringBuilder builder)
+			{
+				builder.Append("isVisible = ");
+				builder.Append(isVisible.ToString());
+				builder.Append(", origin = ");
+				builder.Append(origin.ToString());
+				builder.Append(", xAdvance = ");
+				builder.Append(xAdvance.ToString());
+				builder.Append(", ascentline = ");
+				builder.Append(ascentline.ToString());
+				builder.Append(", baseline = ");
+				builder.Append(baseline.ToString());
+				builder.Append(", descentline = ");
+				builder.Append(descentline.ToString());
+				builder.Append(", topLeft = ");
+				builder.Append(topLeft.ToString());
+				builder.Append(", bottomLeft = ");
+				builder.Append(bottomLeft.ToString());
+				builder.Append(", topRight = ");
+				builder.Append(topRight.ToString());
+				builder.Append(", bottomRight = ");
+				builder.Append(bottomRight.ToString());
+				builder.Append(", scale = ");
+				builder.Append(scale.ToString());
+				builder.Append(", lineNumber = ");
+				builder.Append(lineNumber.ToString());
+				builder.Append(", fontCapLine = ");
+				builder.Append(fontCapLine.ToString());
+				builder.Append(", fontMeanLine = ");
+				builder.Append(fontMeanLine.ToString());
+				return true;
+			}
+
+			[CompilerGenerated]
+			public static bool operator !=(GlyphMetricsForOverlay left, GlyphMetricsForOverlay right)
+			{
+				return !(left == right);
+			}
+
+			[CompilerGenerated]
+			public static bool operator ==(GlyphMetricsForOverlay left, GlyphMetricsForOverlay right)
+			{
+				return left.Equals(right);
+			}
+
+			[CompilerGenerated]
+			public override int GetHashCode()
+			{
+				return ((((((((((((EqualityComparer<bool>.Default.GetHashCode(isVisible) * -1521134295 + EqualityComparer<float>.Default.GetHashCode(origin)) * -1521134295 + EqualityComparer<float>.Default.GetHashCode(xAdvance)) * -1521134295 + EqualityComparer<float>.Default.GetHashCode(ascentline)) * -1521134295 + EqualityComparer<float>.Default.GetHashCode(baseline)) * -1521134295 + EqualityComparer<float>.Default.GetHashCode(descentline)) * -1521134295 + EqualityComparer<Vector3>.Default.GetHashCode(topLeft)) * -1521134295 + EqualityComparer<Vector3>.Default.GetHashCode(bottomLeft)) * -1521134295 + EqualityComparer<Vector3>.Default.GetHashCode(topRight)) * -1521134295 + EqualityComparer<Vector3>.Default.GetHashCode(bottomRight)) * -1521134295 + EqualityComparer<float>.Default.GetHashCode(scale)) * -1521134295 + EqualityComparer<int>.Default.GetHashCode(lineNumber)) * -1521134295 + EqualityComparer<float>.Default.GetHashCode(fontCapLine)) * -1521134295 + EqualityComparer<float>.Default.GetHashCode(fontMeanLine);
+			}
+
+			[CompilerGenerated]
+			public override bool Equals(object obj)
+			{
+				return obj is GlyphMetricsForOverlay && Equals((GlyphMetricsForOverlay)obj);
+			}
+
+			[CompilerGenerated]
+			public bool Equals(GlyphMetricsForOverlay other)
+			{
+				return EqualityComparer<bool>.Default.Equals(isVisible, other.isVisible) && EqualityComparer<float>.Default.Equals(origin, other.origin) && EqualityComparer<float>.Default.Equals(xAdvance, other.xAdvance) && EqualityComparer<float>.Default.Equals(ascentline, other.ascentline) && EqualityComparer<float>.Default.Equals(baseline, other.baseline) && EqualityComparer<float>.Default.Equals(descentline, other.descentline) && EqualityComparer<Vector3>.Default.Equals(topLeft, other.topLeft) && EqualityComparer<Vector3>.Default.Equals(bottomLeft, other.bottomLeft) && EqualityComparer<Vector3>.Default.Equals(topRight, other.topRight) && EqualityComparer<Vector3>.Default.Equals(bottomRight, other.bottomRight) && EqualityComparer<float>.Default.Equals(scale, other.scale) && EqualityComparer<int>.Default.Equals(lineNumber, other.lineNumber) && EqualityComparer<float>.Default.Equals(fontCapLine, other.fontCapLine) && EqualityComparer<float>.Default.Equals(fontMeanLine, other.fontMeanLine);
+			}
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.UIElementsModule" })]
+		internal static TextHandleTemporaryCache s_TemporaryCache = new TextHandleTemporaryCache();
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.UIElementsModule" })]
+		internal static TextHandlePermanentCache s_PermanentCache = new TextHandlePermanentCache();
+
+		private static TextGenerationSettings[] s_Settings;
+
+		private static TextGenerator[] s_Generators;
+
+		private static TextInfo[] s_TextInfosCommon;
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.UIElementsModule" })]
+		internal NativeTextGenerationSettings nativeSettings = NativeTextGenerationSettings.Default;
+
+		protected Vector2 pixelPreferedSize;
+
+		private Rect m_ScreenRect;
+
+		private float m_LineHeightDefault;
+
+		private bool m_IsPlaceholder;
+
+		protected bool m_IsElided;
+
+		private int m_CreateGenerationIteration;
+
+		private IntPtr m_TextGenerationInfo;
+
+		private protected TextHandleFlags m_TextHandleFlags;
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.UIElementsModule" })]
+		internal int m_PreviousGenerationSettingsHash;
+
+		protected bool isDirty;
+
+		internal static TextGenerationSettings[] settingsArray
+		{
+			get
+			{
+				if (s_Settings == null)
+				{
+					InitArray(ref s_Settings, () => new TextGenerationSettings());
+				}
+				return s_Settings;
+			}
+		}
+
+		internal static TextGenerator[] generators
+		{
+			get
+			{
+				if (s_Generators == null)
+				{
+					InitArray(ref s_Generators, () => new TextGenerator());
+				}
+				return s_Generators;
+			}
+		}
+
+		internal static TextInfo[] textInfosCommon
+		{
+			get
+			{
+				if (s_TextInfosCommon == null)
+				{
+					InitArray(ref s_TextInfosCommon, () => new TextInfo());
+				}
+				return s_TextInfosCommon;
+			}
+		}
+
+		internal static TextInfo textInfoCommon => textInfosCommon[JobsUtility.ThreadIndex];
+
+		private static TextGenerator generator => generators[JobsUtility.ThreadIndex];
+
+		internal static TextGenerationSettings settings
+		{
+			[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule" })]
+			get
+			{
+				return settingsArray[JobsUtility.ThreadIndex];
+			}
+		}
+
+		internal Vector2 preferredSize
+		{
+			[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule" })]
+			get
+			{
+				return PixelsToPoints(pixelPreferedSize);
+			}
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule" })]
+		internal IntPtr textGenerationInfo
+		{
+			get
+			{
+				if (IsCachedPermanentATG)
+				{
+					Debug.Assert(m_TextGenerationInfo != IntPtr.Zero, "Internal Text Error: element is marked in permanent cache but the cache doesn't exist");
+				}
+				if (!IsCachedPermanentATG && m_CreateGenerationIteration != TextGenerationInfo.CurrentGenerationIteration)
+				{
+					m_TextGenerationInfo = IntPtr.Zero;
+				}
+				return m_TextGenerationInfo;
+			}
+			set
+			{
+				Debug.Assert(value == IntPtr.Zero || m_TextGenerationInfo == IntPtr.Zero, "Internal Text Error: Transitioning from one cache structure to another directly. This might cause a memory leak");
+				m_TextGenerationInfo = value;
+				bool flag = m_TextHandleFlags.HasFlag(TextHandleFlags.IsCachedPermanentATG);
+				m_CreateGenerationIteration = TextGenerationInfo.CurrentGenerationIteration;
+			}
+		}
+
+		internal LinkedListNode<TextCacheEntry> TextInfoNode { get; set; }
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.UIElementsModule" })]
+		protected internal bool IsCachedPermanent => (m_TextHandleFlags & (TextHandleFlags.IsCachedPermanentTextCore | TextHandleFlags.IsCachedPermanentATG)) != 0;
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.UIElementsModule" })]
+		internal bool IsCachedPermanentATG
+		{
+			get
+			{
+				bool flag = m_TextHandleFlags.HasFlag(TextHandleFlags.IsCachedPermanentATG);
+				if (flag)
+				{
+					Debug.Assert(m_TextGenerationInfo != IntPtr.Zero, "Internal Text Error : The element is marked as being in the permanent cache without having the cache assigned");
+				}
+				return flag;
+			}
+			set
+			{
+				if (value)
+				{
+					m_TextHandleFlags |= TextHandleFlags.IsCachedPermanentATG;
+				}
+				else
+				{
+					m_TextHandleFlags ^= TextHandleFlags.IsCachedPermanentATG;
+				}
+			}
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.UIElementsModule" })]
+		internal bool IsCachedPermanentTextCore
+		{
+			get
+			{
+				bool flag = m_TextHandleFlags.HasFlag(TextHandleFlags.IsCachedPermanentTextCore);
+				if (!IsCachedTemporary)
+				{
+					Debug.AssertFormat(flag == (TextInfoNode != null), "TextHandle : TextCore Permananent cache mismatch. isCache {0} but {1}", flag, (TextInfoNode == null) ? " has no node" : "has a node");
+				}
+				return flag;
+			}
+			set
+			{
+				if (value)
+				{
+					m_TextHandleFlags |= TextHandleFlags.IsCachedPermanentTextCore;
+				}
+				else
+				{
+					m_TextHandleFlags ^= TextHandleFlags.IsCachedPermanentTextCore;
+				}
+			}
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.UIElementsModule" })]
+		internal bool IsCachedTemporary { get; set; }
+
+		internal bool useAdvancedText
+		{
+			[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule" })]
+			get
+			{
+				return IsAdvancedTextEnabledForElement();
+			}
+		}
+
+		internal int characterCount
+		{
+			[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule" })]
+			get
+			{
+				return useAdvancedText ? TextLib.GetCharacterCount(textGenerationInfo) : textInfo.characterCount;
+			}
+		}
+
+		internal TextInfo textInfo
+		{
+			[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule" })]
+			get
+			{
+				if (useAdvancedText)
+				{
+					Debug.LogError("TextHandle.textInfo should not be used with Advanced Text, use textGenerationInfo instead.");
+				}
+				if (TextInfoNode == null)
+				{
+					return textInfoCommon;
+				}
+				return TextInfoNode.Value.textInfo;
+			}
+		}
+
+		public virtual bool IsPlaceholder => m_IsPlaceholder;
+
+		~TextHandle()
+		{
+			RemoveFromTemporaryCache();
+			RemoveFromPermanentCache();
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule" })]
+		internal static void InitThreadArrays()
+		{
+			if (s_Settings == null || s_Generators == null || s_TextInfosCommon == null)
+			{
+				InitArray(ref s_Settings, () => new TextGenerationSettings());
+				InitArray(ref s_Generators, () => new TextGenerator());
+				InitArray(ref s_TextInfosCommon, () => new TextInfo());
+			}
+		}
+
+		private static void InitArray<T>(ref T[] array, Func<T> createInstance)
+		{
+			if (array == null)
+			{
+				array = new T[JobsUtility.ThreadIndexCount];
+				for (int i = 0; i < JobsUtility.ThreadIndexCount; i++)
+				{
+					array[i] = createInstance();
+				}
+			}
+		}
+
+		protected float PointsToPixels(float point)
+		{
+			return point * GetPixelsPerPoint();
+		}
+
+		protected float PixelsToPoints(float pixel)
+		{
+			return pixel / GetPixelsPerPoint();
+		}
+
+		protected Vector2 PointsToPixels(Vector2 point)
+		{
+			return point * GetPixelsPerPoint();
+		}
+
+		protected Vector2 PixelsToPoints(Vector2 pixel)
+		{
+			return pixel / GetPixelsPerPoint();
+		}
+
+		protected virtual float GetPixelsPerPoint()
+		{
+			return 1f;
+		}
+
+		public virtual void AddToPermanentCacheAndGenerateMesh()
+		{
+			if (useAdvancedText)
+			{
+				throw new InvalidOperationException("Method is virtual and should be overriden in ATGTextHanle, the only valid handle for ATG");
+			}
+			s_PermanentCache.AddToCache(this);
+		}
+
+		public void AddTextInfoToTemporaryCache(int hashCode)
+		{
+			if (!useAdvancedText)
+			{
+				s_TemporaryCache.AddTextInfoToCache(this, hashCode);
+			}
+		}
+
+		public void RemoveFromTemporaryCache()
+		{
+			s_TemporaryCache.RemoveFromCache(this);
+		}
+
+		public void RemoveFromPermanentCache()
+		{
+			RemoveFromPermanentCacheATG();
+			RemoveFromPermanentCacheTextCore();
+		}
+
+		public void RemoveFromPermanentCacheTextCore()
+		{
+			s_PermanentCache.RemoveFromCache(this);
+		}
+
+		public void RemoveFromPermanentCacheATG()
+		{
+			if (IsCachedPermanentATG)
+			{
+				TextGenerationInfo.Destroy(textGenerationInfo);
+				textGenerationInfo = IntPtr.Zero;
+				IsCachedPermanentATG = false;
+			}
+		}
+
+		public static void UpdateCurrentFrame()
+		{
+			s_TemporaryCache.UpdateCurrentFrame();
+		}
+
+		internal bool IsTextInfoAllocated()
+		{
+			return textInfo != null;
+		}
+
+		public virtual void SetDirty()
+		{
+			isDirty = true;
+		}
+
+		public bool IsDirty(int hashCode)
+		{
+			if (m_PreviousGenerationSettingsHash == hashCode && !isDirty && (IsCachedTemporary || IsCachedPermanent))
+			{
+				return false;
+			}
+			return true;
+		}
+
+		public float ComputeTextWidth(TextGenerationSettings tgs)
+		{
+			UpdatePreferredValues(tgs);
+			return preferredSize.x;
+		}
+
+		public float ComputeTextHeight(TextGenerationSettings tgs)
+		{
+			UpdatePreferredValues(tgs);
+			return preferredSize.y;
+		}
+
+		protected void UpdatePreferredValues(TextGenerationSettings tgs)
+		{
+			pixelPreferedSize = generator.GetPreferredValues(tgs, textInfoCommon);
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule" })]
+		internal TextInfo Update()
+		{
+			return UpdateWithHash(settings.GetHashCode());
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule" })]
+		internal TextInfo UpdateWithHash(int hashCode)
+		{
+			m_ScreenRect = settings.screenRect;
+			m_LineHeightDefault = GetLineHeightDefault(settings);
+			m_IsPlaceholder = settings.isPlaceholder;
+			if (!IsDirty(hashCode))
+			{
+				return textInfo;
+			}
+			if (settings.fontAsset == null)
+			{
+				Debug.LogWarning("Can't Generate Mesh, No Font Asset has been assigned.");
+				return textInfo;
+			}
+			generator.GenerateText(settings, textInfo);
+			m_PreviousGenerationSettingsHash = hashCode;
+			isDirty = false;
+			m_IsElided = generator.isTextTruncated;
+			return textInfo;
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule" })]
+		internal bool PrepareFontAsset()
+		{
+			if (settings.fontAsset == null)
+			{
+				return false;
+			}
+			if (!IsDirty(settings.GetHashCode()))
+			{
+				return true;
+			}
+			return generator.PrepareFontAsset(settings);
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule" })]
+		internal void UpdatePreferredSize()
+		{
+			if (textInfo.characterCount > 0)
+			{
+				float num = float.MinValue;
+				float num2 = textInfo.textElementInfo[textInfo.characterCount - 1].descender;
+				float num3 = 0f;
+				float num4 = 0f;
+				for (int i = 0; i < textInfo.lineCount; i++)
+				{
+					LineInfo lineInfo = textInfo.lineInfo[i];
+					num = Mathf.Max(num, textInfo.textElementInfo[lineInfo.firstVisibleCharacterIndex].ascender);
+					num2 = Mathf.Min(num2, textInfo.textElementInfo[lineInfo.firstVisibleCharacterIndex].descender);
+					num3 = (settings.isIMGUI ? Mathf.Max(num3, lineInfo.length) : Mathf.Max(num3, lineInfo.lineExtents.max.x - lineInfo.lineExtents.min.x));
+				}
+				num4 = num - num2;
+				num3 = (float)(int)(num3 * 100f + 1f) / 100f;
+				num4 = (float)(int)(num4 * 100f + 1f) / 100f;
+				pixelPreferedSize = new Vector2(num3, num4);
+			}
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.UIElementsModule" })]
+		internal static float ConvertPixelUnitsToTextCoreRelativeUnits(float fontSize, FontAsset fontAsset)
+		{
+			float num = 1f / (float)fontAsset.atlasPadding;
+			float num2 = fontAsset.faceInfo.pointSize / fontSize;
+			return num * num2;
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule" })]
+		internal static float GetLineHeightDefault(TextGenerationSettings settings)
+		{
+			if (settings != null && settings.fontAsset != null)
+			{
+				return settings.fontAsset.faceInfo.lineHeight / settings.fontAsset.faceInfo.pointSize * (float)settings.fontSize;
+			}
+			return 0f;
+		}
+
+		public virtual Vector2 GetCursorPositionFromStringIndexUsingCharacterHeight(int index, bool inverseYAxis = true)
+		{
+			AddToPermanentCacheAndGenerateMesh();
+			Vector2 pixel = (useAdvancedText ? TextSelectionService.GetCursorPositionFromLogicalIndex(textGenerationInfo, index) : textInfo.GetCursorPositionFromStringIndexUsingCharacterHeight(index, m_ScreenRect, m_LineHeightDefault, inverseYAxis));
+			return PixelsToPoints(pixel);
+		}
+
+		public Vector2 GetCursorPositionFromStringIndexUsingLineHeight(int index, bool useXAdvance = false, bool inverseYAxis = true)
+		{
+			AddToPermanentCacheAndGenerateMesh();
+			Vector2 pixel = (useAdvancedText ? TextSelectionService.GetCursorPositionFromLogicalIndex(textGenerationInfo, index) : textInfo.GetCursorPositionFromStringIndexUsingLineHeight(index, m_ScreenRect, m_LineHeightDefault, useXAdvance, inverseYAxis));
+			return PixelsToPoints(pixel);
+		}
+
+		[VisibleToOtherModules(new string[] { "UnityEngine.IMGUIModule", "UnityEngine.UIElementsModule" })]
+		internal Rect[] GetHighlightRectangles(int cursorIndex, int selectIndex)
+		{
+			if (!useAdvancedText)
+			{
+				Debug.LogError("Cannot use GetHighlightRectangles while using Standard Text");
+				return new Rect[0];
+			}
+			Rect[] highlightRectangles = TextSelectionService.GetHighlightRectangles(textGenerationInfo, cursorIndex, selectIndex);
+			float num = 1f / GetPixelsPerPoint();
+			for (int i = 0; i < highlightRectangles.Length; i++)
+			{
+				highlightRectangles[i].x *= num;
+				highlightRectangles[i].y *= num;
+				highlightRectangles[i].width *= num;
+				highlightRectangles[i].height *= num;
+			}
+			return highlightRectangles;
+		}
+
+		public int GetCursorIndexFromPosition(Vector2 position, bool inverseYAxis = true)
+		{
+			position = PointsToPixels(position);
+			return useAdvancedText ? TextSelectionService.GetCursorLogicalIndexFromPosition(textGenerationInfo, position) : textInfo.GetCursorIndexFromPosition(position, m_ScreenRect, inverseYAxis);
+		}
+
+		public int LineDownCharacterPosition(int originalLogicalPos)
+		{
+			return useAdvancedText ? TextSelectionService.LineDownCharacterPosition(textGenerationInfo, originalLogicalPos) : textInfo.LineDownCharacterPosition(originalLogicalPos);
+		}
+
+		public int LineUpCharacterPosition(int originalLogicalPos)
+		{
+			return useAdvancedText ? TextSelectionService.LineUpCharacterPosition(textGenerationInfo, originalLogicalPos) : textInfo.LineUpCharacterPosition(originalLogicalPos);
+		}
+
+		public int FindWordIndex(int cursorIndex)
+		{
+			if (useAdvancedText)
+			{
+				Debug.LogError("Cannot use FindWordIndex while using Advanced Text");
+				return 0;
+			}
+			return textInfo.FindWordIndex(cursorIndex);
+		}
+
+		public int FindNearestLine(Vector2 position)
+		{
+			position = PointsToPixels(position);
+			if (useAdvancedText)
+			{
+				Debug.LogError("Cannot use FindNearestLine while using Advanced Text");
+				return 0;
+			}
+			return textInfo.FindNearestLine(position);
+		}
+
+		public int FindNearestCharacterOnLine(Vector2 position, int line, bool visibleOnly)
+		{
+			if (useAdvancedText)
+			{
+				Debug.LogError("Cannot use FindNearestCharacterOnLine while using Advanced Text");
+				return 0;
+			}
+			position = PointsToPixels(position);
+			return textInfo.FindNearestCharacterOnLine(position, line, visibleOnly);
+		}
+
+		public int FindIntersectingLink(Vector3 position, bool inverseYAxis = true)
+		{
+			if (useAdvancedText)
+			{
+				Debug.LogError("Cannot use FindIntersectingLink while using Advanced Text");
+				return 0;
+			}
+			position = PointsToPixels(position);
+			return textInfo.FindIntersectingLink(position, m_ScreenRect, inverseYAxis);
+		}
+
+		public int GetCorrespondingStringIndex(int index)
+		{
+			return useAdvancedText ? index : textInfo.GetCorrespondingStringIndex(index);
+		}
+
+		public int GetCorrespondingCodePointIndex(int stringIndex)
+		{
+			return useAdvancedText ? stringIndex : textInfo.GetCorrespondingCodePointIndex(stringIndex);
+		}
+
+		public LineInfo GetLineInfoFromCharacterIndex(int index)
+		{
+			if (useAdvancedText)
+			{
+				Debug.LogError("Cannot use GetLineInfoFromCharacterIndex while using Advanced Text");
+				return default(LineInfo);
+			}
+			return textInfo.GetLineInfoFromCharacterIndex(index);
+		}
+
+		public int GetLineNumber(int index)
+		{
+			return useAdvancedText ? TextSelectionService.GetLineNumber(textGenerationInfo, index) : textInfo.GetLineNumber(index);
+		}
+
+		public float GetLineHeight(int lineNumber)
+		{
+			return PixelsToPoints(useAdvancedText ? TextSelectionService.GetLineHeight(textGenerationInfo, lineNumber) : textInfo.GetLineHeight(lineNumber));
+		}
+
+		public float GetLineHeightFromCharacterIndex(int index)
+		{
+			return PixelsToPoints(useAdvancedText ? TextSelectionService.GetCharacterHeightFromIndex(textGenerationInfo, index) : textInfo.GetLineHeightFromCharacterIndex(index));
+		}
+
+		public float GetCharacterHeightFromIndex(int index)
+		{
+			return PixelsToPoints(useAdvancedText ? TextSelectionService.GetCharacterHeightFromIndex(textGenerationInfo, index) : textInfo.GetCharacterHeightFromIndex(index));
+		}
+
+		public string Substring(int startIndex, int length)
+		{
+			return useAdvancedText ? TextSelectionService.Substring(textGenerationInfo, startIndex, startIndex + length) : textInfo.Substring(startIndex, length);
+		}
+
+		public int PreviousCodePointIndex(int currentIndex)
+		{
+			if (!useAdvancedText)
+			{
+				Debug.LogError("Cannot use PreviousCodePointIndex while using Standard Text");
+				return 0;
+			}
+			return TextSelectionService.PreviousCodePointIndex(textGenerationInfo, currentIndex);
+		}
+
+		public int NextCodePointIndex(int currentIndex)
+		{
+			if (!useAdvancedText)
+			{
+				Debug.LogError("Cannot use NextCodePointIndex while using Standard Text");
+				return 0;
+			}
+			return TextSelectionService.NextCodePointIndex(textGenerationInfo, currentIndex);
+		}
+
+		public int GetStartOfNextWord(int currentIndex)
+		{
+			if (!useAdvancedText)
+			{
+				Debug.LogError("Cannot use GetStartOfNextWord while using Standard Text");
+				return 0;
+			}
+			return TextSelectionService.GetStartOfNextWord(textGenerationInfo, currentIndex);
+		}
+
+		public int GetEndOfPreviousWord(int currentIndex)
+		{
+			if (!useAdvancedText)
+			{
+				Debug.LogError("Cannot use GetEndOfPreviousWord while using Standard Text");
+				return 0;
+			}
+			return TextSelectionService.GetEndOfPreviousWord(textGenerationInfo, currentIndex);
+		}
+
+		public int GetFirstCharacterIndexOnLine(int currentIndex)
+		{
+			if (!useAdvancedText)
+			{
+				return GetLineInfoFromCharacterIndex(currentIndex).firstCharacterIndex;
+			}
+			return TextSelectionService.GetFirstCharacterIndexOnLine(textGenerationInfo, currentIndex);
+		}
+
+		public int GetLastCharacterIndexOnLine(int currentIndex)
+		{
+			if (!useAdvancedText)
+			{
+				return GetLineInfoFromCharacterIndex(currentIndex).lastCharacterIndex;
+			}
+			return TextSelectionService.GetLastCharacterIndexOnLine(textGenerationInfo, currentIndex) + 1;
+		}
+
+		public int IndexOf(char value, int startIndex)
+		{
+			if (useAdvancedText)
+			{
+				Debug.LogError("Cannot use IndexOf while using Advanced Text");
+				return 0;
+			}
+			return textInfo.IndexOf(value, startIndex);
+		}
+
+		public int LastIndexOf(char value, int startIndex)
+		{
+			if (useAdvancedText)
+			{
+				Debug.LogError("Cannot use LastIndexOf while using Advanced Text");
+				return 0;
+			}
+			return textInfo.LastIndexOf(value, startIndex);
+		}
+
+		public void SelectCurrentWord(int index, ref int cursorIndex, ref int selectIndex)
+		{
+			if (!useAdvancedText)
+			{
+				Debug.LogError("Cannot use SelectCurrentWord while using Standard Text");
+			}
+			else
+			{
+				TextSelectionService.SelectCurrentWord(textGenerationInfo, index, ref cursorIndex, ref selectIndex);
+			}
+		}
+
+		public void SelectCurrentParagraph(ref int cursorIndex, ref int selectIndex)
+		{
+			if (!useAdvancedText)
+			{
+				Debug.LogError("Cannot use SelectCurrentParagraph while using Standard Text");
+			}
+			else
+			{
+				TextSelectionService.SelectCurrentParagraph(textGenerationInfo, ref cursorIndex, ref selectIndex);
+			}
+		}
+
+		public void SelectToPreviousParagraph(ref int cursorIndex)
+		{
+			if (!useAdvancedText)
+			{
+				Debug.LogError("Cannot use SelectToPreviousParagraph while using Standard Text");
+			}
+			else
+			{
+				TextSelectionService.SelectToPreviousParagraph(textGenerationInfo, ref cursorIndex);
+			}
+		}
+
+		public void SelectToNextParagraph(ref int cursorIndex)
+		{
+			if (!useAdvancedText)
+			{
+				Debug.LogError("Cannot use SelectToNextParagraph while using Standard Text");
+			}
+			else
+			{
+				TextSelectionService.SelectToNextParagraph(textGenerationInfo, ref cursorIndex);
+			}
+		}
+
+		public void SelectToStartOfParagraph(ref int cursorIndex)
+		{
+			if (!useAdvancedText)
+			{
+				Debug.LogError("Cannot use SelectToStartOfParagraph while using Standard Text");
+			}
+			else
+			{
+				TextSelectionService.SelectToStartOfParagraph(textGenerationInfo, ref cursorIndex);
+			}
+		}
+
+		public void SelectToEndOfParagraph(ref int cursorIndex)
+		{
+			if (!useAdvancedText)
+			{
+				Debug.LogError("Cannot use SelectToEndOfParagraph while using Standard Text");
+			}
+			else
+			{
+				TextSelectionService.SelectToEndOfParagraph(textGenerationInfo, ref cursorIndex);
+			}
+		}
+
+		internal virtual bool IsAdvancedTextEnabledForElement()
+		{
+			return false;
+		}
+
+		internal int GetTextElementCount()
+		{
+			if (useAdvancedText)
+			{
+				Debug.LogError("Cannot use GetTextElementCount while using Advanced Text");
+				return 0;
+			}
+			return textInfo.textElementInfo.Length;
+		}
+
+		internal GlyphMetricsForOverlay GetScaledCharacterMetrics(int i)
+		{
+			if (useAdvancedText)
+			{
+				throw new InvalidOperationException("Cannot use GetScaledCharacterMetrics while using Advanced Text");
+			}
+			return new GlyphMetricsForOverlay(ref textInfo.textElementInfo[i], GetPixelsPerPoint());
+		}
+	}
+}

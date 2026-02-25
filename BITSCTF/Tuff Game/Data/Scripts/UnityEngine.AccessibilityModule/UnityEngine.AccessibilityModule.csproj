@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B7F525C0-258E-4139-996C-D85BE4FC9033}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>UnityEngine.AccessibilityModule</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityEngine\Accessibility\AccessibilityHierarchy.cs" />
+    <Compile Include="UnityEngine\Accessibility\AccessibilityHierarchyService.cs" />
+    <Compile Include="UnityEngine\Accessibility\AccessibilityManager.cs" />
+    <Compile Include="UnityEngine\Accessibility\AccessibilityNode.cs" />
+    <Compile Include="UnityEngine\Accessibility\AccessibilityNodeData.cs" />
+    <Compile Include="UnityEngine\Accessibility\AccessibilityNodeDataTests.cs" />
+    <Compile Include="UnityEngine\Accessibility\AccessibilityNodeManager.cs" />
+    <Compile Include="UnityEngine\Accessibility\AccessibilityRole.cs" />
+    <Compile Include="UnityEngine\Accessibility\AccessibilityScrollDirection.cs" />
+    <Compile Include="UnityEngine\Accessibility\AccessibilitySettings.cs" />
+    <Compile Include="UnityEngine\Accessibility\AccessibilityState.cs" />
+    <Compile Include="UnityEngine\Accessibility\AssistiveSupport.cs" />
+    <Compile Include="UnityEngine\Accessibility\IAccessibilityNotificationDispatcher.cs" />
+    <Compile Include="UnityEngine\Accessibility\VisionUtility.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

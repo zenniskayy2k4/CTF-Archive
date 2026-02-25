@@ -1,0 +1,317 @@
+{
+    "activity": null,
+    "activityInstance": null,
+    "application": null,
+    "applicationId": null,
+    "attachments": [],
+    "author": {
+        "id": "678344927997853742",
+        "username": "Sapphire",
+        "discriminator": "8184",
+        "avatar": "37e0fb2dcf8d219aa92bf02f47ea60eb",
+        "avatarDecorationData": null,
+        "banner": null,
+        "verified": false,
+        "bot": true,
+        "system": false,
+        "mobile": false,
+        "desktop": false,
+        "flags": 589824,
+        "publicFlags": 589824,
+        "purchasedFlags": 0,
+        "premiumUsageFlags": 0,
+        "guildMemberAvatars": {},
+        "hasBouncedEmail": false,
+        "globalName": null,
+        "primaryGuild": null,
+        "collectibles": null,
+        "displayNameStyles": null,
+        "premiumState": null,
+        "restrictedSchedule": null,
+        "appTransactionIds": null
+    },
+    "blocked": false,
+    "boostingPrompt": null,
+    "bot": false,
+    "call": null,
+    "changelogId": null,
+    "channel_id": "1466163386453594325",
+    "codedLinks": [],
+    "components": [],
+    "content": "*BITSCTF 2026: Rules & Guidelines*\n\n*General Rules*\n- *Team Size:* There is no team size.\n- *Flag Format:* Unless specified otherwise, all flags follow the format *`​​​‭‭​​​‍‎‬​​​‌‍‬​​​‌‬‬​​​‌⁣​‭‭​​​‌⁢﻿​​​‌‍⁢​​​‌⁣​​​​‌‬​​​​‍‬⁢BITSCTF​​​‌‍‬​​​‌‬‬​​​‌⁣​​​​‌⁢﻿​​​‌‍⁢{​​​‌⁣​​​​‌‬​​​​‍‬⁢​​​‍‌⁢​​​‌​‬​​​‍‌‍​​​‌​‍​​​‌﻿⁢​​​‌​⁢​​​‍‍⁣​​​‍‍‍​​​‌​‍​​​‌﻿⁢​​​‍‬‍​​​​﻿﻿your_​​​‍‍⁣​​​‌﻿⁢​​​‍‍‍​​​‌​‍​​​‌​‬​​​‍​‍​​​‌﻿⁢​​​‌​‍​​​‍‍﻿​​​‌​‍​​​‍‍‍​​​‍‬‍​​​‌​﻿​​​‍​﻿​​​‌​​​​​‍‌⁣​​​‍​⁣​​​‌﻿⁢​​​‍​‌flag​​​‌​‬​​​‍‍‍​​​‌​‍​​​‍​⁢​​​‍‍⁣​​​‍‌‬​​​‍‌‬​​​‍‬‍​​​‍‬﻿_goes_here}`*.  \n\n*Prohibited Actions* \n- *No Flag Sharing:* Do not share *flags, solutions, or challenge write-ups* during the competition.  \n\n*Communication Guidelines*\n\n- *Use Discord for Queries:* All clarifications and discussions should happen in the official *BITSCTF Discord server*.  \n- *No Unsolicited DMs/Pings:* Avoid direct messaging admins or spamming challenge authors.  \n- *Respect & Courtesy:* Treat fellow participants, organizers, and admins with *respect*. Any form of *abuse, harassment, or unsportsmanlike behavior* will not be tolerated.  \n\n*Technical Rules*  \n- *No Malicious Activity:* Do not *attack* or *tamper* with competition infrastructure.  \n- *No Unauthorized Scanning:* Running *automated scanners* (e.g., Burp Suite Intruder, SQLmap) is *strictly prohibited*, unless explicitly allowed in a challenge.  \n\n*Event Schedule*  \n- The competition runs from *20-02-2026 (11:00 IST) → 22-02-2026 (11:00 IST)*.  \n\nFailure to follow these rules may result in *penalties* or *disqualification* at the discretion of the organizers.  \n\n*Stay ethical, stay competitive, and most importantly; have fun hacking!*",
+    "editedTimestamp": null,
+    "embeds": [],
+    "flags": 0,
+    "giftCodes": [],
+    "giftingPrompt": null,
+    "id": "1473773283047506183",
+    "ignored": false,
+    "interaction": null,
+    "interactionData": null,
+    "interactionError": null,
+    "interactionMetadata": null,
+    "isSearchHit": false,
+    "isUnsupported": false,
+    "loggingName": null,
+    "mentionChannels": [],
+    "mentioned": false,
+    "mentionEveryone": false,
+    "mentionGames": [],
+    "mentionRoles": [],
+    "mentions": [],
+    "messageReference": null,
+    "messageSnapshots": [],
+    "pinned": false,
+    "premiumGroupInviteId": null,
+    "reactions": [
+        {
+            "emoji": {
+                "id": null,
+                "name": "✅"
+            },
+            "count": 172,
+            "count_details": {
+                "burst": 0,
+                "normal": 172
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": "1466188669441277964",
+                "name": "BITSkrieg"
+            },
+            "count": 114,
+            "count_details": {
+                "burst": 0,
+                "normal": 114
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": null,
+                "name": "👍"
+            },
+            "count": 98,
+            "count_details": {
+                "burst": 0,
+                "normal": 98
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": null,
+                "name": "😮"
+            },
+            "count": 69,
+            "count_details": {
+                "burst": 0,
+                "normal": 69
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": null,
+                "name": "🔥"
+            },
+            "count": 53,
+            "count_details": {
+                "burst": 0,
+                "normal": 53
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": null,
+                "name": "😇"
+            },
+            "count": 52,
+            "count_details": {
+                "burst": 0,
+                "normal": 52
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": "607282427760738324",
+                "name": "atxpewpew",
+                "animated": true
+            },
+            "count": 49,
+            "count_details": {
+                "burst": 0,
+                "normal": 49
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": null,
+                "name": "❤️"
+            },
+            "count": 44,
+            "count_details": {
+                "burst": 0,
+                "normal": 44
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": null,
+                "name": "🫡"
+            },
+            "count": 34,
+            "count_details": {
+                "burst": 0,
+                "normal": 34
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": null,
+                "name": "🐸"
+            },
+            "count": 28,
+            "count_details": {
+                "burst": 0,
+                "normal": 28
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": null,
+                "name": "🤝"
+            },
+            "count": 22,
+            "count_details": {
+                "burst": 0,
+                "normal": 22
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": null,
+                "name": "🖕"
+            },
+            "count": 8,
+            "count_details": {
+                "burst": 0,
+                "normal": 8
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": "799636797042589706",
+                "name": "FAKENEWS"
+            },
+            "count": 13,
+            "count_details": {
+                "burst": 0,
+                "normal": 13
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": null,
+                "name": "🍉"
+            },
+            "count": 9,
+            "count_details": {
+                "burst": 0,
+                "normal": 9
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        },
+        {
+            "emoji": {
+                "id": null,
+                "name": "💻"
+            },
+            "count": 8,
+            "count_details": {
+                "burst": 0,
+                "normal": 8
+            },
+            "burst_colors": [],
+            "me_burst": false,
+            "burst_me": false,
+            "me": false,
+            "burst_count": 0
+        }
+    ],
+    "referralTrialOfferId": null,
+    "state": "SENT",
+    "stickerItems": [],
+    "stickers": [],
+    "timestamp": "2026-02-18T20:08:52.062Z",
+    "tts": false,
+    "type": 0,
+    "webhookId": null
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E398C9CA-18CF-4807-851F-6970C6591365}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Unity.RenderPipelines.Universal.2D.Runtime</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Runtime">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RenderAs2DModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.RenderAs2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-BurstDirectCallInitializer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShadowShapeProvider2DUtility.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\CinemachineUniversalPixelPerfect.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Clipper.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ClipperBase.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ClipperException.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ClipperOffset.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ClipType.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ClipTypes.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\CompositeShadowCaster2D.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\CopyCameraSortingLayerPass.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Directions.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DoublePoint.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DrawLight2DPass.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DrawNormal2DPass.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DrawRenderer2DPass.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\DrawShadow2DPass.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\EdgeDictionary.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\EdgeSides.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\EndType.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\EndTypes.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\GlobalPropertiesPass.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\IEdgeStore.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ILight2DCullResult.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Int128.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\IntersectNode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\IntPoint.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\IntRect.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\IPixelPerfectCamera.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Join.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\JoinType.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\JoinTypes.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\LayerBatch.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\LayerUtility.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Light2D.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Light2DBlendStyle.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Light2DCullResult.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Light2DLookupTexture.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Light2DManager.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\LightBatch.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\LightBuffer.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\LightStats.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\LightUtility.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\LocalMinima.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Maxima.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\MyIntersectNodeSort.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\OutPt.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\OutRec.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PerLight2D.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PixelPerfectCamera.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PixelPerfectCameraInternal.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PolyFillType.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PolyFillTypes.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PolyNode.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PolyTree.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PolyType.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\PolyTypes.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Renderer2D.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Renderer2DData.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\RendererLighting.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\RenderPassEvent2D.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\Scanbeam.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ScriptableRenderPass2DExtension.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowCaster2D.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowCasterGroup2D.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowCasterGroup2DManager.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowEdge.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowMesh2D.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowRendering.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowShape2D.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowShape2DProvider.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowShape2DProvider_Collider2D.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowShape2DProvider_SpriteRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowShape2DProvider_SpriteShape.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShadowUtility.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\ShapeProviderUtility.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\TEdge.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UpscalePass.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\URP2D_GraphicsExtensions.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\ArraySlice.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\ArraySliceDebugView.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\DelaEdgeCompare.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\ICondition2.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\IntersectionCompare.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\ModuleHandle.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\PlanarGraph.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\TessCellCompare.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\TessEdgeCompare.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\Tessellator.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\TessEventCompare.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\TessJunctionCompare.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\TessLink.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\UBounds.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\UCircle.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\UEncroachingSegment.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\UEvent.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\UEventType.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\UHull.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\UStar.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\UTriangle.cs" />
+    <Compile Include="UnityEngine\Rendering\Universal\UTess\XCompare.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="VertexDictionary.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0D0135DB-A613-4EBD-89BF-8DA8CF2BEB94}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>UnityEngine.MarshallingModule</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityEngine\AbstractClass.cs" />
+    <Compile Include="UnityEngine\BlittableCornerCases.cs" />
+    <Compile Include="UnityEngine\BlittableNestedCollectionMarshallerTests.cs" />
+    <Compile Include="UnityEngine\BlittableStructTests.cs" />
+    <Compile Include="UnityEngine\BoolStructTests.cs" />
+    <Compile Include="UnityEngine\ClassToStruct.cs" />
+    <Compile Include="UnityEngine\CustomMarshallingTests.cs" />
+    <Compile Include="UnityEngine\DelegateTests.cs" />
+    <Compile Include="UnityEngine\DifferentMarshallingTestObject.cs" />
+    <Compile Include="UnityEngine\EnumTests.cs" />
+    <Compile Include="UnityEngine\ExceptionTests.cs" />
+    <Compile Include="UnityEngine\ExceptionTypeTests.cs" />
+    <Compile Include="UnityEngine\FieldBoundPropertyTests.cs" />
+    <Compile Include="UnityEngine\IntPtrObjectTests.cs" />
+    <Compile Include="UnityEngine\InvokeTests.cs" />
+    <Compile Include="UnityEngine\ManagedObjectTests.cs" />
+    <Compile Include="UnityEngine\MarshallingTestObject.cs" />
+    <Compile Include="UnityEngine\MarshallingTests.cs" />
+    <Compile Include="UnityEngine\MarshallingTests2.cs" />
+    <Compile Include="UnityEngine\MyIntPtrObject.cs" />
+    <Compile Include="UnityEngine\MyManagedObject.cs" />
+    <Compile Include="UnityEngine\NonBlittableStructTests.cs" />
+    <Compile Include="UnityEngine\NullCheckTests.cs" />
+    <Compile Include="UnityEngine\OutArrayMarshallingTests.cs" />
+    <Compile Include="UnityEngine\ParentOfNested.cs" />
+    <Compile Include="UnityEngine\PrimitiveTests.cs" />
+    <Compile Include="UnityEngine\ReturnArrayMarshallingTests.cs" />
+    <Compile Include="UnityEngine\SomeEnum.cs" />
+    <Compile Include="UnityEngine\StringTests.cs" />
+    <Compile Include="UnityEngine\StructCoreString.cs" />
+    <Compile Include="UnityEngine\StructCoreStringVector.cs" />
+    <Compile Include="UnityEngine\StructFixedBuffer.cs" />
+    <Compile Include="UnityEngine\StructInt.cs" />
+    <Compile Include="UnityEngine\StructInt2.cs" />
+    <Compile Include="UnityEngine\StructIntPtrObject.cs" />
+    <Compile Include="UnityEngine\StructIntPtrObjectVector.cs" />
+    <Compile Include="UnityEngine\StructManagedObject.cs" />
+    <Compile Include="UnityEngine\StructManagedObjectVector.cs" />
+    <Compile Include="UnityEngine\StructNestedBlittable.cs" />
+    <Compile Include="UnityEngine\StructSystemReflectionFieldInfo.cs" />
+    <Compile Include="UnityEngine\StructSystemReflectionFieldInfoArray.cs" />
+    <Compile Include="UnityEngine\StructSystemReflectionMethodInfo.cs" />
+    <Compile Include="UnityEngine\StructSystemReflectionMethodInfoArray.cs" />
+    <Compile Include="UnityEngine\StructSystemType.cs" />
+    <Compile Include="UnityEngine\StructSystemTypeArray.cs" />
+    <Compile Include="UnityEngine\StructUnityObject.cs" />
+    <Compile Include="UnityEngine\StructUnityObjectPPtr.cs" />
+    <Compile Include="UnityEngine\StructUnityObjectVector.cs" />
+    <Compile Include="UnityEngine\StructWith8ByteAndBoolFields.cs" />
+    <Compile Include="UnityEngine\StructWithClassToStruct.cs" />
+    <Compile Include="UnityEngine\StructWithExternTests.cs" />
+    <Compile Include="UnityEngine\StructWithNonBlittableArrayField.cs" />
+    <Compile Include="UnityEngine\StructWithSelfPointer.cs" />
+    <Compile Include="UnityEngine\StructWithStringIgnoredIntAndFloat.cs" />
+    <Compile Include="UnityEngine\StructWithStringIntAndFloat.cs" />
+    <Compile Include="UnityEngine\StructWithStringIntAndFloat2.cs" />
+    <Compile Include="UnityEngine\StructWithTypedefManagedName.cs" />
+    <Compile Include="UnityEngine\SystemReflectionFieldInfoMarshallingTests.cs" />
+    <Compile Include="UnityEngine\SystemReflectionMethodInfoMarshallingTests.cs" />
+    <Compile Include="UnityEngine\SystemTypeMarshallingTests.cs" />
+    <Compile Include="UnityEngine\TypedefManagedNameTests.cs" />
+    <Compile Include="UnityEngine\UnityObjectTests.cs" />
+    <Compile Include="UnityEngine\ValueTypeArrayTests.cs" />
+    <Compile Include="UnityEngine\ValueTypeListOfTTests.cs" />
+    <Compile Include="UnityEngine\ValueTypeSpanTests.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

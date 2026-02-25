@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{8BAF8EE6-E877-49D6-8F65-F0F15FBE570C}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Unity.VisualScripting.Antlr3.Runtime</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\ANTLRFileStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\ANTLRInputStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\ANTLRReaderStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\ANTLRStringStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\BaseRecognizer.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\BitSet.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\CharStreamConstants.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\CharStreamState.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\ClassicToken.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Collections\CollectionUtils.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Collections\HashList.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Collections\StackList.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\CommonErrorNode.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\CommonToken.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\CommonTokenStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Constants.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\DFA.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\EarlyExitException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\FailedPredicateException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\ICharStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\IIntStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\IToken.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\ITokenSource.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\ITokenStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Lexer.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Misc\ErrorManager.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Misc\Stats.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\MismatchedNotSetException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\MismatchedRangeException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\MismatchedSetException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\MismatchedTokenException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\MismatchedTreeNodeException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\MissingTokenException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\NoViableAltException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Parser.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\ParserRuleReturnScope.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\RecognitionException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\RecognizerSharedState.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\RuleReturnScope.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\SynPredPointer.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Token.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\TokenRewriteStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\BaseTree.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\BaseTreeAdaptor.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\CommonTree.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\CommonTreeAdaptor.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\CommonTreeNodeStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\ITree.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\ITreeAdaptor.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\ITreeNodeStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\ITreeVisitorAction.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\ParseTree.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\RewriteCardinalityException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\RewriteEarlyExitException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\RewriteEmptyStreamException.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\RewriteRuleElementStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\RewriteRuleNodeStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\RewriteRuleSubtreeStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\RewriteRuleTokenStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\Tree.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\TreeParser.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\TreePatternLexer.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\TreePatternParser.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\TreeRuleReturnScope.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\TreeVisitor.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\TreeWizard.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\Tree\UnBufferedTreeNodeStream.cs" />
+    <Compile Include="Unity\VisualScripting\Antlr3\Runtime\UnwantedTokenException.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,11 @@
+namespace System.IO.Pipes
+{
+	/// <summary>Specifies the transmission mode of the pipe.</summary>
+	public enum PipeTransmissionMode
+	{
+		/// <summary>Indicates that data in the pipe is transmitted and read as a stream of bytes.</summary>
+		Byte = 0,
+		/// <summary>Indicates that data in the pipe is transmitted and read as a stream of messages.</summary>
+		Message = 1
+	}
+}

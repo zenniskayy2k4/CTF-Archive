@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{ACF63889-5438-4B2D-9366-601238C77216}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>UnityEngine.Physics2DModule</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityEngine\AnchoredJoint2D.cs" />
+    <Compile Include="UnityEngine\AreaEffector2D.cs" />
+    <Compile Include="UnityEngine\BoxCollider2D.cs" />
+    <Compile Include="UnityEngine\BuoyancyEffector2D.cs" />
+    <Compile Include="UnityEngine\CapsuleCollider2D.cs" />
+    <Compile Include="UnityEngine\CapsuleDirection2D.cs" />
+    <Compile Include="UnityEngine\CircleCollider2D.cs" />
+    <Compile Include="UnityEngine\Collider2D.cs" />
+    <Compile Include="UnityEngine\ColliderDistance2D.cs" />
+    <Compile Include="UnityEngine\ColliderErrorState2D.cs" />
+    <Compile Include="UnityEngine\Collision2D.cs" />
+    <Compile Include="UnityEngine\CollisionDetectionMode2D.cs" />
+    <Compile Include="UnityEngine\CompositeCollider2D.cs" />
+    <Compile Include="UnityEngine\ConstantForce2D.cs" />
+    <Compile Include="UnityEngine\ContactFilter2D.cs" />
+    <Compile Include="UnityEngine\ContactPoint2D.cs" />
+    <Compile Include="UnityEngine\CustomCollider2D.cs" />
+    <Compile Include="UnityEngine\DistanceJoint2D.cs" />
+    <Compile Include="UnityEngine\EdgeCollider2D.cs" />
+    <Compile Include="UnityEngine\Effector2D.cs" />
+    <Compile Include="UnityEngine\EffectorForceMode2D.cs" />
+    <Compile Include="UnityEngine\EffectorSelection2D.cs" />
+    <Compile Include="UnityEngine\FixedJoint2D.cs" />
+    <Compile Include="UnityEngine\ForceMode2D.cs" />
+    <Compile Include="UnityEngine\FrictionJoint2D.cs" />
+    <Compile Include="UnityEngine\HingeJoint2D.cs" />
+    <Compile Include="UnityEngine\Joint2D.cs" />
+    <Compile Include="UnityEngine\JointAngleLimits2D.cs" />
+    <Compile Include="UnityEngine\JointBreakAction2D.cs" />
+    <Compile Include="UnityEngine\JointLimitState2D.cs" />
+    <Compile Include="UnityEngine\JointMotor2D.cs" />
+    <Compile Include="UnityEngine\JointSuspension2D.cs" />
+    <Compile Include="UnityEngine\JointTranslationLimits2D.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\CapsuleGeometry.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\ChainGeometry.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\ChainSegmentGeometry.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\CircleGeometry.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\IPhysicsJoint.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsAABB.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsBody.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsBodyDefinition.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsCallbacks.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsChain.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsChainDefinition.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsComposer.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsComposerScripting2D.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsConstants.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsDestructor.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsDestructorScripting2D.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsDistanceJoint.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsDistanceJointDefinition.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsEvents.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsFixedJoint.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsFixedJointDefinition.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsHingeJoint.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsHingeJointDefinition.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsIgnoreJoint.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsIgnoreJointDefinition.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsJoint.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsLayers.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsLowLevelScripting2D.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsLowLevelSettings2D.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsMask.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsMath.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsNativeMethods.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsPlane.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsQuery.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsRelativeJoint.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsRelativeJointDefinition.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsRotate.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsShape.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsShapeDefinition.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsSliderJoint.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsSliderJointDefinition.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsTransform.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsUserData.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsWheelJoint.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsWheelJointDefinition.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsWorld.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsWorldDefinition.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PhysicsWorldRenderer.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\PolygonGeometry.cs" />
+    <Compile Include="UnityEngine\LowLevelPhysics2D\SegmentGeometry.cs" />
+    <Compile Include="UnityEngine\Physics2D.cs" />
+    <Compile Include="UnityEngine\PhysicsJobOptions2D.cs" />
+    <Compile Include="UnityEngine\PhysicsMaterial2D.cs" />
+    <Compile Include="UnityEngine\PhysicsMaterialCombine2D.cs" />
+    <Compile Include="UnityEngine\PhysicsScene2D.cs" />
+    <Compile Include="UnityEngine\PhysicsSceneExtensions2D.cs" />
+    <Compile Include="UnityEngine\PhysicsShape2D.cs" />
+    <Compile Include="UnityEngine\PhysicsShapeGroup2D.cs" />
+    <Compile Include="UnityEngine\PhysicsShapeType2D.cs" />
+    <Compile Include="UnityEngine\PhysicsUpdateBehaviour2D.cs" />
+    <Compile Include="UnityEngine\PlatformEffector2D.cs" />
+    <Compile Include="UnityEngine\PointEffector2D.cs" />
+    <Compile Include="UnityEngine\PolygonCollider2D.cs" />
+    <Compile Include="UnityEngine\RaycastHit2D.cs" />
+    <Compile Include="UnityEngine\RelativeJoint2D.cs" />
+    <Compile Include="UnityEngine\Rigidbody2D.cs" />
+    <Compile Include="UnityEngine\RigidbodyConstraints2D.cs" />
+    <Compile Include="UnityEngine\RigidbodyInterpolation2D.cs" />
+    <Compile Include="UnityEngine\RigidbodySleepMode2D.cs" />
+    <Compile Include="UnityEngine\RigidbodyType2D.cs" />
+    <Compile Include="UnityEngine\SimulationMode2D.cs" />
+    <Compile Include="UnityEngine\SliderJoint2D.cs" />
+    <Compile Include="UnityEngine\SpringJoint2D.cs" />
+    <Compile Include="UnityEngine\SurfaceEffector2D.cs" />
+    <Compile Include="UnityEngine\TargetJoint2D.cs" />
+    <Compile Include="UnityEngine\WheelJoint2D.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

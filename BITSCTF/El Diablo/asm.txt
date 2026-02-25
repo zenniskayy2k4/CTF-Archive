@@ -1,0 +1,253 @@
+================================================================================
+PC     | Hex                            | Instruction
+================================================================================
+0000   | 30 02 01 00 20                 | LOAD_STR         R[2] = " "  (len=1)
+0005   | 30 03 4E 00 48 65 6C 6C 6F 21 20 43 6F 6E 67 72 61 74 73 20 6F 6E 20 6D 61 6B 69 6E 67 20 69 74 20 74 68 69 73 20 66 61 72 20 3A 29 20 48 61 76 65 20 61 20 6C 6F 6F 6B 20 61 72 6F 75 6E 64 20 74 6F 20 66 69 6E 64 20 74 68 65 20 66 6C 61 67 2E 0A | LOAD_STR         R[3] = "Hello! Congrats on making it this far :) Have a look around to find the flag.\n"  (len=78)
+0057   | 30 04 20 00 54 68 65 20 66 6C 61 67 20 6C 69 65 73 20 68 65 72 65 20 73 6F 6D 65 77 68 65 72 65 2E 2E 2E 0A | LOAD_STR         R[4] = "The flag lies here somewhere...\n"  (len=32)
+007B   | 30 05 01 00 0A                 | LOAD_STR         R[5] = "\n"  (len=1)
+0080   | 31 04                          | PRINT_STR        R[4]
+0082   | 01 00 DB 00                    | LOAD_IMM16       R[0] = 0x00DB
+0086   | 01 03 00 00                    | LOAD_IMM16       R[3] = 0x0000
+008A   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+008D   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+0091   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+0093   | 01 00 BC 00                    | LOAD_IMM16       R[0] = 0x00BC
+0097   | 01 03 01 00                    | LOAD_IMM16       R[3] = 0x0001
+009B   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+009E   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+00A2   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+00A4   | 01 00 33 00                    | LOAD_IMM16       R[0] = 0x0033
+00A8   | 01 03 02 00                    | LOAD_IMM16       R[3] = 0x0002
+00AC   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+00AF   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+00B3   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+00B5   | 01 00 42 00                    | LOAD_IMM16       R[0] = 0x0042
+00B9   | 01 03 03 00                    | LOAD_IMM16       R[3] = 0x0003
+00BD   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+00C0   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+00C4   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+00C6   | 01 00 67 00                    | LOAD_IMM16       R[0] = 0x0067
+00CA   | 01 03 04 00                    | LOAD_IMM16       R[3] = 0x0004
+00CE   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+00D1   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+00D5   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+00D7   | 01 00 81 00                    | LOAD_IMM16       R[0] = 0x0081
+00DB   | 01 03 05 00                    | LOAD_IMM16       R[3] = 0x0005
+00DF   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+00E2   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+00E6   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+00E8   | 01 00 66 00                    | LOAD_IMM16       R[0] = 0x0066
+00EC   | 01 03 06 00                    | LOAD_IMM16       R[3] = 0x0006
+00F0   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+00F3   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+00F7   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+00F9   | 01 00 AE 00                    | LOAD_IMM16       R[0] = 0x00AE
+00FD   | 01 03 07 00                    | LOAD_IMM16       R[3] = 0x0007
+0101   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0104   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+0108   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+010A   | 01 00 9A 00                    | LOAD_IMM16       R[0] = 0x009A
+010E   | 01 03 08 00                    | LOAD_IMM16       R[3] = 0x0008
+0112   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0115   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+0119   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+011B   | 01 00 08 00                    | LOAD_IMM16       R[0] = 0x0008
+011F   | 01 03 09 00                    | LOAD_IMM16       R[3] = 0x0009
+0123   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0126   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+012A   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+012C   | 01 00 E0 00                    | LOAD_IMM16       R[0] = 0x00E0
+0130   | 01 03 00 00                    | LOAD_IMM16       R[3] = 0x0000
+0134   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0137   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+013B   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+013D   | 01 00 C6 00                    | LOAD_IMM16       R[0] = 0x00C6
+0141   | 01 03 01 00                    | LOAD_IMM16       R[3] = 0x0001
+0145   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0148   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+014C   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+014E   | 01 00 15 00                    | LOAD_IMM16       R[0] = 0x0015
+0152   | 01 03 02 00                    | LOAD_IMM16       R[3] = 0x0002
+0156   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0159   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+015D   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+015F   | 01 00 4E 00                    | LOAD_IMM16       R[0] = 0x004E
+0163   | 01 03 03 00                    | LOAD_IMM16       R[3] = 0x0003
+0167   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+016A   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+016E   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+0170   | 01 00 46 00                    | LOAD_IMM16       R[0] = 0x0046
+0174   | 01 03 04 00                    | LOAD_IMM16       R[3] = 0x0004
+0178   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+017B   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+017F   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+0181   | 01 00 AC 00                    | LOAD_IMM16       R[0] = 0x00AC
+0185   | 01 03 05 00                    | LOAD_IMM16       R[3] = 0x0005
+0189   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+018C   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+0190   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+0192   | 01 00 7F 00                    | LOAD_IMM16       R[0] = 0x007F
+0196   | 01 03 06 00                    | LOAD_IMM16       R[3] = 0x0006
+019A   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+019D   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+01A1   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+01A3   | 01 00 B9 00                    | LOAD_IMM16       R[0] = 0x00B9
+01A7   | 01 03 07 00                    | LOAD_IMM16       R[3] = 0x0007
+01AB   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+01AE   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+01B2   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+01B4   | 01 00 C2 00                    | LOAD_IMM16       R[0] = 0x00C2
+01B8   | 01 03 08 00                    | LOAD_IMM16       R[3] = 0x0008
+01BC   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+01BF   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+01C3   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+01C5   | 01 00 45 00                    | LOAD_IMM16       R[0] = 0x0045
+01C9   | 01 03 09 00                    | LOAD_IMM16       R[3] = 0x0009
+01CD   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+01D0   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+01D4   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+01D6   | 01 00 AA 00                    | LOAD_IMM16       R[0] = 0x00AA
+01DA   | 01 03 00 00                    | LOAD_IMM16       R[3] = 0x0000
+01DE   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+01E1   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+01E5   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+01E7   | 01 00 87 00                    | LOAD_IMM16       R[0] = 0x0087
+01EB   | 01 03 01 00                    | LOAD_IMM16       R[3] = 0x0001
+01EF   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+01F2   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+01F6   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+01F8   | 01 00 38 00                    | LOAD_IMM16       R[0] = 0x0038
+01FC   | 01 03 02 00                    | LOAD_IMM16       R[3] = 0x0002
+0200   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0203   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+0207   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+0209   | 01 00 68 00                    | LOAD_IMM16       R[0] = 0x0068
+020D   | 01 03 03 00                    | LOAD_IMM16       R[3] = 0x0003
+0211   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0214   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+0218   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+021A   | 01 00 14 00                    | LOAD_IMM16       R[0] = 0x0014
+021E   | 01 03 04 00                    | LOAD_IMM16       R[3] = 0x0004
+0222   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0225   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+0229   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+022B   | 01 00 A0 00                    | LOAD_IMM16       R[0] = 0x00A0
+022F   | 01 03 05 00                    | LOAD_IMM16       R[3] = 0x0005
+0233   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0236   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+023A   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+023C   | 01 00 7F 00                    | LOAD_IMM16       R[0] = 0x007F
+0240   | 01 03 06 00                    | LOAD_IMM16       R[3] = 0x0006
+0244   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0247   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+024B   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+024D   | 01 00 A0 00                    | LOAD_IMM16       R[0] = 0x00A0
+0251   | 01 03 07 00                    | LOAD_IMM16       R[3] = 0x0007
+0255   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0258   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+025C   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+025E   | 01 00 98 00                    | LOAD_IMM16       R[0] = 0x0098
+0262   | 01 03 08 00                    | LOAD_IMM16       R[3] = 0x0008
+0266   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0269   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+026D   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+026F   | 01 00 4E 00                    | LOAD_IMM16       R[0] = 0x004E
+0273   | 01 03 09 00                    | LOAD_IMM16       R[3] = 0x0009
+0277   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+027A   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+027E   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+0280   | 01 00 AD 00                    | LOAD_IMM16       R[0] = 0x00AD
+0284   | 01 03 00 00                    | LOAD_IMM16       R[3] = 0x0000
+0288   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+028B   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+028F   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+0291   | 01 00 83 00                    | LOAD_IMM16       R[0] = 0x0083
+0295   | 01 03 01 00                    | LOAD_IMM16       R[3] = 0x0001
+0299   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+029C   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+02A0   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+02A2   | 01 00 54 00                    | LOAD_IMM16       R[0] = 0x0054
+02A6   | 01 03 02 00                    | LOAD_IMM16       R[3] = 0x0002
+02AA   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+02AD   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+02B1   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+02B3   | 01 00 7D 00                    | LOAD_IMM16       R[0] = 0x007D
+02B7   | 01 03 03 00                    | LOAD_IMM16       R[3] = 0x0003
+02BB   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+02BE   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+02C2   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+02C4   | 01 00 7B 00                    | LOAD_IMM16       R[0] = 0x007B
+02C8   | 01 03 04 00                    | LOAD_IMM16       R[3] = 0x0004
+02CC   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+02CF   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+02D3   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+02D5   | 01 00 B8 00                    | LOAD_IMM16       R[0] = 0x00B8
+02D9   | 01 03 05 00                    | LOAD_IMM16       R[3] = 0x0005
+02DD   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+02E0   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+02E4   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+02E6   | 01 00 59 00                    | LOAD_IMM16       R[0] = 0x0059
+02EA   | 01 03 06 00                    | LOAD_IMM16       R[3] = 0x0006
+02EE   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+02F1   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+02F5   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+02F7   | 01 00 8A 00                    | LOAD_IMM16       R[0] = 0x008A
+02FB   | 01 03 07 00                    | LOAD_IMM16       R[3] = 0x0007
+02FF   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0302   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+0306   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+0308   | 01 00 C3 00                    | LOAD_IMM16       R[0] = 0x00C3
+030C   | 01 03 08 00                    | LOAD_IMM16       R[3] = 0x0008
+0310   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0313   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+0317   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+0319   | 01 00 0F 00                    | LOAD_IMM16       R[0] = 0x000F
+031D   | 01 03 09 00                    | LOAD_IMM16       R[3] = 0x0009
+0321   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0324   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+0328   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+032A   | 01 00 FA 00                    | LOAD_IMM16       R[0] = 0x00FA
+032E   | 01 03 00 00                    | LOAD_IMM16       R[3] = 0x0000
+0332   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0335   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+0339   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+033B   | 01 00 87 00                    | LOAD_IMM16       R[0] = 0x0087
+033F   | 01 03 01 00                    | LOAD_IMM16       R[3] = 0x0001
+0343   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0346   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+034A   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+034C   | 01 00 54 00                    | LOAD_IMM16       R[0] = 0x0054
+0350   | 01 03 02 00                    | LOAD_IMM16       R[3] = 0x0002
+0354   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0357   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+035B   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+035D   | 01 00 26 00                    | LOAD_IMM16       R[0] = 0x0026
+0361   | 01 03 03 00                    | LOAD_IMM16       R[3] = 0x0003
+0365   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0368   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+036C   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+036E   | 01 00 11 00                    | LOAD_IMM16       R[0] = 0x0011
+0372   | 01 03 04 00                    | LOAD_IMM16       R[3] = 0x0004
+0376   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+0379   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+037D   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+037F   | 01 00 A8 00                    | LOAD_IMM16       R[0] = 0x00A8
+0383   | 01 03 05 00                    | LOAD_IMM16       R[3] = 0x0005
+0387   | 82 01 03                       | GET_LICENSE_BYTE R[1] = License[ R[3] ]
+038A   | 20 00 00 01                    | XOR              R[0] = R[0] ^ R[1]
+038E   | 84 00                          | PRINT_FLAG_CHAR  R[0]
+0390   | 31 05                          | PRINT_STR        R[5]
+0392   | 00                             | HALT             
+0393   | 00                             | HALT             
+0394   | 00                             | HALT             
+0395   | 00                             | HALT             
+0396   | 00                             | HALT             
+0397   | 00                             | HALT             
+0398   | 00                             | HALT             
+0399   | 00                             | HALT             
+039A   | 00                             | HALT             
+039B   | 00                             | HALT             
+039C   | 00                             | HALT             
+039D   | 00                             | HALT             
+039E   | 00                             | HALT             
+039F   | 00                             | HALT             

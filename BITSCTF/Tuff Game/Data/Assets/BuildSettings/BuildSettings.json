@@ -1,0 +1,29 @@
+{
+	"m_AuthToken": "b7a764024f1dbff172c84c583ed13b5eb939771ee59b0ce47fd7889340fcb5dddb5a6e8ef171eb2c",
+	"m_BuildTags": [],
+	"m_EnabledVRDevices": [],
+	"m_EnableDynamicBatching": false,
+	"m_GraphicsAPIs": [
+		18,
+		2
+	],
+	"m_HasAdvancedVersion": false,
+	"m_HasClusterRendering": false,
+	"m_HasLocalLightShadows": true,
+	"m_HasPROVersion": false,
+	"m_HasPublishingRights": true,
+	"m_HasShadows": true,
+	"m_HasSoftShadows": true,
+	"m_HideFlags": 0,
+	"m_IsEducationalBuild": false,
+	"m_IsEmbedded": false,
+	"m_IsNoWatermarkBuild": false,
+	"m_IsPrototypingBuild": false,
+	"m_IsTrial": false,
+	"m_PreloadedPlugins": [],
+	"m_Scenes": [
+		"Assets/Scenes/Game.unity"
+	],
+	"m_UsesOnMouseEvents": true,
+	"m_Version": "6000.3.4f1"
+}

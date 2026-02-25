@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{AB5D5F6E-5C14-45F1-A127-BBD69A6185F6}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Unity.Burst</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-BurstDirectCallInitializer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="Unity\Burst\BurstCompileAttribute.cs" />
+    <Compile Include="Unity\Burst\BurstCompiler.cs" />
+    <Compile Include="Unity\Burst\BurstCompilerOptions.cs" />
+    <Compile Include="Unity\Burst\BurstExecutionEnvironment.cs" />
+    <Compile Include="Unity\Burst\BurstRuntime.cs" />
+    <Compile Include="Unity\Burst\BurstString.cs" />
+    <Compile Include="Unity\Burst\BurstTargetCpu.cs" />
+    <Compile Include="Unity\Burst\CompilationPriority.cs" />
+    <Compile Include="Unity\Burst\CompilerServices\Aliasing.cs" />
+    <Compile Include="Unity\Burst\CompilerServices\AssumeRangeAttribute.cs" />
+    <Compile Include="Unity\Burst\CompilerServices\Constant.cs" />
+    <Compile Include="Unity\Burst\CompilerServices\Hint.cs" />
+    <Compile Include="Unity\Burst\CompilerServices\IgnoreWarningAttribute.cs" />
+    <Compile Include="Unity\Burst\CompilerServices\SkipLocalsInitAttribute.cs" />
+    <Compile Include="Unity\Burst\DiagnosticId.cs" />
+    <Compile Include="Unity\Burst\FloatMode.cs" />
+    <Compile Include="Unity\Burst\FloatPrecision.cs" />
+    <Compile Include="Unity\Burst\FunctionPointer.cs" />
+    <Compile Include="Unity\Burst\GlobalSafetyChecksSettingKind.cs" />
+    <Compile Include="Unity\Burst\IFunctionPointer.cs" />
+    <Compile Include="Unity\Burst\Intrinsics\Arm.cs" />
+    <Compile Include="Unity\Burst\Intrinsics\BurstTargetCpuAttribute.cs" />
+    <Compile Include="Unity\Burst\Intrinsics\Common.cs" />
+    <Compile Include="Unity\Burst\Intrinsics\v128.cs" />
+    <Compile Include="Unity\Burst\Intrinsics\V128DebugView.cs" />
+    <Compile Include="Unity\Burst\Intrinsics\v256.cs" />
+    <Compile Include="Unity\Burst\Intrinsics\V256DebugView.cs" />
+    <Compile Include="Unity\Burst\Intrinsics\v64.cs" />
+    <Compile Include="Unity\Burst\Intrinsics\V64DebugView.cs" />
+    <Compile Include="Unity\Burst\Intrinsics\X86.cs" />
+    <Compile Include="Unity\Burst\NativeDumpFlags.cs" />
+    <Compile Include="Unity\Burst\NoAliasAttribute.cs" />
+    <Compile Include="Unity\Burst\OptimizeFor.cs" />
+    <Compile Include="Unity\Burst\SafeStringArrayHelper.cs" />
+    <Compile Include="Unity\Burst\SharedStatic.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

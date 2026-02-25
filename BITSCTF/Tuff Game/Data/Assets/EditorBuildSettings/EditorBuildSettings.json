@@ -1,0 +1,17 @@
+{
+	"m_ConfigObjects": {},
+	"m_HideFlags": 0,
+	"m_Scenes": [
+		{
+			"m_Enabled": true,
+			"m_Guid": {
+				"m_Data_0_": 1763683517,
+				"m_Data_1_": 1174456047,
+				"m_Data_2_": 3459842200,
+				"m_Data_3_": 436614236
+			},
+			"m_Path": "Assets/Scenes/Game.unity"
+		}
+	],
+	"m_UseUCBPForAssetBundles": false
+}

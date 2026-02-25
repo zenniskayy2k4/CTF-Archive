@@ -1,0 +1,16 @@
+using System.Runtime.InteropServices;
+
+namespace System
+{
+	/// <summary>Specifies the location where an environment variable is stored or retrieved in a set or get operation.</summary>
+	[ComVisible(true)]
+	public enum EnvironmentVariableTarget
+	{
+		/// <summary>The environment variable is stored or retrieved from the environment block associated with the current process.</summary>
+		Process = 0,
+		/// <summary>The environment variable is stored or retrieved from the <see langword="HKEY_CURRENT_USER\Environment" /> key in the Windows operating system registry.</summary>
+		User = 1,
+		/// <summary>The environment variable is stored or retrieved from the <see langword="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment" /> key in the Windows operating system registry.</summary>
+		Machine = 2
+	}
+}

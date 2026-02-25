@@ -1,0 +1,43 @@
+using System;
+using UnityEngine.Bindings;
+using UnityEngine.Scripting;
+
+namespace UnityEngine.TextCore.LowLevel
+{
+	[Serializable]
+	[UsedByNativeCode]
+	internal struct ContextualSubstitutionRecord
+	{
+		[NativeName("inputGlyphSequences")]
+		[SerializeField]
+		private GlyphIDSequence[] m_InputGlyphSequences;
+
+		[NativeName("sequenceLookupRecords")]
+		[SerializeField]
+		private SequenceLookupRecord[] m_SequenceLookupRecords;
+
+		public GlyphIDSequence[] inputSequences
+		{
+			get
+			{
+				return m_InputGlyphSequences;
+			}
+			set
+			{
+				m_InputGlyphSequences = value;
+			}
+		}
+
+		public SequenceLookupRecord[] sequenceLookupRecords
+		{
+			get
+			{
+				return m_SequenceLookupRecords;
+			}
+			set
+			{
+				m_SequenceLookupRecords = value;
+			}
+		}
+	}
+}

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{6ED3DFFB-476E-4158-A5C1-67A6C95A8CAC}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Unity.Cinemachine</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Splines">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Splines.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeltaTimeScaleProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="Unity\Cinemachine\Active.cs" />
+    <Compile Include="Unity\Cinemachine\AxisBase.cs" />
+    <Compile Include="Unity\Cinemachine\AxisState.cs" />
+    <Compile Include="Unity\Cinemachine\BlendManager.cs" />
+    <Compile Include="Unity\Cinemachine\CachedScaledSpline.cs" />
+    <Compile Include="Unity\Cinemachine\CameraBlendStack.cs" />
+    <Compile Include="Unity\Cinemachine\CameraPipelineAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\CameraState.cs" />
+    <Compile Include="Unity\Cinemachine\CameraStateExtensions.cs" />
+    <Compile Include="Unity\Cinemachine\CameraTarget.cs" />
+    <Compile Include="Unity\Cinemachine\CameraUpdateManager.cs" />
+    <Compile Include="Unity\Cinemachine\ChildCameraPropertyAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\Cinemachine3OrbitRig.cs" />
+    <Compile Include="Unity\Cinemachine\Cinemachine3rdPersonFollow.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineAutoFocus.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineBasicMultiChannelPerlin.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineBlend.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineBlendDefinition.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineBlenderSettings.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineBrain.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineBrainEvents.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineCamera.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineCameraEvents.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineCameraManagerBase.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineCameraManagerEvents.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineCameraOffset.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineClearShot.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineCollider.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineCollisionImpulseSource.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineComponentBase.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineComposer.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineConfiner.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineConfiner2D.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineConfiner3D.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineCore.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineDebug.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineDecollider.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineDeoccluder.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineDollyCart.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineDoNotUpgrade.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineEmbeddedAssetPropertyAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineExtension.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineExternalCamera.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineExternalImpulseListener.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineFixedSignal.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineFollow.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineFollowZoom.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineFramingTransposer.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineFreeLook.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineFreeLookModifier.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineGroupComposer.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineGroupFraming.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineHardLockToTarget.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineHardLookAt.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineImpulseChannelPropertyAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineImpulseDefinition.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineImpulseListener.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineImpulseManager.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineImpulseSource.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineInputAxisController.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineInputAxisDriver.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineInputProvider.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineInputProviderExtensions.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineLegacyCameraEvents.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineMixerEventsBase.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineMixingCamera.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineOrbitalFollow.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineOrbitalTransposer.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachinePanTilt.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachinePath.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachinePathBase.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachinePipeline.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachinePixelPerfect.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachinePlayableMixer.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachinePositionComposer.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachinePOV.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineRecomposer.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineRotateWithFollowTarget.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineRotationComposer.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineSameAsFollowTarget.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineSequencerCamera.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineShot.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineShotPlayable.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineShotQualityEvaluator.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineSmoothPath.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineSplineCart.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineSplineDolly.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineSplineDollyLookAtTargets.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineSplineRoll.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineSplineSmoother.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineStateDrivenCamera.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineStoryboard.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineTargetGroup.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineThirdPersonAim.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineThirdPersonFollow.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineTouchInputMapper.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineTrack.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineTrackedDolly.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineTransposer.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineTriggerAction.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineVirtualCamera.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineVirtualCameraBase.cs" />
+    <Compile Include="Unity\Cinemachine\CinemachineVolumeSettings.cs" />
+    <Compile Include="Unity\Cinemachine\Clipper.cs" />
+    <Compile Include="Unity\Cinemachine\Clipper64.cs" />
+    <Compile Include="Unity\Cinemachine\ClipperBase.cs" />
+    <Compile Include="Unity\Cinemachine\ClipperD.cs" />
+    <Compile Include="Unity\Cinemachine\ClipperLibException.cs" />
+    <Compile Include="Unity\Cinemachine\ClipperOffset.cs" />
+    <Compile Include="Unity\Cinemachine\ClipType.cs" />
+    <Compile Include="Unity\Cinemachine\ConfinerOven.cs" />
+    <Compile Include="Unity\Cinemachine\Damper.cs" />
+    <Compile Include="Unity\Cinemachine\DefaultInputAxisDriver.cs" />
+    <Compile Include="Unity\Cinemachine\DelayedVectorAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\Documentation.cs" />
+    <Compile Include="Unity\Cinemachine\EmbeddedBlenderSettingsPropertyAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\EnabledPropertyAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\EndType.cs" />
+    <Compile Include="Unity\Cinemachine\FillRule.cs" />
+    <Compile Include="Unity\Cinemachine\FoldoutWithEnabledButtonAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\GaussianWindow1d.cs" />
+    <Compile Include="Unity\Cinemachine\GaussianWindow1D_CameraRotation.cs" />
+    <Compile Include="Unity\Cinemachine\GaussianWindow1D_Quaternion.cs" />
+    <Compile Include="Unity\Cinemachine\GaussianWindow1D_Vector3.cs" />
+    <Compile Include="Unity\Cinemachine\GroupWeightManipulator.cs" />
+    <Compile Include="Unity\Cinemachine\HeadingTracker.cs" />
+    <Compile Include="Unity\Cinemachine\HideFoldoutAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\HideIfNoComponentAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\ICameraOverrideStack.cs" />
+    <Compile Include="Unity\Cinemachine\ICinemachineCamera.cs" />
+    <Compile Include="Unity\Cinemachine\ICinemachineMixer.cs" />
+    <Compile Include="Unity\Cinemachine\ICinemachineTargetGroup.cs" />
+    <Compile Include="Unity\Cinemachine\IInputAxisController.cs" />
+    <Compile Include="Unity\Cinemachine\IInputAxisOwner.cs" />
+    <Compile Include="Unity\Cinemachine\IInputAxisReader.cs" />
+    <Compile Include="Unity\Cinemachine\IInputAxisResetSource.cs" />
+    <Compile Include="Unity\Cinemachine\InputAxis.cs" />
+    <Compile Include="Unity\Cinemachine\InputAxisControllerBase.cs" />
+    <Compile Include="Unity\Cinemachine\InputAxisControllerManager.cs" />
+    <Compile Include="Unity\Cinemachine\InputAxisControllerManagerAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\InputAxisNamePropertyAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\InternalClipper.cs" />
+    <Compile Include="Unity\Cinemachine\IntersectNode.cs" />
+    <Compile Include="Unity\Cinemachine\IShotQualityEvaluator.cs" />
+    <Compile Include="Unity\Cinemachine\ISignalSource6D.cs" />
+    <Compile Include="Unity\Cinemachine\ISplineReferencer.cs" />
+    <Compile Include="Unity\Cinemachine\Joiner.cs" />
+    <Compile Include="Unity\Cinemachine\JoinType.cs" />
+    <Compile Include="Unity\Cinemachine\LegacyLensSettings.cs" />
+    <Compile Include="Unity\Cinemachine\LensSettings.cs" />
+    <Compile Include="Unity\Cinemachine\LensSettingsHideModeOverridePropertyAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\LocalMinima.cs" />
+    <Compile Include="Unity\Cinemachine\LocMinSorter.cs" />
+    <Compile Include="Unity\Cinemachine\LookaheadSettings.cs" />
+    <Compile Include="Unity\Cinemachine\Minkowski.cs" />
+    <Compile Include="Unity\Cinemachine\MinMaxRangeSliderAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\NestedBlendSource.cs" />
+    <Compile Include="Unity\Cinemachine\NoiseSettings.cs" />
+    <Compile Include="Unity\Cinemachine\NoSaveDuringPlayAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\OutPt.cs" />
+    <Compile Include="Unity\Cinemachine\OutputChannels.cs" />
+    <Compile Include="Unity\Cinemachine\OutRec.cs" />
+    <Compile Include="Unity\Cinemachine\PathGroup.cs" />
+    <Compile Include="Unity\Cinemachine\PathType.cs" />
+    <Compile Include="Unity\Cinemachine\PipResult.cs" />
+    <Compile Include="Unity\Cinemachine\Point64.cs" />
+    <Compile Include="Unity\Cinemachine\PointD.cs" />
+    <Compile Include="Unity\Cinemachine\PointInPolygonResult.cs" />
+    <Compile Include="Unity\Cinemachine\PolyPath64.cs" />
+    <Compile Include="Unity\Cinemachine\PolyPathBase.cs" />
+    <Compile Include="Unity\Cinemachine\PolyPathD.cs" />
+    <Compile Include="Unity\Cinemachine\PolyPathEnum.cs" />
+    <Compile Include="Unity\Cinemachine\PolyTree64.cs" />
+    <Compile Include="Unity\Cinemachine\PolyTreeD.cs" />
+    <Compile Include="Unity\Cinemachine\PositionPredictor.cs" />
+    <Compile Include="Unity\Cinemachine\PrioritySettings.cs" />
+    <Compile Include="Unity\Cinemachine\RangeSliderAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\Rect64.cs" />
+    <Compile Include="Unity\Cinemachine\RectD.cs" />
+    <Compile Include="Unity\Cinemachine\RequiredTargetAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\RuntimeUtility.cs" />
+    <Compile Include="Unity\Cinemachine\SaveDuringPlayAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\ScreenComposerSettings.cs" />
+    <Compile Include="Unity\Cinemachine\SensorSizePropertyAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\SignalSourceAsset.cs" />
+    <Compile Include="Unity\Cinemachine\SplineAutoDolly.cs" />
+    <Compile Include="Unity\Cinemachine\SplineContainerExtensions.cs" />
+    <Compile Include="Unity\Cinemachine\SplineHelpers.cs" />
+    <Compile Include="Unity\Cinemachine\SplineSettings.cs" />
+    <Compile Include="Unity\Cinemachine\TagFieldAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\TargetPositionCache.cs" />
+    <Compile Include="Unity\Cinemachine\TargetTracking\AngularDampingMode.cs" />
+    <Compile Include="Unity\Cinemachine\TargetTracking\BindingMode.cs" />
+    <Compile Include="Unity\Cinemachine\TargetTracking\Tracker.cs" />
+    <Compile Include="Unity\Cinemachine\TargetTracking\TrackerSettings.cs" />
+    <Compile Include="Unity\Cinemachine\TargetTracking\TrackerSettingsExtensions.cs" />
+    <Compile Include="Unity\Cinemachine\UnityQuaternionExtensions.cs" />
+    <Compile Include="Unity\Cinemachine\UnityRectExtensions.cs" />
+    <Compile Include="Unity\Cinemachine\UnityVectorExtensions.cs" />
+    <Compile Include="Unity\Cinemachine\UpdateTracker.cs" />
+    <Compile Include="Unity\Cinemachine\VcamTargetPropertyAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\Vector2AsRangeAttribute.cs" />
+    <Compile Include="Unity\Cinemachine\Vertex.cs" />
+    <Compile Include="Unity\Cinemachine\VertexFlags.cs" />
+    <Compile Include="Unity\Cinemachine\VirtualCameraRegistry.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{69D67C59-7A85-4899-9900-20EE2CCCEACE}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Unity.VisualScripting.Flow</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="Unity\VisualScripting\Absolute.cs" />
+    <Compile Include="Unity\VisualScripting\Add.cs" />
+    <Compile Include="Unity\VisualScripting\AddDictionaryItem.cs" />
+    <Compile Include="Unity\VisualScripting\AddListItem.cs" />
+    <Compile Include="Unity\VisualScripting\And.cs" />
+    <Compile Include="Unity\VisualScripting\Angle.cs" />
+    <Compile Include="Unity\VisualScripting\ApproximatelyEqual.cs" />
+    <Compile Include="Unity\VisualScripting\Average.cs" />
+    <Compile Include="Unity\VisualScripting\BinaryComparisonUnit.cs" />
+    <Compile Include="Unity\VisualScripting\BoltAnimationEvent.cs" />
+    <Compile Include="Unity\VisualScripting\BoltNamedAnimationEvent.cs" />
+    <Compile Include="Unity\VisualScripting\BoltUnityEvent.cs" />
+    <Compile Include="Unity\VisualScripting\Break.cs" />
+    <Compile Include="Unity\VisualScripting\Cache.cs" />
+    <Compile Include="Unity\VisualScripting\ClearDictionary.cs" />
+    <Compile Include="Unity\VisualScripting\ClearList.cs" />
+    <Compile Include="Unity\VisualScripting\CollisionEvent2DUnit.cs" />
+    <Compile Include="Unity\VisualScripting\CollisionEventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\Comparison.cs" />
+    <Compile Include="Unity\VisualScripting\ControlConnection.cs" />
+    <Compile Include="Unity\VisualScripting\ControlInput.cs" />
+    <Compile Include="Unity\VisualScripting\ControlInputDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\ControlOutput.cs" />
+    <Compile Include="Unity\VisualScripting\ControlOutputDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\ControlPortDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\Cooldown.cs" />
+    <Compile Include="Unity\VisualScripting\CountItems.cs" />
+    <Compile Include="Unity\VisualScripting\CreateDictionary.cs" />
+    <Compile Include="Unity\VisualScripting\CreateList.cs" />
+    <Compile Include="Unity\VisualScripting\CreateStruct.cs" />
+    <Compile Include="Unity\VisualScripting\CrossProduct.cs" />
+    <Compile Include="Unity\VisualScripting\CustomEvent.cs" />
+    <Compile Include="Unity\VisualScripting\CustomEventArgs.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\BinaryExpression.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\BinaryExpressionType.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\EvaluateFunctionHandler.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\EvaluateOptions.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\EvaluateParameterHandler.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\EvaluationException.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\EvaluationVisitor.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\Expression.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\FunctionArgs.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\FunctionExpression.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\IdentifierExpression.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\LogicalExpression.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\LogicalExpressionVisitor.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\NCalcLexer.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\NCalcParser.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\ParameterArgs.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\SerializationVisitor.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\TernaryExpression.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\UnaryExpression.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\UnaryExpressionType.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\ValueExpression.cs" />
+    <Compile Include="Unity\VisualScripting\Dependencies\NCalc\ValueType.cs" />
+    <Compile Include="Unity\VisualScripting\DeprecatedGenericAdd.cs" />
+    <Compile Include="Unity\VisualScripting\DeprecatedScalarAdd.cs" />
+    <Compile Include="Unity\VisualScripting\DeprecatedVector2Add.cs" />
+    <Compile Include="Unity\VisualScripting\DeprecatedVector3Add.cs" />
+    <Compile Include="Unity\VisualScripting\DeprecatedVector4Add.cs" />
+    <Compile Include="Unity\VisualScripting\DictionaryContainsKey.cs" />
+    <Compile Include="Unity\VisualScripting\Distance.cs" />
+    <Compile Include="Unity\VisualScripting\Divide.cs" />
+    <Compile Include="Unity\VisualScripting\DotProduct.cs" />
+    <Compile Include="Unity\VisualScripting\Equal.cs" />
+    <Compile Include="Unity\VisualScripting\EqualityComparison.cs" />
+    <Compile Include="Unity\VisualScripting\EventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\ExclusiveOr.cs" />
+    <Compile Include="Unity\VisualScripting\Expose.cs" />
+    <Compile Include="Unity\VisualScripting\FirstItem.cs" />
+    <Compile Include="Unity\VisualScripting\FixedUpdate.cs" />
+    <Compile Include="Unity\VisualScripting\Flow.cs" />
+    <Compile Include="Unity\VisualScripting\FlowGraph.cs" />
+    <Compile Include="Unity\VisualScripting\FlowGraphData.cs" />
+    <Compile Include="Unity\VisualScripting\For.cs" />
+    <Compile Include="Unity\VisualScripting\ForEach.cs" />
+    <Compile Include="Unity\VisualScripting\Formula.cs" />
+    <Compile Include="Unity\VisualScripting\GameObjectEventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\GenericDivide.cs" />
+    <Compile Include="Unity\VisualScripting\GenericGuiEventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\GenericModulo.cs" />
+    <Compile Include="Unity\VisualScripting\GenericMultiply.cs" />
+    <Compile Include="Unity\VisualScripting\GenericSubtract.cs" />
+    <Compile Include="Unity\VisualScripting\GenericSum.cs" />
+    <Compile Include="Unity\VisualScripting\GetApplicationVariable.cs" />
+    <Compile Include="Unity\VisualScripting\GetDictionaryItem.cs" />
+    <Compile Include="Unity\VisualScripting\GetGraph.cs" />
+    <Compile Include="Unity\VisualScripting\GetGraphs.cs" />
+    <Compile Include="Unity\VisualScripting\GetGraphVariable.cs" />
+    <Compile Include="Unity\VisualScripting\GetListItem.cs" />
+    <Compile Include="Unity\VisualScripting\GetMember.cs" />
+    <Compile Include="Unity\VisualScripting\GetObjectVariable.cs" />
+    <Compile Include="Unity\VisualScripting\GetSavedVariable.cs" />
+    <Compile Include="Unity\VisualScripting\GetSceneVariable.cs" />
+    <Compile Include="Unity\VisualScripting\GetScriptGraph.cs" />
+    <Compile Include="Unity\VisualScripting\GetScriptGraphs.cs" />
+    <Compile Include="Unity\VisualScripting\GetVariable.cs" />
+    <Compile Include="Unity\VisualScripting\GetVariableUnit.cs" />
+    <Compile Include="Unity\VisualScripting\GlobalEventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\GraphInput.cs" />
+    <Compile Include="Unity\VisualScripting\GraphOutput.cs" />
+    <Compile Include="Unity\VisualScripting\Greater.cs" />
+    <Compile Include="Unity\VisualScripting\GreaterOrEqual.cs" />
+    <Compile Include="Unity\VisualScripting\HasGraph.cs" />
+    <Compile Include="Unity\VisualScripting\HasScriptGraph.cs" />
+    <Compile Include="Unity\VisualScripting\IApplicationVariableUnit.cs" />
+    <Compile Include="Unity\VisualScripting\IBranchUnit.cs" />
+    <Compile Include="Unity\VisualScripting\IDefaultValue.cs" />
+    <Compile Include="Unity\VisualScripting\IEventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\If.cs" />
+    <Compile Include="Unity\VisualScripting\IGameObjectEventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\IGraphVariableUnit.cs" />
+    <Compile Include="Unity\VisualScripting\IMouseEventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\IMultiInputUnit.cs" />
+    <Compile Include="Unity\VisualScripting\INesterUnit.cs" />
+    <Compile Include="Unity\VisualScripting\InputSystem\InputActionChangeOption.cs" />
+    <Compile Include="Unity\VisualScripting\InputSystem\OnInputSystemEvent.cs" />
+    <Compile Include="Unity\VisualScripting\InputSystem\OnInputSystemEventButton.cs" />
+    <Compile Include="Unity\VisualScripting\InputSystem\OnInputSystemEventFloat.cs" />
+    <Compile Include="Unity\VisualScripting\InputSystem\OnInputSystemEventVector2.cs" />
+    <Compile Include="Unity\VisualScripting\InputSystem\OutputType.cs" />
+    <Compile Include="Unity\VisualScripting\InsertListItem.cs" />
+    <Compile Include="Unity\VisualScripting\InvalidConnection.cs" />
+    <Compile Include="Unity\VisualScripting\InvalidInput.cs" />
+    <Compile Include="Unity\VisualScripting\InvalidOutput.cs" />
+    <Compile Include="Unity\VisualScripting\InvokeMember.cs" />
+    <Compile Include="Unity\VisualScripting\IObjectVariableUnit.cs" />
+    <Compile Include="Unity\VisualScripting\IsApplicationVariableDefined.cs" />
+    <Compile Include="Unity\VisualScripting\ISavedVariableUnit.cs" />
+    <Compile Include="Unity\VisualScripting\ISceneVariableUnit.cs" />
+    <Compile Include="Unity\VisualScripting\ISelectUnit.cs" />
+    <Compile Include="Unity\VisualScripting\IsGraphVariableDefined.cs" />
+    <Compile Include="Unity\VisualScripting\IsObjectVariableDefined.cs" />
+    <Compile Include="Unity\VisualScripting\IsSavedVariableDefined.cs" />
+    <Compile Include="Unity\VisualScripting\IsSceneVariableDefined.cs" />
+    <Compile Include="Unity\VisualScripting\IsVariableDefined.cs" />
+    <Compile Include="Unity\VisualScripting\IsVariableDefinedUnit.cs" />
+    <Compile Include="Unity\VisualScripting\IUnifiedVariableUnit.cs" />
+    <Compile Include="Unity\VisualScripting\IUnit.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitConnection.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitConnectionDebugData.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitControlPort.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitControlPortDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitDebugData.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitInputPort.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitInputPortDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitInvalidPort.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitOutputPort.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitOutputPortDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitPort.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitPortCollection.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitPortDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitRelation.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitValuePort.cs" />
+    <Compile Include="Unity\VisualScripting\IUnitValuePortDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\IVariableUnit.cs" />
+    <Compile Include="Unity\VisualScripting\LastItem.cs" />
+    <Compile Include="Unity\VisualScripting\LateUpdate.cs" />
+    <Compile Include="Unity\VisualScripting\Lerp.cs" />
+    <Compile Include="Unity\VisualScripting\Less.cs" />
+    <Compile Include="Unity\VisualScripting\LessOrEqual.cs" />
+    <Compile Include="Unity\VisualScripting\ListContainsItem.cs" />
+    <Compile Include="Unity\VisualScripting\Literal.cs" />
+    <Compile Include="Unity\VisualScripting\LoopUnit.cs" />
+    <Compile Include="Unity\VisualScripting\MachineEventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\ManualEventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\Maximum.cs" />
+    <Compile Include="Unity\VisualScripting\MemberUnit.cs" />
+    <Compile Include="Unity\VisualScripting\MergeDictionaries.cs" />
+    <Compile Include="Unity\VisualScripting\MergeLists.cs" />
+    <Compile Include="Unity\VisualScripting\Minimum.cs" />
+    <Compile Include="Unity\VisualScripting\MissingType.cs" />
+    <Compile Include="Unity\VisualScripting\MissingValuePortInputException.cs" />
+    <Compile Include="Unity\VisualScripting\Modulo.cs" />
+    <Compile Include="Unity\VisualScripting\MoveTowards.cs" />
+    <Compile Include="Unity\VisualScripting\MultiInputUnit.cs" />
+    <Compile Include="Unity\VisualScripting\Multiply.cs" />
+    <Compile Include="Unity\VisualScripting\Negate.cs" />
+    <Compile Include="Unity\VisualScripting\NesterUnit.cs" />
+    <Compile Include="Unity\VisualScripting\Normalize.cs" />
+    <Compile Include="Unity\VisualScripting\NotApproximatelyEqual.cs" />
+    <Compile Include="Unity\VisualScripting\NotEqual.cs" />
+    <Compile Include="Unity\VisualScripting\Null.cs" />
+    <Compile Include="Unity\VisualScripting\NullCheck.cs" />
+    <Compile Include="Unity\VisualScripting\NullCoalesce.cs" />
+    <Compile Include="Unity\VisualScripting\NumericComparison.cs" />
+    <Compile Include="Unity\VisualScripting\OnAnimatorIK.cs" />
+    <Compile Include="Unity\VisualScripting\OnAnimatorMove.cs" />
+    <Compile Include="Unity\VisualScripting\OnApplicationFocus.cs" />
+    <Compile Include="Unity\VisualScripting\OnApplicationLostFocus.cs" />
+    <Compile Include="Unity\VisualScripting\OnApplicationPause.cs" />
+    <Compile Include="Unity\VisualScripting\OnApplicationQuit.cs" />
+    <Compile Include="Unity\VisualScripting\OnApplicationResume.cs" />
+    <Compile Include="Unity\VisualScripting\OnBecameInvisible.cs" />
+    <Compile Include="Unity\VisualScripting\OnBecameVisible.cs" />
+    <Compile Include="Unity\VisualScripting\OnBeginDrag.cs" />
+    <Compile Include="Unity\VisualScripting\OnButtonClick.cs" />
+    <Compile Include="Unity\VisualScripting\OnButtonInput.cs" />
+    <Compile Include="Unity\VisualScripting\OnCancel.cs" />
+    <Compile Include="Unity\VisualScripting\Once.cs" />
+    <Compile Include="Unity\VisualScripting\OnCollisionEnter.cs" />
+    <Compile Include="Unity\VisualScripting\OnCollisionEnter2D.cs" />
+    <Compile Include="Unity\VisualScripting\OnCollisionExit.cs" />
+    <Compile Include="Unity\VisualScripting\OnCollisionExit2D.cs" />
+    <Compile Include="Unity\VisualScripting\OnCollisionStay.cs" />
+    <Compile Include="Unity\VisualScripting\OnCollisionStay2D.cs" />
+    <Compile Include="Unity\VisualScripting\OnControllerColliderHit.cs" />
+    <Compile Include="Unity\VisualScripting\OnDeselect.cs" />
+    <Compile Include="Unity\VisualScripting\OnDestinationReached.cs" />
+    <Compile Include="Unity\VisualScripting\OnDestroy.cs" />
+    <Compile Include="Unity\VisualScripting\OnDisable.cs" />
+    <Compile Include="Unity\VisualScripting\OnDrag.cs" />
+    <Compile Include="Unity\VisualScripting\OnDrawGizmos.cs" />
+    <Compile Include="Unity\VisualScripting\OnDrawGizmosSelected.cs" />
+    <Compile Include="Unity\VisualScripting\OnDrop.cs" />
+    <Compile Include="Unity\VisualScripting\OnDropdownValueChanged.cs" />
+    <Compile Include="Unity\VisualScripting\OnEnable.cs" />
+    <Compile Include="Unity\VisualScripting\OnEndDrag.cs" />
+    <Compile Include="Unity\VisualScripting\OnGUI.cs" />
+    <Compile Include="Unity\VisualScripting\OnInputFieldEndEdit.cs" />
+    <Compile Include="Unity\VisualScripting\OnInputFieldValueChanged.cs" />
+    <Compile Include="Unity\VisualScripting\OnJointBreak.cs" />
+    <Compile Include="Unity\VisualScripting\OnJointBreak2D.cs" />
+    <Compile Include="Unity\VisualScripting\OnKeyboardInput.cs" />
+    <Compile Include="Unity\VisualScripting\OnMouseDown.cs" />
+    <Compile Include="Unity\VisualScripting\OnMouseDrag.cs" />
+    <Compile Include="Unity\VisualScripting\OnMouseEnter.cs" />
+    <Compile Include="Unity\VisualScripting\OnMouseExit.cs" />
+    <Compile Include="Unity\VisualScripting\OnMouseInput.cs" />
+    <Compile Include="Unity\VisualScripting\OnMouseOver.cs" />
+    <Compile Include="Unity\VisualScripting\OnMouseUp.cs" />
+    <Compile Include="Unity\VisualScripting\OnMouseUpAsButton.cs" />
+    <Compile Include="Unity\VisualScripting\OnMove.cs" />
+    <Compile Include="Unity\VisualScripting\OnParticleCollision.cs" />
+    <Compile Include="Unity\VisualScripting\OnPointerClick.cs" />
+    <Compile Include="Unity\VisualScripting\OnPointerDown.cs" />
+    <Compile Include="Unity\VisualScripting\OnPointerEnter.cs" />
+    <Compile Include="Unity\VisualScripting\OnPointerExit.cs" />
+    <Compile Include="Unity\VisualScripting\OnPointerUp.cs" />
+    <Compile Include="Unity\VisualScripting\OnScroll.cs" />
+    <Compile Include="Unity\VisualScripting\OnScrollbarValueChanged.cs" />
+    <Compile Include="Unity\VisualScripting\OnScrollRectValueChanged.cs" />
+    <Compile Include="Unity\VisualScripting\OnSelect.cs" />
+    <Compile Include="Unity\VisualScripting\OnSliderValueChanged.cs" />
+    <Compile Include="Unity\VisualScripting\OnSubmit.cs" />
+    <Compile Include="Unity\VisualScripting\OnTimerElapsed.cs" />
+    <Compile Include="Unity\VisualScripting\OnToggleValueChanged.cs" />
+    <Compile Include="Unity\VisualScripting\OnTransformChildrenChanged.cs" />
+    <Compile Include="Unity\VisualScripting\OnTransformParentChanged.cs" />
+    <Compile Include="Unity\VisualScripting\OnTriggerEnter.cs" />
+    <Compile Include="Unity\VisualScripting\OnTriggerEnter2D.cs" />
+    <Compile Include="Unity\VisualScripting\OnTriggerExit.cs" />
+    <Compile Include="Unity\VisualScripting\OnTriggerExit2D.cs" />
+    <Compile Include="Unity\VisualScripting\OnTriggerStay.cs" />
+    <Compile Include="Unity\VisualScripting\OnTriggerStay2D.cs" />
+    <Compile Include="Unity\VisualScripting\Or.cs" />
+    <Compile Include="Unity\VisualScripting\PerSecond.cs" />
+    <Compile Include="Unity\VisualScripting\PointerEventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\PortKeyAttribute.cs" />
+    <Compile Include="Unity\VisualScripting\PortLabelAttribute.cs" />
+    <Compile Include="Unity\VisualScripting\PortLabelHiddenAttribute.cs" />
+    <Compile Include="Unity\VisualScripting\Project.cs" />
+    <Compile Include="Unity\VisualScripting\RemoveDictionaryItem.cs" />
+    <Compile Include="Unity\VisualScripting\RemoveListItem.cs" />
+    <Compile Include="Unity\VisualScripting\RemoveListItemAt.cs" />
+    <Compile Include="Unity\VisualScripting\Round.cs" />
+    <Compile Include="Unity\VisualScripting\SaveVariables.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarAbsolute.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarAverage.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarDivide.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarExponentiate.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarLerp.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarMaximum.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarMinimum.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarModulo.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarMoveTowards.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarMultiply.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarNormalize.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarPerSecond.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarRoot.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarRound.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarSubtract.cs" />
+    <Compile Include="Unity\VisualScripting\ScalarSum.cs" />
+    <Compile Include="Unity\VisualScripting\ScriptGraphAsset.cs" />
+    <Compile Include="Unity\VisualScripting\ScriptGraphContainerType.cs" />
+    <Compile Include="Unity\VisualScripting\ScriptMachine.cs" />
+    <Compile Include="Unity\VisualScripting\SelectOnEnum.cs" />
+    <Compile Include="Unity\VisualScripting\SelectOnFlow.cs" />
+    <Compile Include="Unity\VisualScripting\SelectOnInteger.cs" />
+    <Compile Include="Unity\VisualScripting\SelectOnString.cs" />
+    <Compile Include="Unity\VisualScripting\SelectUnit.cs" />
+    <Compile Include="Unity\VisualScripting\Sequence.cs" />
+    <Compile Include="Unity\VisualScripting\SetApplicationVariable.cs" />
+    <Compile Include="Unity\VisualScripting\SetDictionaryItem.cs" />
+    <Compile Include="Unity\VisualScripting\SetGraph.cs" />
+    <Compile Include="Unity\VisualScripting\SetGraphVariable.cs" />
+    <Compile Include="Unity\VisualScripting\SetListItem.cs" />
+    <Compile Include="Unity\VisualScripting\SetMember.cs" />
+    <Compile Include="Unity\VisualScripting\SetObjectVariable.cs" />
+    <Compile Include="Unity\VisualScripting\SetSavedVariable.cs" />
+    <Compile Include="Unity\VisualScripting\SetSceneVariable.cs" />
+    <Compile Include="Unity\VisualScripting\SetScriptGraph.cs" />
+    <Compile Include="Unity\VisualScripting\SetVariable.cs" />
+    <Compile Include="Unity\VisualScripting\SetVariableUnit.cs" />
+    <Compile Include="Unity\VisualScripting\SpecialUnitAttribute.cs" />
+    <Compile Include="Unity\VisualScripting\Start.cs" />
+    <Compile Include="Unity\VisualScripting\SubgraphUnit.cs" />
+    <Compile Include="Unity\VisualScripting\Subtract.cs" />
+    <Compile Include="Unity\VisualScripting\Sum.cs" />
+    <Compile Include="Unity\VisualScripting\SwitchOnEnum.cs" />
+    <Compile Include="Unity\VisualScripting\SwitchOnInteger.cs" />
+    <Compile Include="Unity\VisualScripting\SwitchOnString.cs" />
+    <Compile Include="Unity\VisualScripting\SwitchUnit.cs" />
+    <Compile Include="Unity\VisualScripting\This.cs" />
+    <Compile Include="Unity\VisualScripting\Throw.cs" />
+    <Compile Include="Unity\VisualScripting\Timer.cs" />
+    <Compile Include="Unity\VisualScripting\ToggleFlow.cs" />
+    <Compile Include="Unity\VisualScripting\ToggleValue.cs" />
+    <Compile Include="Unity\VisualScripting\TriggerCustomEvent.cs" />
+    <Compile Include="Unity\VisualScripting\TriggerEvent2DUnit.cs" />
+    <Compile Include="Unity\VisualScripting\TriggerEventUnit.cs" />
+    <Compile Include="Unity\VisualScripting\TryCatch.cs" />
+    <Compile Include="Unity\VisualScripting\UnifiedVariableUnit.cs" />
+    <Compile Include="Unity\VisualScripting\Unit.cs" />
+    <Compile Include="Unity\VisualScripting\UnitCategory.cs" />
+    <Compile Include="Unity\VisualScripting\UnitCategoryConverter.cs" />
+    <Compile Include="Unity\VisualScripting\UnitConnection.cs" />
+    <Compile Include="Unity\VisualScripting\UnitConnectionDebugData.cs" />
+    <Compile Include="Unity\VisualScripting\UnitFooterPortsAttribute.cs" />
+    <Compile Include="Unity\VisualScripting\UnitHeaderInspectableAttribute.cs" />
+    <Compile Include="Unity\VisualScripting\UnitOrderAttribute.cs" />
+    <Compile Include="Unity\VisualScripting\UnitPort.cs" />
+    <Compile Include="Unity\VisualScripting\UnitPortCollection.cs" />
+    <Compile Include="Unity\VisualScripting\UnitPortDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\UnitPortDefinitionCollection.cs" />
+    <Compile Include="Unity\VisualScripting\UnitPreservation.cs" />
+    <Compile Include="Unity\VisualScripting\UnitRelation.cs" />
+    <Compile Include="Unity\VisualScripting\UnitShortTitleAttribute.cs" />
+    <Compile Include="Unity\VisualScripting\UnitSubtitleAttribute.cs" />
+    <Compile Include="Unity\VisualScripting\UnitSurtitleAttribute.cs" />
+    <Compile Include="Unity\VisualScripting\UnitTitleAttribute.cs" />
+    <Compile Include="Unity\VisualScripting\Update.cs" />
+    <Compile Include="Unity\VisualScripting\ValueConnection.cs" />
+    <Compile Include="Unity\VisualScripting\ValueInput.cs" />
+    <Compile Include="Unity\VisualScripting\ValueInputDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\ValueOutput.cs" />
+    <Compile Include="Unity\VisualScripting\ValueOutputDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\ValuePortDefinition.cs" />
+    <Compile Include="Unity\VisualScripting\VariableUnit.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Absolute.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Angle.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Average.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Distance.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Divide.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2DotProduct.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Lerp.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Maximum.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Minimum.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Modulo.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2MoveTowards.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Multiply.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Normalize.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2PerSecond.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Project.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Round.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Subtract.cs" />
+    <Compile Include="Unity\VisualScripting\Vector2Sum.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Absolute.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Angle.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Average.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3CrossProduct.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Distance.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Divide.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3DotProduct.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Lerp.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Maximum.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Minimum.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Modulo.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3MoveTowards.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Multiply.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Normalize.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3PerSecond.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Project.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Round.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Subtract.cs" />
+    <Compile Include="Unity\VisualScripting\Vector3Sum.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Absolute.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Average.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Distance.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Divide.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4DotProduct.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Lerp.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Maximum.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Minimum.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Modulo.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4MoveTowards.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Multiply.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Normalize.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4PerSecond.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Round.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Subtract.cs" />
+    <Compile Include="Unity\VisualScripting\Vector4Sum.cs" />
+    <Compile Include="Unity\VisualScripting\WaitForEndOfFrameUnit.cs" />
+    <Compile Include="Unity\VisualScripting\WaitForFlow.cs" />
+    <Compile Include="Unity\VisualScripting\WaitForNextFrameUnit.cs" />
+    <Compile Include="Unity\VisualScripting\WaitForSecondsUnit.cs" />
+    <Compile Include="Unity\VisualScripting\WaitUnit.cs" />
+    <Compile Include="Unity\VisualScripting\WaitUntilUnit.cs" />
+    <Compile Include="Unity\VisualScripting\WaitWhileUnit.cs" />
+    <Compile Include="Unity\VisualScripting\While.cs" />
+    <Compile Include="Unity\VisualScripting\XUnit.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

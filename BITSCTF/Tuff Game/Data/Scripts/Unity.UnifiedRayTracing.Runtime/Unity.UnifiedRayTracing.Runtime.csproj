@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{12179357-CD44-420A-AC37-B93F7C2A5646}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Unity.UnifiedRayTracing.Runtime</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\AABB.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\BottomLevelLevelAccelStruct.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\BuildFlags.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\BvhCheck.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\BvhHeader.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\BvhNode.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\Common.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\HlbvhBuilder.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\HlbvhTopLevelBuilder.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\IndexFormat.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\Instance.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\InstanceInfo.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\MeshBuildInfo.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\MeshBuildMemoryRequirements.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\RadeonRaysAPI.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\RadeonRaysShaders.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\RadixSort.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\RayQueryOutputType.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\RayQueryType.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\RestructureBvh.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\Scan.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\SceneBuildMemoryRequirements.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\SceneMemoryRequirements.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\SID.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\TopLevelAccelStruct.cs" />
+    <Compile Include="UnityEngine\Rendering\RadeonRays\Transform.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\AccelerationStructureOptions.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\AccelStructAdapter.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\AccelStructInstances.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\AsyncTerrainToMeshRequest.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\BackendHelpers.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\BLASPositionsPool.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\BlockAllocator.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\BuildFlags.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\ComputeRayTracingAccelStruct.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\ComputeRayTracingBackend.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\ComputeRayTracingShader.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\ComputeTerrainMeshJob.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\GeometryPool.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\GeometryPoolConstants.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\GeometryPoolDesc.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\GeometryPoolEntryDesc.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\GeometryPoolEntryInfo.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\GeometryPoolHandle.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\GeometryPoolSubmeshData.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\GeoPoolMeshChunk.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\GeoPoolVertex.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\GeoPoolVertexAttribs.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\GraphicsHelpers.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\HardwareRayTracingAccelStruct.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\HardwareRayTracingBackend.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\HardwareRayTracingShader.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\IRayTracingAccelStruct.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\IRayTracingBackend.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\IRayTracingShader.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\MeshInstanceDesc.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\PersistentGpuArray.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\RayTracingBackend.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\RayTracingContext.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\RayTracingHelper.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\RayTracingRenderPipelineResources.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\RayTracingResources.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\ReferenceCounter.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\SID.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\TerrainDesc.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\TerrainToMesh.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\UnifiedRayTracingError.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\UnifiedRayTracingException.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\Utils.cs" />
+    <Compile Include="UnityEngine\Rendering\UnifiedRayTracing\VertexBufferChunk.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="__JobReflectionRegistrationOutput__1874814860780562806.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,26 @@
+using UnityEngine;
+
+public class EnemyZigZag : EnemyBase
+{
+	public float amplitude = 1.5f;
+
+	public float frequency = 3f;
+
+	private float startY;
+
+	private float time;
+
+	protected override void Start()
+	{
+		base.Start();
+		startY = base.transform.position.y;
+	}
+
+	protected override void Update()
+	{
+		base.Update();
+		time += Time.deltaTime;
+		float num = Mathf.Sin(time * frequency) * amplitude;
+		base.transform.position = new Vector3(base.transform.position.x, startY + num, 0f);
+	}
+}

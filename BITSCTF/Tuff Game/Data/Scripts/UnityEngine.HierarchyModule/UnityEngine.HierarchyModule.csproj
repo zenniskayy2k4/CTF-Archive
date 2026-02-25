@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0AA1B3D4-CFB8-49E7-8647-E28451F570A7}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>UnityEngine.HierarchyModule</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.HierarchyCoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.HierarchyCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unity\Hierarchy\CircularBuffer.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyExtensions.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyNodeTypeHandler.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyNodeTypeHandlerEnumerable.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyView.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewCell.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewCellDescriptor.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewCellValueEditor.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewColumn.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewColumnContextPool.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewColumnDescriptor.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewColumnState.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewColumnUtility.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewDragAndDropHandlingData.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewDragAndDropSetupData.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewDragHandler.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewItem.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewItemColumn.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewItemContainer.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewItemName.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewOperationExtension.cs" />
+    <Compile Include="Unity\Hierarchy\HierarchyViewState.cs" />
+    <Compile Include="Unity\Hierarchy\IHierarchyEditorNodeTypeHandler.cs" />
+    <Compile Include="Unity\Hierarchy\IHierarchyEntityIdConverter.cs" />
+    <Compile Include="Unity\Hierarchy\SpanExtensions.cs" />
+    <Compile Include="Unity\Hierarchy\StopwatchExtensions.cs" />
+    <Compile Include="Unity\Hierarchy\UnsafeCircularBufferTDebugView.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

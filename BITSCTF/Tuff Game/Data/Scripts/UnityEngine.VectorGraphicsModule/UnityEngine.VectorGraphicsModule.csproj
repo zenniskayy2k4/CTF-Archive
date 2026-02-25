@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{FDFF62AF-C7BF-4944-BD61-FB837DFB09A7}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>UnityEngine.VectorGraphicsModule</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClipperLib\Clipper.cs" />
+    <Compile Include="ClipperLib\ClipperBase.cs" />
+    <Compile Include="ClipperLib\ClipperException.cs" />
+    <Compile Include="ClipperLib\ClipperOffset.cs" />
+    <Compile Include="ClipperLib\ClipType.cs" />
+    <Compile Include="ClipperLib\Direction.cs" />
+    <Compile Include="ClipperLib\DoublePoint.cs" />
+    <Compile Include="ClipperLib\EdgeSide.cs" />
+    <Compile Include="ClipperLib\EndType.cs" />
+    <Compile Include="ClipperLib\Int128.cs" />
+    <Compile Include="ClipperLib\IntersectNode.cs" />
+    <Compile Include="ClipperLib\IntPoint.cs" />
+    <Compile Include="ClipperLib\IntRect.cs" />
+    <Compile Include="ClipperLib\Join.cs" />
+    <Compile Include="ClipperLib\JoinType.cs" />
+    <Compile Include="ClipperLib\LocalMinima.cs" />
+    <Compile Include="ClipperLib\Maxima.cs" />
+    <Compile Include="ClipperLib\MyIntersectNodeSort.cs" />
+    <Compile Include="ClipperLib\OutPt.cs" />
+    <Compile Include="ClipperLib\OutRec.cs" />
+    <Compile Include="ClipperLib\PolyFillType.cs" />
+    <Compile Include="ClipperLib\PolyNode.cs" />
+    <Compile Include="ClipperLib\PolyTree.cs" />
+    <Compile Include="ClipperLib\PolyType.cs" />
+    <Compile Include="ClipperLib\Scanbeam.cs" />
+    <Compile Include="ClipperLib\TEdge.cs" />
+    <Compile Include="LibTessDotNet\CombineCallback.cs" />
+    <Compile Include="LibTessDotNet\ContourOrientation.cs" />
+    <Compile Include="LibTessDotNet\ContourVertex.cs" />
+    <Compile Include="LibTessDotNet\Dict.cs" />
+    <Compile Include="LibTessDotNet\ElementType.cs" />
+    <Compile Include="LibTessDotNet\Geom.cs" />
+    <Compile Include="LibTessDotNet\Mesh.cs" />
+    <Compile Include="LibTessDotNet\MeshUtils.cs" />
+    <Compile Include="LibTessDotNet\PQHandle.cs" />
+    <Compile Include="LibTessDotNet\PriorityHeap.cs" />
+    <Compile Include="LibTessDotNet\PriorityQueue.cs" />
+    <Compile Include="LibTessDotNet\Tess.cs" />
+    <Compile Include="LibTessDotNet\Vec3.cs" />
+    <Compile Include="LibTessDotNet\WindingRule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unity\VectorGraphics\AddressMode.cs" />
+    <Compile Include="Unity\VectorGraphics\BezierContour.cs" />
+    <Compile Include="Unity\VectorGraphics\BezierPathSegment.cs" />
+    <Compile Include="Unity\VectorGraphics\BezierSegment.cs" />
+    <Compile Include="Unity\VectorGraphics\FillMode.cs" />
+    <Compile Include="Unity\VectorGraphics\GradientFill.cs" />
+    <Compile Include="Unity\VectorGraphics\GradientFillType.cs" />
+    <Compile Include="Unity\VectorGraphics\GradientStop.cs" />
+    <Compile Include="Unity\VectorGraphics\IFill.cs" />
+    <Compile Include="Unity\VectorGraphics\Inheritance.cs" />
+    <Compile Include="Unity\VectorGraphics\Matrix2D.cs" />
+    <Compile Include="Unity\VectorGraphics\NamedWebColorDictionary.cs" />
+    <Compile Include="Unity\VectorGraphics\PathCorner.cs" />
+    <Compile Include="Unity\VectorGraphics\PathDistanceForwardIterator.cs" />
+    <Compile Include="Unity\VectorGraphics\PathEnding.cs" />
+    <Compile Include="Unity\VectorGraphics\PathPatternIterator.cs" />
+    <Compile Include="Unity\VectorGraphics\PathProperties.cs" />
+    <Compile Include="Unity\VectorGraphics\PatternFill.cs" />
+    <Compile Include="Unity\VectorGraphics\Scene.cs" />
+    <Compile Include="Unity\VectorGraphics\SceneNode.cs" />
+    <Compile Include="Unity\VectorGraphics\Shape.cs" />
+    <Compile Include="Unity\VectorGraphics\SolidFill.cs" />
+    <Compile Include="Unity\VectorGraphics\Stroke.cs" />
+    <Compile Include="Unity\VectorGraphics\SVGAttribParser.cs" />
+    <Compile Include="Unity\VectorGraphics\SVGDictionary.cs" />
+    <Compile Include="Unity\VectorGraphics\SVGDocument.cs" />
+    <Compile Include="Unity\VectorGraphics\SVGFormatException.cs" />
+    <Compile Include="Unity\VectorGraphics\SVGParser.cs" />
+    <Compile Include="Unity\VectorGraphics\SVGPostponedFills.cs" />
+    <Compile Include="Unity\VectorGraphics\SVGPropertySheet.cs" />
+    <Compile Include="Unity\VectorGraphics\SVGStyleResolver.cs" />
+    <Compile Include="Unity\VectorGraphics\SVGStyleSheet.cs" />
+    <Compile Include="Unity\VectorGraphics\SVGStyleSheetUtils.cs" />
+    <Compile Include="Unity\VectorGraphics\TextureFill.cs" />
+    <Compile Include="Unity\VectorGraphics\VectorClip.cs" />
+    <Compile Include="Unity\VectorGraphics\VectorImageUtils.cs" />
+    <Compile Include="Unity\VectorGraphics\VectorUtils.cs" />
+    <Compile Include="Unity\VectorGraphics\ViewportOptions.cs" />
+    <Compile Include="Unity\VectorGraphics\XmlReaderIterator.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B83CD445-77D9-41AD-8AF7-FC0DFD81CC05}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Unity.VisualScripting.State</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="Unity\VisualScripting\AnyState.cs" />
+    <Compile Include="Unity\VisualScripting\FlowState.cs" />
+    <Compile Include="Unity\VisualScripting\FlowStateTransition.cs" />
+    <Compile Include="Unity\VisualScripting\GetStateGraph.cs" />
+    <Compile Include="Unity\VisualScripting\GetStateGraphs.cs" />
+    <Compile Include="Unity\VisualScripting\HasStateGraph.cs" />
+    <Compile Include="Unity\VisualScripting\INesterState.cs" />
+    <Compile Include="Unity\VisualScripting\INesterStateTransition.cs" />
+    <Compile Include="Unity\VisualScripting\IState.cs" />
+    <Compile Include="Unity\VisualScripting\IStateDebugData.cs" />
+    <Compile Include="Unity\VisualScripting\IStateTransition.cs" />
+    <Compile Include="Unity\VisualScripting\IStateTransitionDebugData.cs" />
+    <Compile Include="Unity\VisualScripting\NesterState.cs" />
+    <Compile Include="Unity\VisualScripting\NesterStateTransition.cs" />
+    <Compile Include="Unity\VisualScripting\OnEnterState.cs" />
+    <Compile Include="Unity\VisualScripting\OnExitState.cs" />
+    <Compile Include="Unity\VisualScripting\SetStateGraph.cs" />
+    <Compile Include="Unity\VisualScripting\State.cs" />
+    <Compile Include="Unity\VisualScripting\StateEnterReason.cs" />
+    <Compile Include="Unity\VisualScripting\StateEventHooks.cs" />
+    <Compile Include="Unity\VisualScripting\StateExitReason.cs" />
+    <Compile Include="Unity\VisualScripting\StateGraph.cs" />
+    <Compile Include="Unity\VisualScripting\StateGraphAsset.cs" />
+    <Compile Include="Unity\VisualScripting\StateGraphContainerType.cs" />
+    <Compile Include="Unity\VisualScripting\StateGraphData.cs" />
+    <Compile Include="Unity\VisualScripting\StateMachine.cs" />
+    <Compile Include="Unity\VisualScripting\StateTransition.cs" />
+    <Compile Include="Unity\VisualScripting\StateUnit.cs" />
+    <Compile Include="Unity\VisualScripting\SuperState.cs" />
+    <Compile Include="Unity\VisualScripting\TriggerStateTransition.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

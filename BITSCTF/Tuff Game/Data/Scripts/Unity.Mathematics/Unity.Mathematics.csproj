@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{13EA13D8-2273-4000-AAF2-14852103B157}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Unity.Mathematics</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="Unity\IL2CPP\CompilerServices\Il2CppEagerStaticClassConstructionAttribute.cs" />
+    <Compile Include="Unity\Mathematics\AffineTransform.cs" />
+    <Compile Include="Unity\Mathematics\bool2.cs" />
+    <Compile Include="Unity\Mathematics\bool2x2.cs" />
+    <Compile Include="Unity\Mathematics\bool2x3.cs" />
+    <Compile Include="Unity\Mathematics\bool2x4.cs" />
+    <Compile Include="Unity\Mathematics\bool3.cs" />
+    <Compile Include="Unity\Mathematics\bool3x2.cs" />
+    <Compile Include="Unity\Mathematics\bool3x3.cs" />
+    <Compile Include="Unity\Mathematics\bool3x4.cs" />
+    <Compile Include="Unity\Mathematics\bool4.cs" />
+    <Compile Include="Unity\Mathematics\bool4x2.cs" />
+    <Compile Include="Unity\Mathematics\bool4x3.cs" />
+    <Compile Include="Unity\Mathematics\bool4x4.cs" />
+    <Compile Include="Unity\Mathematics\DoNotNormalizeAttribute.cs" />
+    <Compile Include="Unity\Mathematics\double2.cs" />
+    <Compile Include="Unity\Mathematics\double2x2.cs" />
+    <Compile Include="Unity\Mathematics\double2x3.cs" />
+    <Compile Include="Unity\Mathematics\double2x4.cs" />
+    <Compile Include="Unity\Mathematics\double3.cs" />
+    <Compile Include="Unity\Mathematics\double3x2.cs" />
+    <Compile Include="Unity\Mathematics\double3x3.cs" />
+    <Compile Include="Unity\Mathematics\double3x4.cs" />
+    <Compile Include="Unity\Mathematics\double4.cs" />
+    <Compile Include="Unity\Mathematics\double4x2.cs" />
+    <Compile Include="Unity\Mathematics\double4x3.cs" />
+    <Compile Include="Unity\Mathematics\double4x4.cs" />
+    <Compile Include="Unity\Mathematics\float2.cs" />
+    <Compile Include="Unity\Mathematics\float2x2.cs" />
+    <Compile Include="Unity\Mathematics\float2x3.cs" />
+    <Compile Include="Unity\Mathematics\float2x4.cs" />
+    <Compile Include="Unity\Mathematics\float3.cs" />
+    <Compile Include="Unity\Mathematics\float3x2.cs" />
+    <Compile Include="Unity\Mathematics\float3x3.cs" />
+    <Compile Include="Unity\Mathematics\float3x4.cs" />
+    <Compile Include="Unity\Mathematics\float4.cs" />
+    <Compile Include="Unity\Mathematics\float4x2.cs" />
+    <Compile Include="Unity\Mathematics\float4x3.cs" />
+    <Compile Include="Unity\Mathematics\float4x4.cs" />
+    <Compile Include="Unity\Mathematics\Geometry\Math.cs" />
+    <Compile Include="Unity\Mathematics\Geometry\MinMaxAABB.cs" />
+    <Compile Include="Unity\Mathematics\Geometry\Plane.cs" />
+    <Compile Include="Unity\Mathematics\half.cs" />
+    <Compile Include="Unity\Mathematics\half2.cs" />
+    <Compile Include="Unity\Mathematics\half3.cs" />
+    <Compile Include="Unity\Mathematics\half4.cs" />
+    <Compile Include="Unity\Mathematics\int2.cs" />
+    <Compile Include="Unity\Mathematics\int2x2.cs" />
+    <Compile Include="Unity\Mathematics\int2x3.cs" />
+    <Compile Include="Unity\Mathematics\int2x4.cs" />
+    <Compile Include="Unity\Mathematics\int3.cs" />
+    <Compile Include="Unity\Mathematics\int3x2.cs" />
+    <Compile Include="Unity\Mathematics\int3x3.cs" />
+    <Compile Include="Unity\Mathematics\int3x4.cs" />
+    <Compile Include="Unity\Mathematics\int4.cs" />
+    <Compile Include="Unity\Mathematics\int4x2.cs" />
+    <Compile Include="Unity\Mathematics\int4x3.cs" />
+    <Compile Include="Unity\Mathematics\int4x4.cs" />
+    <Compile Include="Unity\Mathematics\math.cs" />
+    <Compile Include="Unity\Mathematics\noise.cs" />
+    <Compile Include="Unity\Mathematics\PostNormalizeAttribute.cs" />
+    <Compile Include="Unity\Mathematics\quaternion.cs" />
+    <Compile Include="Unity\Mathematics\Random.cs" />
+    <Compile Include="Unity\Mathematics\RigidTransform.cs" />
+    <Compile Include="Unity\Mathematics\svd.cs" />
+    <Compile Include="Unity\Mathematics\uint2.cs" />
+    <Compile Include="Unity\Mathematics\uint2x2.cs" />
+    <Compile Include="Unity\Mathematics\uint2x3.cs" />
+    <Compile Include="Unity\Mathematics\uint2x4.cs" />
+    <Compile Include="Unity\Mathematics\uint3.cs" />
+    <Compile Include="Unity\Mathematics\uint3x2.cs" />
+    <Compile Include="Unity\Mathematics\uint3x3.cs" />
+    <Compile Include="Unity\Mathematics\uint3x4.cs" />
+    <Compile Include="Unity\Mathematics\uint4.cs" />
+    <Compile Include="Unity\Mathematics\uint4x2.cs" />
+    <Compile Include="Unity\Mathematics\uint4x3.cs" />
+    <Compile Include="Unity\Mathematics\uint4x4.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

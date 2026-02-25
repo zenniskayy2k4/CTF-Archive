@@ -1,0 +1,100 @@
+The Final RCE — Write‑up (glibc 2.36 obstack / UAF → largebin → FSOP)
+
+Setup / protections
+
+chall is amd64 PIE, NX, partial RELRO, no canary. Provided libc.so.6 is glibc 2.36.
+Menu interface: alloc / free / edit / show.
+The program uses a GNU obstack as its “heap” for user chunks.
+1) Bugs
+Bug A — signed truncation in alloc (obstack pointer corruption)
+The program stores the requested size as 64‑bit, but updates obstack pointers using a 32‑bit signed value. So a size like 0xFFFF_FFF0 becomes -0x10 for pointer arithmetic.
+
+Effect:
+
+You can move object_base / next_free backwards inside the obstack chunk.
+Then the program does read(0, ptr, size_64) using the full 64‑bit size, giving a powerful write primitive (and allowing you to “allocate” pointers to metadata inside the obstack chunk).
+Bug B — obstack_free(NULL) misuse ⇒ UAF
+free(idx) ends up calling obstack_free(&obs, ptr). If ptr is NULL (unallocated index) it becomes obstack_free(&obs, NULL) which frees the whole obstack chain, but in this challenge the program still keeps stale pointers in its chunks[] table (and the obstack state is left usable enough to keep operating).
+
+Effect:
+
+Use-after-free: old chunks[i] pointers still point into freed malloc chunks.
+This matches the author hint: “use a pointer that has already been freed”.
+Info leak surface
+show(idx) prints with puts(chunks[idx]), so it leaks bytes until a NUL byte.
+
+2) Phase 1: heap leak (get obstack chunk base)
+Goal: compute the current obstack chunk base/header addresses.
+
+Technique:
+
+Make an “anchor” allocation so we know a stable pointer inside the chunk (base+0x10).
+Use the signed-truncation allocation with size 0xFFFF_FFF0 (= -0x10) to move object_base back by 0x10, so the next allocation returns a pointer to the obstack chunk header area.
+show() then leaks the chunk’s limit pointer; from that we derive:
+chunk_base = chunk_limit - 0xFE0
+chunk_header = chunk_base - 0x10
+This is what leak_obstack_chunk() in solve.py automates.
+
+3) Phase 2: libc leak via unsorted bin fd
+Goal: leak a main_arena pointer from an unsorted chunk.
+
+Problem:
+
+If you free the only top-most chunk, glibc may consolidate it into the top chunk, destroying unsorted fd/bk pointers.
+Fix:
+
+Shrink the first malloc chunk (call it chunk A) from 0xff0 to 0xf00 by overwriting its malloc header using the backwards obstack pointer move.
+Forge a small in-use remainder chunk after it (size 0xf0|PREV_INUSE) so A won’t consolidate into top when freed.
+Then:
+
+Trigger obstack_free(NULL) (via freeing an unallocated index like 63) so A is actually freed to malloc.
+show() a stale pointer into A: the freed chunk now contains unsorted pointers, so leaking fd gives libc:
+libc_base = unsorted_fd - 0x1D3CC0 (glibc 2.36 main_arena offset used in the solver)
+4) Phase 3: largebin attack → overwrite _IO_list_all
+This uses the second author hint: “attack that takes advantage of a freed chunk to write a heap address to a controlled address” → largebin attack.
+
+Target: _IO_list_all (global pointer used by stdio flush at exit).
+
+Plan:
+
+Ensure freed chunk A (size 0xf00) ends up in the largebin.
+Corrupt A’s largebin pointers (fd_nextsize/bk_nextsize) via UAF:
+Set A->bk_nextsize = _IO_list_all - 0x20
+Create a second freed chunk B of size 0xe00 (same largebin index as 0xf00, but smaller), then free it into unsorted.
+Allocate again to force malloc to process unsorted B and insert it into the largebin. In the “insert smaller-than-smallest” branch, glibc executes a write equivalent to:
+*(B->bk_nextsize + 0x20) = B
+With B->bk_nextsize = _IO_list_all - 0x20, this becomes:
+*_IO_list_all = B ✅
+Result:
+
+_IO_list_all now points to a heap address we control (the header of chunk B), which we’ll treat as a fake FILE.
+Important stability detail in solve.py:
+
+Before freeing the obstack chain again, B’s struct _obstack_chunk.prev is set to NULL so obstack_free(NULL) won’t walk back and free A again (avoids double-free).
+5) Phase 4: FSOP → setcontext pivot → syscall execve
+When the program exits, glibc runs _IO_cleanup() → _IO_flush_all_lockp(0), iterating for (fp = _IO_list_all; fp; fp = fp->_chain) and calling _IO_OVERFLOW(fp, EOF) if it looks writable.
+
+We craft fake FILE at chunk B so that:
+
+_IO_write_ptr > _IO_write_base is true (to trigger overflow),
+vtable points to _IO_wfile_jumps so overflow becomes _IO_wfile_overflow,
+wide-data fields are arranged so _IO_wfile_overflow calls _IO_wdoallocbuf,
+_IO_wdoallocbuf dispatches _IO_WDOALLOCATE(fp) via the wide vtable, and we set that function pointer to setcontext.
+Why setcontext:
+
+setcontext loads registers + stack pointer from a ucontext_t-like memory block.
+We abuse its layout so it treats our fake FILE object as the context and pivots RSP into a controlled region (we use FILE->_wide_data as the new stack).
+Final step:
+
+A tiny ROP chain (stored in wide_data) does a direct syscall:
+rax = 59 (execve)
+rdi = "/bin/sh"
+rsi = argv = ["/bin/sh","-c", "cat flag* /flag 2>/dev/null", NULL]
+rdx = NULL
+syscall
+This prints the flag and exits cleanly (more reliable than trying for an interactive shell).
+All of this is implemented in build_fsop_payload() in solve.py.
+
+6) Output / PoW
+Remote requires PoW: banner includes a token; solve.py runs ./redpwnpow <token> and sends the solution.
+Then it executes the exploit and regex-extracts the flag from output.

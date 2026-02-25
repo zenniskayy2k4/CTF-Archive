@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E913B3FE-4EC2-4972-B666-B7E3C50DA0D5}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>System.IO.Hashing</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard" />
+    <Reference Include="System.Memory">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="FxResources\System\IO\Hashing\SR.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\AllowNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DisallowNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DoesNotReturnAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\DoesNotReturnIfAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\MaybeNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\MaybeNullWhenAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\MemberNotNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\MemberNotNullWhenAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\NotNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\NotNullIfNotNullAttribute.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\NotNullWhenAttribute.cs" />
+    <Compile Include="System\IO\Hashing\Crc32.cs" />
+    <Compile Include="System\IO\Hashing\Crc64.cs" />
+    <Compile Include="System\IO\Hashing\NonCryptographicHashAlgorithm.cs" />
+    <Compile Include="System\IO\Hashing\XxHash128.cs" />
+    <Compile Include="System\IO\Hashing\XxHash3.cs" />
+    <Compile Include="System\IO\Hashing\XxHash32.cs" />
+    <Compile Include="System\IO\Hashing\XxHash64.cs" />
+    <Compile Include="System\IO\Hashing\XxHashShared.cs" />
+    <Compile Include="System\Numerics\BitOperations.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullablePublicOnlyAttribute.cs" />
+    <Compile Include="System\Runtime\InteropServices\LibraryImportAttribute.cs" />
+    <Compile Include="System\Runtime\InteropServices\StringMarshalling.cs" />
+    <Compile Include="System\SR.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FxResources.System.IO.Hashing.SR.resx" LogicalName="FxResources.System.IO.Hashing.SR.resources" />
+    <EmbeddedResource Include="ILLink.Substitutions.xml" LogicalName="ILLink.Substitutions.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

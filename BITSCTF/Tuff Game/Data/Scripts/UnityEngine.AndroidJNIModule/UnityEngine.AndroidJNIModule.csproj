@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{2B7AC4BE-51E3-4D06-8A4A-E0928D412E1C}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>UnityEngine.AndroidJNIModule</AssemblyName>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>E:\Cyber Security\CTF\BITSCTF\Tuff Game\Data\Assemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityEngine\AndroidJavaClass.cs" />
+    <Compile Include="UnityEngine\AndroidJavaException.cs" />
+    <Compile Include="UnityEngine\AndroidJavaObject.cs" />
+    <Compile Include="UnityEngine\AndroidJavaObjectUnityOwned.cs" />
+    <Compile Include="UnityEngine\AndroidJavaProxy.cs" />
+    <Compile Include="UnityEngine\AndroidJavaRunnable.cs" />
+    <Compile Include="UnityEngine\AndroidJavaRunnableProxy.cs" />
+    <Compile Include="UnityEngine\AndroidJNI.cs" />
+    <Compile Include="UnityEngine\AndroidJNIHelper.cs" />
+    <Compile Include="UnityEngine\AndroidJNISafe.cs" />
+    <Compile Include="UnityEngine\AndroidReflection.cs" />
+    <Compile Include="UnityEngine\Android\AndroidApplication.cs" />
+    <Compile Include="UnityEngine\Android\AndroidAssetPackError.cs" />
+    <Compile Include="UnityEngine\Android\AndroidAssetPackInfo.cs" />
+    <Compile Include="UnityEngine\Android\AndroidAssetPacks.cs" />
+    <Compile Include="UnityEngine\Android\AndroidAssetPackState.cs" />
+    <Compile Include="UnityEngine\Android\AndroidAssetPackStatus.cs" />
+    <Compile Include="UnityEngine\Android\AndroidAssetPackUseMobileDataRequestResult.cs" />
+    <Compile Include="UnityEngine\Android\AndroidColorModeHdr.cs" />
+    <Compile Include="UnityEngine\Android\AndroidColorModeWideColorGamut.cs" />
+    <Compile Include="UnityEngine\Android\AndroidConfiguration.cs" />
+    <Compile Include="UnityEngine\Android\AndroidDevice.cs" />
+    <Compile Include="UnityEngine\Android\AndroidGame.cs" />
+    <Compile Include="UnityEngine\Android\AndroidGameMode.cs" />
+    <Compile Include="UnityEngine\Android\AndroidGameState.cs" />
+    <Compile Include="UnityEngine\Android\AndroidHardwareKeyboardHidden.cs" />
+    <Compile Include="UnityEngine\Android\AndroidHardwareType.cs" />
+    <Compile Include="UnityEngine\Android\AndroidInsets.cs" />
+    <Compile Include="UnityEngine\Android\AndroidKeyboard.cs" />
+    <Compile Include="UnityEngine\Android\AndroidKeyboardHidden.cs" />
+    <Compile Include="UnityEngine\Android\AndroidLocale.cs" />
+    <Compile Include="UnityEngine\Android\AndroidNavigation.cs" />
+    <Compile Include="UnityEngine\Android\AndroidNavigationHidden.cs" />
+    <Compile Include="UnityEngine\Android\AndroidOrientation.cs" />
+    <Compile Include="UnityEngine\Android\AndroidScreenLayoutDirection.cs" />
+    <Compile Include="UnityEngine\Android\AndroidScreenLayoutLong.cs" />
+    <Compile Include="UnityEngine\Android\AndroidScreenLayoutRound.cs" />
+    <Compile Include="UnityEngine\Android\AndroidScreenLayoutSize.cs" />
+    <Compile Include="UnityEngine\Android\AndroidTouchScreen.cs" />
+    <Compile Include="UnityEngine\Android\AndroidUIModeNight.cs" />
+    <Compile Include="UnityEngine\Android\AndroidUIModeType.cs" />
+    <Compile Include="UnityEngine\Android\ApplicationExitInfoProvider.cs" />
+    <Compile Include="UnityEngine\Android\DiagnosticsReporting.cs" />
+    <Compile Include="UnityEngine\Android\DownloadAssetPackAsyncOperation.cs" />
+    <Compile Include="UnityEngine\Android\ExitReason.cs" />
+    <Compile Include="UnityEngine\Android\GameStateLabel.cs" />
+    <Compile Include="UnityEngine\Android\GetAssetPackStateAsyncOperation.cs" />
+    <Compile Include="UnityEngine\Android\IApplicationExitInfo.cs" />
+    <Compile Include="UnityEngine\Android\Permission.cs" />
+    <Compile Include="UnityEngine\Android\PermissionCallbacks.cs" />
+    <Compile Include="UnityEngine\Android\ProcessImportance.cs" />
+    <Compile Include="UnityEngine\Android\RequestToUseMobileDataAsyncOperation.cs" />
+    <Compile Include="UnityEngine\GlobalJavaObjectRef.cs" />
+    <Compile Include="UnityEngine\JNINativeMethod.cs" />
+    <Compile Include="UnityEngine\jvalue.cs" />
+    <Compile Include="UnityEngine\_AndroidJNIHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,15 @@
+[package]
+name = "solwanna-solve"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+borsh = "1.5.7"
+borsh-derive = "1.5.7"
+solana-program = "3.0"
+solana-system-interface = { version = "3.0", features = ["bincode"] }
+solwanna = { version = "1.0.0", path = "../program", features = ["no-entrypoint"] }
+base64ct = "=1.6.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
