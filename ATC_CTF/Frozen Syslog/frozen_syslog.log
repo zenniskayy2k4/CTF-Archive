@@ -1,0 +1,5 @@
+Jan 02 03:14:15 icebox kernel: Booting frozen kernel...
+Jan 02 03:14:18 icebox winterd[221]: Snow level nominal
+Jan 02 03:14:22 icebox auth[310]: token=ZXhwaXJlZA==
+Jan 02 03:14:29 icebox audit[411]: payload_b64=YXRjY3RmX2Zyb3N0eWxvZ3M=
+Jan 02 03:14:31 icebox winterd[221]: Done

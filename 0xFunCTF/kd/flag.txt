@@ -1,0 +1,4 @@
+0xfun{wh0_n33ds_sl33p_wh3n_y0u_h4v3_cr4sh_dumps}
+
+
+Dùng WinDbg: gõ lệnh `da 00007ff7af0a0000`, trước đó phải gõ: !analyze -v

@@ -1,0 +1,3 @@
+atcctf_dotdashingthroughthesnow
+
+morse code -> hex -> string
