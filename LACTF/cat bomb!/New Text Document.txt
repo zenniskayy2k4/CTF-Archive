@@ -1,0 +1,3 @@
+lactf{34.9681588,135.7772502}
+
+https://www.google.com/maps/place/Senbon+Torii+(Thousand+Torii+Gates)/@34.9681588,135.7772502,3a,57.4y,253.66h,93.41t/data=!3m10!1e1!3m8!1sG-tGGMaka6g-1r5XO9f5Vg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-3.408267653940669%26panoid%3DG-tGGMaka6g-1r5XO9f5Vg%26yaw%3D253.66464966331208!7i13312!8i6656!9m2!1b1!2i40!4m16!1m8!3m7!1s0x60010f14384c5a19:0x5d22970f58bfde17!2sSenbon+Torii+(Thousand+Torii+Gates)!8m2!3d34.9670429!4d135.7746595!10e5!16s%2Fg%2F11bzq2vczc!3m6!1s0x60010f14384c5a19:0x5d22970f58bfde17!8m2!3d34.9670429!4d135.7746595!10e5!16s%2Fg%2F11bzq2vczc?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D
