@@ -1,0 +1,646 @@
+package android.support.v4.app;
+
+import android.app.Notification;
+import android.os.Binder;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.os.RemoteException;
+import kotlin.text.Typography;
+
+/* loaded from: classes.dex */
+public interface INotificationSideChannel extends IInterface {
+    public static final String DESCRIPTOR = "android$support$v4$app$INotificationSideChannel".replace(Typography.dollar, '.');
+
+    void cancel(String str, int i, String str2) throws RemoteException;
+
+    void cancelAll(String str) throws RemoteException;
+
+    void notify(String str, int i, String str2, Notification notification) throws RemoteException;
+
+    public static class Default implements INotificationSideChannel {
+        @Override // android.support.v4.app.INotificationSideChannel
+        public void notify(String packageName, int id, String tag, Notification notification) throws RemoteException {
+        }
+
+        @Override // android.support.v4.app.INotificationSideChannel
+        public void cancel(String packageName, int id, String tag) throws RemoteException {
+        }
+
+        @Override // android.support.v4.app.INotificationSideChannel
+        public void cancelAll(String packageName) throws RemoteException {
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return null;
+        }
+    }
+
+    public static abstract class Stub extends Binder implements INotificationSideChannel {
+        static final int TRANSACTION_cancel = 2;
+        static final int TRANSACTION_cancelAll = 3;
+        static final int TRANSACTION_notify = 1;
+
+        public Stub() {
+            attachInterface(this, DESCRIPTOR);
+        }
+
+        public static INotificationSideChannel asInterface(IBinder obj) {
+            if (obj == null) {
+                return null;
+            }
+            IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
+            if (iin != null && (iin instanceof INotificationSideChannel)) {
+                return (INotificationSideChannel) iin;
+            }
+            return new Proxy(obj);
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return this;
+        }
+
+        @Override // android.os.Binder
+        public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException {
+            String descriptor = DESCRIPTOR;
+            if (code >= 1 && code <= 16777215) {
+                data.enforceInterface(descriptor);
+            }
+            switch (code) {
+                case 1598968902:
+                    reply.writeString(descriptor);
+                    return true;
+                default:
+                    switch (code) {
+                        case 1:
+                            String _arg0 = data.readString();
+                            int _arg1 = data.readInt();
+                            String _arg2 = data.readString();
+                            Notification _arg3 = (Notification) _Parcel.readTypedObject(data, Notification.CREATOR);
+                            notify(_arg0, _arg1, _arg2, _arg3);
+                            return true;
+                        case 2:
+                            String _arg02 = data.readString();
+                            int _arg12 = data.readInt();
+                            String _arg22 = data.readString();
+                            cancel(_arg02, _arg12, _arg22);
+                            return true;
+                        case 3:
+                            String _arg03 = data.readString();
+                            cancelAll(_arg03);
+                            return true;
+                        default:
+                            return super.onTransact(code, data, reply, flags);
+                    }
+            }
+        }
+
+        private static class Proxy implements INotificationSideChannel {
+            private IBinder mRemote;
+
+            Proxy(IBinder remote) {
+                this.mRemote = remote;
+            }
+
+            @Override // android.os.IInterface
+            public IBinder asBinder() {
+                return this.mRemote;
+            }
+
+            public String getInterfaceDescriptor() {
+                return DESCRIPTOR;
+            }
+
+            @Override // android.support.v4.app.INotificationSideChannel
+            public void notify(String packageName, int id, String tag, Notification notification) throws RemoteException {
+                Parcel _data = Parcel.obtain();
+                try {
+                    _data.writeInterfaceToken(DESCRIPTOR);
+                    _data.writeString(packageName);
+                    _data.writeInt(id);
+                    _data.writeString(tag);
+                    _Parcel.writeTypedObject(_data, notification, 0);
+                    this.mRemote.transact(1, _data, null, 1);
+                } finally {
+                    _data.recycle();
+                }
+            }
+
+            @Override // android.support.v4.app.INotificationSideChannel
+            public void cancel(String packageName, int id, String tag) throws RemoteException {
+                Parcel _data = Parcel.obtain();
+                try {
+                    _data.writeInterfaceToken(DESCRIPTOR);
+                    _data.writeString(packageName);
+                    _data.writeInt(id);
+                    _data.writeString(tag);
+                    this.mRemote.transact(2, _data, null, 1);
+                } finally {
+                    _data.recycle();
+                }
+            }
+
+            @Override // android.support.v4.app.INotificationSideChannel
+            public void cancelAll(String packageName) throws RemoteException {
+                Parcel _data = Parcel.obtain();
+                try {
+                    _data.writeInterfaceToken(DESCRIPTOR);
+                    _data.writeString(packageName);
+                    this.mRemote.transact(3, _data, null, 1);
+                } finally {
+                    _data.recycle();
+                }
+            }
+        }
+    }
+
+    public static class _Parcel {
+        /* JADX INFO: Access modifiers changed from: private */
+        public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c) {
+            if (parcel.readInt() != 0) {
+                return c.createFromParcel(parcel);
+            }
+            return null;
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags) {
+            if (value != null) {
+                parcel.writeInt(1);
+                value.writeToParcel(parcel, parcelableFlags);
+            } else {
+                parcel.writeInt(0);
+            }
+        }
+    }
+}
+
+package android.support.v4.app;
+
+import androidx.core.app.RemoteActionCompat;
+import androidx.versionedparcelable.VersionedParcel;
+
+/* loaded from: classes.dex */
+public final class RemoteActionCompatParcelizer extends androidx.core.app.RemoteActionCompatParcelizer {
+    public static RemoteActionCompat read(VersionedParcel parcel) {
+        return androidx.core.app.RemoteActionCompatParcelizer.read(parcel);
+    }
+
+    public static void write(RemoteActionCompat obj, VersionedParcel parcel) {
+        androidx.core.app.RemoteActionCompatParcelizer.write(obj, parcel);
+    }
+}
+
+
+package android.support.v4.graphics.drawable;
+
+import androidx.core.graphics.drawable.IconCompat;
+import androidx.versionedparcelable.VersionedParcel;
+
+/* loaded from: classes.dex */
+public final class IconCompatParcelizer extends androidx.core.graphics.drawable.IconCompatParcelizer {
+    public static IconCompat read(VersionedParcel parcel) {
+        return androidx.core.graphics.drawable.IconCompatParcelizer.read(parcel);
+    }
+
+    public static void write(IconCompat obj, VersionedParcel parcel) {
+        androidx.core.graphics.drawable.IconCompatParcelizer.write(obj, parcel);
+    }
+}
+
+package android.support.v4.os;
+
+import android.os.Binder;
+import android.os.Bundle;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.os.RemoteException;
+import kotlin.text.Typography;
+
+/* loaded from: classes.dex */
+public interface IResultReceiver extends IInterface {
+    public static final String DESCRIPTOR = "android$support$v4$os$IResultReceiver".replace(Typography.dollar, '.');
+
+    void send(int i, Bundle bundle) throws RemoteException;
+
+    public static class Default implements IResultReceiver {
+        @Override // android.support.v4.os.IResultReceiver
+        public void send(int resultCode, Bundle resultData) throws RemoteException {
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return null;
+        }
+    }
+
+    public static abstract class Stub extends Binder implements IResultReceiver {
+        static final int TRANSACTION_send = 1;
+
+        public Stub() {
+            attachInterface(this, DESCRIPTOR);
+        }
+
+        public static IResultReceiver asInterface(IBinder obj) {
+            if (obj == null) {
+                return null;
+            }
+            IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
+            if (iin != null && (iin instanceof IResultReceiver)) {
+                return (IResultReceiver) iin;
+            }
+            return new Proxy(obj);
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return this;
+        }
+
+        @Override // android.os.Binder
+        public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException {
+            String descriptor = DESCRIPTOR;
+            if (code >= 1 && code <= 16777215) {
+                data.enforceInterface(descriptor);
+            }
+            switch (code) {
+                case 1598968902:
+                    reply.writeString(descriptor);
+                    return true;
+                default:
+                    switch (code) {
+                        case 1:
+                            int _arg0 = data.readInt();
+                            Bundle _arg1 = (Bundle) _Parcel.readTypedObject(data, Bundle.CREATOR);
+                            send(_arg0, _arg1);
+                            return true;
+                        default:
+                            return super.onTransact(code, data, reply, flags);
+                    }
+            }
+        }
+
+        private static class Proxy implements IResultReceiver {
+            private IBinder mRemote;
+
+            Proxy(IBinder remote) {
+                this.mRemote = remote;
+            }
+
+            @Override // android.os.IInterface
+            public IBinder asBinder() {
+                return this.mRemote;
+            }
+
+            public String getInterfaceDescriptor() {
+                return DESCRIPTOR;
+            }
+
+            @Override // android.support.v4.os.IResultReceiver
+            public void send(int resultCode, Bundle resultData) throws RemoteException {
+                Parcel _data = Parcel.obtain();
+                try {
+                    _data.writeInterfaceToken(DESCRIPTOR);
+                    _data.writeInt(resultCode);
+                    _Parcel.writeTypedObject(_data, resultData, 0);
+                    this.mRemote.transact(1, _data, null, 1);
+                } finally {
+                    _data.recycle();
+                }
+            }
+        }
+    }
+
+    public static class _Parcel {
+        /* JADX INFO: Access modifiers changed from: private */
+        public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c) {
+            if (parcel.readInt() != 0) {
+                return c.createFromParcel(parcel);
+            }
+            return null;
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags) {
+            if (value != null) {
+                parcel.writeInt(1);
+                value.writeToParcel(parcel, parcelableFlags);
+            } else {
+                parcel.writeInt(0);
+            }
+        }
+    }
+}
+
+package android.support.v4.os;
+
+import android.os.Binder;
+import android.os.Bundle;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.os.RemoteException;
+import kotlin.text.Typography;
+
+/* loaded from: classes.dex */
+public interface IResultReceiver2 extends IInterface {
+    public static final String DESCRIPTOR = "android$support$v4$os$IResultReceiver2".replace(Typography.dollar, '.');
+
+    void send(int i, Bundle bundle) throws RemoteException;
+
+    public static class Default implements IResultReceiver2 {
+        @Override // android.support.v4.os.IResultReceiver2
+        public void send(int resultCode, Bundle resultData) throws RemoteException {
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return null;
+        }
+    }
+
+    public static abstract class Stub extends Binder implements IResultReceiver2 {
+        static final int TRANSACTION_send = 1;
+
+        public Stub() {
+            attachInterface(this, DESCRIPTOR);
+        }
+
+        public static IResultReceiver2 asInterface(IBinder obj) {
+            if (obj == null) {
+                return null;
+            }
+            IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
+            if (iin != null && (iin instanceof IResultReceiver2)) {
+                return (IResultReceiver2) iin;
+            }
+            return new Proxy(obj);
+        }
+
+        @Override // android.os.IInterface
+        public IBinder asBinder() {
+            return this;
+        }
+
+        @Override // android.os.Binder
+        public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException {
+            String descriptor = DESCRIPTOR;
+            if (code >= 1 && code <= 16777215) {
+                data.enforceInterface(descriptor);
+            }
+            switch (code) {
+                case 1598968902:
+                    reply.writeString(descriptor);
+                    return true;
+                default:
+                    switch (code) {
+                        case 1:
+                            int _arg0 = data.readInt();
+                            Bundle _arg1 = (Bundle) _Parcel.readTypedObject(data, Bundle.CREATOR);
+                            send(_arg0, _arg1);
+                            return true;
+                        default:
+                            return super.onTransact(code, data, reply, flags);
+                    }
+            }
+        }
+
+        private static class Proxy implements IResultReceiver2 {
+            private IBinder mRemote;
+
+            Proxy(IBinder remote) {
+                this.mRemote = remote;
+            }
+
+            @Override // android.os.IInterface
+            public IBinder asBinder() {
+                return this.mRemote;
+            }
+
+            public String getInterfaceDescriptor() {
+                return DESCRIPTOR;
+            }
+
+            @Override // android.support.v4.os.IResultReceiver2
+            public void send(int resultCode, Bundle resultData) throws RemoteException {
+                Parcel _data = Parcel.obtain();
+                try {
+                    _data.writeInterfaceToken(DESCRIPTOR);
+                    _data.writeInt(resultCode);
+                    _Parcel.writeTypedObject(_data, resultData, 0);
+                    this.mRemote.transact(1, _data, null, 1);
+                } finally {
+                    _data.recycle();
+                }
+            }
+        }
+    }
+
+    public static class _Parcel {
+        /* JADX INFO: Access modifiers changed from: private */
+        public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c) {
+            if (parcel.readInt() != 0) {
+                return c.createFromParcel(parcel);
+            }
+            return null;
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags) {
+            if (value != null) {
+                parcel.writeInt(1);
+                value.writeToParcel(parcel, parcelableFlags);
+            } else {
+                parcel.writeInt(0);
+            }
+        }
+    }
+}
+
+package android.support.v4.os;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.os.RemoteException;
+import android.support.v4.os.IResultReceiver;
+
+/* loaded from: classes.dex */
+public class ResultReceiver implements Parcelable {
+    public static final Parcelable.Creator<ResultReceiver> CREATOR = new Parcelable.Creator<ResultReceiver>() { // from class: android.support.v4.os.ResultReceiver.1
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public ResultReceiver createFromParcel(Parcel in) {
+            return new ResultReceiver(in);
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public ResultReceiver[] newArray(int size) {
+            return new ResultReceiver[size];
+        }
+    };
+    final Handler mHandler;
+    final boolean mLocal;
+    IResultReceiver mReceiver;
+
+    class MyRunnable implements Runnable {
+        final int mResultCode;
+        final Bundle mResultData;
+
+        MyRunnable(int resultCode, Bundle resultData) {
+            this.mResultCode = resultCode;
+            this.mResultData = resultData;
+        }
+
+        @Override // java.lang.Runnable
+        public void run() {
+            ResultReceiver.this.onReceiveResult(this.mResultCode, this.mResultData);
+        }
+    }
+
+    class MyResultReceiver extends IResultReceiver.Stub {
+        MyResultReceiver() {
+        }
+
+        @Override // android.support.v4.os.IResultReceiver
+        public void send(int resultCode, Bundle resultData) {
+            Handler handler = ResultReceiver.this.mHandler;
+            ResultReceiver resultReceiver = ResultReceiver.this;
+            if (handler != null) {
+                resultReceiver.mHandler.post(ResultReceiver.this.new MyRunnable(resultCode, resultData));
+            } else {
+                resultReceiver.onReceiveResult(resultCode, resultData);
+            }
+        }
+    }
+
+    public ResultReceiver(Handler handler) {
+        this.mLocal = true;
+        this.mHandler = handler;
+    }
+
+    public void send(int resultCode, Bundle resultData) {
+        if (this.mLocal) {
+            if (this.mHandler != null) {
+                this.mHandler.post(new MyRunnable(resultCode, resultData));
+                return;
+            } else {
+                onReceiveResult(resultCode, resultData);
+                return;
+            }
+        }
+        if (this.mReceiver != null) {
+            try {
+                this.mReceiver.send(resultCode, resultData);
+            } catch (RemoteException e) {
+            }
+        }
+    }
+
+    protected void onReceiveResult(int resultCode, Bundle resultData) {
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel out, int flags) {
+        synchronized (this) {
+            if (this.mReceiver == null) {
+                this.mReceiver = new MyResultReceiver();
+            }
+            out.writeStrongBinder(this.mReceiver.asBinder());
+        }
+    }
+
+    ResultReceiver(Parcel in) {
+        this.mLocal = false;
+        this.mHandler = null;
+        this.mReceiver = IResultReceiver.Stub.asInterface(in.readStrongBinder());
+    }
+}
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:compileSdkVersion="36"
+    android:compileSdkVersionCodename="16"
+    package="com.example.helloworld"
+    platformBuildVersionCode="36"
+    platformBuildVersionName="16">
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="36"/>
+    <permission
+        android:name="com.example.helloworld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.helloworld.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application
+        android:theme="@style/Theme.Helloworld"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+        <activity
+            android:name="com.example.helloworld.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="flag"
+            android:value="hidden"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.example.helloworld.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

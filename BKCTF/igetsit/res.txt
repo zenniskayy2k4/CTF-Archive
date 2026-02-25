@@ -1,0 +1,7 @@
+[x] Starting local process './igetsit'
+[+] Starting local process './igetsit': pid 1344
+[*] Scanning stack for leaks...
+[+] PIE Base: 0x5bf3b966f000
+[+] Libc Base: 0x721f63397000
+[*] Triggering FSOP...
+[*] Process './igetsit' stopped with exit code -11 (SIGSEGV) (pid 1344)
