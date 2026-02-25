@@ -1,0 +1,58 @@
+package android.support.v4.view;
+
+import android.R;
+import android.content.Context;
+import android.util.Log;
+import android.util.TypedValue;
+import android.view.ViewConfiguration;
+import java.lang.reflect.Method;
+
+/* loaded from: classes.dex */
+public final class ViewConfigurationCompat {
+    private static final String TAG = "ViewConfigCompat";
+    private static Method sGetScaledScrollFactorMethod;
+
+    @Deprecated
+    public static int getScaledPagingTouchSlop(ViewConfiguration viewConfiguration) {
+        return viewConfiguration.getScaledPagingTouchSlop();
+    }
+
+    @Deprecated
+    public static boolean hasPermanentMenuKey(ViewConfiguration viewConfiguration) {
+        return viewConfiguration.hasPermanentMenuKey();
+    }
+
+    public static float getScaledHorizontalScrollFactor(ViewConfiguration viewConfiguration, Context context) {
+        return viewConfiguration.getScaledHorizontalScrollFactor();
+    }
+
+    public static float getScaledVerticalScrollFactor(ViewConfiguration viewConfiguration, Context context) {
+        return viewConfiguration.getScaledVerticalScrollFactor();
+    }
+
+    private static float getLegacyScrollFactor(ViewConfiguration viewConfiguration, Context context) {
+        if (sGetScaledScrollFactorMethod != null) {
+            try {
+                return ((Integer) r0.invoke(viewConfiguration, new Object[0])).intValue();
+            } catch (Exception unused) {
+                Log.i(TAG, "Could not find method getScaledScrollFactor() on ViewConfiguration");
+            }
+        }
+        TypedValue typedValue = new TypedValue();
+        if (context.getTheme().resolveAttribute(R.attr.listPreferredItemHeight, typedValue, true)) {
+            return typedValue.getDimension(context.getResources().getDisplayMetrics());
+        }
+        return 0.0f;
+    }
+
+    public static int getScaledHoverSlop(ViewConfiguration viewConfiguration) {
+        return viewConfiguration.getScaledHoverSlop();
+    }
+
+    public static boolean shouldShowMenuShortcutsWhenKeyboardPresent(ViewConfiguration viewConfiguration, Context context) {
+        return viewConfiguration.shouldShowMenuShortcutsWhenKeyboardPresent();
+    }
+
+    private ViewConfigurationCompat() {
+    }
+}
