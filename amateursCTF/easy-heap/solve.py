@@ -3,9 +3,8 @@ from pwn import *
 # --- CẤU HÌNH ---
 exe = ELF('./heap')
 context.binary = exe
-# context.log_level = 'debug' # Bật cái này nếu muốn xem chi tiết gửi nhận
+# context.log_level = 'debug'
 
-# Kết nối: Process local hoặc Remote server
 # p = process('./heap')
 p = remote('amt.rs', 37557)
 
@@ -36,9 +35,7 @@ def trigger_check():
     # 0x43 hex = 67 decimal
     p.sendlineafter(b"> ", b"67") 
 
-# --- EXPLOIT START ---
-
-# 1. Lấy địa chỉ checkbuf (No PIE nên cố định)
+# 1. Lấy địa chỉ checkbuf
 checkbuf_addr = exe.symbols['checkbuf']
 log.info(f"Target checkbuf address: {hex(checkbuf_addr)}")
 

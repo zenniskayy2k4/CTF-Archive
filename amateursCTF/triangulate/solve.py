@@ -38,7 +38,7 @@ def solve():
     res34 = poly3.resultant(poly4)
 
     print("[*] Finding GCD to recover m...")
-    # Resultant trả về số rất lớn, là bội của m
+    # The resultants return a very large number that is a multiple of m
     m_sympy = gcd(res23, res34)
     
     m = int(m_sympy)

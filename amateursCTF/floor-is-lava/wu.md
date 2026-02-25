@@ -3,6 +3,7 @@ Số bước đi cần thiết là 28, số bit phải lật cũng là 28.
 => Chỉ cần DFS tìm đường đi 28 ô duy nhất, đường đi phải đi qua 28 ô mục tiêu một lần duy nhất và không được đi vào ô nào khác.
 
 ```python
+# !/usr/bin/env python3
 import ctypes
 from collections import deque
 import sys
